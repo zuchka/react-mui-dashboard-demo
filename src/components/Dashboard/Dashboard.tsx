@@ -285,44 +285,6 @@ export default function Dashboard() {
           </Box>
         </Paper>
       </Box>
-
-      {/* Orders Table */}
-      <Paper sx={{ p: 3 }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between", mb: 3 }}>
-          <Typography variant="h6">Orders Status</Typography>
-          <Box sx={{ display: "flex", gap: 2 }}>
-            <Button variant="contained" sx={{ bgcolor: "background.paper" }}>
-              Jan 2024
-            </Button>
-            <Button variant="contained" color="primary">
-              Create order
-            </Button>
-          </Box>
-        </Box>
-
-        <Box sx={{ height: 400, width: "100%" }}>
-          <DataGrid
-            rows={orders}
-            columns={columns}
-            initialState={{
-              pagination: {
-                paginationModel: { pageSize: 5 },
-              },
-            }}
-            pageSizeOptions={[5, 10, 25]}
-            disableRowSelectionOnClick
-            sx={{
-              border: "none",
-              "& .MuiDataGrid-cell": {
-                borderColor: "divider",
-              },
-              "& .MuiDataGrid-columnHeaders": {
-                borderColor: "divider",
-              },
-            }}
-          />
-        </Box>
-      </Paper>
     </Box>
   );
 }
