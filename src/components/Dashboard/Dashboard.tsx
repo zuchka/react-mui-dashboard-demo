@@ -1,74 +1,7 @@
 import { Box, Paper, Typography, Button } from "@mui/material";
-import { DataGrid } from "@mui/x-data-grid";
-import type { GridColDef } from "@mui/x-data-grid";
 import { StatsCard } from "../StatsCard/StatsCard";
 
 export default function Dashboard() {
-  const orders = [
-    {
-      id: "1532",
-      clientName: "John Carter",
-      clientEmail: "hello@johncarter.com",
-      date: "Jan 30, 2024",
-      status: "Delivered",
-      statusColor: "success",
-      country: "United States",
-      total: "$ 1,099.24",
-    },
-    {
-      id: "1531",
-      clientName: "Sophie Moore",
-      clientEmail: "contact@sophiemoore.com",
-      date: "Jan 27, 2024",
-      status: "Canceled",
-      statusColor: "error",
-      country: "United Kingdom",
-      total: "$ 5,870.32",
-    },
-  ];
-
-  const columns: GridColDef[] = [
-    { field: "id", headerName: "Order", width: 100 },
-    {
-      field: "clientName",
-      headerName: "Client",
-      width: 150,
-    },
-    {
-      field: "clientEmail",
-      headerName: "Email",
-      width: 200,
-    },
-    { field: "date", headerName: "Date", width: 150 },
-    {
-      field: "status",
-      headerName: "Status",
-      width: 130,
-      renderCell: (params) => (
-        <Box
-          sx={{
-            px: 1,
-            py: 0.5,
-            borderRadius: 1,
-            display: "inline-block",
-            bgcolor: `${params.row.statusColor}.light`,
-            color: `${params.row.statusColor}.main`,
-          }}
-        >
-          <Typography variant="caption">{params.row.status}</Typography>
-        </Box>
-      ),
-    },
-    { field: "country", headerName: "Country", width: 150 },
-    {
-      field: "total",
-      headerName: "Total",
-      width: 130,
-      align: "right",
-      headerAlign: "right",
-    },
-  ];
-
   return (
     <Box
       component="main"
