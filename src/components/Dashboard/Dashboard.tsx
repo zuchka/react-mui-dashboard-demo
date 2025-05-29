@@ -1,4 +1,5 @@
 import { Box, Paper, Typography, Button } from "@mui/material";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { StatsCard } from "../StatsCard/StatsCard";
 
 export default function Dashboard() {
