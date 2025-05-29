@@ -220,11 +220,27 @@ export default function Dashboard() {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "1fr 2fr",
+          gridTemplateColumns: "2fr 1fr",
           gap: 3,
           mb: 4,
         }}
       >
+        {/* Analytics Chart */}
+        <Paper
+          sx={{
+            p: 3,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/cecb0a586d41b199491293c20063d9f661073c1f?placeholderIfAbsent=true"
+            alt="Analytics"
+            style={{ width: "100%", height: "auto", objectFit: "contain" }}
+          />
+        </Paper>
+
         {/* Website Visitors */}
         <Paper sx={{ p: 3 }}>
           <Box
@@ -266,22 +282,6 @@ export default function Dashboard() {
               />
             </Box>
           ))}
-        </Paper>
-
-        {/* Analytics Chart */}
-        <Paper
-          sx={{
-            p: 3,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/cecb0a586d41b199491293c20063d9f661073c1f?placeholderIfAbsent=true"
-            alt="Analytics"
-            style={{ width: "100%", height: "auto", objectFit: "contain" }}
-          />
         </Paper>
       </Box>
 
