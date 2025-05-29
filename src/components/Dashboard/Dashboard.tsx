@@ -392,6 +392,57 @@ export default function Dashboard() {
           </Box>
         </Paper>
       </Box>
+
+      {/* Team Table */}
+      <Paper sx={{ p: 3 }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mb: 3,
+          }}
+        >
+          <Typography variant="h6">Team Overview</Typography>
+          <Button
+            variant="contained"
+            size="small"
+            sx={{ bgcolor: "primary.main" }}
+          >
+            Manage Team
+          </Button>
+        </Box>
+
+        <Box sx={{ height: 400, width: "100%" }}>
+          <DataGrid
+            rows={teamData}
+            columns={teamColumns}
+            initialState={{
+              pagination: {
+                paginationModel: { page: 0, pageSize: 10 },
+              },
+            }}
+            pageSizeOptions={[5, 10, 25]}
+            checkboxSelection
+            disableRowSelectionOnClick
+            sx={{
+              border: "none",
+              "& .MuiDataGrid-cell": {
+                borderBottom: "1px solid",
+                borderColor: "divider",
+              },
+              "& .MuiDataGrid-columnHeaders": {
+                backgroundColor: "background.default",
+                borderBottom: "2px solid",
+                borderColor: "divider",
+              },
+              "& .MuiDataGrid-row:hover": {
+                backgroundColor: "action.hover",
+              },
+            }}
+          />
+        </Box>
+      </Paper>
     </Box>
   );
 }
