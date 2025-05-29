@@ -2,6 +2,179 @@ import { Box, Paper, Typography, Button } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { StatsCard } from "../StatsCard/StatsCard";
 
+// Team data for the table
+const teamData = [
+  {
+    id: 1,
+    name: "John Carter",
+    email: "john.carter@company.com",
+    role: "Frontend Developer",
+    department: "Engineering",
+    progress: 60,
+    status: "Active",
+    joinDate: "2023-01-15",
+  },
+  {
+    id: 2,
+    name: "Sophie Moore",
+    email: "sophie.moore@company.com",
+    role: "UI/UX Designer",
+    department: "Design",
+    progress: 33,
+    status: "Active",
+    joinDate: "2023-03-20",
+  },
+  {
+    id: 3,
+    name: "Matt Cannon",
+    email: "matt.cannon@company.com",
+    role: "Backend Developer",
+    department: "Engineering",
+    progress: 75,
+    status: "Active",
+    joinDate: "2022-11-08",
+  },
+  {
+    id: 4,
+    name: "Sarah Johnson",
+    email: "sarah.johnson@company.com",
+    role: "Product Manager",
+    department: "Product",
+    progress: 85,
+    status: "Active",
+    joinDate: "2022-08-12",
+  },
+  {
+    id: 5,
+    name: "Michael Chen",
+    email: "michael.chen@company.com",
+    role: "DevOps Engineer",
+    department: "Engineering",
+    progress: 45,
+    status: "On Leave",
+    joinDate: "2023-05-03",
+  },
+  {
+    id: 6,
+    name: "Emily Davis",
+    email: "emily.davis@company.com",
+    role: "Marketing Specialist",
+    department: "Marketing",
+    progress: 90,
+    status: "Active",
+    joinDate: "2022-09-25",
+  },
+  {
+    id: 7,
+    name: "David Wilson",
+    email: "david.wilson@company.com",
+    role: "QA Engineer",
+    department: "Engineering",
+    progress: 55,
+    status: "Active",
+    joinDate: "2023-02-14",
+  },
+  {
+    id: 8,
+    name: "Lisa Anderson",
+    email: "lisa.anderson@company.com",
+    role: "HR Manager",
+    department: "Human Resources",
+    progress: 70,
+    status: "Active",
+    joinDate: "2022-06-10",
+  },
+];
+
+// Define columns for the DataGrid
+const teamColumns: GridColDef[] = [
+  {
+    field: "name",
+    headerName: "Name",
+    width: 180,
+    flex: 1,
+  },
+  {
+    field: "email",
+    headerName: "Email",
+    width: 220,
+    flex: 1,
+  },
+  {
+    field: "role",
+    headerName: "Role",
+    width: 160,
+    flex: 1,
+  },
+  {
+    field: "department",
+    headerName: "Department",
+    width: 140,
+    flex: 1,
+  },
+  {
+    field: "progress",
+    headerName: "Progress (%)",
+    width: 120,
+    type: "number",
+    renderCell: (params) => (
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+        <Typography>{params.value}%</Typography>
+        <Box
+          sx={{
+            width: 40,
+            height: 4,
+            bgcolor: "grey.300",
+            borderRadius: 1,
+            overflow: "hidden",
+          }}
+        >
+          <Box
+            sx={{
+              width: `${params.value}%`,
+              height: "100%",
+              bgcolor:
+                params.value >= 70
+                  ? "success.main"
+                  : params.value >= 40
+                    ? "warning.main"
+                    : "error.main",
+            }}
+          />
+        </Box>
+      </Box>
+    ),
+  },
+  {
+    field: "status",
+    headerName: "Status",
+    width: 100,
+    renderCell: (params) => (
+      <Box
+        sx={{
+          px: 1,
+          py: 0.5,
+          borderRadius: 1,
+          backgroundColor:
+            params.value === "Active" ? "success.light" : "warning.light",
+          color: params.value === "Active" ? "success.main" : "warning.main",
+          fontSize: "0.75rem",
+          fontWeight: 500,
+        }}
+      >
+        {params.value}
+      </Box>
+    ),
+  },
+  {
+    field: "joinDate",
+    headerName: "Join Date",
+    width: 120,
+    type: "date",
+    valueGetter: (value) => new Date(value),
+  },
+];
+
 export default function Dashboard() {
   return (
     <Box
