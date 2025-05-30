@@ -8,15 +8,36 @@ import {
 } from "@mui/material";
 import { useState, useCallback } from "react";
 
+// Constants
+const COLORS = {
+  primary: '#CB3CFF',
+  primaryHover: '#B733E6',
+  cardBg: '#0B1739',
+  containerBg: '#081028',
+  border: '#343B4F',
+  inactiveBg: '#0A1330',
+  white: '#FFF',
+  textSecondary: '#AEB9E1',
+} as const;
+
+const IMAGES = {
+  activeInApp: "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/bac86996770940d72e7a46bd9283a666a1cab0bc?placeholderIfAbsent=true",
+  inactiveInApp: "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/ade96a6ee4d0c33d2ff3d4635195623084206fa8?placeholderIfAbsent=true",
+  activeEmail: "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/411b5e4b7280baa432d73e29f24098dd86b1a150?placeholderIfAbsent=true",
+  inactiveEmail: "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/601c22712fef0c1450c53281ec7391d9a8e00c38?placeholderIfAbsent=true",
+  infoIcon: "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/810a8a8e4607ddcc81ec2b0db6fbc102d2f8bef4?placeholderIfAbsent=true",
+  summaryIcon: "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/2e0dad61d40ec22570e37384ca09b3d53344808f?placeholderIfAbsent=true",
+} as const;
+
 // Custom styled toggle button component
 const NotificationToggle = styled(Button)<{ active?: boolean }>(({ theme, active }) => ({
   minWidth: 'auto',
   padding: '6px 9px',
   fontSize: '12px',
   fontWeight: 400,
-  border: `0.6px solid ${active ? '#CB3CFF' : '#0B1739'}`,
-  backgroundColor: active ? '#CB3CFF' : '#0A1330',
-  color: active ? '#FFF' : '#AEB9E1',
+  border: `0.6px solid ${active ? COLORS.primary : COLORS.cardBg}`,
+  backgroundColor: active ? COLORS.primary : COLORS.inactiveBg,
+  color: active ? COLORS.white : COLORS.textSecondary,
   borderRadius: 0,
   boxShadow: '1px 1px 1px 0px rgba(16, 25, 52, 0.40)',
   textTransform: 'none',
@@ -30,15 +51,15 @@ const NotificationToggle = styled(Button)<{ active?: boolean }>(({ theme, active
     borderRadius: '0 4px 4px 0',
   },
   '&:hover': {
-    backgroundColor: active ? '#CB3CFF' : '#0A1330',
-    borderColor: active ? '#CB3CFF' : '#343B4F',
+    backgroundColor: active ? COLORS.primary : COLORS.inactiveBg,
+    borderColor: active ? COLORS.primary : COLORS.border,
   },
 }));
 
 const NotificationCard = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#0B1739',
+  backgroundColor: COLORS.cardBg,
   borderRadius: '12px',
-  border: '1px solid #343B4F',
+  border: `1px solid ${COLORS.border}`,
   boxShadow: '0px 2px 10px rgba(25, 93, 194, 0.07)',
   padding: '31px 25px 82px 0',
   [theme.breakpoints.down('md')]: {
