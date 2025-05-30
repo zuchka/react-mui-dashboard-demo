@@ -3,72 +3,180 @@ import { DataGrid } from "@mui/x-data-grid";
 import type { GridColDef } from "@mui/x-data-grid";
 import { StatsCard } from "../StatsCard/StatsCard";
 
-export default function Dashboard() {
-  const orders = [
-    {
-      id: "1532",
-      clientName: "John Carter",
-      clientEmail: "hello@johncarter.com",
-      date: "Jan 30, 2024",
-      status: "Delivered",
-      statusColor: "success",
-      country: "United States",
-      total: "$ 1,099.24",
-    },
-    {
-      id: "1531",
-      clientName: "Sophie Moore",
-      clientEmail: "contact@sophiemoore.com",
-      date: "Jan 27, 2024",
-      status: "Canceled",
-      statusColor: "error",
-      country: "United Kingdom",
-      total: "$ 5,870.32",
-    },
-  ];
+// Team data for the table
+const teamData = [
+  {
+    id: 1,
+    name: "John Carter",
+    email: "john.carter@company.com",
+    role: "Frontend Developer",
+    department: "Engineering",
+    progress: 60,
+    status: "Active",
+    joinDate: "2023-01-15",
+  },
+  {
+    id: 2,
+    name: "Sophie Moore",
+    email: "sophie.moore@company.com",
+    role: "UI/UX Designer",
+    department: "Design",
+    progress: 33,
+    status: "Active",
+    joinDate: "2023-03-20",
+  },
+  {
+    id: 3,
+    name: "Matt Cannon",
+    email: "matt.cannon@company.com",
+    role: "Backend Developer",
+    department: "Engineering",
+    progress: 75,
+    status: "Active",
+    joinDate: "2022-11-08",
+  },
+  {
+    id: 4,
+    name: "Sarah Johnson",
+    email: "sarah.johnson@company.com",
+    role: "Product Manager",
+    department: "Product",
+    progress: 85,
+    status: "Active",
+    joinDate: "2022-08-12",
+  },
+  {
+    id: 5,
+    name: "Michael Chen",
+    email: "michael.chen@company.com",
+    role: "DevOps Engineer",
+    department: "Engineering",
+    progress: 45,
+    status: "On Leave",
+    joinDate: "2023-05-03",
+  },
+  {
+    id: 6,
+    name: "Emily Davis",
+    email: "emily.davis@company.com",
+    role: "Marketing Specialist",
+    department: "Marketing",
+    progress: 90,
+    status: "Active",
+    joinDate: "2022-09-25",
+  },
+  {
+    id: 7,
+    name: "David Wilson",
+    email: "david.wilson@company.com",
+    role: "QA Engineer",
+    department: "Engineering",
+    progress: 55,
+    status: "Active",
+    joinDate: "2023-02-14",
+  },
+  {
+    id: 8,
+    name: "Lisa Anderson",
+    email: "lisa.anderson@company.com",
+    role: "HR Manager",
+    department: "Human Resources",
+    progress: 70,
+    status: "Active",
+    joinDate: "2022-06-10",
+  },
+];
 
-  const columns: GridColDef[] = [
-    { field: "id", headerName: "Order", width: 100 },
-    {
-      field: "clientName",
-      headerName: "Client",
-      width: 150,
-    },
-    {
-      field: "clientEmail",
-      headerName: "Email",
-      width: 200,
-    },
-    { field: "date", headerName: "Date", width: 150 },
-    {
-      field: "status",
-      headerName: "Status",
-      width: 130,
-      renderCell: (params) => (
+// Define columns for the DataGrid
+const teamColumns: GridColDef[] = [
+  {
+    field: "name",
+    headerName: "Name",
+    width: 180,
+    flex: 1,
+  },
+  {
+    field: "email",
+    headerName: "Email",
+    width: 220,
+    flex: 1,
+  },
+  {
+    field: "role",
+    headerName: "Role",
+    width: 160,
+    flex: 1,
+  },
+  {
+    field: "department",
+    headerName: "Department",
+    width: 140,
+    flex: 1,
+  },
+  {
+    field: "progress",
+    headerName: "Progress (%)",
+    width: 120,
+    type: "number",
+    renderCell: (params) => (
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+        <Typography>{params.value}%</Typography>
         <Box
           sx={{
-            px: 1,
-            py: 0.5,
+            width: 40,
+            height: 4,
+            bgcolor: "grey.300",
             borderRadius: 1,
-            display: "inline-block",
-            bgcolor: `${params.row.statusColor}.light`,
-            color: `${params.row.statusColor}.main`,
+            overflow: "hidden",
           }}
         >
-          <Typography variant="caption">{params.row.status}</Typography>
+          <Box
+            sx={{
+              width: `${params.value}%`,
+              height: "100%",
+              bgcolor:
+                params.value >= 70
+                  ? "success.main"
+                  : params.value >= 40
+                    ? "warning.main"
+                    : "error.main",
+            }}
+          />
         </Box>
-      ),
-    },
-    { field: "country", headerName: "Country", width: 150 },
-    {
-      field: "total",
-      headerName: "Total",
-      width: 130,
-      align: "right",
-      headerAlign: "right",
-    },
-  ];
+      </Box>
+    ),
+  },
+  {
+    field: "status",
+    headerName: "Status",
+    width: 100,
+    renderCell: (params) => (
+      <Box
+        sx={{
+          px: 1,
+          py: 0.5,
+          borderRadius: 1,
+          backgroundColor:
+            params.value === "Active" ? "success.light" : "warning.light",
+          color: params.value === "Active" ? "success.main" : "warning.main",
+          fontSize: "0.75rem",
+          fontWeight: 500,
+        }}
+      >
+        {params.value}
+      </Box>
+    ),
+  },
+  {
+    field: "joinDate",
+    headerName: "Join Date",
+    width: 120,
+    type: "date",
+    valueGetter: (value) => new Date(value),
+  },
+];
 
+export default function Dashboard() {
   return (
     <Box
       component="main"
@@ -112,11 +220,27 @@ export default function Dashboard() {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "1fr 2fr",
+          gridTemplateColumns: "2fr 1fr",
           gap: 3,
           mb: 4,
         }}
       >
+        {/* Analytics Chart */}
+        <Paper
+          sx={{
+            p: 3,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "flex-start",
+          }}
+        >
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/cecb0a586d41b199491293c20063d9f661073c1f?placeholderIfAbsent=true"
+            alt="Analytics"
+            style={{ width: "100%", height: "auto", objectFit: "contain" }}
+          />
+        </Paper>
+
         {/* Website Visitors */}
         <Paper sx={{ p: 3 }}>
           <Box
@@ -158,22 +282,6 @@ export default function Dashboard() {
               />
             </Box>
           ))}
-        </Paper>
-
-        {/* Analytics Chart */}
-        <Paper
-          sx={{
-            p: 3,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/cecb0a586d41b199491293c20063d9f661073c1f?placeholderIfAbsent=true"
-            alt="Analytics"
-            style={{ width: "100%", height: "auto", objectFit: "contain" }}
-          />
         </Paper>
       </Box>
 
@@ -286,38 +394,51 @@ export default function Dashboard() {
         </Paper>
       </Box>
 
-      {/* Orders Table */}
+      {/* Team Table */}
       <Paper sx={{ p: 3 }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between", mb: 3 }}>
-          <Typography variant="h6">Orders Status</Typography>
-          <Box sx={{ display: "flex", gap: 2 }}>
-            <Button variant="contained" sx={{ bgcolor: "background.paper" }}>
-              Jan 2024
-            </Button>
-            <Button variant="contained" color="primary">
-              Create order
-            </Button>
-          </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mb: 3,
+          }}
+        >
+          <Typography variant="h6">Team Overview</Typography>
+          <Button
+            variant="contained"
+            size="small"
+            sx={{ bgcolor: "primary.main" }}
+          >
+            Manage Team
+          </Button>
         </Box>
 
         <Box sx={{ height: 400, width: "100%" }}>
           <DataGrid
-            rows={orders}
-            columns={columns}
+            rows={teamData}
+            columns={teamColumns}
             initialState={{
               pagination: {
-                paginationModel: { pageSize: 5 },
+                paginationModel: { page: 0, pageSize: 10 },
               },
             }}
             pageSizeOptions={[5, 10, 25]}
+            checkboxSelection
             disableRowSelectionOnClick
             sx={{
               border: "none",
               "& .MuiDataGrid-cell": {
+                borderBottom: "1px solid",
                 borderColor: "divider",
               },
               "& .MuiDataGrid-columnHeaders": {
+                backgroundColor: "background.default",
+                borderBottom: "2px solid",
                 borderColor: "divider",
+              },
+              "& .MuiDataGrid-row:hover": {
+                backgroundColor: "action.hover",
               },
             }}
           />
