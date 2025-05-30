@@ -15,7 +15,6 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
   title = "Customer Testimonials",
   subtitle = "What our clients say about our products",
 }) => {
-  const theme = useTheme();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const itemsPerPage = 3;
@@ -28,11 +27,6 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
   const handleNext = () => {
     setCurrentIndex((prev) => Math.min(maxIndex, prev + 1));
   };
-
-  const visibleTestimonials = testimonials.slice(
-    currentIndex,
-    currentIndex + itemsPerPage,
-  );
 
   return (
     <Box sx={{ width: "100%", py: 4 }}>
