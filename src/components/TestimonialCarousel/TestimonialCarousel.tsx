@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import TestimonialCard from "../TestimonialCard/TestimonialCard";
