@@ -19,6 +19,7 @@ const WebsiteVisitorsCard = () => {
           boxShadow: "1px 1px 1px 0px rgba(16, 25, 52, 0.40)",
           display: "flex",
           width: "100%",
+          height: "320px",
           padding: "28px 30px",
           flexDirection: "column",
           alignItems: "start",

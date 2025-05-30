@@ -43,6 +43,7 @@ const TeamProgressCard = () => {
           boxShadow: "1px 1px 1px 0px rgba(16, 25, 52, 0.40)",
           display: "flex",
           width: "100%",
+          height: "320px",
           padding: "31px 30px",
           flexDirection: "column",
           alignItems: "stretch",

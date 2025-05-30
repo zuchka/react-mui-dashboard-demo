@@ -32,8 +32,8 @@ const UserCarousel = () => {
         width: "100%",
         maxWidth: "400px",
         margin: "0 auto",
-        padding: "0 40px", // Add padding to prevent button cutoff
-        overflow: "visible",
+        padding: "0 40px",
+        overflow: "hidden",
       }}
     >
       {/* Carousel Container */}
@@ -49,9 +49,10 @@ const UserCarousel = () => {
             key={index}
             sx={{
               minWidth: "100%",
+              maxWidth: "100%",
               display: "flex",
               justifyContent: "center",
-              padding: "0 20px",
+              flexShrink: 0,
             }}
           >
             {slide}
