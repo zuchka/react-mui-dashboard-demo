@@ -115,7 +115,7 @@ export default function Settings() {
     monthlySummary: { inApp: true, email: false },
   });
 
-  const handleNotificationChange = (
+  const handleNotificationChange = useCallback((
     category: keyof NotificationSettings,
     type: keyof NotificationState
   ) => {
@@ -126,7 +126,7 @@ export default function Settings() {
         [type]: !prev[category][type]
       }
     }));
-  };
+  }, []);
 
   const NotificationToggleGroup = ({
     category,
