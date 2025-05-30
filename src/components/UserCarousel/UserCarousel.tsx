@@ -32,7 +32,8 @@ const UserCarousel = () => {
         width: "100%",
         maxWidth: "400px",
         margin: "0 auto",
-        overflow: "hidden",
+        padding: "0 40px", // Add padding to prevent button cutoff
+        overflow: "visible",
       }}
     >
       {/* Carousel Container */}
@@ -63,7 +64,7 @@ const UserCarousel = () => {
         onClick={prevSlide}
         sx={{
           position: "absolute",
-          left: -10,
+          left: 0,
           top: "50%",
           transform: "translateY(-50%)",
           backgroundColor: "rgba(255, 255, 255, 0.8)",
@@ -80,7 +81,7 @@ const UserCarousel = () => {
         onClick={nextSlide}
         sx={{
           position: "absolute",
-          right: -10,
+          right: 0,
           top: "50%",
           transform: "translateY(-50%)",
           backgroundColor: "rgba(255, 255, 255, 0.8)",

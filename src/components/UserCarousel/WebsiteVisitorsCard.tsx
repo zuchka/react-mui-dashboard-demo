@@ -74,71 +74,162 @@ const WebsiteVisitorsCard = () => {
           </Typography>
         </Box>
 
+        {/* Progress Bars */}
         <Box
           sx={{
             display: "flex",
-            marginTop: "36px",
-            marginLeft: "18px",
-            minHeight: "16px",
+            flexDirection: "column",
+            marginTop: "20px",
             width: "100%",
-            alignItems: "start",
-            gap: "30px",
-            fontSize: "14px",
-            color: "var(--Neutral-Colors-400, #AEB9E1)",
-            fontWeight: 400,
-            whiteSpace: "nowrap",
-            lineHeight: 1.14,
-            justifyContent: "start",
+            gap: "12px",
           }}
         >
-          <Typography
-            sx={{
-              color: "var(--Neutral-Colors-400, #AEB9E1)",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              alignSelf: "stretch",
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              justifyContent: "start",
-              fontSize: "14px",
-              fontWeight: 400,
-              lineHeight: 1.14,
-            }}
-          >
-            Sell
-          </Typography>
-          <Typography
-            sx={{
-              color: "var(--Neutral-Colors-400, #AEB9E1)",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              alignSelf: "stretch",
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              justifyContent: "start",
-              fontSize: "14px",
-              fontWeight: 400,
-              lineHeight: 1.14,
-            }}
-          >
-            Distribute
-          </Typography>
-          <Typography
-            sx={{
-              color: "var(--Neutral-Colors-400, #AEB9E1)",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              alignSelf: "stretch",
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              justifyContent: "start",
-              fontSize: "14px",
-              fontWeight: 400,
-              lineHeight: 1.14,
-            }}
-          >
-            Return
-          </Typography>
+          {/* Sell Progress */}
+          <Box sx={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "var(--Neutral-Colors-400, #AEB9E1)",
+                  fontSize: "12px",
+                  fontWeight: 400,
+                }}
+              >
+                Sell
+              </Typography>
+              <Typography
+                sx={{
+                  color: "var(--Neutral-Colors-100, #FFF)",
+                  fontSize: "12px",
+                  fontWeight: 400,
+                }}
+              >
+                65%
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                width: "100%",
+                height: "4px",
+                backgroundColor: "rgba(255, 255, 255, 0.1)",
+                borderRadius: "2px",
+                overflow: "hidden",
+              }}
+            >
+              <Box
+                sx={{
+                  width: "65%",
+                  height: "100%",
+                  background:
+                    "linear-gradient(90deg, #CB3CFF 0%, #7F25FB 100%)",
+                  borderRadius: "2px",
+                }}
+              />
+            </Box>
+          </Box>
+
+          {/* Distribute Progress */}
+          <Box sx={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "var(--Neutral-Colors-400, #AEB9E1)",
+                  fontSize: "12px",
+                  fontWeight: 400,
+                }}
+              >
+                Distribute
+              </Typography>
+              <Typography
+                sx={{
+                  color: "var(--Neutral-Colors-100, #FFF)",
+                  fontSize: "12px",
+                  fontWeight: 400,
+                }}
+              >
+                45%
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                width: "100%",
+                height: "4px",
+                backgroundColor: "rgba(255, 255, 255, 0.1)",
+                borderRadius: "2px",
+                overflow: "hidden",
+              }}
+            >
+              <Box
+                sx={{
+                  width: "45%",
+                  height: "100%",
+                  background:
+                    "linear-gradient(90deg, #00E6CC 0%, #00B8A9 100%)",
+                  borderRadius: "2px",
+                }}
+              />
+            </Box>
+          </Box>
+
+          {/* Return Progress */}
+          <Box sx={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "var(--Neutral-Colors-400, #AEB9E1)",
+                  fontSize: "12px",
+                  fontWeight: 400,
+                }}
+              >
+                Return
+              </Typography>
+              <Typography
+                sx={{
+                  color: "var(--Neutral-Colors-100, #FFF)",
+                  fontSize: "12px",
+                  fontWeight: 400,
+                }}
+              >
+                30%
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                width: "100%",
+                height: "4px",
+                backgroundColor: "rgba(255, 255, 255, 0.1)",
+                borderRadius: "2px",
+                overflow: "hidden",
+              }}
+            >
+              <Box
+                sx={{
+                  width: "30%",
+                  height: "100%",
+                  background:
+                    "linear-gradient(90deg, #FF6B6B 0%, #FF5722 100%)",
+                  borderRadius: "2px",
+                }}
+              />
+            </Box>
+          </Box>
         </Box>
       </Card>
     </Box>
