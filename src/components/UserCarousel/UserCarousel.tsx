@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Box, IconButton, useTheme } from "@mui/material";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import TeamProgressCard from "./TeamProgressCard";
@@ -8,10 +8,13 @@ const UserCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const theme = useTheme();
 
-  const slides = [
-    <TeamProgressCard key="team-progress" />,
-    <WebsiteVisitorsCard key="website-visitors" />,
-  ];
+  const slides = useMemo(
+    () => [
+      <TeamProgressCard key="team-progress" />,
+      <WebsiteVisitorsCard key="website-visitors" />,
+    ],
+    [],
+  );
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
