@@ -231,8 +231,8 @@ export default function Settings() {
                     I'm mentioned in a message
                   </Typography>
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/810a8a8e4607ddcc81ec2b0db6fbc102d2f8bef4?placeholderIfAbsent=true"
-                    alt=""
+                    src={IMAGES.infoIcon}
+                    alt="Information"
                     style={{ width: 12, height: 12 }}
                   />
                 </Box>
