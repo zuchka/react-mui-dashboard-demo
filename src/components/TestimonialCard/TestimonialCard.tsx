@@ -1,17 +1,8 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Avatar,
-  Chip,
-  IconButton,
-  Stack,
-  useTheme,
-} from "@mui/material";
+import { Box, Typography, Avatar, Stack } from "@mui/material";
 import {
   Star,
   StarBorder,
-  VerifiedUser,
   Person,
   Code,
   ThumbUp,
