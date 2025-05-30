@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Box, IconButton, Stack, useTheme, Typography } from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
-import TestimonialCard, {
-  TestimonialData,
-} from "../TestimonialCard/TestimonialCard";
+import TestimonialCard from "../TestimonialCard/TestimonialCard";
+import type { TestimonialData } from "../TestimonialCard/TestimonialCard";
 
 interface TestimonialCarouselProps {
   testimonials: TestimonialData[];
