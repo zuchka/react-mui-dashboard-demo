@@ -17,8 +17,11 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const itemsPerPage = 3;
-  const maxIndex = Math.max(0, testimonials.length - itemsPerPage);
+  const itemsPerPage = useMemo(() => 3, []);
+  const maxIndex = useMemo(
+    () => Math.max(0, testimonials.length - itemsPerPage),
+    [testimonials.length, itemsPerPage],
+  );
 
   const handlePrevious = () => {
     setCurrentIndex((prev) => Math.max(0, prev - 1));
