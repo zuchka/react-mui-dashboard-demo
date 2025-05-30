@@ -3,12 +3,10 @@ import {
   Box,
   Paper,
   Button,
-  Switch,
-  FormControlLabel,
   useTheme,
   styled,
 } from "@mui/material";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 // Custom styled toggle button component
 const NotificationToggle = styled(Button)<{ active?: boolean }>(
