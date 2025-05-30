@@ -31,8 +31,6 @@ interface TestimonialCardProps {
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
-  const theme = useTheme();
-
   const renderStars = (rating: number, filled = true) => {
     return Array.from({ length: 5 }, (_, index) => (
       <Star
