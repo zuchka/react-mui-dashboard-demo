@@ -231,7 +231,7 @@ export default function Dashboard() {
             p: 3,
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "flex-start",
           }}
         >
           <img
