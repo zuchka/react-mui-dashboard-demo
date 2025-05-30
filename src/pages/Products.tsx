@@ -1,6 +1,6 @@
 import { Typography, Box } from "@mui/material";
-import TestimonialCarousel from "../components/TestimonialCarousel/TestimonialCarousel";
-import { TestimonialData } from "../components/TestimonialCard/TestimonialCard";
+import TestimonialCarousel from "../components/TestimonialCarousel";
+import { TestimonialData } from "../components/TestimonialCard";
 
 const testimonialData: TestimonialData[] = [
   {
