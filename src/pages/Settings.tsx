@@ -143,11 +143,8 @@ export default function Settings() {
         onClick={() => handleNotificationChange(category, 'inApp')}
       >
         <img
-          src={inAppActive
-            ? "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/bac86996770940d72e7a46bd9283a666a1cab0bc?placeholderIfAbsent=true"
-            : "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/ade96a6ee4d0c33d2ff3d4635195623084206fa8?placeholderIfAbsent=true"
-          }
-          alt=""
+          src={inAppActive ? IMAGES.activeInApp : IMAGES.inactiveInApp}
+          alt={inAppActive ? "In-app notifications enabled" : "In-app notifications disabled"}
           style={{ width: 14, height: 14 }}
         />
         In-app
@@ -157,11 +154,8 @@ export default function Settings() {
         onClick={() => handleNotificationChange(category, 'email')}
       >
         <img
-          src={emailActive
-            ? "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/411b5e4b7280baa432d73e29f24098dd86b1a150?placeholderIfAbsent=true"
-            : "https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/601c22712fef0c1450c53281ec7391d9a8e00c38?placeholderIfAbsent=true"
-          }
-          alt=""
+          src={emailActive ? IMAGES.activeEmail : IMAGES.inactiveEmail}
+          alt={emailActive ? "Email notifications enabled" : "Email notifications disabled"}
           style={{ width: 14, height: 14 }}
         />
         Email
