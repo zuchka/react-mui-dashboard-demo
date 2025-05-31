@@ -16,9 +16,7 @@ import {
   Search as SearchIcon,
   KeyboardArrowDown as ArrowDownIcon,
 } from "@mui/icons-material";
-import TemplateCard, {
-  TemplateCardProps,
-} from "../components/TemplateCard/TemplateCard";
+import TemplateCard from "../components/TemplateCard/TemplateCard";
 import CategoryFilter from "../components/CategoryFilter/CategoryFilter";
 
 // Types
@@ -26,6 +24,21 @@ interface Category {
   id: string;
   name: string;
   count?: number;
+}
+
+interface TemplateCardProps {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  author: {
+    name: string;
+    avatar?: string;
+  };
+  downloads: number;
+  category: string;
+  isPopular?: boolean;
+  onDeploy?: (id: string) => void;
 }
 
 // Mock data for templates
