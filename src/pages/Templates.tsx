@@ -389,24 +389,27 @@ export default function Templates() {
         </Box>
 
         {/* Featured Templates Grid */}
-        <Grid container spacing={3} sx={{ mb: 6, width: "100%" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 3,
+            mb: 6,
+          }}
+        >
           {featuredTemplates.map((template) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
+            <Box
               key={template.id}
               sx={{
-                display: "flex",
-                minWidth: 0, // Allow Grid item to shrink
-                maxWidth: { xs: "100%", sm: "50%" }, // Force exact width
-                flex: { xs: "0 0 100%", sm: "0 0 50%" }, // Strict flex basis
+                width: { xs: "100%", sm: "calc(50% - 12px)" }, // Exact 50% minus half the gap
+                flexShrink: 0,
+                flexGrow: 0,
               }}
             >
               <TemplateCard {...template} onDeploy={handleDeploy} />
-            </Grid>
+            </Box>
           ))}
-        </Grid>
+        </Box>
       </Box>
 
       {/* Explore All Templates Section */}
