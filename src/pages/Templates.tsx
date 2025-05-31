@@ -440,7 +440,7 @@ export default function Templates() {
         {/* All Templates Grid */}
         <Grid container spacing={3}>
           {filteredAndSortedTemplates.map((template) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} key={template.id}>
+            <Grid item xs={12} sm={6} key={template.id}>
               <TemplateCard {...template} onDeploy={handleDeploy} />
             </Grid>
           ))}
