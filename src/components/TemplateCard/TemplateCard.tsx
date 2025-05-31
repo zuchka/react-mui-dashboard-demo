@@ -14,7 +14,7 @@ import {
   Person as PersonIcon,
 } from "@mui/icons-material";
 
-export interface TemplateCardProps {
+interface TemplateCardProps {
   id: string;
   title: string;
   description: string;
