@@ -64,29 +64,35 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
               backgroundColor:
                 selectedCategory === category.id
                   ? "primary.main"
-                  : "transparent",
+                  : "background.paper",
               color:
-                selectedCategory === category.id ? "white" : "text.secondary",
+                selectedCategory === category.id ? "white" : "text.primary",
               border: "1px solid",
               borderColor:
                 selectedCategory === category.id
                   ? "primary.main"
-                  : "rgba(255, 255, 255, 0.2)",
+                  : "rgba(52, 59, 79, 1)",
               fontWeight: 500,
               fontSize: "14px",
+              borderRadius: 2,
+              height: 36,
+              transition: "all 0.2s ease-in-out",
               "&:hover": {
                 backgroundColor:
                   selectedCategory === category.id
                     ? "primary.dark"
-                    : "rgba(255, 255, 255, 0.05)",
+                    : "rgba(203, 60, 255, 0.1)",
                 borderColor:
                   selectedCategory === category.id
                     ? "primary.dark"
-                    : "rgba(255, 255, 255, 0.3)",
+                    : "primary.main",
+                transform: "translateY(-1px)",
               },
               "& .MuiChip-label": {
-                px: 2,
+                px: 2.5,
                 py: 1,
+                fontFamily:
+                  "Mona-Sans, -apple-system, Roboto, Helvetica, sans-serif",
               },
             }}
           />
