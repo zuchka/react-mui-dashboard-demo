@@ -19,9 +19,14 @@ import {
 import TemplateCard, {
   TemplateCardProps,
 } from "../components/TemplateCard/TemplateCard";
-import CategoryFilter, {
-  Category,
-} from "../components/CategoryFilter/CategoryFilter";
+import CategoryFilter from "../components/CategoryFilter/CategoryFilter";
+
+// Types
+interface Category {
+  id: string;
+  name: string;
+  count?: number;
+}
 
 // Mock data for templates
 const mockTemplates: TemplateCardProps[] = [
