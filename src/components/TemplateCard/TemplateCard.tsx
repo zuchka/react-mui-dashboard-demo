@@ -56,7 +56,7 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
   return (
     <Card
       sx={{
-        height: "100%",
+        height: 320, // Fixed height for all cards
         display: "flex",
         flexDirection: "column",
         backgroundColor: "background.paper",
@@ -71,7 +71,14 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
       }}
     >
       <CardContent
-        sx={{ flex: 1, display: "flex", flexDirection: "column", p: 3 }}
+        sx={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          p: 3,
+          height: "100%",
+          overflow: "hidden", // Prevent content overflow
+        }}
       >
         {/* Header with icon and category */}
         <Box
