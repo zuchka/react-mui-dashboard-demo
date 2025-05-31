@@ -62,10 +62,11 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
         backgroundColor: "background.paper",
         border: "0.6px solid #343B4F",
         boxShadow: "1px 1px 1px 0px rgba(16, 25, 52, 0.40)",
+        transition: "all 0.2s ease-in-out",
         "&:hover": {
-          transform: "translateY(-2px)",
-          transition: "transform 0.2s ease-in-out",
-          boxShadow: "2px 4px 8px 0px rgba(16, 25, 52, 0.60)",
+          transform: "translateY(-4px)",
+          boxShadow: "0px 8px 24px 0px rgba(16, 25, 52, 0.60)",
+          borderColor: "rgba(203, 60, 255, 0.3)",
         },
       }}
     >
