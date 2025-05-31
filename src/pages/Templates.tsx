@@ -342,14 +342,18 @@ export default function Templates() {
               sx={{
                 backgroundColor: "background.paper",
                 color: "text.secondary",
+                fontSize: "14px",
                 "& .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "rgba(255, 255, 255, 0.1)",
+                  borderColor: "#343B4F",
                 },
                 "&:hover .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "rgba(255, 255, 255, 0.2)",
+                  borderColor: "rgba(203, 60, 255, 0.3)",
                 },
                 "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
                   borderColor: "primary.main",
+                },
+                "& .MuiSelect-icon": {
+                  color: "text.secondary",
                 },
               }}
             >
