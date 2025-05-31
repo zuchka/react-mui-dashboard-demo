@@ -243,7 +243,7 @@ export default function Templates() {
     .slice(0, 4);
 
   return (
-    <Container maxWidth="xl" sx={{ py: 4 }}>
+    <Container maxWidth="xl" sx={{ py: 4, px: { xs: 2, md: 4 } }}>
       {/* Header */}
       <Box sx={{ textAlign: "center", mb: 6 }}>
         <Typography
