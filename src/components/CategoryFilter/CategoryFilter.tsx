@@ -24,12 +24,14 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
         variant="h6"
         sx={{
           fontWeight: 600,
-          fontSize: "18px",
-          mb: 2,
-          color: "text.primary",
+          fontSize: "14px",
+          mb: 3,
+          color: "text.secondary",
+          letterSpacing: "0.5px",
+          textTransform: "uppercase",
         }}
       >
-        CATEGORY
+        Category
       </Typography>
 
       <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
