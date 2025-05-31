@@ -277,14 +277,22 @@ export default function Templates() {
               "& .MuiOutlinedInput-root": {
                 backgroundColor: "background.paper",
                 borderRadius: 2,
+                fontSize: "16px",
                 "& fieldset": {
-                  borderColor: "rgba(255, 255, 255, 0.1)",
+                  borderColor: "#343B4F",
                 },
                 "&:hover fieldset": {
-                  borderColor: "rgba(255, 255, 255, 0.2)",
+                  borderColor: "rgba(203, 60, 255, 0.3)",
                 },
                 "&.Mui-focused fieldset": {
                   borderColor: "primary.main",
+                },
+                "& input": {
+                  color: "text.secondary",
+                  "&::placeholder": {
+                    color: "text.secondary",
+                    opacity: 0.7,
+                  },
                 },
               },
             }}
