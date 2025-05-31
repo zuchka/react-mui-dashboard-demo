@@ -391,7 +391,7 @@ export default function Templates() {
         {/* Featured Templates Grid */}
         <Grid container spacing={3} sx={{ mb: 6 }}>
           {featuredTemplates.map((template) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} key={template.id}>
+            <Grid item xs={12} sm={6} key={template.id}>
               <TemplateCard {...template} onDeploy={handleDeploy} />
             </Grid>
           ))}
