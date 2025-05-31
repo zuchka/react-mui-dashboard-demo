@@ -142,6 +142,11 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
             lineHeight: "20px",
             mb: 3,
             flex: 1,
+            overflow: "hidden",
+            display: "-webkit-box",
+            WebkitLineClamp: 3, // Limit to 3 lines
+            WebkitBoxOrient: "vertical",
+            textOverflow: "ellipsis",
           }}
         >
           {description}
