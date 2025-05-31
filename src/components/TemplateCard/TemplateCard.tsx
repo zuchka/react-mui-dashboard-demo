@@ -7,7 +7,6 @@ import {
   Button,
   Avatar,
   Chip,
-  IconButton,
 } from "@mui/material";
 import {
   Download as DownloadIcon,
@@ -56,7 +55,9 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
   return (
     <Card
       sx={{
-        height: 320, // Fixed height for all cards
+        width: "100%", // Take full width of Grid item
+        height: 320, // Fixed height
+        minWidth: 0, // Allow shrinking
         display: "flex",
         flexDirection: "column",
         backgroundColor: "background.paper",
@@ -76,8 +77,9 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
           display: "flex",
           flexDirection: "column",
           p: 3,
-          height: "100%",
-          overflow: "hidden", // Prevent content overflow
+          width: "100%",
+          minWidth: 0, // Important: allows content to shrink
+          overflow: "hidden",
         }}
       >
         {/* Header with icon and category */}
@@ -100,6 +102,7 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
                 alignItems: "center",
                 justifyContent: "center",
                 fontSize: "24px",
+                flexShrink: 0, // Don't shrink icon
               }}
             >
               {icon}
@@ -114,6 +117,7 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
                   fontSize: "10px",
                   height: 20,
                   border: "0.6px solid rgba(87, 93, 255, 0.50)",
+                  flexShrink: 0, // Don't shrink chip
                 }}
               />
             )}
@@ -121,36 +125,49 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
         </Box>
 
         {/* Title and Description */}
-        <Typography
-          variant="h6"
+        <Box
           sx={{
-            fontWeight: 600,
-            fontSize: "16px",
-            lineHeight: "20px",
-            mb: 1,
-            color: "text.primary",
-          }}
-        >
-          {title}
-        </Typography>
-
-        <Typography
-          variant="body2"
-          sx={{
-            color: "text.secondary",
-            fontSize: "14px",
-            lineHeight: "20px",
-            mb: 3,
             flex: 1,
-            overflow: "hidden",
-            display: "-webkit-box",
-            WebkitLineClamp: 3, // Limit to 3 lines
-            WebkitBoxOrient: "vertical",
-            textOverflow: "ellipsis",
+            display: "flex",
+            flexDirection: "column",
+            minHeight: 0,
           }}
         >
-          {description}
-        </Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: 600,
+              fontSize: "16px",
+              lineHeight: "20px",
+              mb: 1,
+              color: "text.primary",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              whiteSpace: "nowrap", // Single line title
+            }}
+          >
+            {title}
+          </Typography>
+
+          <Typography
+            variant="body2"
+            sx={{
+              color: "text.secondary",
+              fontSize: "14px",
+              lineHeight: "20px",
+              mb: 3,
+              flex: 1,
+              overflow: "hidden",
+              display: "-webkit-box",
+              WebkitLineClamp: 3, // Limit to 3 lines
+              WebkitBoxOrient: "vertical",
+              textOverflow: "ellipsis",
+              wordBreak: "break-word", // Break long words
+            }}
+          >
+            {description}
+          </Typography>
+        </Box>
 
         {/* Author and stats */}
         <Box
@@ -161,7 +178,15 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
             mb: 2,
           }}
         >
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              minWidth: 0,
+              flex: 1,
+            }}
+          >
             <Avatar
               src={author.avatar}
               sx={{
@@ -169,6 +194,7 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
                 height: 20,
                 backgroundColor: "primary.main",
                 fontSize: "10px",
+                flexShrink: 0,
               }}
             >
               {!author.avatar && <PersonIcon sx={{ fontSize: 12 }} />}
@@ -178,13 +204,24 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
               sx={{
                 color: "text.secondary",
                 fontSize: "12px",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
+                minWidth: 0,
               }}
             >
               {author.name}
             </Typography>
           </Box>
 
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              flexShrink: 0,
+            }}
+          >
             <DownloadIcon sx={{ fontSize: 12, color: "text.secondary" }} />
             <Typography
               variant="caption"
@@ -209,6 +246,7 @@ const TemplateCard: React.FC<TemplateCardProps> = ({
             fontWeight: 500,
             fontSize: "14px",
             py: 1,
+            flexShrink: 0, // Don't shrink button
             "&:hover": {
               backgroundColor: "primary.dark",
             },
