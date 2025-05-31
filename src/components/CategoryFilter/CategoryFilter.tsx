@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Chip, Typography } from "@mui/material";
 
-export interface Category {
+interface Category {
   id: string;
   name: string;
   count?: number;
