@@ -16,12 +16,8 @@ import {
   Search as SearchIcon,
   KeyboardArrowDown as ArrowDownIcon,
 } from "@mui/icons-material";
-import TemplateCard, {
-  TemplateCardProps,
-} from "../components/TemplateCard/TemplateCard";
-import CategoryFilter, {
-  Category,
-} from "../components/CategoryFilter/CategoryFilter";
+import TemplateCard, { TemplateCardProps } from "../components/TemplateCard";
+import CategoryFilter, { Category } from "../components/CategoryFilter";
 
 // Mock data for templates
 const mockTemplates: TemplateCardProps[] = [
