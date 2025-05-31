@@ -452,13 +452,26 @@ export default function Templates() {
         />
 
         {/* All Templates Grid */}
-        <Grid container spacing={3}>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 3,
+          }}
+        >
           {filteredAndSortedTemplates.map((template) => (
-            <Grid item xs={12} sm={6} key={template.id}>
+            <Box
+              key={template.id}
+              sx={{
+                width: { xs: "100%", sm: "calc(50% - 12px)" }, // Exact 50% minus half the gap
+                flexShrink: 0,
+                flexGrow: 0,
+              }}
+            >
               <TemplateCard {...template} onDeploy={handleDeploy} />
-            </Grid>
+            </Box>
           ))}
-        </Grid>
+        </Box>
 
         {/* Empty State */}
         {filteredAndSortedTemplates.length === 0 && (
