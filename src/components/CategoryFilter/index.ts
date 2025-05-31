@@ -1,2 +1,5 @@
-export { default } from "./CategoryFilter";
-export type { Category, CategoryFilterProps } from "./CategoryFilter";
+export {
+  default,
+  type Category,
+  type CategoryFilterProps,
+} from "./CategoryFilter";
