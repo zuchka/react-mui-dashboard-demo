@@ -651,7 +651,7 @@ export default function Users() {
       {/* Add User Dialog */}
       <Dialog
         open={openAddDialog}
-        onClose={() => setOpenAddDialog(false)}
+        onClose={handleCloseAddDialog}
         maxWidth="sm"
         fullWidth
       >
@@ -662,37 +662,156 @@ export default function Users() {
               label="Full Name"
               fullWidth
               placeholder="Enter full name"
+              value={formData.name}
+              onChange={(e) => handleFormChange("name", e.target.value)}
+              error={!!validationErrors.name}
+              helperText={validationErrors.name}
+              disabled={isSubmitting}
             />
             <TextField
               label="Email Address"
               type="email"
               fullWidth
               placeholder="Enter email address"
+              value={formData.email}
+              onChange={(e) => handleFormChange("email", e.target.value)}
+              error={!!validationErrors.email}
+              helperText={validationErrors.email}
+              disabled={isSubmitting}
             />
-            <FormControl fullWidth>
+            <FormControl fullWidth error={!!validationErrors.role}>
               <InputLabel>Role</InputLabel>
-              <Select defaultValue="" label="Role">
+              <Select
+                value={formData.role}
+                label="Role"
+                onChange={(e) => handleFormChange("role", e.target.value)}
+                disabled={isSubmitting}
+              >
                 <MenuItem value="Admin">Admin</MenuItem>
                 <MenuItem value="Manager">Manager</MenuItem>
                 <MenuItem value="Developer">Developer</MenuItem>
                 <MenuItem value="Designer">Designer</MenuItem>
               </Select>
+              {validationErrors.role && (
+                <FormHelperText>{validationErrors.role}</FormHelperText>
+              )}
             </FormControl>
-            <FormControl fullWidth>
+            <FormControl fullWidth error={!!validationErrors.department}>
               <InputLabel>Department</InputLabel>
-              <Select defaultValue="" label="Department">
+              <Select
+                value={formData.department}
+                label="Department"
+                onChange={(e) => handleFormChange("department", e.target.value)}
+                disabled={isSubmitting}
+              >
                 <MenuItem value="Engineering">Engineering</MenuItem>
                 <MenuItem value="Marketing">Marketing</MenuItem>
                 <MenuItem value="Design">Design</MenuItem>
                 <MenuItem value="Sales">Sales</MenuItem>
               </Select>
+              {validationErrors.department && (
+                <FormHelperText>{validationErrors.department}</FormHelperText>
+              )}
             </FormControl>
           </Box>
         </DialogContent>
         <DialogActions>
-          <Button onClick={() => setOpenAddDialog(false)}>Cancel</Button>
-          <Button variant="contained" onClick={() => setOpenAddDialog(false)}>
-            Add User
+          <Button onClick={handleCloseAddDialog} disabled={isSubmitting}>
+            Cancel
+          </Button>
+          <Button
+            variant="contained"
+            onClick={handleAddUser}
+            disabled={isSubmitting}
+            startIcon={
+              isSubmitting ? <CircularProgress size={20} /> : <AddIcon />
+            }
+          >
+            {isSubmitting ? "Adding..." : "Add User"}
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      {/* Edit User Dialog */}
+      <Dialog
+        open={openEditDialog}
+        onClose={handleCloseEditDialog}
+        maxWidth="sm"
+        fullWidth
+      >
+        <DialogTitle>Edit User</DialogTitle>
+        <DialogContent>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2, pt: 1 }}>
+            <TextField
+              label="Full Name"
+              fullWidth
+              placeholder="Enter full name"
+              value={formData.name}
+              onChange={(e) => handleFormChange("name", e.target.value)}
+              error={!!validationErrors.name}
+              helperText={validationErrors.name}
+              disabled={isSubmitting}
+            />
+            <TextField
+              label="Email Address"
+              type="email"
+              fullWidth
+              placeholder="Enter email address"
+              value={formData.email}
+              onChange={(e) => handleFormChange("email", e.target.value)}
+              error={!!validationErrors.email}
+              helperText={validationErrors.email}
+              disabled={isSubmitting}
+            />
+            <FormControl fullWidth error={!!validationErrors.role}>
+              <InputLabel>Role</InputLabel>
+              <Select
+                value={formData.role}
+                label="Role"
+                onChange={(e) => handleFormChange("role", e.target.value)}
+                disabled={isSubmitting}
+              >
+                <MenuItem value="Admin">Admin</MenuItem>
+                <MenuItem value="Manager">Manager</MenuItem>
+                <MenuItem value="Developer">Developer</MenuItem>
+                <MenuItem value="Designer">Designer</MenuItem>
+              </Select>
+              {validationErrors.role && (
+                <FormHelperText>{validationErrors.role}</FormHelperText>
+              )}
+            </FormControl>
+            <FormControl fullWidth error={!!validationErrors.department}>
+              <InputLabel>Department</InputLabel>
+              <Select
+                value={formData.department}
+                label="Department"
+                onChange={(e) => handleFormChange("department", e.target.value)}
+                disabled={isSubmitting}
+              >
+                <MenuItem value="Engineering">Engineering</MenuItem>
+                <MenuItem value="Marketing">Marketing</MenuItem>
+                <MenuItem value="Design">Design</MenuItem>
+                <MenuItem value="Sales">Sales</MenuItem>
+              </Select>
+              {validationErrors.department && (
+                <FormHelperText>{validationErrors.department}</FormHelperText>
+              )}
+            </FormControl>
+          </Box>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseEditDialog} disabled={isSubmitting}>
+            Cancel
+          </Button>
+          <Button
+            variant="contained"
+            onClick={handleEditUser}
+            disabled={isSubmitting}
+            startIcon={
+              isSubmitting ? <CircularProgress size={20} /> : <EditIcon />
+            }
+          >
+            {isSubmitting ? "Updating..." : "Update User"}
           </Button>
         </DialogActions>
       </Dialog>
