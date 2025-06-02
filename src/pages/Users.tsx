@@ -347,18 +347,25 @@ export default function Users() {
             Department Overview
           </Typography>
 
-          <Box sx={{ flexGrow: 1 }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
             {["Engineering", "Marketing", "Design"].map((dept, index) => {
               const deptUsers = users.filter((u) => u.department === dept);
               const percentage =
                 deptUsers.length > 0
                   ? Math.round((deptUsers.length / users.length) * 100)
-                  : [50, 30, 20][index];
+                  : [60, 25, 15][index];
               const userCount =
                 deptUsers.length > 0 ? deptUsers.length : [3, 2, 1][index];
 
               return (
-                <Box key={dept} sx={{ mb: 3 }}>
+                <Box key={dept} sx={{ mb: 2 }}>
                   <Box
                     sx={{
                       display: "flex",
@@ -370,7 +377,7 @@ export default function Users() {
                       {dept}
                     </Typography>
                     <Typography variant="body2" sx={{ fontWeight: 600 }}>
-                      {userCount} users ({percentage}%)
+                      {userCount} users
                     </Typography>
                   </Box>
                   <Box
@@ -384,17 +391,32 @@ export default function Users() {
                       minWidth: "20%",
                     }}
                   />
+                  <Typography
+                    variant="caption"
+                    color="text.secondary"
+                    sx={{ mt: 0.5, display: "block" }}
+                  >
+                    {percentage}% of total users
+                  </Typography>
                 </Box>
               );
             })}
 
-            <Box sx={{ mt: 2, p: 2, bgcolor: "action.hover", borderRadius: 1 }}>
+            <Box
+              sx={{
+                mt: "auto",
+                p: 1.5,
+                bgcolor: "rgba(255, 255, 255, 0.05)",
+                borderRadius: 1,
+              }}
+            >
               <Typography
-                variant="body2"
-                color="text.primary"
-                sx={{ fontWeight: 600 }}
+                variant="caption"
+                color="text.secondary"
+                align="center"
+                sx={{ display: "block" }}
               >
-                Total: {users.length} users across all departments
+                Total: {users.length} users
               </Typography>
             </Box>
           </Box>
