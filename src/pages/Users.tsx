@@ -418,7 +418,7 @@ export default function Users() {
               flexGrow: 1,
               display: "flex",
               flexDirection: "column",
-              gap: 2,
+              justifyContent: "space-between",
               minHeight: 0,
               overflowY: "auto",
             }}
@@ -494,20 +494,6 @@ export default function Users() {
                 type: "update",
                 department: "Sales",
               },
-              {
-                action: "Account verification completed",
-                user: "Anna Garcia",
-                time: "1 week ago",
-                type: "join",
-                department: "Finance",
-              },
-              {
-                action: "User permissions updated",
-                user: "Chris Brown",
-                time: "2 weeks ago",
-                type: "update",
-                department: "Engineering",
-              },
             ].map((activity, index) => (
               <Box
                 key={index}
@@ -515,18 +501,19 @@ export default function Users() {
                   display: "flex",
                   gap: 2,
                   alignItems: "flex-start",
-                  py: 1.5,
-                  px: 1,
+                  py: 2.5,
+                  px: 1.5,
                   borderRadius: 1,
+                  bgcolor: index % 2 === 0 ? "transparent" : "action.hover",
                   "&:hover": {
-                    bgcolor: "action.hover",
+                    bgcolor: "action.selected",
                   },
                 }}
               >
                 <Avatar
                   sx={{
-                    width: 36,
-                    height: 36,
+                    width: 40,
+                    height: 40,
                     bgcolor:
                       activity.type === "join"
                         ? "success.main"
@@ -538,41 +525,45 @@ export default function Users() {
                   }}
                 >
                   {activity.type === "join" && (
-                    <AddIcon sx={{ fontSize: 18 }} />
+                    <AddIcon sx={{ fontSize: 20 }} />
                   )}
                   {activity.type === "update" && (
-                    <EditIcon sx={{ fontSize: 18 }} />
+                    <EditIcon sx={{ fontSize: 20 }} />
                   )}
                   {activity.type === "revoke" && (
-                    <DeleteIcon sx={{ fontSize: 18 }} />
+                    <DeleteIcon sx={{ fontSize: 20 }} />
                   )}
                   {activity.type === "invite" && (
-                    <EmailIcon sx={{ fontSize: 18 }} />
+                    <EmailIcon sx={{ fontSize: 20 }} />
                   )}
                 </Avatar>
                 <Box sx={{ flexGrow: 1, minWidth: 0 }}>
                   <Typography
                     variant="subtitle2"
-                    sx={{ mb: 0.5, fontWeight: 600 }}
+                    sx={{ mb: 1, fontWeight: 600, lineHeight: 1.3 }}
                   >
                     {activity.action}
                   </Typography>
                   <Typography
                     variant="body2"
                     color="text.primary"
-                    sx={{ mb: 1 }}
+                    sx={{ mb: 1.5, lineHeight: 1.3 }}
                   >
                     {activity.user}
                   </Typography>
                   <Box
                     sx={{
                       display: "flex",
-                      gap: 1,
+                      gap: 1.5,
                       flexWrap: "wrap",
                       alignItems: "center",
                     }}
                   >
-                    <Typography variant="caption" color="text.secondary">
+                    <Typography
+                      variant="caption"
+                      color="text.secondary"
+                      sx={{ fontWeight: 500 }}
+                    >
                       {activity.time}
                     </Typography>
                     <Typography variant="caption" color="text.secondary">
@@ -583,11 +574,11 @@ export default function Users() {
                       size="small"
                       variant="outlined"
                       sx={{
-                        height: 20,
-                        fontSize: "10px",
+                        height: 22,
+                        fontSize: "11px",
                         borderColor: "divider",
                         "& .MuiChip-label": {
-                          px: 1,
+                          px: 1.5,
                         },
                       }}
                     />
