@@ -84,36 +84,6 @@ export default function Users() {
     }
   };
 
-  const handleMenuOpen = (
-    event: React.MouseEvent<HTMLElement>,
-    userId: GridRowId,
-  ) => {
-    setAnchorEl(event.currentTarget);
-    setSelectedUserId(userId);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    setSelectedUserId(null);
-  };
-
-  const handleEdit = () => {
-    console.log("Edit user:", selectedUserId);
-    handleMenuClose();
-  };
-
-  const handleDelete = () => {
-    console.log("Delete user:", selectedUserId);
-    handleMenuClose();
-  };
-
-  const filteredUsers = users.filter(
-    (user) =>
-      user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      user.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      user.department.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
-
   const columns: GridColDef[] = [
     {
       field: "name",
