@@ -171,9 +171,9 @@ export default function Users() {
 
   const columns: GridColDef[] = [
     {
-      field: "user",
-      headerName: "User",
-      width: 250,
+      field: "name",
+      headerName: "Name",
+      width: 200,
       renderCell: (params) => (
         <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
           <Avatar
@@ -181,15 +181,20 @@ export default function Users() {
             alt={params.row.name}
             sx={{ width: 32, height: 32 }}
           />
-          <Box>
-            <Typography variant="subtitle2" color="text.primary">
-              {params.row.name}
-            </Typography>
-            <Typography variant="caption" color="text.secondary">
-              {params.row.email}
-            </Typography>
-          </Box>
+          <Typography variant="subtitle2" color="text.primary">
+            {params.row.name}
+          </Typography>
         </Box>
+      ),
+    },
+    {
+      field: "email",
+      headerName: "Email",
+      width: 220,
+      renderCell: (params) => (
+        <Typography variant="body2" color="text.secondary">
+          {params.row.email}
+        </Typography>
       ),
     },
     {
