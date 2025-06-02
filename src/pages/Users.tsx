@@ -603,7 +603,7 @@ export default function Users() {
             <Button
               variant="contained"
               startIcon={<AddIcon />}
-              onClick={() => setOpenAddDialog(true)}
+              onClick={handleOpenAddDialog}
             >
               Add User
             </Button>
