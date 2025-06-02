@@ -438,10 +438,9 @@ export default function Users() {
               flex: 1,
               display: "flex",
               flexDirection: "column",
-              justifyContent: "space-between",
+              height: "calc(600px - 120px)", // Subtract header height
               overflowY: "auto",
               pr: 1,
-              gap: 1,
             }}
           >
             {[
@@ -507,8 +506,8 @@ export default function Users() {
                 sx={{
                   display: "flex",
                   gap: 2.5,
-                  alignItems: "flex-start",
-                  py: 3.5,
+                  alignItems: "center",
+                  py: 4,
                   px: 1.5,
                   borderRadius: 2,
                   bgcolor:
@@ -516,8 +515,8 @@ export default function Users() {
                       ? "transparent"
                       : "rgba(255, 255, 255, 0.02)",
                   border: "1px solid transparent",
-                  flex: "1 1 auto",
-                  minHeight: 0,
+                  height: "calc((100% - 16px) / 8)", // Distribute equally among 8 items with gap
+                  minHeight: 70,
                   "&:hover": {
                     bgcolor: "action.hover",
                     borderColor: "divider",
@@ -551,15 +550,7 @@ export default function Users() {
                     <EmailIcon sx={{ fontSize: 18 }} />
                   )}
                 </Avatar>
-                <Box
-                  sx={{
-                    flexGrow: 1,
-                    minWidth: 0,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                  }}
-                >
+                <Box sx={{ flexGrow: 1, minWidth: 0 }}>
                   <Typography
                     variant="subtitle2"
                     sx={{
