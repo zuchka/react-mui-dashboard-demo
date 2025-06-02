@@ -348,57 +348,55 @@ export default function Users() {
           </Typography>
 
           <Box sx={{ flexGrow: 1 }}>
-            {["Engineering", "Marketing", "Design", "Sales"].map(
-              (dept, index) => {
-                const deptUsers = users.filter((u) => u.department === dept);
-                const percentage =
-                  deptUsers.length > 0
-                    ? Math.round((deptUsers.length / users.length) * 100)
-                    : [40, 30, 20, 10][index];
-                const userCount =
-                  deptUsers.length > 0 ? deptUsers.length : [3, 2, 1, 1][index];
+            {["Engineering", "Marketing", "Design"].map((dept, index) => {
+              const deptUsers = users.filter((u) => u.department === dept);
+              const percentage =
+                deptUsers.length > 0
+                  ? Math.round((deptUsers.length / users.length) * 100)
+                  : [50, 30, 20][index];
+              const userCount =
+                deptUsers.length > 0 ? deptUsers.length : [3, 2, 1][index];
 
-                return (
-                  <Box key={dept} sx={{ mb: 2.5 }}>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        mb: 1,
-                      }}
-                    >
-                      <Typography
-                        color="text.secondary"
-                        variant="body2"
-                        sx={{ fontSize: "0.875rem" }}
-                      >
-                        {dept}
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ fontSize: "0.875rem", fontWeight: 600 }}
-                      >
-                        {userCount} ({percentage}%)
-                      </Typography>
-                    </Box>
-                    <Box
-                      sx={{
-                        height: 4,
-                        bgcolor: [
-                          "primary.main",
-                          "success.main",
-                          "warning.main",
-                          "error.main",
-                        ][index % 4],
-                        width: `${percentage}%`,
-                        borderRadius: 1,
-                        minWidth: "15%",
-                      }}
-                    />
+              return (
+                <Box key={dept} sx={{ mb: 3 }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      mb: 1,
+                    }}
+                  >
+                    <Typography color="text.secondary" variant="body2">
+                      {dept}
+                    </Typography>
+                    <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                      {userCount} users ({percentage}%)
+                    </Typography>
                   </Box>
-                );
-              },
-            )}
+                  <Box
+                    sx={{
+                      height: 6,
+                      bgcolor: ["primary.main", "success.main", "warning.main"][
+                        index % 3
+                      ],
+                      width: `${percentage}%`,
+                      borderRadius: 1,
+                      minWidth: "20%",
+                    }}
+                  />
+                </Box>
+              );
+            })}
+
+            <Box sx={{ mt: 2, p: 2, bgcolor: "action.hover", borderRadius: 1 }}>
+              <Typography
+                variant="body2"
+                color="text.primary"
+                sx={{ fontWeight: 600 }}
+              >
+                Total: {users.length} users across all departments
+              </Typography>
+            </Box>
           </Box>
         </Paper>
 
