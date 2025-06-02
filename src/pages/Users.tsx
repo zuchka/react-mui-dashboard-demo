@@ -304,28 +304,41 @@ export default function Users() {
           gridTemplateColumns: "1fr 2fr",
           gap: 3,
           mb: 4,
-          alignItems: "stretch",
+          alignItems: "start",
         }}
       >
         {/* Quick Actions */}
-        <Paper sx={{ p: 3, display: "flex", flexDirection: "column" }}>
+        <Paper
+          sx={{ p: 3, display: "flex", flexDirection: "column", height: 600 }}
+        >
           <Typography variant="h6" gutterBottom>
             Quick Actions
           </Typography>
 
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mb: 3 }}>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mb: 4 }}>
             <Button
               variant="contained"
               startIcon={<AddIcon />}
               onClick={() => setOpenAddDialog(true)}
               fullWidth
+              sx={{ py: 1.5 }}
             >
               Add New User
             </Button>
-            <Button variant="outlined" startIcon={<EmailIcon />} fullWidth>
+            <Button
+              variant="outlined"
+              startIcon={<EmailIcon />}
+              fullWidth
+              sx={{ py: 1.5 }}
+            >
               Send Invitations
             </Button>
-            <Button variant="outlined" startIcon={<GroupIcon />} fullWidth>
+            <Button
+              variant="outlined"
+              startIcon={<GroupIcon />}
+              fullWidth
+              sx={{ py: 1.5 }}
+            >
               Manage Permissions
             </Button>
           </Box>
@@ -334,7 +347,14 @@ export default function Users() {
             Department Overview
           </Typography>
 
-          <Box sx={{ flexGrow: 1 }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
             {[
               "Engineering",
               "Marketing",
@@ -347,31 +367,35 @@ export default function Users() {
               const percentage =
                 deptUsers.length > 0
                   ? Math.round((deptUsers.length / users.length) * 100)
-                  : [15, 25, 20, 10, 8, 12][index];
+                  : [25, 20, 15, 12, 10, 8][index];
               const userCount =
                 deptUsers.length > 0
                   ? deptUsers.length
                   : [3, 2, 1, 1, 1, 1][index];
 
               return (
-                <Box key={dept} sx={{ mb: 2.5 }}>
+                <Box key={dept} sx={{ mb: 3 }}>
                   <Box
                     sx={{
                       display: "flex",
                       justifyContent: "space-between",
-                      mb: 1,
+                      mb: 1.5,
                     }}
                   >
-                    <Typography color="text.secondary" variant="body2">
+                    <Typography
+                      color="text.secondary"
+                      variant="body2"
+                      sx={{ fontWeight: 500 }}
+                    >
                       {dept}
                     </Typography>
-                    <Typography variant="body2">
+                    <Typography variant="body2" sx={{ fontWeight: 600 }}>
                       {userCount} users ({percentage}%)
                     </Typography>
                   </Box>
                   <Box
                     sx={{
-                      height: 4,
+                      height: 6,
                       bgcolor: [
                         "primary.main",
                         "success.main",
@@ -382,6 +406,7 @@ export default function Users() {
                       ][index % 6],
                       width: `${percentage}%`,
                       borderRadius: 1,
+                      minWidth: "20%",
                     }}
                   />
                 </Box>
@@ -392,7 +417,7 @@ export default function Users() {
 
         {/* Recent Activity */}
         <Paper
-          sx={{ p: 3, display: "flex", flexDirection: "column", height: 500 }}
+          sx={{ p: 3, display: "flex", flexDirection: "column", height: 600 }}
         >
           <Box
             sx={{
