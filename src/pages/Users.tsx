@@ -239,7 +239,7 @@ export default function Users() {
             <Button
               variant="contained"
               startIcon={<AddIcon />}
-              onClick={() => setOpenAddDialog(true)}
+              onClick={handleOpenAddDialog}
               fullWidth
               sx={{ py: 1.5 }}
             >
