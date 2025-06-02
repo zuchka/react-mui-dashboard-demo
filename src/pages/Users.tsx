@@ -404,7 +404,7 @@ export default function Users() {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              mb: 2,
+              mb: 3,
             }}
           >
             <Typography variant="h6">Recent Activity</Typography>
@@ -413,7 +413,16 @@ export default function Users() {
             </Button>
           </Box>
 
-          <Box sx={{ flexGrow: 1, overflowY: "auto" }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: "flex",
+              flexDirection: "column",
+              gap: 2,
+              minHeight: 0,
+              overflowY: "auto",
+            }}
+          >
             {[
               {
                 action: "New user joined",
@@ -499,37 +508,25 @@ export default function Users() {
                 type: "update",
                 department: "Engineering",
               },
-              {
-                action: "Security alert resolved",
-                user: "Security Team",
-                time: "2 weeks ago",
-                type: "update",
-                department: "IT Security",
-              },
-              {
-                action: "New department created",
-                user: "Admin",
-                time: "3 weeks ago",
-                type: "join",
-                department: "Operations",
-              },
             ].map((activity, index) => (
               <Box
                 key={index}
                 sx={{
                   display: "flex",
                   gap: 2,
-                  mb: 2,
                   alignItems: "flex-start",
-                  pb: 2,
-                  borderBottom: index < 13 ? "1px solid" : "none",
-                  borderColor: "divider",
+                  py: 1.5,
+                  px: 1,
+                  borderRadius: 1,
+                  "&:hover": {
+                    bgcolor: "action.hover",
+                  },
                 }}
               >
                 <Avatar
                   sx={{
-                    width: 32,
-                    height: 32,
+                    width: 36,
+                    height: 36,
                     bgcolor:
                       activity.type === "join"
                         ? "success.main"
@@ -541,29 +538,29 @@ export default function Users() {
                   }}
                 >
                   {activity.type === "join" && (
-                    <AddIcon sx={{ fontSize: 16 }} />
+                    <AddIcon sx={{ fontSize: 18 }} />
                   )}
                   {activity.type === "update" && (
-                    <EditIcon sx={{ fontSize: 16 }} />
+                    <EditIcon sx={{ fontSize: 18 }} />
                   )}
                   {activity.type === "revoke" && (
-                    <DeleteIcon sx={{ fontSize: 16 }} />
+                    <DeleteIcon sx={{ fontSize: 18 }} />
                   )}
                   {activity.type === "invite" && (
-                    <EmailIcon sx={{ fontSize: 16 }} />
+                    <EmailIcon sx={{ fontSize: 18 }} />
                   )}
                 </Avatar>
                 <Box sx={{ flexGrow: 1, minWidth: 0 }}>
                   <Typography
                     variant="subtitle2"
-                    sx={{ mb: 0.5, lineHeight: 1.2 }}
+                    sx={{ mb: 0.5, fontWeight: 600 }}
                   >
                     {activity.action}
                   </Typography>
                   <Typography
                     variant="body2"
                     color="text.primary"
-                    sx={{ mb: 0.5, lineHeight: 1.2 }}
+                    sx={{ mb: 1 }}
                   >
                     {activity.user}
                   </Typography>
@@ -586,8 +583,8 @@ export default function Users() {
                       size="small"
                       variant="outlined"
                       sx={{
-                        height: 18,
-                        fontSize: "9px",
+                        height: 20,
+                        fontSize: "10px",
                         borderColor: "divider",
                         "& .MuiChip-label": {
                           px: 1,
