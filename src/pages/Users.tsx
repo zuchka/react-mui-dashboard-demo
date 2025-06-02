@@ -367,7 +367,14 @@ export default function Users() {
         </Paper>
 
         {/* Recent Activity */}
-        <Paper sx={{ p: 3, height: "fit-content" }}>
+        <Paper
+          sx={{
+            p: 3,
+            display: "flex",
+            flexDirection: "column",
+            height: "100%",
+          }}
+        >
           <Box
             sx={{
               display: "flex",
@@ -382,7 +389,7 @@ export default function Users() {
             </Button>
           </Box>
 
-          <Box sx={{ maxHeight: 400, overflowY: "auto" }}>
+          <Box sx={{ flexGrow: 1, overflowY: "auto" }}>
             {[
               {
                 action: "New user joined",
@@ -468,54 +475,71 @@ export default function Users() {
                 type: "update",
                 department: "Engineering",
               },
+              {
+                action: "Security alert resolved",
+                user: "Security Team",
+                time: "2 weeks ago",
+                type: "update",
+                department: "IT Security",
+              },
+              {
+                action: "New department created",
+                user: "Admin",
+                time: "3 weeks ago",
+                type: "join",
+                department: "Operations",
+              },
             ].map((activity, index) => (
               <Box
                 key={index}
                 sx={{
                   display: "flex",
                   gap: 2,
-                  mb: 2.5,
+                  mb: 2,
                   alignItems: "flex-start",
                   pb: 2,
-                  borderBottom: index < 11 ? "1px solid" : "none",
+                  borderBottom: index < 13 ? "1px solid" : "none",
                   borderColor: "divider",
                 }}
               >
                 <Avatar
                   sx={{
-                    width: 36,
-                    height: 36,
+                    width: 32,
+                    height: 32,
                     bgcolor:
                       activity.type === "join"
                         ? "success.main"
                         : activity.type === "revoke"
                           ? "error.main"
                           : activity.type === "invite"
-                            ? "info.main"
+                            ? "warning.main"
                             : "primary.main",
                   }}
                 >
                   {activity.type === "join" && (
-                    <AddIcon sx={{ fontSize: 18 }} />
+                    <AddIcon sx={{ fontSize: 16 }} />
                   )}
                   {activity.type === "update" && (
-                    <EditIcon sx={{ fontSize: 18 }} />
+                    <EditIcon sx={{ fontSize: 16 }} />
                   )}
                   {activity.type === "revoke" && (
-                    <DeleteIcon sx={{ fontSize: 18 }} />
+                    <DeleteIcon sx={{ fontSize: 16 }} />
                   )}
                   {activity.type === "invite" && (
-                    <EmailIcon sx={{ fontSize: 18 }} />
+                    <EmailIcon sx={{ fontSize: 16 }} />
                   )}
                 </Avatar>
                 <Box sx={{ flexGrow: 1, minWidth: 0 }}>
-                  <Typography variant="subtitle2" sx={{ mb: 0.5 }}>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ mb: 0.5, lineHeight: 1.2 }}
+                  >
                     {activity.action}
                   </Typography>
                   <Typography
                     variant="body2"
                     color="text.primary"
-                    sx={{ mb: 0.5 }}
+                    sx={{ mb: 0.5, lineHeight: 1.2 }}
                   >
                     {activity.user}
                   </Typography>
@@ -538,9 +562,12 @@ export default function Users() {
                       size="small"
                       variant="outlined"
                       sx={{
-                        height: 20,
-                        fontSize: "10px",
+                        height: 18,
+                        fontSize: "9px",
                         borderColor: "divider",
+                        "& .MuiChip-label": {
+                          px: 1,
+                        },
                       }}
                     />
                   </Box>
