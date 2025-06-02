@@ -367,55 +367,187 @@ export default function Users() {
         </Paper>
 
         {/* Recent Activity */}
-        <Paper sx={{ p: 3 }}>
-          <Typography variant="h6" gutterBottom>
-            Recent Activity
-          </Typography>
+        <Paper sx={{ p: 3, height: "fit-content" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              mb: 2,
+            }}
+          >
+            <Typography variant="h6">Recent Activity</Typography>
+            <Button variant="text" size="small" color="primary">
+              View All
+            </Button>
+          </Box>
 
-          {[
-            {
-              action: "New user joined",
-              user: "James Rodriguez",
-              time: "2 hours ago",
-              type: "join",
-            },
-            {
-              action: "User updated profile",
-              user: "Sophie Moore",
-              time: "5 hours ago",
-              type: "update",
-            },
-            {
-              action: "User access revoked",
-              user: "Emma Wilson",
-              time: "1 day ago",
-              type: "revoke",
-            },
-            {
-              action: "New user invitation sent",
-              user: "Alex Thompson",
-              time: "2 days ago",
-              type: "invite",
-            },
-          ].map((activity, index) => (
-            <Box
-              key={index}
-              sx={{ display: "flex", gap: 2, mb: 2, alignItems: "center" }}
-            >
-              <Avatar sx={{ width: 32, height: 32, bgcolor: "primary.main" }}>
-                {activity.type === "join" && <AddIcon />}
-                {activity.type === "update" && <EditIcon />}
-                {activity.type === "revoke" && <DeleteIcon />}
-                {activity.type === "invite" && <EmailIcon />}
-              </Avatar>
-              <Box sx={{ flexGrow: 1 }}>
-                <Typography variant="subtitle2">{activity.action}</Typography>
-                <Typography variant="caption" color="text.secondary">
-                  {activity.user} • {activity.time}
-                </Typography>
+          <Box sx={{ maxHeight: 400, overflowY: "auto" }}>
+            {[
+              {
+                action: "New user joined",
+                user: "James Rodriguez",
+                time: "2 hours ago",
+                type: "join",
+                department: "Engineering",
+              },
+              {
+                action: "User updated profile",
+                user: "Sophie Moore",
+                time: "5 hours ago",
+                type: "update",
+                department: "Marketing",
+              },
+              {
+                action: "User access revoked",
+                user: "Emma Wilson",
+                time: "1 day ago",
+                type: "revoke",
+                department: "Design",
+              },
+              {
+                action: "New user invitation sent",
+                user: "Alex Thompson",
+                time: "2 days ago",
+                type: "invite",
+                department: "Sales",
+              },
+              {
+                action: "Password reset requested",
+                user: "Michael Chen",
+                time: "3 days ago",
+                type: "update",
+                department: "Engineering",
+              },
+              {
+                action: "User role changed to Admin",
+                user: "Sarah Johnson",
+                time: "4 days ago",
+                type: "update",
+                department: "Management",
+              },
+              {
+                action: "New user joined",
+                user: "David Kim",
+                time: "5 days ago",
+                type: "join",
+                department: "Design",
+              },
+              {
+                action: "User deactivated",
+                user: "Lisa Wang",
+                time: "6 days ago",
+                type: "revoke",
+                department: "Marketing",
+              },
+              {
+                action: "Bulk invitation sent",
+                user: "HR Team",
+                time: "1 week ago",
+                type: "invite",
+                department: "Human Resources",
+              },
+              {
+                action: "User login from new device",
+                user: "Tom Wilson",
+                time: "1 week ago",
+                type: "update",
+                department: "Sales",
+              },
+              {
+                action: "Account verification completed",
+                user: "Anna Garcia",
+                time: "1 week ago",
+                type: "join",
+                department: "Finance",
+              },
+              {
+                action: "User permissions updated",
+                user: "Chris Brown",
+                time: "2 weeks ago",
+                type: "update",
+                department: "Engineering",
+              },
+            ].map((activity, index) => (
+              <Box
+                key={index}
+                sx={{
+                  display: "flex",
+                  gap: 2,
+                  mb: 2.5,
+                  alignItems: "flex-start",
+                  pb: 2,
+                  borderBottom: index < 11 ? "1px solid" : "none",
+                  borderColor: "divider",
+                }}
+              >
+                <Avatar
+                  sx={{
+                    width: 36,
+                    height: 36,
+                    bgcolor:
+                      activity.type === "join"
+                        ? "success.main"
+                        : activity.type === "revoke"
+                          ? "error.main"
+                          : activity.type === "invite"
+                            ? "info.main"
+                            : "primary.main",
+                  }}
+                >
+                  {activity.type === "join" && (
+                    <AddIcon sx={{ fontSize: 18 }} />
+                  )}
+                  {activity.type === "update" && (
+                    <EditIcon sx={{ fontSize: 18 }} />
+                  )}
+                  {activity.type === "revoke" && (
+                    <DeleteIcon sx={{ fontSize: 18 }} />
+                  )}
+                  {activity.type === "invite" && (
+                    <EmailIcon sx={{ fontSize: 18 }} />
+                  )}
+                </Avatar>
+                <Box sx={{ flexGrow: 1, minWidth: 0 }}>
+                  <Typography variant="subtitle2" sx={{ mb: 0.5 }}>
+                    {activity.action}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.primary"
+                    sx={{ mb: 0.5 }}
+                  >
+                    {activity.user}
+                  </Typography>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      gap: 1,
+                      flexWrap: "wrap",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Typography variant="caption" color="text.secondary">
+                      {activity.time}
+                    </Typography>
+                    <Typography variant="caption" color="text.secondary">
+                      •
+                    </Typography>
+                    <Chip
+                      label={activity.department}
+                      size="small"
+                      variant="outlined"
+                      sx={{
+                        height: 20,
+                        fontSize: "10px",
+                        borderColor: "divider",
+                      }}
+                    />
+                  </Box>
+                </Box>
               </Box>
-            </Box>
-          ))}
+            ))}
+          </Box>
         </Paper>
       </Box>
 
