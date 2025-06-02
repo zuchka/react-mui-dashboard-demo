@@ -438,7 +438,7 @@ export default function Users() {
               flex: 1,
               display: "flex",
               flexDirection: "column",
-              gap: 1,
+              justifyContent: "space-between",
               overflowY: "auto",
               pr: 1,
             }}
@@ -528,6 +528,20 @@ export default function Users() {
                 type: "update",
                 department: "Engineering",
               },
+              {
+                action: "Security alert resolved",
+                user: "Security Team",
+                time: "2 weeks ago",
+                type: "update",
+                department: "IT Security",
+              },
+              {
+                action: "New department created",
+                user: "Admin",
+                time: "3 weeks ago",
+                type: "join",
+                department: "Operations",
+              },
             ].map((activity, index) => (
               <Box
                 key={index}
@@ -535,7 +549,7 @@ export default function Users() {
                   display: "flex",
                   gap: 2,
                   alignItems: "flex-start",
-                  py: 1.5,
+                  py: 2,
                   px: 1,
                   borderRadius: 1,
                   bgcolor:
@@ -543,6 +557,7 @@ export default function Users() {
                       ? "transparent"
                       : "rgba(255, 255, 255, 0.02)",
                   border: "1px solid transparent",
+                  flex: "0 0 auto",
                   "&:hover": {
                     bgcolor: "action.hover",
                     borderColor: "divider",
