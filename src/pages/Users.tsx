@@ -17,9 +17,11 @@ import {
   FormControl,
   InputLabel,
   Select,
+  FormHelperText,
+  CircularProgress,
 } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import type { GridColDef, GridRowId } from "@mui/x-data-grid";
+import type { GridColDef } from "@mui/x-data-grid";
 import { StatsCard } from "../components/StatsCard/StatsCard";
 import {
   Search as SearchIcon,
@@ -32,88 +34,31 @@ import {
   Group as GroupIcon,
   AdminPanelSettings as AdminIcon,
 } from "@mui/icons-material";
-import { useState } from "react";
-
-interface User {
-  id: string;
-  name: string;
-  email: string;
-  role: string;
-  status: "Active" | "Inactive" | "Pending";
-  avatar: string;
-  joinDate: string;
-  lastLogin: string;
-  department: string;
-}
+import { useUserManagement } from "../hooks/useUserManagement";
 
 export default function Users() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const [selectedUserId, setSelectedUserId] = useState<GridRowId | null>(null);
-  const [openAddDialog, setOpenAddDialog] = useState(false);
-
-  const users: User[] = [
-    {
-      id: "1",
-      name: "John Carter",
-      email: "john.carter@company.com",
-      role: "Admin",
-      status: "Active",
-      avatar:
-        "https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/26bd6ffcec002bf455996a05d2b89c3461015451?placeholderIfAbsent=true",
-      joinDate: "Jan 15, 2023",
-      lastLogin: "2 hours ago",
-      department: "Engineering",
-    },
-    {
-      id: "2",
-      name: "Sophie Moore",
-      email: "sophie.moore@company.com",
-      role: "Manager",
-      status: "Active",
-      avatar:
-        "https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/300129fe3be7a6564cb775553f1f1a895db4261c?placeholderIfAbsent=true",
-      joinDate: "Mar 22, 2023",
-      lastLogin: "1 day ago",
-      department: "Marketing",
-    },
-    {
-      id: "3",
-      name: "Matt Cannon",
-      email: "matt.cannon@company.com",
-      role: "Developer",
-      status: "Active",
-      avatar:
-        "https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/300129fe3be7a6564cb775553f1f1a895db4261c?placeholderIfAbsent=true",
-      joinDate: "May 10, 2023",
-      lastLogin: "5 minutes ago",
-      department: "Engineering",
-    },
-    {
-      id: "4",
-      name: "Emma Wilson",
-      email: "emma.wilson@company.com",
-      role: "Designer",
-      status: "Inactive",
-      avatar:
-        "https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/300129fe3be7a6564cb775553f1f1a895db4261c?placeholderIfAbsent=true",
-      joinDate: "Jul 08, 2023",
-      lastLogin: "1 week ago",
-      department: "Design",
-    },
-    {
-      id: "5",
-      name: "James Rodriguez",
-      email: "james.rodriguez@company.com",
-      role: "Developer",
-      status: "Pending",
-      avatar:
-        "https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/300129fe3be7a6564cb775553f1f1a895db4261c?placeholderIfAbsent=true",
-      joinDate: "Aug 15, 2023",
-      lastLogin: "Never",
-      department: "Engineering",
-    },
-  ];
+  const {
+    users,
+    filteredUsers,
+    searchTerm,
+    anchorEl,
+    openAddDialog,
+    openEditDialog,
+    formData,
+    validationErrors,
+    isSubmitting,
+    setSearchTerm,
+    handleFormChange,
+    handleMenuOpen,
+    handleMenuClose,
+    handleOpenAddDialog,
+    handleCloseAddDialog,
+    handleOpenEditDialog,
+    handleCloseEditDialog,
+    handleAddUser,
+    handleEditUser,
+    handleDeleteUser,
+  } = useUserManagement();
 
   const getStatusColor = (status: string) => {
     switch (status) {
