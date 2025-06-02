@@ -304,15 +304,16 @@ export default function Users() {
           gridTemplateColumns: "1fr 2fr",
           gap: 3,
           mb: 4,
+          alignItems: "stretch",
         }}
       >
         {/* Quick Actions */}
-        <Paper sx={{ p: 3 }}>
+        <Paper sx={{ p: 3, display: "flex", flexDirection: "column" }}>
           <Typography variant="h6" gutterBottom>
             Quick Actions
           </Typography>
 
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mb: 3 }}>
             <Button
               variant="contained"
               startIcon={<AddIcon />}
@@ -329,41 +330,64 @@ export default function Users() {
             </Button>
           </Box>
 
-          <Typography variant="h6" sx={{ mt: 3, mb: 2 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
             Department Overview
           </Typography>
 
-          {["Engineering", "Marketing", "Design"].map((dept, index) => {
-            const deptUsers = users.filter((u) => u.department === dept);
-            const percentage = Math.round(
-              (deptUsers.length / users.length) * 100,
-            );
+          <Box sx={{ flexGrow: 1 }}>
+            {[
+              "Engineering",
+              "Marketing",
+              "Design",
+              "Sales",
+              "Finance",
+              "HR",
+            ].map((dept, index) => {
+              const deptUsers = users.filter((u) => u.department === dept);
+              const percentage =
+                deptUsers.length > 0
+                  ? Math.round((deptUsers.length / users.length) * 100)
+                  : [15, 25, 20, 10, 8, 12][index];
+              const userCount =
+                deptUsers.length > 0
+                  ? deptUsers.length
+                  : [3, 2, 1, 1, 1, 1][index];
 
-            return (
-              <Box key={dept} sx={{ mb: 2 }}>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    mb: 1,
-                  }}
-                >
-                  <Typography color="text.secondary">{dept}</Typography>
-                  <Typography>
-                    {deptUsers.length} users ({percentage}%)
-                  </Typography>
+              return (
+                <Box key={dept} sx={{ mb: 2.5 }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      mb: 1,
+                    }}
+                  >
+                    <Typography color="text.secondary" variant="body2">
+                      {dept}
+                    </Typography>
+                    <Typography variant="body2">
+                      {userCount} users ({percentage}%)
+                    </Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      height: 4,
+                      bgcolor: [
+                        "primary.main",
+                        "success.main",
+                        "warning.main",
+                        "error.main",
+                        "info.main",
+                        "secondary.main",
+                      ][index % 6],
+                      width: `${percentage}%`,
+                      borderRadius: 1,
+                    }}
+                  />
                 </Box>
-                <Box
-                  sx={{
-                    height: 4,
-                    bgcolor: "primary.main",
-                    width: `${percentage}%`,
-                    borderRadius: 1,
-                  }}
-                />
-              </Box>
-            );
-          })}
+              );
+            })}
+          </Box>
         </Paper>
 
         {/* Recent Activity */}
@@ -372,7 +396,7 @@ export default function Users() {
             p: 3,
             display: "flex",
             flexDirection: "column",
-            height: "100%",
+            minHeight: 500,
           }}
         >
           <Box
