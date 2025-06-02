@@ -438,9 +438,9 @@ export default function Users() {
               flex: 1,
               display: "flex",
               flexDirection: "column",
-              height: "calc(600px - 120px)", // Subtract header height
               overflowY: "auto",
               pr: 1,
+              gap: 0.5,
             }}
           >
             {[
@@ -500,23 +500,63 @@ export default function Users() {
                 type: "revoke",
                 department: "Marketing",
               },
+              {
+                action: "Bulk invitation sent",
+                user: "HR Team",
+                time: "1 week ago",
+                type: "invite",
+                department: "Human Resources",
+              },
+              {
+                action: "User login from new device",
+                user: "Tom Wilson",
+                time: "1 week ago",
+                type: "update",
+                department: "Sales",
+              },
+              {
+                action: "Account verification completed",
+                user: "Anna Garcia",
+                time: "1 week ago",
+                type: "join",
+                department: "Finance",
+              },
+              {
+                action: "User permissions updated",
+                user: "Chris Brown",
+                time: "2 weeks ago",
+                type: "update",
+                department: "Engineering",
+              },
+              {
+                action: "Security alert resolved",
+                user: "Security Team",
+                time: "2 weeks ago",
+                type: "update",
+                department: "IT Security",
+              },
+              {
+                action: "New department created",
+                user: "Admin",
+                time: "3 weeks ago",
+                type: "join",
+                department: "Operations",
+              },
             ].map((activity, index) => (
               <Box
                 key={index}
                 sx={{
                   display: "flex",
-                  gap: 2.5,
+                  gap: 2,
                   alignItems: "center",
-                  py: 4,
+                  py: 2.5,
                   px: 1.5,
-                  borderRadius: 2,
+                  borderRadius: 1,
                   bgcolor:
                     index % 2 === 0
                       ? "transparent"
                       : "rgba(255, 255, 255, 0.02)",
                   border: "1px solid transparent",
-                  height: "calc((100% - 16px) / 8)", // Distribute equally among 8 items with gap
-                  minHeight: 70,
                   "&:hover": {
                     bgcolor: "action.hover",
                     borderColor: "divider",
@@ -525,8 +565,8 @@ export default function Users() {
               >
                 <Avatar
                   sx={{
-                    width: 40,
-                    height: 40,
+                    width: 36,
+                    height: 36,
                     bgcolor:
                       activity.type === "join"
                         ? "success.main"
@@ -538,41 +578,36 @@ export default function Users() {
                   }}
                 >
                   {activity.type === "join" && (
-                    <AddIcon sx={{ fontSize: 18 }} />
+                    <AddIcon sx={{ fontSize: 16 }} />
                   )}
                   {activity.type === "update" && (
-                    <EditIcon sx={{ fontSize: 18 }} />
+                    <EditIcon sx={{ fontSize: 16 }} />
                   )}
                   {activity.type === "revoke" && (
-                    <DeleteIcon sx={{ fontSize: 18 }} />
+                    <DeleteIcon sx={{ fontSize: 16 }} />
                   )}
                   {activity.type === "invite" && (
-                    <EmailIcon sx={{ fontSize: 18 }} />
+                    <EmailIcon sx={{ fontSize: 16 }} />
                   )}
                 </Avatar>
                 <Box sx={{ flexGrow: 1, minWidth: 0 }}>
                   <Typography
                     variant="subtitle2"
-                    sx={{
-                      mb: 1,
-                      fontWeight: 600,
-                      fontSize: "0.9rem",
-                      lineHeight: 1.4,
-                    }}
+                    sx={{ mb: 0.5, fontWeight: 600, fontSize: "0.875rem" }}
                   >
                     {activity.action}
                   </Typography>
                   <Typography
                     variant="body2"
                     color="text.primary"
-                    sx={{ mb: 1.5, fontSize: "0.85rem", lineHeight: 1.4 }}
+                    sx={{ mb: 0.5, fontSize: "0.8rem" }}
                   >
                     {activity.user}
                   </Typography>
                   <Box
                     sx={{
                       display: "flex",
-                      gap: 1.5,
+                      gap: 1,
                       flexWrap: "wrap",
                       alignItems: "center",
                     }}
@@ -580,14 +615,14 @@ export default function Users() {
                     <Typography
                       variant="caption"
                       color="text.secondary"
-                      sx={{ fontSize: "0.75rem", fontWeight: 500 }}
+                      sx={{ fontSize: "0.7rem" }}
                     >
                       {activity.time}
                     </Typography>
                     <Typography
                       variant="caption"
                       color="text.secondary"
-                      sx={{ fontSize: "0.75rem" }}
+                      sx={{ fontSize: "0.7rem" }}
                     >
                       •
                     </Typography>
@@ -596,11 +631,11 @@ export default function Users() {
                       size="small"
                       variant="outlined"
                       sx={{
-                        height: 20,
-                        fontSize: "10px",
+                        height: 18,
+                        fontSize: "9px",
                         borderColor: "divider",
                         "& .MuiChip-label": {
-                          px: 1,
+                          px: 0.8,
                         },
                       }}
                     />
