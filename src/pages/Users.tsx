@@ -438,8 +438,10 @@ export default function Users() {
               flex: 1,
               display: "flex",
               flexDirection: "column",
+              justifyContent: "space-between",
               overflowY: "auto",
               pr: 1,
+              gap: 1,
             }}
           >
             {[
@@ -499,20 +501,6 @@ export default function Users() {
                 type: "revoke",
                 department: "Marketing",
               },
-              {
-                action: "Bulk invitation sent",
-                user: "HR Team",
-                time: "1 week ago",
-                type: "invite",
-                department: "Human Resources",
-              },
-              {
-                action: "User login from new device",
-                user: "Tom Wilson",
-                time: "1 week ago",
-                type: "update",
-                department: "Sales",
-              },
             ].map((activity, index) => (
               <Box
                 key={index}
@@ -520,16 +508,16 @@ export default function Users() {
                   display: "flex",
                   gap: 2.5,
                   alignItems: "flex-start",
-                  py: 3,
+                  py: 3.5,
                   px: 1.5,
-                  mb: 1,
                   borderRadius: 2,
                   bgcolor:
                     index % 2 === 0
                       ? "transparent"
                       : "rgba(255, 255, 255, 0.02)",
                   border: "1px solid transparent",
-                  minHeight: 80,
+                  flex: "1 1 auto",
+                  minHeight: 0,
                   "&:hover": {
                     bgcolor: "action.hover",
                     borderColor: "divider",
@@ -563,14 +551,22 @@ export default function Users() {
                     <EmailIcon sx={{ fontSize: 18 }} />
                   )}
                 </Avatar>
-                <Box sx={{ flexGrow: 1, minWidth: 0 }}>
+                <Box
+                  sx={{
+                    flexGrow: 1,
+                    minWidth: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
                   <Typography
                     variant="subtitle2"
                     sx={{
                       mb: 1,
                       fontWeight: 600,
                       fontSize: "0.9rem",
-                      lineHeight: 1.3,
+                      lineHeight: 1.4,
                     }}
                   >
                     {activity.action}
@@ -578,7 +574,7 @@ export default function Users() {
                   <Typography
                     variant="body2"
                     color="text.primary"
-                    sx={{ mb: 1.5, fontSize: "0.85rem", lineHeight: 1.3 }}
+                    sx={{ mb: 1.5, fontSize: "0.85rem", lineHeight: 1.4 }}
                   >
                     {activity.user}
                   </Typography>
