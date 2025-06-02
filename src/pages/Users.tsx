@@ -640,10 +640,10 @@ export default function Users() {
         open={Boolean(anchorEl)}
         onClose={handleMenuClose}
       >
-        <MenuItem onClick={handleEdit}>
+        <MenuItem onClick={handleOpenEditDialog}>
           <EditIcon sx={{ mr: 1 }} /> Edit User
         </MenuItem>
-        <MenuItem onClick={handleDelete} sx={{ color: "error.main" }}>
+        <MenuItem onClick={handleDeleteUser} sx={{ color: "error.main" }}>
           <DeleteIcon sx={{ mr: 1 }} /> Delete User
         </MenuItem>
       </Menu>
