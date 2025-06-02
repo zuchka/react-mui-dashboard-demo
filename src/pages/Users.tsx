@@ -438,7 +438,6 @@ export default function Users() {
               flex: 1,
               display: "flex",
               flexDirection: "column",
-              justifyContent: "space-between",
               overflowY: "auto",
               pr: 1,
             }}
@@ -514,50 +513,23 @@ export default function Users() {
                 type: "update",
                 department: "Sales",
               },
-              {
-                action: "Account verification completed",
-                user: "Anna Garcia",
-                time: "1 week ago",
-                type: "join",
-                department: "Finance",
-              },
-              {
-                action: "User permissions updated",
-                user: "Chris Brown",
-                time: "2 weeks ago",
-                type: "update",
-                department: "Engineering",
-              },
-              {
-                action: "Security alert resolved",
-                user: "Security Team",
-                time: "2 weeks ago",
-                type: "update",
-                department: "IT Security",
-              },
-              {
-                action: "New department created",
-                user: "Admin",
-                time: "3 weeks ago",
-                type: "join",
-                department: "Operations",
-              },
             ].map((activity, index) => (
               <Box
                 key={index}
                 sx={{
                   display: "flex",
-                  gap: 2,
+                  gap: 2.5,
                   alignItems: "flex-start",
-                  py: 2,
-                  px: 1,
-                  borderRadius: 1,
+                  py: 3,
+                  px: 1.5,
+                  mb: 1,
+                  borderRadius: 2,
                   bgcolor:
                     index % 2 === 0
                       ? "transparent"
                       : "rgba(255, 255, 255, 0.02)",
                   border: "1px solid transparent",
-                  flex: "0 0 auto",
+                  minHeight: 80,
                   "&:hover": {
                     bgcolor: "action.hover",
                     borderColor: "divider",
@@ -566,8 +538,8 @@ export default function Users() {
               >
                 <Avatar
                   sx={{
-                    width: 32,
-                    height: 32,
+                    width: 40,
+                    height: 40,
                     bgcolor:
                       activity.type === "join"
                         ? "success.main"
@@ -579,36 +551,41 @@ export default function Users() {
                   }}
                 >
                   {activity.type === "join" && (
-                    <AddIcon sx={{ fontSize: 16 }} />
+                    <AddIcon sx={{ fontSize: 18 }} />
                   )}
                   {activity.type === "update" && (
-                    <EditIcon sx={{ fontSize: 16 }} />
+                    <EditIcon sx={{ fontSize: 18 }} />
                   )}
                   {activity.type === "revoke" && (
-                    <DeleteIcon sx={{ fontSize: 16 }} />
+                    <DeleteIcon sx={{ fontSize: 18 }} />
                   )}
                   {activity.type === "invite" && (
-                    <EmailIcon sx={{ fontSize: 16 }} />
+                    <EmailIcon sx={{ fontSize: 18 }} />
                   )}
                 </Avatar>
                 <Box sx={{ flexGrow: 1, minWidth: 0 }}>
                   <Typography
                     variant="subtitle2"
-                    sx={{ mb: 0.5, fontWeight: 600, fontSize: "0.875rem" }}
+                    sx={{
+                      mb: 1,
+                      fontWeight: 600,
+                      fontSize: "0.9rem",
+                      lineHeight: 1.3,
+                    }}
                   >
                     {activity.action}
                   </Typography>
                   <Typography
                     variant="body2"
                     color="text.primary"
-                    sx={{ mb: 0.5, fontSize: "0.8rem" }}
+                    sx={{ mb: 1.5, fontSize: "0.85rem", lineHeight: 1.3 }}
                   >
                     {activity.user}
                   </Typography>
                   <Box
                     sx={{
                       display: "flex",
-                      gap: 1,
+                      gap: 1.5,
                       flexWrap: "wrap",
                       alignItems: "center",
                     }}
@@ -616,14 +593,14 @@ export default function Users() {
                     <Typography
                       variant="caption"
                       color="text.secondary"
-                      sx={{ fontSize: "0.7rem" }}
+                      sx={{ fontSize: "0.75rem", fontWeight: 500 }}
                     >
                       {activity.time}
                     </Typography>
                     <Typography
                       variant="caption"
                       color="text.secondary"
-                      sx={{ fontSize: "0.7rem" }}
+                      sx={{ fontSize: "0.75rem" }}
                     >
                       •
                     </Typography>
@@ -632,11 +609,11 @@ export default function Users() {
                       size="small"
                       variant="outlined"
                       sx={{
-                        height: 18,
-                        fontSize: "9px",
+                        height: 20,
+                        fontSize: "10px",
                         borderColor: "divider",
                         "& .MuiChip-label": {
-                          px: 0.8,
+                          px: 1,
                         },
                       }}
                     />
