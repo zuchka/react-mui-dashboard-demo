@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Paper,
@@ -36,7 +37,7 @@ import {
 } from "@mui/icons-material";
 import { useUserManagement } from "../hooks/useUserManagement";
 
-export default function Users() {
+const Users = () => {
   const {
     users,
     filteredUsers,
@@ -817,4 +818,6 @@ export default function Users() {
       </Dialog>
     </Box>
   );
-}
+};
+
+export default Users;
