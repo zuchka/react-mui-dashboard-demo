@@ -120,9 +120,22 @@ export default function Buoys() {
               },
             }}
           >
-            <Typography variant="body2" color="text.secondary">
-              {loadedBuoys.length} of {allAvailableBuoys.length} buoys loaded
-              {!buoyListInitialized && " (fetching complete list...)"}
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                flexWrap: "wrap",
+                gap: 1,
+              }}
+            >
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                component="span"
+              >
+                {loadedBuoys.length} of {allAvailableBuoys.length} buoys loaded
+                {!buoyListInitialized && " (fetching complete list...)"}
+              </Typography>
               {lastUpdate && (
                 <Chip
                   label={`Last updated: ${lastUpdate.toLocaleTimeString()}`}
@@ -130,14 +143,13 @@ export default function Buoys() {
                   color="primary"
                   variant="outlined"
                   sx={{
-                    ml: 1,
                     borderRadius: "16px",
                     height: "24px",
                     fontSize: "13px",
                   }}
                 />
               )}
-            </Typography>
+            </Box>
           </Box>
 
           <Box
