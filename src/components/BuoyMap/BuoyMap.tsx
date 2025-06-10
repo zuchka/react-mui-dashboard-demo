@@ -77,56 +77,62 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
 }));
 
 const PopupContainer = styled(Box)(({ theme }) => ({
-  padding: "12px",
+  padding: "4px",
   backgroundColor: theme.palette.background.paper,
-  borderRadius: "12px",
-  minWidth: "260px",
+  borderRadius: "8px",
+  minWidth: "220px",
 }));
 
 const BuoyTitle = styled(Typography)(({ theme }) => ({
   fontFamily: theme.typography.h6.fontFamily,
   fontWeight: 600,
-  fontSize: "16px",
+  fontSize: "14px",
   color: theme.palette.text.primary,
-  marginBottom: "4px",
-  lineHeight: "1.2",
+  lineHeight: "1.1",
+  margin: "1px 0",
 }));
 
 const LocationText = styled(Typography)(({ theme }) => ({
-  fontSize: "12px",
+  fontSize: "10px",
   color: theme.palette.text.secondary,
-  marginBottom: "8px",
   fontFamily: "Menlo, Monaco, Consolas, monospace",
+  margin: "1px 0",
 }));
 
 const DataContainer = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
-  borderRadius: "6px",
-  padding: "10px",
+  borderRadius: "4px",
+  padding: "0 4px",
   border: `1px solid ${theme.palette.divider}`,
+  marginTop: "2px",
 }));
 
 const DataRow = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  marginBottom: "2px",
+  padding: "1px 0",
+  "&:first-of-type": {
+    paddingTop: "2px",
+  },
   "&:last-child": {
-    marginBottom: "0",
+    paddingBottom: "2px",
   },
 }));
 
 const DataLabel = styled(Typography)(({ theme }) => ({
-  fontSize: "13px",
+  fontSize: "11px",
   color: theme.palette.text.secondary,
   fontWeight: 500,
+  margin: "1px 0",
 }));
 
 const DataValue = styled(Typography)(({ theme }) => ({
-  fontSize: "14px",
+  fontSize: "12px",
   color: theme.palette.text.primary,
   fontWeight: 600,
   fontFamily: "Menlo, Monaco, Consolas, monospace",
+  margin: "1px 0",
 }));
 
 const NoDataMessage = styled(Box)(({ theme }) => ({
