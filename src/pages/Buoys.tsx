@@ -284,6 +284,7 @@ export default function Buoys() {
           buoys={mapBuoys}
           selectedBuoyId={selectedBuoyId}
           onBuoySelect={handleBuoySelect}
+          centerOnSelection={true}
         />
       </StyledPaper>
 

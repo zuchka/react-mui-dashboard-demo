@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
-import { Box, Typography, Paper } from "@mui/material";
+import { Box, Typography, Paper, Chip } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -28,13 +28,113 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
     width: "100%",
     borderRadius: "12px",
   },
+  // Custom Leaflet popup styling to match brand colors
+  "& .leaflet-popup": {
+    marginBottom: "20px",
+  },
+  "& .leaflet-popup-content-wrapper": {
+    backgroundColor: theme.palette.background.paper,
+    color: theme.palette.text.primary,
+    borderRadius: "12px",
+    border: `1px solid ${theme.palette.divider}`,
+    boxShadow: "0 8px 32px rgba(0, 0, 0, 0.32)",
+    fontFamily: theme.typography.fontFamily,
+    padding: "0",
+    minWidth: "280px",
+  },
+  "& .leaflet-popup-content": {
+    margin: "0",
+    fontSize: "14px",
+    lineHeight: "1.4",
+    fontFamily: theme.typography.fontFamily,
+    color: theme.palette.text.primary,
+  },
+  "& .leaflet-popup-close-button": {
+    color: theme.palette.text.secondary,
+    fontSize: "18px",
+    fontWeight: "bold",
+    padding: "8px",
+    top: "8px",
+    right: "8px",
+    width: "32px",
+    height: "32px",
+    borderRadius: "6px",
+    transition: "all 0.2s ease",
+    "&:hover": {
+      backgroundColor: theme.palette.action.hover,
+      color: theme.palette.text.primary,
+    },
+  },
+  "& .leaflet-popup-tip": {
+    backgroundColor: theme.palette.background.paper,
+    border: `1px solid ${theme.palette.divider}`,
+    borderTop: "none",
+    borderRight: "none",
+  },
+  "& .leaflet-popup-tip-container": {
+    marginTop: "-1px",
+  },
 }));
 
-const InfoBox = styled(Box)(({ theme }) => ({
-  padding: "8px 12px",
+const PopupContainer = styled(Box)(({ theme }) => ({
+  padding: "12px",
+  backgroundColor: theme.palette.background.paper,
+  borderRadius: "12px",
+  minWidth: "260px",
+}));
+
+const BuoyTitle = styled(Typography)(({ theme }) => ({
+  fontFamily: theme.typography.h6.fontFamily,
+  fontWeight: 600,
+  fontSize: "16px",
+  color: theme.palette.text.primary,
+  marginBottom: "4px",
+  lineHeight: "1.2",
+}));
+
+const LocationText = styled(Typography)(({ theme }) => ({
+  fontSize: "12px",
+  color: theme.palette.text.secondary,
+  marginBottom: "8px",
+  fontFamily: "Menlo, Monaco, Consolas, monospace",
+}));
+
+const DataContainer = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
+  borderRadius: "6px",
+  padding: "10px",
+  border: `1px solid ${theme.palette.divider}`,
+}));
+
+const DataRow = styled(Box)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginBottom: "2px",
+  "&:last-child": {
+    marginBottom: "0",
+  },
+}));
+
+const DataLabel = styled(Typography)(({ theme }) => ({
+  fontSize: "13px",
+  color: theme.palette.text.secondary,
+  fontWeight: 500,
+}));
+
+const DataValue = styled(Typography)(({ theme }) => ({
+  fontSize: "14px",
+  color: theme.palette.text.primary,
+  fontWeight: 600,
+  fontFamily: "Menlo, Monaco, Consolas, monospace",
+}));
+
+const NoDataMessage = styled(Box)(({ theme }) => ({
+  padding: "12px 16px",
+  backgroundColor: theme.palette.action.selected,
   borderRadius: "8px",
-  marginTop: "8px",
+  border: `1px dashed ${theme.palette.divider}`,
+  textAlign: "center",
 }));
 
 interface BuoyLocation {
@@ -52,22 +152,59 @@ interface BuoyMapProps {
   buoys: BuoyLocation[];
   selectedBuoyId?: string;
   onBuoySelect?: (buoyId: string) => void;
+  centerOnSelection?: boolean;
 }
 
-// Component to fit map bounds to show all buoys (only on initial load)
-const MapBoundsUpdater = ({ buoys }: { buoys: BuoyLocation[] }) => {
+// Component to handle map bounds and centering
+const MapController = ({
+  buoys,
+  selectedBuoyId,
+  centerOnSelection,
+}: {
+  buoys: BuoyLocation[];
+  selectedBuoyId?: string;
+  centerOnSelection?: boolean;
+}) => {
   const map = useMap();
   const [hasInitialized, setHasInitialized] = useState(false);
+  const previousSelectedBuoyId = useRef<string | undefined>(undefined);
 
+  // Initial map bounds setup
   useEffect(() => {
     if (buoys.length > 0 && !hasInitialized) {
-      const group = new L.FeatureGroup(
-        buoys.map((buoy) => L.marker([buoy.lat, buoy.lng])),
+      const buoysWithValidCoords = buoys.filter(
+        (buoy) => buoy.lat !== 0 && buoy.lng !== 0,
       );
-      map.fitBounds(group.getBounds(), { padding: [20, 20] });
+      if (buoysWithValidCoords.length > 0) {
+        const group = new L.FeatureGroup(
+          buoysWithValidCoords.map((buoy) => L.marker([buoy.lat, buoy.lng])),
+        );
+        map.fitBounds(group.getBounds(), { padding: [20, 20] });
+      }
       setHasInitialized(true);
     }
   }, [buoys, map, hasInitialized]);
+
+  // Center on selected buoy
+  useEffect(() => {
+    if (
+      selectedBuoyId &&
+      centerOnSelection &&
+      hasInitialized &&
+      selectedBuoyId !== previousSelectedBuoyId.current
+    ) {
+      const selectedBuoy = buoys.find((buoy) => buoy.id === selectedBuoyId);
+      if (selectedBuoy && selectedBuoy.lat !== 0 && selectedBuoy.lng !== 0) {
+        // Center on the selected buoy with smooth animation and appropriate zoom
+        map.setView([selectedBuoy.lat, selectedBuoy.lng], 6, {
+          animate: true,
+          duration: 1.5, // Smooth 1.5 second animation
+          easeLinearity: 0.5,
+        });
+      }
+      previousSelectedBuoyId.current = selectedBuoyId;
+    }
+  }, [selectedBuoyId, centerOnSelection, buoys, map, hasInitialized]);
 
   return null;
 };
@@ -76,6 +213,7 @@ export const BuoyMap = ({
   buoys,
   selectedBuoyId,
   onBuoySelect,
+  centerOnSelection = true,
 }: BuoyMapProps) => {
   const mapRef = useRef<L.Map | null>(null);
 
@@ -140,7 +278,11 @@ export const BuoyMap = ({
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        <MapBoundsUpdater buoys={buoys} />
+        <MapController
+          buoys={buoys}
+          selectedBuoyId={selectedBuoyId}
+          centerOnSelection={centerOnSelection}
+        />
 
         {buoys.map((buoy) => (
           <Marker
@@ -152,43 +294,67 @@ export const BuoyMap = ({
             }}
           >
             <Popup>
-              <Box sx={{ minWidth: 200 }}>
-                <Typography variant="h6" sx={{ mb: 1, fontWeight: 600 }}>
-                  {buoy.name}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ mb: 1 }}
-                >
-                  Location: {buoy.lat.toFixed(4)}°N, {buoy.lng.toFixed(4)}°W
-                </Typography>
+              <PopupContainer>
+                <BuoyTitle>{buoy.name}</BuoyTitle>
+
+                <LocationText>
+                  {buoy.lat.toFixed(4)}°N, {Math.abs(buoy.lng).toFixed(4)}°
+                  {buoy.lng < 0 ? "W" : "E"}
+                </LocationText>
+
                 {buoy.hasData ? (
-                  <InfoBox>
-                    <Typography variant="body2">
-                      Temperature: {buoy.temperature?.toFixed(1)}°C
-                    </Typography>
+                  <DataContainer>
+                    <DataRow>
+                      <DataLabel>Temperature</DataLabel>
+                      <DataValue>
+                        {buoy.temperature !== undefined
+                          ? `${buoy.temperature.toFixed(1)}°C`
+                          : "N/A"}
+                      </DataValue>
+                    </DataRow>
+
                     {buoy.waveHeight !== undefined && (
-                      <Typography variant="body2">
-                        Wave Height: {buoy.waveHeight.toFixed(1)}m
-                      </Typography>
+                      <DataRow>
+                        <DataLabel>Wave Height</DataLabel>
+                        <DataValue>{buoy.waveHeight.toFixed(1)}m</DataValue>
+                      </DataRow>
                     )}
+
                     {buoy.windSpeed !== undefined && (
-                      <Typography variant="body2">
-                        Wind Speed: {buoy.windSpeed.toFixed(1)} m/s
-                      </Typography>
+                      <DataRow>
+                        <DataLabel>Wind Speed</DataLabel>
+                        <DataValue>{buoy.windSpeed.toFixed(1)} m/s</DataValue>
+                      </DataRow>
                     )}
-                  </InfoBox>
+                  </DataContainer>
                 ) : (
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    sx={{ fontStyle: "italic", mt: 1 }}
-                  >
-                    Click to load real-time data
-                  </Typography>
+                  <NoDataMessage>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ fontSize: "13px", fontWeight: 500 }}
+                    >
+                      Click marker to load real-time data
+                    </Typography>
+                    <Chip
+                      label="Load Data"
+                      size="small"
+                      variant="outlined"
+                      sx={{
+                        mt: 1,
+                        fontSize: "11px",
+                        height: "24px",
+                        borderColor: "primary.main",
+                        color: "primary.main",
+                        "&:hover": {
+                          backgroundColor: "primary.main",
+                          color: "primary.contrastText",
+                        },
+                      }}
+                    />
+                  </NoDataMessage>
                 )}
-              </Box>
+              </PopupContainer>
             </Popup>
           </Marker>
         ))}

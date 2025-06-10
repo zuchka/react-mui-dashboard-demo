@@ -48,6 +48,19 @@ export const BuoyDropdown = ({
     onBuoyChange(event.target.value);
   };
 
+  // Sort buoys: named stations first (alphabetically), then NOAA stations at bottom (alphabetically)
+  const sortedBuoys = [...buoys].sort((a, b) => {
+    const aIsNOAA = a.name.startsWith("NOAA Station");
+    const bIsNOAA = b.name.startsWith("NOAA Station");
+
+    // If one is NOAA and one isn't, put NOAA at bottom
+    if (aIsNOAA && !bIsNOAA) return 1;
+    if (!aIsNOAA && bIsNOAA) return -1;
+
+    // If both are same type (both NOAA or both named), sort alphabetically
+    return a.name.localeCompare(b.name);
+  });
+
   return (
     <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
       <Typography variant="h6" color="text.primary">
@@ -80,7 +93,7 @@ export const BuoyDropdown = ({
           {buoys.length === 0 ? (
             <MenuItem disabled>No buoys available</MenuItem>
           ) : (
-            buoys.map((buoy) => (
+            sortedBuoys.map((buoy) => (
               <MenuItem key={buoy.id} value={buoy.id}>
                 {buoy.name}
               </MenuItem>
