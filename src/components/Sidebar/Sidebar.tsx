@@ -1,22 +1,29 @@
 import { Box, Button, Typography, Divider } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
-const SidebarContainer = styled(Box)(({ theme }) => ({
-  width: "22%",
-  backgroundColor: theme.palette.background.paper,
-  boxShadow: "0px 8px 28px 0px rgba(1, 5, 17, 0.30)",
-  display: "flex",
-  flexDirection: "column",
-  paddingTop: "40px",
-  [theme.breakpoints.down("md")]: {
-    width: "100%",
-    paddingTop: "20px",
-  },
-}));
+const SidebarContainer = styled(Box)<{ expanded: boolean }>(
+  ({ theme, expanded }) => ({
+    width: expanded ? "22%" : "80px",
+    backgroundColor: theme.palette.background.paper,
+    boxShadow: "0px 8px 28px 0px rgba(1, 5, 17, 0.30)",
+    display: "flex",
+    flexDirection: "column",
+    paddingTop: "40px",
+    transition: "width 0.3s ease-in-out",
+    overflow: "hidden",
+    position: "relative",
+    zIndex: 1000,
+    [theme.breakpoints.down("md")]: {
+      width: expanded ? "100%" : "70px",
+      paddingTop: "20px",
+    },
+  }),
+);
 
-const MenuItem = styled(Box)(({ theme }) => ({
-  padding: "14px",
+const MenuItem = styled(Box)<{ expanded: boolean }>(({ theme, expanded }) => ({
+  padding: expanded ? "14px" : "14px 12px",
   borderRadius: "7px",
   display: "flex",
   alignItems: "center",
@@ -24,6 +31,9 @@ const MenuItem = styled(Box)(({ theme }) => ({
   cursor: "pointer",
   textDecoration: "none",
   color: theme.palette.text.secondary,
+  justifyContent: expanded ? "flex-start" : "center",
+  minHeight: "46px",
+  transition: "all 0.3s ease-in-out",
   "&:hover": {
     backgroundColor: theme.palette.action.hover,
   },
@@ -39,8 +49,51 @@ const StyledLink = styled(Link)({
   width: "100%",
 });
 
+const LogoContainer = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
+  display: "flex",
+  alignItems: "center",
+  gap: expanded ? "8px" : "0",
+  justifyContent: expanded ? "flex-start" : "center",
+  transition: "all 0.3s ease-in-out",
+  overflow: "hidden",
+  whiteSpace: "nowrap",
+}));
+
+const MenuItemText = styled(Typography)<{ expanded: boolean }>(
+  ({ expanded }) => ({
+    opacity: expanded ? 1 : 0,
+    transform: expanded ? "translateX(0)" : "translateX(-10px)",
+    transition: "all 0.3s ease-in-out",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    visibility: expanded ? "visible" : "hidden",
+    width: expanded ? "auto" : "0",
+  }),
+);
+
+const SidebarPadding = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
+  paddingLeft: expanded ? "28px" : "12px",
+  paddingRight: expanded ? "28px" : "12px",
+  transition: "padding 0.3s ease-in-out",
+}));
+
 export const Sidebar = () => {
   const location = useLocation();
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Default icons for menu items that don't have one
+  const getDefaultIcon = (label: string) => {
+    const iconMap: { [key: string]: string } = {
+      "All pages": "📄",
+      Reports: "📊",
+      Buoys: "🚢",
+      Products: "📦",
+      Task: "✓",
+      Users: "👥",
+      Pricing: "💰",
+    };
+    return iconMap[label] || "•";
+  };
 
   const menuItems = [
     {
@@ -77,72 +130,148 @@ export const Sidebar = () => {
     },
   ];
 
+  const handleMouseEnter = () => {
+    setIsExpanded(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsExpanded(false);
+  };
+
   return (
-    <SidebarContainer>
-      <Box px={3.5} mb={4}>
-        <Box display="flex" alignItems="center" gap={1}>
+    <SidebarContainer
+      expanded={isExpanded}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      role="navigation"
+      aria-label="Main navigation"
+      aria-expanded={isExpanded}
+    >
+      <SidebarPadding expanded={isExpanded} mb={4}>
+        <LogoContainer expanded={isExpanded}>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/fccf2e7ec9723b0ade97e83d78184ae7dc22e34b?placeholderIfAbsent=true"
-            alt="Logo"
-            style={{ width: "26px" }}
+            alt="Dashdark X Logo"
+            style={{
+              width: "26px",
+              minWidth: "26px",
+              transition: "all 0.3s ease-in-out",
+            }}
           />
-          <Typography variant="h6" color="text.primary">
+          <MenuItemText variant="h6" color="text.primary" expanded={isExpanded}>
             Dashdark X
-          </Typography>
-        </Box>
-      </Box>
+          </MenuItemText>
+        </LogoContainer>
+      </SidebarPadding>
 
-      <Box px={3.5}>
+      <SidebarPadding expanded={isExpanded}>
         {menuItems.map((item) => (
           <StyledLink to={item.path} key={item.path}>
             <MenuItem
+              expanded={isExpanded}
               className={location.pathname === item.path ? "active" : ""}
+              role="menuitem"
+              aria-label={item.label}
             >
-              {item.icon && (
-                <img src={item.icon} alt="" style={{ width: "14px" }} />
+              {item.icon ? (
+                <img
+                  src={item.icon}
+                  alt=""
+                  style={{
+                    width: "14px",
+                    minWidth: "14px",
+                    height: "14px",
+                  }}
+                />
+              ) : (
+                <Box
+                  component="span"
+                  sx={{
+                    fontSize: "14px",
+                    minWidth: "14px",
+                    textAlign: "center",
+                    opacity: 0.7,
+                  }}
+                >
+                  {getDefaultIcon(item.label)}
+                </Box>
               )}
-              <Typography variant="body2">{item.label}</Typography>
+              <MenuItemText variant="body2" expanded={isExpanded}>
+                {item.label}
+              </MenuItemText>
             </MenuItem>
           </StyledLink>
         ))}
-      </Box>
+      </SidebarPadding>
 
       <Divider sx={{ my: 2, opacity: 0.2 }} />
 
-      <Box px={3.5}>
+      <SidebarPadding expanded={isExpanded}>
         <Button
           variant="contained"
-          fullWidth
+          fullWidth={isExpanded}
           sx={{
             mt: 2,
             py: 1.5,
+            minWidth: isExpanded ? "auto" : "40px",
+            width: isExpanded ? "100%" : "40px",
             background:
               "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
+            transition: "all 0.3s ease-in-out",
+            fontSize: isExpanded ? "inherit" : "12px",
+            overflow: "hidden",
           }}
         >
-          Get template
+          {isExpanded ? "Get template" : "GT"}
         </Button>
-      </Box>
+      </SidebarPadding>
 
-      <Box mt="auto" p={3.5} display="flex" alignItems="center" gap={1}>
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/26bd6ffcec002bf455996a05d2b89c3461015451?placeholderIfAbsent=true"
-          alt="Profile"
-          style={{
-            width: "32px",
-            height: "32px",
-            borderRadius: "50%",
+      <SidebarPadding
+        expanded={isExpanded}
+        sx={{
+          mt: "auto",
+          pt: 2,
+          pb: 3.5,
+        }}
+      >
+        <Box
+          display="flex"
+          alignItems="center"
+          gap={isExpanded ? 1 : 0}
+          sx={{
+            justifyContent: isExpanded ? "flex-start" : "center",
+            transition: "all 0.3s ease-in-out",
           }}
-        />
-        <Box>
-          <Typography variant="body2" color="text.primary">
-            John Carter
-          </Typography>
-          <Typography variant="caption" color="text.secondary">
-            Account settings
-          </Typography>
+        >
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/26bd6ffcec002bf455996a05d2b89c3461015451?placeholderIfAbsent=true"
+            alt="John Carter Profile"
+            style={{
+              width: "32px",
+              height: "32px",
+              borderRadius: "50%",
+              minWidth: "32px",
+            }}
+          />
+          <Box
+            sx={{
+              opacity: isExpanded ? 1 : 0,
+              transform: isExpanded ? "translateX(0)" : "translateX(-10px)",
+              transition: "all 0.3s ease-in-out",
+              overflow: "hidden",
+              whiteSpace: "nowrap",
+              width: isExpanded ? "auto" : "0",
+            }}
+          >
+            <Typography variant="body2" color="text.primary">
+              John Carter
+            </Typography>
+            <Typography variant="caption" color="text.secondary">
+              Account settings
+            </Typography>
+          </Box>
         </Box>
-      </Box>
+      </SidebarPadding>
     </SidebarContainer>
   );
 };
