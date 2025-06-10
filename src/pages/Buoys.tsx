@@ -13,6 +13,7 @@ import { BuoyDropdown } from "../components/BuoyDropdown/BuoyDropdown";
 import { BuoyMap } from "../components/BuoyMap/BuoyMap";
 import { BuoyCharts } from "../components/BuoyCharts/BuoyCharts";
 import { StatsCard } from "../components/StatsCard/StatsCard";
+import { WindSpeedChart } from "../components/WindSpeedChart/WindSpeedChart";
 import { BUOY_METADATA, DEFAULT_BUOY_ID } from "../data/buoyMetadata";
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
@@ -168,17 +169,16 @@ export default function Buoys() {
         </Alert>
       )}
 
-      {/* Overview Stats */}
+      {/* Overview Stats and Wind Speed Chart */}
       {selectedBuoyData && (
         <Box
           sx={{
             display: "grid",
             gridTemplateColumns: {
               xs: "1fr",
-              sm: "1fr 1fr",
-              md: "repeat(4, 1fr)",
+              lg: "400px 1fr",
             },
-            gap: 3,
+            gap: 4,
             mb: 4,
             position: "relative",
           }}
@@ -194,74 +194,91 @@ export default function Buoys() {
             </LoadingOverlay>
           )}
 
-          <StatsCard
-            title="Water Temperature"
-            value={`${selectedBuoyData.info.temperature.toFixed(1)}°C`}
-            trend={{
-              value:
-                selectedBuoyData.history.length > 1
-                  ? `${(selectedBuoyData.info.temperature - selectedBuoyData.history[selectedBuoyData.history.length - 2].temperature).toFixed(1)}°C`
-                  : "0°C",
-              positive:
-                selectedBuoyData.history.length > 1
-                  ? selectedBuoyData.info.temperature >=
-                    selectedBuoyData.history[
-                      selectedBuoyData.history.length - 2
-                    ].temperature
-                  : true,
+          {/* Column 1: Stats in 2x2 Grid */}
+          <Box
+            sx={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: 2,
             }}
-          />
-          <StatsCard
-            title="Wave Height"
-            value={`${selectedBuoyData.info.waveHeight.toFixed(1)}m`}
-            trend={{
-              value:
-                selectedBuoyData.history.length > 1
-                  ? `${(selectedBuoyData.info.waveHeight - selectedBuoyData.history[selectedBuoyData.history.length - 2].waveHeight).toFixed(1)}m`
-                  : "0m",
-              positive:
-                selectedBuoyData.history.length > 1
-                  ? selectedBuoyData.info.waveHeight >=
-                    selectedBuoyData.history[
-                      selectedBuoyData.history.length - 2
-                    ].waveHeight
-                  : true,
-            }}
-          />
-          <StatsCard
-            title="Wind Speed"
-            value={`${selectedBuoyData.info.windSpeed.toFixed(1)} m/s`}
-            trend={{
-              value:
-                selectedBuoyData.history.length > 1
-                  ? `${(selectedBuoyData.info.windSpeed - selectedBuoyData.history[selectedBuoyData.history.length - 2].windSpeed).toFixed(1)} m/s`
-                  : "0 m/s",
-              positive:
-                selectedBuoyData.history.length > 1
-                  ? selectedBuoyData.info.windSpeed >=
-                    selectedBuoyData.history[
-                      selectedBuoyData.history.length - 2
-                    ].windSpeed
-                  : true,
-            }}
-          />
-          <StatsCard
-            title="Pressure"
-            value={`${selectedBuoyData.info.pressure.toFixed(0)} hPa`}
-            trend={{
-              value:
-                selectedBuoyData.history.length > 1
-                  ? `${(selectedBuoyData.info.pressure - selectedBuoyData.history[selectedBuoyData.history.length - 2].pressure).toFixed(0)} hPa`
-                  : "0 hPa",
-              positive:
-                selectedBuoyData.history.length > 1
-                  ? selectedBuoyData.info.pressure >=
-                    selectedBuoyData.history[
-                      selectedBuoyData.history.length - 2
-                    ].pressure
-                  : true,
-            }}
-          />
+          >
+            <StatsCard
+              title="Water Temperature"
+              value={`${selectedBuoyData.info.temperature.toFixed(1)}°C`}
+              trend={{
+                value:
+                  selectedBuoyData.history.length > 1
+                    ? `${(selectedBuoyData.info.temperature - selectedBuoyData.history[selectedBuoyData.history.length - 2].temperature).toFixed(1)}°C`
+                    : "0°C",
+                positive:
+                  selectedBuoyData.history.length > 1
+                    ? selectedBuoyData.info.temperature >=
+                      selectedBuoyData.history[
+                        selectedBuoyData.history.length - 2
+                      ].temperature
+                    : true,
+              }}
+            />
+            <StatsCard
+              title="Wave Height"
+              value={`${selectedBuoyData.info.waveHeight.toFixed(1)}m`}
+              trend={{
+                value:
+                  selectedBuoyData.history.length > 1
+                    ? `${(selectedBuoyData.info.waveHeight - selectedBuoyData.history[selectedBuoyData.history.length - 2].waveHeight).toFixed(1)}m`
+                    : "0m",
+                positive:
+                  selectedBuoyData.history.length > 1
+                    ? selectedBuoyData.info.waveHeight >=
+                      selectedBuoyData.history[
+                        selectedBuoyData.history.length - 2
+                      ].waveHeight
+                    : true,
+              }}
+            />
+            <StatsCard
+              title="Wind Speed"
+              value={`${selectedBuoyData.info.windSpeed.toFixed(1)} m/s`}
+              trend={{
+                value:
+                  selectedBuoyData.history.length > 1
+                    ? `${(selectedBuoyData.info.windSpeed - selectedBuoyData.history[selectedBuoyData.history.length - 2].windSpeed).toFixed(1)} m/s`
+                    : "0 m/s",
+                positive:
+                  selectedBuoyData.history.length > 1
+                    ? selectedBuoyData.info.windSpeed >=
+                      selectedBuoyData.history[
+                        selectedBuoyData.history.length - 2
+                      ].windSpeed
+                    : true,
+              }}
+            />
+            <StatsCard
+              title="Pressure"
+              value={`${selectedBuoyData.info.pressure.toFixed(0)} hPa`}
+              trend={{
+                value:
+                  selectedBuoyData.history.length > 1
+                    ? `${(selectedBuoyData.info.pressure - selectedBuoyData.history[selectedBuoyData.history.length - 2].pressure).toFixed(0)} hPa`
+                    : "0 hPa",
+                positive:
+                  selectedBuoyData.history.length > 1
+                    ? selectedBuoyData.info.pressure >=
+                      selectedBuoyData.history[
+                        selectedBuoyData.history.length - 2
+                      ].pressure
+                    : true,
+              }}
+            />
+          </Box>
+
+          {/* Column 2: Wind Speed Chart */}
+          <StyledPaper sx={{ p: 3 }}>
+            <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+              Wind Speed Analysis
+            </Typography>
+            <WindSpeedChart data={selectedBuoyData.history} height={300} />
+          </StyledPaper>
         </Box>
       )}
 
