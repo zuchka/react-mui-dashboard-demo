@@ -178,7 +178,7 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
           <TimeSeriesChart
             data={windSpeedData}
             height={300}
-            color={theme.palette.warning.main}
+            color={theme.palette.primary.main}
             yAxisLabel="Wind Speed (m/s)"
           />
         </ChartContainer>
@@ -214,7 +214,7 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
             colors={[
               theme.palette.error.main,
               theme.palette.info.main,
-              theme.palette.warning.main,
+              theme.palette.primary.main,
               theme.palette.success.main,
             ]}
           />
@@ -230,7 +230,7 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
             colors={[
               theme.palette.error.main,
               theme.palette.info.main,
-              theme.palette.warning.main,
+              theme.palette.primary.main,
               theme.palette.success.main,
             ]}
           />

@@ -49,7 +49,7 @@ export const WindSpeedChart = ({ data, height = 300 }: WindSpeedChartProps) => {
     <TimeSeriesChart
       data={windSpeedData}
       height={height}
-      color={theme.palette.warning.main}
+      color={theme.palette.primary.main}
       yAxisLabel="Wind Speed (m/s)"
     />
   );
