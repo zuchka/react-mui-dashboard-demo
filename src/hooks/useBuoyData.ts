@@ -110,9 +110,14 @@ const fetchBuoyDataFromNOAA = async (
         .split("\n")
         .filter((line) => line.trim() && !line.startsWith("#"));
 
+      console.log(`Buoy ${buoyId}: Retrieved ${lines.length} data lines`);
+
       if (lines.length === 0) {
         throw new Error("No data found in response");
       }
+
+      // Log first few lines for debugging
+      console.log(`Buoy ${buoyId}: First 3 data lines:`, lines.slice(0, 3));
 
       console.log(`Successfully fetched buoy ${buoyId} using method ${i + 1}`);
 
@@ -163,15 +168,29 @@ const parseBuoyData = async (
 
   // Parse each data line
   // NOAA format: YY MM DD hh mm WDIR WSPD GST WVHT DPD APD MWD PRES ATMP WTMP DEWP VIS PTDY TIDE
+  console.log(`Parsing ${lines.length} lines for buoy ${buoyId}`);
+
   lines.forEach((line, index) => {
     const values = line.trim().split(/\s+/);
-    if (values.length < 15) return; // Skip malformed lines
+    if (values.length < 15) {
+      if (index < 5)
+        console.log(
+          `Buoy ${buoyId}: Skipping malformed line ${index}: ${line} (${values.length} values)`,
+        );
+      return; // Skip malformed lines
+    }
 
     const [year, month, day, hour, minute, , wspd, , wvht, , , , pres, , wtmp] =
       values;
 
     // Validate essential values
-    if (!year || !month || !day || !hour || !minute) return;
+    if (!year || !month || !day || !hour || !minute) {
+      if (index < 5)
+        console.log(
+          `Buoy ${buoyId}: Skipping line ${index} - missing time data: ${line}`,
+        );
+      return;
+    }
 
     // Create timestamp
     const timestamp = new Date(
@@ -217,6 +236,10 @@ const parseBuoyData = async (
     (a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime(),
   );
 
+  console.log(
+    `Buoy ${buoyId}: Parsed ${history.length} valid data points, latest reading: ${latestReading ? "found" : "NOT FOUND"}`,
+  );
+
   if (latestReading) {
     return {
       info: latestReading,
@@ -224,6 +247,9 @@ const parseBuoyData = async (
     };
   }
 
+  console.warn(
+    `Buoy ${buoyId}: No valid data could be parsed from ${lines.length} lines`,
+  );
   return null;
 };
 
@@ -264,13 +290,30 @@ export const useBuoyData = () => {
         setLastUpdate(new Date());
         console.log(`Successfully loaded data for buoy ${buoyId}`);
       } else {
-        throw new Error(`No data returned for buoy ${buoyId}`);
+        throw new Error(
+          `No valid data could be parsed for buoy ${buoyId}. This buoy may not have recent data or the data format may be incompatible.`,
+        );
       }
     } catch (err) {
       const errorMessage =
         err instanceof Error ? err.message : "Failed to fetch buoy data";
-      setError(`Error loading ${buoyId}: ${errorMessage}`);
+
+      // Provide user-friendly error message
+      const userFriendlyMessage = errorMessage.includes(
+        "No valid data could be parsed",
+      )
+        ? `Buoy ${buoyId} is temporarily unavailable or not reporting data`
+        : `Unable to load data for buoy ${buoyId}`;
+
+      setError(userFriendlyMessage);
       console.error(`Error fetching buoy ${buoyId}:`, err);
+
+      // Log suggestion for maintenance
+      if (errorMessage.includes("No valid data could be parsed")) {
+        console.warn(
+          `Buoy ${buoyId} may need to be removed from the verified active list - check NOAA station status`,
+        );
+      }
     } finally {
       setLoading(false);
       setLoadingBuoyId(null);
@@ -283,7 +326,9 @@ export const useBuoyData = () => {
       try {
         await initializeBuoyMetadata();
         setBuoyListInitialized(true);
-        console.log("Buoy metadata initialized with real NOAA data");
+        console.log(
+          "Buoy metadata initialized with verified active NOAA stations",
+        );
       } catch (error) {
         console.error("Failed to initialize buoy metadata:", error);
         setBuoyListInitialized(true); // Continue with fallback data
@@ -342,6 +387,27 @@ export const useBuoyData = () => {
     [loadingBuoyId],
   );
 
+  // Development helper to test multiple buoys and see which ones have data
+  const testMultipleBuoys = useCallback(
+    async (buoyIds: string[]) => {
+      const results: { [buoyId: string]: boolean } = {};
+
+      for (const buoyId of buoyIds) {
+        try {
+          await fetchBuoyData(buoyId);
+          results[buoyId] = true;
+          console.log(`✅ Buoy ${buoyId}: Data available`);
+        } catch (error) {
+          results[buoyId] = false;
+          console.log(`❌ Buoy ${buoyId}: No data available`);
+        }
+      }
+
+      return results;
+    },
+    [fetchBuoyData],
+  );
+
   return {
     groupedData,
     loading,
@@ -357,5 +423,6 @@ export const useBuoyData = () => {
     isBuoyLoading,
     fetchBuoyData,
     refetch: () => fetchBuoyData(DEFAULT_BUOY_ID),
+    testMultipleBuoys, // For development/debugging only
   };
 };

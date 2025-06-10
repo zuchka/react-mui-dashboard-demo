@@ -1,0 +1,2515 @@
+Skip to feedback
+Index of /data/realtime2/
+[ICO]	Name	Last modified	Size	Description
+[PARENTDIR]	Parent Directory	 	-	 
+[TXT]	32ST0.ocean	2025-06-10 20:10	86K	Oceanographic Data
+[TXT]	32ST0.srad	2025-06-10 20:10	40K	Solar Radiation Data
+[TXT]	32ST0.txt	2025-06-10 20:10	99K	Standard Meteorological Data
+[TXT]	51WH0.ocean	2025-06-10 20:00	86K	Oceanographic Data
+[TXT]	51WH0.srad	2025-06-10 20:00	40K	Solar Radiation Data
+[TXT]	51WH0.txt	2025-06-10 20:00	100K	Standard Meteorological Data
+[TXT]	13001.txt	2025-06-10 19:25	97K	Standard Meteorological Data
+[TXT]	13002.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	13008.txt	2025-06-10 19:25	100K	Standard Meteorological Data
+[TXT]	14048.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	14049.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	15001.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	15002.txt	2025-06-10 20:15	50K	Standard Meteorological Data
+[TXT]	15006.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	15009.txt	2025-06-10 20:25	44K	Standard Meteorological Data
+[TXT]	21414.dart	2025-06-10 18:25	127K	Water Column Height (DART) Data
+[TXT]	21415.dart	2025-06-10 18:25	131K	Water Column Height (DART) Data
+[TXT]	21416.dart	2025-06-10 18:20	140K	Water Column Height (DART) Data
+[TXT]	21418.dart	2025-06-10 18:20	112K	Water Column Height (DART) Data
+[TXT]	21419.dart	2025-06-10 18:25	130K	Water Column Height (DART) Data
+[TXT]	22101.drift	2025-06-10 19:25	85K	Standard Meteorological Data for Drifting Buoys
+[TXT]	22102.drift	2025-06-10 19:25	94K	Standard Meteorological Data for Drifting Buoys
+[TXT]	22103.drift	2025-06-10 20:25	92K	Standard Meteorological Data for Drifting Buoys
+[TXT]	22104.drift	2025-06-10 20:25	94K	Standard Meteorological Data for Drifting Buoys
+[TXT]	22105.drift	2025-06-10 20:25	92K	Standard Meteorological Data for Drifting Buoys
+[TXT]	22106.drift	2025-06-10 20:25	93K	Standard Meteorological Data for Drifting Buoys
+[TXT]	22107.drift	2025-05-31 23:25	54K	Standard Meteorological Data for Drifting Buoys
+[TXT]	22108.drift	2025-06-10 20:25	93K	Standard Meteorological Data for Drifting Buoys
+[TXT]	23001.txt	2025-06-10 20:15	43K	Standard Meteorological Data
+[TXT]	23003.txt	2025-06-10 20:15	44K	Standard Meteorological Data
+[TXT]	23007.txt	2025-06-10 18:30	44K	Standard Meteorological Data
+[TXT]	23008.txt	2025-06-10 19:25	100K	Standard Meteorological Data
+[TXT]	23009.txt	2025-06-10 18:35	44K	Standard Meteorological Data
+[TXT]	23010.txt	2025-06-10 19:25	100K	Standard Meteorological Data
+[TXT]	23012.txt	2025-06-10 20:15	46K	Standard Meteorological Data
+[TXT]	23013.txt	2025-05-06 06:20	36K	Standard Meteorological Data
+[TXT]	23014.txt	2025-06-10 20:15	48K	Standard Meteorological Data
+[TXT]	23016.txt	2025-06-10 20:15	48K	Standard Meteorological Data
+[TXT]	23019.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	23218.dart	2025-06-10 20:25	121K	Water Column Height (DART) Data
+[TXT]	23220.dart	2025-06-04 16:25	186	Water Column Height (DART) Data
+[TXT]	23223.dart	2025-06-10 20:25	120K	Water Column Height (DART) Data
+[TXT]	23226.dart	2025-06-10 20:25	121K	Water Column Height (DART) Data
+[TXT]	23228.dart	2025-06-10 18:50	129K	Water Column Height (DART) Data
+[TXT]	23401.dart	2025-06-10 18:40	133K	Water Column Height (DART) Data
+[TXT]	23461.dart	2025-06-10 18:40	133K	Water Column Height (DART) Data
+[TXT]	31003.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	31004.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	31006.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	32401.dart	2025-05-04 00:40	130K	Water Column Height (DART) Data
+[TXT]	32402.dart	2025-06-10 18:25	133K	Water Column Height (DART) Data
+[TXT]	32403.dart	2025-06-08 06:20	94K	Water Column Height (DART) Data
+[TXT]	32404.dart	2025-06-10 18:25	89K	Water Column Height (DART) Data
+[TXT]	32411.dart	2025-06-08 06:25	131K	Water Column Height (DART) Data
+[TXT]	32413.dart	2025-06-10 18:25	133K	Water Column Height (DART) Data
+[TXT]	34420.dart	2025-06-10 18:30	132K	Water Column Height (DART) Data
+[TXT]	41001.data_spec	2025-06-10 20:15	801K	Raw Spectral Wave Data
+[TXT]	41001.spec	2025-06-10 20:10	84K	Spectral Wave Summary Data
+[TXT]	41001.supl	2025-06-10 20:20	172K	Supplemental Measurements Data
+[TXT]	41001.swdir	2025-06-10 20:15	784K	Spectral Wave Data (alpha1)
+[TXT]	41001.swdir2	2025-06-10 20:15	782K	Spectral Wave Data (alpha2)
+[TXT]	41001.swr1	2025-06-10 20:15	760K	Spectral Wave Data (r1)
+[TXT]	41001.swr2	2025-06-10 20:15	760K	Spectral Wave Data (r2)
+[TXT]	41001.txt	2025-06-10 20:20	338K	Standard Meteorological Data
+[TXT]	41002.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41002.spec	2025-06-10 20:10	146K	Spectral Wave Summary Data
+[TXT]	41002.supl	2025-06-10 20:20	298K	Supplemental Measurements Data
+[TXT]	41002.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	41002.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	41002.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41002.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41002.txt	2025-06-10 20:20	584K	Standard Meteorological Data
+[TXT]	41004.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41004.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	41004.supl	2025-06-10 20:25	306K	Supplemental Measurements Data
+[TXT]	41004.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41004.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41004.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41004.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41004.txt	2025-06-10 20:25	599K	Standard Meteorological Data
+[TXT]	41008.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41008.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41008.supl	2025-06-10 20:25	307K	Supplemental Measurements Data
+[TXT]	41008.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41008.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41008.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41008.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41008.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	41009.data_spec	2025-06-10 20:15	849K	Raw Spectral Wave Data
+[TXT]	41009.spec	2025-06-10 20:10	89K	Spectral Wave Summary Data
+[TXT]	41009.supl	2025-06-10 20:25	215K	Supplemental Measurements Data
+[TXT]	41009.swdir	2025-06-10 20:15	823K	Spectral Wave Data (alpha1)
+[TXT]	41009.swdir2	2025-06-10 20:15	824K	Spectral Wave Data (alpha2)
+[TXT]	41009.swr1	2025-06-10 20:15	803K	Spectral Wave Data (r1)
+[TXT]	41009.swr2	2025-06-10 20:15	803K	Spectral Wave Data (r2)
+[TXT]	41009.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	41010.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41010.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41010.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	41010.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41010.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41010.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41010.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41010.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	41013.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41013.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	41013.supl	2025-06-10 20:20	305K	Supplemental Measurements Data
+[TXT]	41013.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41013.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41013.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41013.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41013.txt	2025-06-10 20:20	598K	Standard Meteorological Data
+[TXT]	41024.ocean	2025-06-10 19:35	87K	Oceanographic Data
+[TXT]	41024.txt	2025-06-10 19:35	101K	Standard Meteorological Data
+[TXT]	41025.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41025.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	41025.supl	2025-06-10 20:25	304K	Supplemental Measurements Data
+[TXT]	41025.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41025.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41025.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41025.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41025.txt	2025-06-10 20:25	595K	Standard Meteorological Data
+[TXT]	41029.ocean	2025-06-10 19:35	87K	Oceanographic Data
+[TXT]	41029.txt	2025-06-10 19:35	101K	Standard Meteorological Data
+[TXT]	41033.ocean	2025-06-10 19:35	87K	Oceanographic Data
+[TXT]	41033.txt	2025-06-10 19:35	101K	Standard Meteorological Data
+[TXT]	41037.ocean	2025-06-10 19:35	86K	Oceanographic Data
+[TXT]	41037.txt	2025-06-10 19:35	100K	Standard Meteorological Data
+[TXT]	41038.ocean	2025-06-10 19:35	86K	Oceanographic Data
+[TXT]	41038.txt	2025-06-10 19:35	101K	Standard Meteorological Data
+[TXT]	41040.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41040.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41040.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	41040.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	41040.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	41040.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41040.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41040.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	41043.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41043.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41043.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	41043.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	41043.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	41043.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41043.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41043.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	41044.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41044.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41044.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	41044.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	41044.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	41044.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41044.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41044.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	41046.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41046.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41046.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	41046.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41046.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41046.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41046.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41046.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	41047.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41047.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41047.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	41047.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41047.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41047.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41047.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41047.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	41049.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	41049.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41049.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	41049.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41049.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41049.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	41049.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	41049.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	41052.adcp	2025-06-10 20:25	754K	Acoustic Doppler Current Profiler Data
+[TXT]	41052.ocean	2025-06-10 20:25	87K	Oceanographic Data
+[TXT]	41052.spec	2025-06-10 20:25	75K	Spectral Wave Summary Data
+[TXT]	41052.txt	2025-06-10 20:25	599K	Standard Meteorological Data
+[TXT]	41053.adcp	2025-06-10 20:25	542K	Acoustic Doppler Current Profiler Data
+[TXT]	41053.ocean	2025-06-10 20:25	87K	Oceanographic Data
+[TXT]	41053.spec	2025-06-10 20:25	75K	Spectral Wave Summary Data
+[TXT]	41053.txt	2025-06-10 20:25	604K	Standard Meteorological Data
+[TXT]	41056.adcp	2025-06-10 20:25	503K	Acoustic Doppler Current Profiler Data
+[TXT]	41056.spec	2025-06-10 20:25	75K	Spectral Wave Summary Data
+[TXT]	41056.txt	2025-06-10 20:25	598K	Standard Meteorological Data
+[TXT]	41064.ocean	2025-06-10 19:35	54K	Oceanographic Data
+[TXT]	41064.txt	2025-06-10 19:35	63K	Standard Meteorological Data
+[TXT]	41065.spec	2025-06-10 19:35	37K	Spectral Wave Summary Data
+[TXT]	41065.txt	2025-06-10 19:35	50K	Standard Meteorological Data
+[TXT]	41066.ocean	2025-06-02 23:30	87K	Oceanographic Data
+[TXT]	41066.txt	2025-06-10 19:35	100K	Standard Meteorological Data
+[TXT]	41067.spec	2025-06-10 20:05	207K	Spectral Wave Summary Data
+[TXT]	41067.txt	2025-06-10 20:05	784K	Standard Meteorological Data
+[TXT]	41068.ocean	2025-06-10 19:35	87K	Oceanographic Data
+[TXT]	41068.txt	2025-06-10 19:35	101K	Standard Meteorological Data
+[TXT]	41069.ocean	2025-05-17 18:35	87K	Oceanographic Data
+[TXT]	41069.txt	2025-05-17 18:40	101K	Standard Meteorological Data
+[TXT]	41070.spec	2025-06-10 20:20	75K	Spectral Wave Summary Data
+[TXT]	41070.txt	2025-06-10 20:20	101K	Standard Meteorological Data
+[TXT]	41076.spec	2025-05-25 06:15	74K	Spectral Wave Summary Data
+[TXT]	41076.txt	2025-05-25 06:16	100K	Standard Meteorological Data
+[TXT]	41082.ocean	2025-06-10 19:55	431K	Oceanographic Data
+[TXT]	41082.spec	2025-06-10 19:55	62K	Spectral Wave Summary Data
+[TXT]	41082.srad	2025-06-10 19:55	202K	Solar Radiation Data
+[TXT]	41082.txt	2025-06-10 19:55	497K	Standard Meteorological Data
+[TXT]	41083.ocean	2025-06-10 19:55	376K	Oceanographic Data
+[TXT]	41083.spec	2025-06-10 19:55	55K	Spectral Wave Summary Data
+[TXT]	41083.srad	2025-06-10 19:55	176K	Solar Radiation Data
+[TXT]	41083.txt	2025-06-10 19:55	434K	Standard Meteorological Data
+[TXT]	41108.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	41108.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41108.swdir	2025-06-10 20:10	970K	Spectral Wave Data (alpha1)
+[TXT]	41108.swdir2	2025-06-10 20:10	967K	Spectral Wave Data (alpha2)
+[TXT]	41108.swr1	2025-06-10 20:10	910K	Spectral Wave Data (r1)
+[TXT]	41108.swr2	2025-06-10 20:10	910K	Spectral Wave Data (r2)
+[TXT]	41108.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	41110.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	41110.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41110.swdir	2025-06-10 20:10	972K	Spectral Wave Data (alpha1)
+[TXT]	41110.swdir2	2025-06-10 20:10	969K	Spectral Wave Data (alpha2)
+[TXT]	41110.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	41110.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	41110.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	41112.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	41112.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41112.swdir	2025-06-10 20:10	970K	Spectral Wave Data (alpha1)
+[TXT]	41112.swdir2	2025-06-10 20:10	970K	Spectral Wave Data (alpha2)
+[TXT]	41112.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	41112.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	41112.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	41113.data_spec	2025-06-10 20:20	1.0M	Raw Spectral Wave Data
+[TXT]	41113.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	41113.swdir	2025-06-10 20:20	965K	Spectral Wave Data (alpha1)
+[TXT]	41113.swdir2	2025-06-10 20:20	967K	Spectral Wave Data (alpha2)
+[TXT]	41113.swr1	2025-06-10 20:20	913K	Spectral Wave Data (r1)
+[TXT]	41113.swr2	2025-06-10 20:20	913K	Spectral Wave Data (r2)
+[TXT]	41113.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	41114.data_spec	2025-06-10 20:10	821K	Raw Spectral Wave Data
+[TXT]	41114.spec	2025-06-10 20:10	125K	Spectral Wave Summary Data
+[TXT]	41114.swdir	2025-06-10 20:10	792K	Spectral Wave Data (alpha1)
+[TXT]	41114.swdir2	2025-06-10 20:10	794K	Spectral Wave Data (alpha2)
+[TXT]	41114.swr1	2025-06-10 20:10	758K	Spectral Wave Data (r1)
+[TXT]	41114.swr2	2025-06-10 20:10	758K	Spectral Wave Data (r2)
+[TXT]	41114.txt	2025-06-10 20:10	167K	Standard Meteorological Data
+[TXT]	41115.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	41115.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41115.swdir	2025-06-10 20:10	918K	Spectral Wave Data (alpha1)
+[TXT]	41115.swdir2	2025-06-10 20:10	918K	Spectral Wave Data (alpha2)
+[TXT]	41115.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	41115.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	41115.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	41117.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	41117.spec	2025-06-10 20:05	150K	Spectral Wave Summary Data
+[TXT]	41117.swdir	2025-06-10 20:10	961K	Spectral Wave Data (alpha1)
+[TXT]	41117.swdir2	2025-06-10 20:10	964K	Spectral Wave Data (alpha2)
+[TXT]	41117.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	41117.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	41117.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	41120.adcp	2025-06-10 20:25	72K	Acoustic Doppler Current Profiler Data
+[TXT]	41120.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	41120.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	41120.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	41120.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	41120.swr1	2025-06-10 20:25	1.4M	Spectral Wave Data (r1)
+[TXT]	41120.swr2	2025-06-10 20:25	1.4M	Spectral Wave Data (r2)
+[TXT]	41120.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	41122.data_spec	2025-06-10 20:10	766K	Raw Spectral Wave Data
+[TXT]	41122.spec	2025-06-10 20:10	115K	Spectral Wave Summary Data
+[TXT]	41122.swdir	2025-06-10 20:10	654K	Spectral Wave Data (alpha1)
+[TXT]	41122.swdir2	2025-06-10 20:10	658K	Spectral Wave Data (alpha2)
+[TXT]	41122.swr1	2025-06-10 20:10	621K	Spectral Wave Data (r1)
+[TXT]	41122.swr2	2025-06-10 20:10	621K	Spectral Wave Data (r2)
+[TXT]	41122.txt	2025-06-10 20:10	158K	Standard Meteorological Data
+[TXT]	41159.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	41159.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	41159.swdir	2025-06-10 20:10	972K	Spectral Wave Data (alpha1)
+[TXT]	41159.swdir2	2025-06-10 20:10	968K	Spectral Wave Data (alpha2)
+[TXT]	41159.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	41159.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	41159.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	41420.dart	2025-06-10 18:25	133K	Water Column Height (DART) Data
+[TXT]	41421.dart	2025-06-10 18:20	203K	Water Column Height (DART) Data
+[TXT]	41425.dart	2025-06-10 18:25	132K	Water Column Height (DART) Data
+[TXT]	42001.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42001.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42001.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42001.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	42001.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	42001.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42001.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42001.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42002.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42002.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42002.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42002.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	42002.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	42002.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42002.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42002.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42012.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42012.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42012.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42012.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	42012.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	42012.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42012.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42012.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42013.adcp	2025-06-10 19:50	358K	Acoustic Doppler Current Profiler Data
+[TXT]	42013.ocean	2025-06-10 20:20	174K	Oceanographic Data
+[TXT]	42013.srad	2025-06-10 20:20	81K	Solar Radiation Data
+[TXT]	42013.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	42019.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42019.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42019.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42019.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	42019.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	42019.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42019.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42019.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42020.data_spec	2025-06-08 23:05	1.2M	Raw Spectral Wave Data
+[TXT]	42020.spec	2025-06-08 23:05	125K	Spectral Wave Summary Data
+[TXT]	42020.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42020.swdir	2025-06-08 23:05	1.1M	Spectral Wave Data (alpha1)
+[TXT]	42020.swdir2	2025-06-08 23:05	1.1M	Spectral Wave Data (alpha2)
+[TXT]	42020.swr1	2025-06-08 23:05	1.1M	Spectral Wave Data (r1)
+[TXT]	42020.swr2	2025-06-08 23:05	1.1M	Spectral Wave Data (r2)
+[TXT]	42020.txt	2025-06-10 20:20	602K	Standard Meteorological Data
+[TXT]	42022.txt	2025-06-10 20:20	202K	Standard Meteorological Data
+[TXT]	42023.adcp	2025-06-10 18:20	612K	Acoustic Doppler Current Profiler Data
+[TXT]	42023.ocean	2025-06-10 20:20	174K	Oceanographic Data
+[TXT]	42023.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	42026.adcp	2025-06-10 20:00	1.1M	Acoustic Doppler Current Profiler Data
+[TXT]	42026.ocean	2025-06-10 20:20	174K	Oceanographic Data
+[TXT]	42026.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	42035.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42035.spec	2025-06-10 20:15	150K	Spectral Wave Summary Data
+[TXT]	42035.supl	2025-06-10 20:25	307K	Supplemental Measurements Data
+[TXT]	42035.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	42035.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	42035.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42035.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42035.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	42036.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42036.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	42036.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	42036.swdir	2025-06-10 20:15	1.2M	Spectral Wave Data (alpha1)
+[TXT]	42036.swdir2	2025-06-10 20:15	1.2M	Spectral Wave Data (alpha2)
+[TXT]	42036.swr1	2025-06-10 20:15	1.2M	Spectral Wave Data (r1)
+[TXT]	42036.swr2	2025-06-10 20:15	1.2M	Spectral Wave Data (r2)
+[TXT]	42036.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	42040.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42040.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42040.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42040.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42055.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42055.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42055.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42055.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	42055.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	42055.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42055.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42055.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42056.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42056.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	42056.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42056.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	42056.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	42056.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42056.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42056.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42057.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42057.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42057.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42057.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	42057.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	42057.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42057.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42057.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42058.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42058.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42058.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42058.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	42058.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	42058.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42058.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42058.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	42059.data_spec	2025-05-09 16:04	1.1M	Raw Spectral Wave Data
+[TXT]	42059.spec	2025-05-09 16:04	118K	Spectral Wave Summary Data
+[TXT]	42059.supl	2025-05-09 16:06	242K	Supplemental Measurements Data
+[TXT]	42059.swdir	2025-05-09 16:07	1.0M	Spectral Wave Data (alpha1)
+[TXT]	42059.swdir2	2025-05-09 16:07	1.1M	Spectral Wave Data (alpha2)
+[TXT]	42059.swr1	2025-05-09 16:08	1.0M	Spectral Wave Data (r1)
+[TXT]	42059.swr2	2025-05-09 16:08	1.0M	Spectral Wave Data (r2)
+[TXT]	42059.txt	2025-05-09 16:09	475K	Standard Meteorological Data
+[TXT]	42060.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	42060.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42060.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	42060.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	42060.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	42060.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	42060.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	42060.txt	2025-06-10 20:20	602K	Standard Meteorological Data
+[TXT]	42067.txt	2025-06-10 20:15	568K	Standard Meteorological Data
+[TXT]	42084.adcp	2025-06-10 20:15	68K	Acoustic Doppler Current Profiler Data
+[TXT]	42084.data_spec	2025-06-10 20:20	1.4M	Raw Spectral Wave Data
+[TXT]	42084.spec	2025-06-10 20:15	141K	Spectral Wave Summary Data
+[TXT]	42084.swdir	2025-06-10 20:20	1.3M	Spectral Wave Data (alpha1)
+[TXT]	42084.swdir2	2025-06-10 20:20	1.3M	Spectral Wave Data (alpha2)
+[TXT]	42084.swr1	2025-06-10 20:20	1.2M	Spectral Wave Data (r1)
+[TXT]	42084.swr2	2025-06-10 20:20	1.2M	Spectral Wave Data (r2)
+[TXT]	42084.txt	2025-06-10 20:20	187K	Standard Meteorological Data
+[TXT]	42085.adcp	2025-06-10 19:30	268K	Acoustic Doppler Current Profiler Data
+[TXT]	42085.ocean	2025-06-10 20:25	87K	Oceanographic Data
+[TXT]	42085.spec	2025-06-10 20:25	75K	Spectral Wave Summary Data
+[TXT]	42085.txt	2025-06-10 20:25	585K	Standard Meteorological Data
+[TXT]	42091.data_spec	2025-05-16 03:05	972K	Raw Spectral Wave Data
+[TXT]	42091.spec	2025-05-16 03:05	148K	Spectral Wave Summary Data
+[TXT]	42091.swdir	2025-05-16 03:05	950K	Spectral Wave Data (alpha1)
+[TXT]	42091.swdir2	2025-05-16 03:05	946K	Spectral Wave Data (alpha2)
+[TXT]	42091.swr1	2025-05-16 03:05	891K	Spectral Wave Data (r1)
+[TXT]	42091.swr2	2025-05-16 03:05	891K	Spectral Wave Data (r2)
+[TXT]	42091.txt	2025-05-16 03:10	197K	Standard Meteorological Data
+[TXT]	42092.data_spec	2025-06-10 20:25	952K	Raw Spectral Wave Data
+[TXT]	42092.spec	2025-06-10 20:25	95K	Spectral Wave Summary Data
+[TXT]	42092.swdir	2025-06-10 20:25	942K	Spectral Wave Data (alpha1)
+[TXT]	42092.swdir2	2025-06-10 20:25	939K	Spectral Wave Data (alpha2)
+[TXT]	42092.swr1	2025-06-10 20:25	881K	Spectral Wave Data (r1)
+[TXT]	42092.swr2	2025-06-10 20:25	881K	Spectral Wave Data (r2)
+[TXT]	42092.txt	2025-06-10 20:25	128K	Standard Meteorological Data
+[TXT]	42095.adcp	2025-06-10 20:25	72K	Acoustic Doppler Current Profiler Data
+[TXT]	42095.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	42095.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	42095.swdir	2025-06-10 20:25	1.3M	Spectral Wave Data (alpha1)
+[TXT]	42095.swdir2	2025-06-10 20:25	1.3M	Spectral Wave Data (alpha2)
+[TXT]	42095.swr1	2025-06-10 20:25	1.3M	Spectral Wave Data (r1)
+[TXT]	42095.swr2	2025-06-10 20:25	1.3M	Spectral Wave Data (r2)
+[TXT]	42095.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	42097.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	42097.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42097.swdir	2025-06-10 20:10	971K	Spectral Wave Data (alpha1)
+[TXT]	42097.swdir2	2025-06-10 20:10	969K	Spectral Wave Data (alpha2)
+[TXT]	42097.swr1	2025-06-10 20:10	912K	Spectral Wave Data (r1)
+[TXT]	42097.swr2	2025-06-10 20:10	911K	Spectral Wave Data (r2)
+[TXT]	42097.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	42098.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	42098.spec	2025-06-10 20:05	150K	Spectral Wave Summary Data
+[TXT]	42098.swdir	2025-06-10 20:10	920K	Spectral Wave Data (alpha1)
+[TXT]	42098.swdir2	2025-06-10 20:10	919K	Spectral Wave Data (alpha2)
+[TXT]	42098.swr1	2025-06-10 20:10	858K	Spectral Wave Data (r1)
+[TXT]	42098.swr2	2025-06-10 20:10	858K	Spectral Wave Data (r2)
+[TXT]	42098.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	42099.adcp	2025-06-10 20:20	45K	Acoustic Doppler Current Profiler Data
+[TXT]	42099.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	42099.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	42099.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	42099.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	42099.swr1	2025-06-10 20:25	1.3M	Spectral Wave Data (r1)
+[TXT]	42099.swr2	2025-06-10 20:25	1.3M	Spectral Wave Data (r2)
+[TXT]	42099.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	42354.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	42354.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	42354.swdir	2025-06-10 20:10	946K	Spectral Wave Data (alpha1)
+[TXT]	42354.swdir2	2025-06-10 20:10	945K	Spectral Wave Data (alpha2)
+[TXT]	42354.swr1	2025-06-10 20:10	887K	Spectral Wave Data (r1)
+[TXT]	42354.swr2	2025-06-10 20:10	887K	Spectral Wave Data (r2)
+[TXT]	42354.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	42407.dart	2025-06-10 18:25	126K	Water Column Height (DART) Data
+[TXT]	42409.dart	2025-06-10 18:20	132K	Water Column Height (DART) Data
+[TXT]	43412.dart	2025-06-10 18:25	133K	Water Column Height (DART) Data
+[TXT]	43413.dart	2025-06-10 18:25	133K	Water Column Height (DART) Data
+[TXT]	44007.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	44007.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44007.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	44007.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	44007.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	44007.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	44007.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	44007.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	44008.data_spec	2025-06-10 20:15	1.0M	Raw Spectral Wave Data
+[TXT]	44008.spec	2025-06-10 20:10	104K	Spectral Wave Summary Data
+[TXT]	44008.supl	2025-06-10 20:20	213K	Supplemental Measurements Data
+[TXT]	44008.swdir	2025-06-10 20:15	1.0M	Spectral Wave Data (alpha1)
+[TXT]	44008.swdir2	2025-06-10 20:15	972K	Spectral Wave Data (alpha2)
+[TXT]	44008.swr1	2025-06-10 20:15	944K	Spectral Wave Data (r1)
+[TXT]	44008.swr2	2025-06-10 20:15	944K	Spectral Wave Data (r2)
+[TXT]	44008.txt	2025-06-10 20:20	417K	Standard Meteorological Data
+[TXT]	44009.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	44009.spec	2025-06-10 20:15	149K	Spectral Wave Summary Data
+[TXT]	44009.supl	2025-06-10 20:20	304K	Supplemental Measurements Data
+[TXT]	44009.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	44009.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	44009.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	44009.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	44009.txt	2025-06-10 20:20	596K	Standard Meteorological Data
+[TXT]	44011.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	44011.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	44011.supl	2025-06-10 20:20	304K	Supplemental Measurements Data
+[TXT]	44011.swdir	2025-06-10 20:15	937K	Spectral Wave Data (alpha1)
+[TXT]	44011.swdir2	2025-06-10 20:15	935K	Spectral Wave Data (alpha2)
+[TXT]	44011.swr1	2025-06-10 20:15	909K	Spectral Wave Data (r1)
+[TXT]	44011.swr2	2025-06-10 20:15	909K	Spectral Wave Data (r2)
+[TXT]	44011.txt	2025-06-10 20:20	596K	Standard Meteorological Data
+[TXT]	44013.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	44013.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	44013.supl	2025-06-10 20:15	307K	Supplemental Measurements Data
+[TXT]	44013.swdir	2025-06-10 20:15	1.2M	Spectral Wave Data (alpha1)
+[TXT]	44013.swdir2	2025-06-10 20:15	1.2M	Spectral Wave Data (alpha2)
+[TXT]	44013.swr1	2025-06-10 20:15	1.2M	Spectral Wave Data (r1)
+[TXT]	44013.swr2	2025-06-10 20:15	1.2M	Spectral Wave Data (r2)
+[TXT]	44013.txt	2025-06-10 20:15	601K	Standard Meteorological Data
+[TXT]	44014.data_spec	2025-06-10 20:05	1.4M	Raw Spectral Wave Data
+[TXT]	44014.spec	2025-06-10 20:00	148K	Spectral Wave Summary Data
+[TXT]	44014.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	44014.swdir	2025-06-10 20:05	1.3M	Spectral Wave Data (alpha1)
+[TXT]	44014.swdir2	2025-06-10 20:05	1.3M	Spectral Wave Data (alpha2)
+[TXT]	44014.swr1	2025-06-10 20:05	1.3M	Spectral Wave Data (r1)
+[TXT]	44014.swr2	2025-06-10 20:05	1.3M	Spectral Wave Data (r2)
+[TXT]	44014.txt	2025-06-10 20:20	602K	Standard Meteorological Data
+[TXT]	44020.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	44020.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44020.supl	2025-06-10 20:15	307K	Supplemental Measurements Data
+[TXT]	44020.swdir	2025-06-10 20:15	1.0M	Spectral Wave Data (alpha1)
+[TXT]	44020.swdir2	2025-06-10 20:15	1.0M	Spectral Wave Data (alpha2)
+[TXT]	44020.swr1	2025-06-10 20:15	1.0M	Spectral Wave Data (r1)
+[TXT]	44020.swr2	2025-06-10 20:15	1.0M	Spectral Wave Data (r2)
+[TXT]	44020.txt	2025-06-10 20:15	600K	Standard Meteorological Data
+[TXT]	44025.data_spec	2025-06-04 00:15	1.0M	Raw Spectral Wave Data
+[TXT]	44025.spec	2025-06-04 00:15	104K	Spectral Wave Summary Data
+[TXT]	44025.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	44025.swdir	2025-06-04 00:15	1.0M	Spectral Wave Data (alpha1)
+[TXT]	44025.swdir2	2025-06-04 00:15	1.0M	Spectral Wave Data (alpha2)
+[TXT]	44025.swr1	2025-06-04 00:15	939K	Spectral Wave Data (r1)
+[TXT]	44025.swr2	2025-06-04 00:15	939K	Spectral Wave Data (r2)
+[TXT]	44025.txt	2025-06-10 20:20	602K	Standard Meteorological Data
+[TXT]	44027.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	44027.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44027.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	44027.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	44027.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	44027.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	44027.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	44027.txt	2025-06-10 20:20	602K	Standard Meteorological Data
+[TXT]	44029.adcp	2025-06-03 12:15	275K	Acoustic Doppler Current Profiler Data
+[TXT]	44029.txt	2025-06-10 20:05	267K	Standard Meteorological Data
+[TXT]	44030.adcp	2025-06-03 12:15	256K	Acoustic Doppler Current Profiler Data
+[TXT]	44030.ocean	2025-06-03 12:15	83K	Oceanographic Data
+[TXT]	44030.txt	2025-06-10 20:05	267K	Standard Meteorological Data
+[TXT]	44032.txt	2025-06-10 20:05	261K	Standard Meteorological Data
+[TXT]	44033.adcp	2025-06-03 12:15	453K	Acoustic Doppler Current Profiler Data
+[TXT]	44033.ocean	2025-05-27 17:15	13K	Oceanographic Data
+[TXT]	44033.txt	2025-06-10 20:05	267K	Standard Meteorological Data
+[TXT]	44034.adcp	2025-06-03 12:15	422K	Acoustic Doppler Current Profiler Data
+[TXT]	44034.txt	2025-06-10 20:05	267K	Standard Meteorological Data
+[TXT]	44042.adcp	2025-06-10 20:20	291K	Acoustic Doppler Current Profiler Data
+[TXT]	44042.ocean	2025-06-10 20:20	674K	Oceanographic Data
+[TXT]	44042.txt	2025-06-10 20:20	779K	Standard Meteorological Data
+[TXT]	44056.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	44056.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44056.swdir	2025-06-10 20:10	956K	Spectral Wave Data (alpha1)
+[TXT]	44056.swdir2	2025-06-10 20:10	957K	Spectral Wave Data (alpha2)
+[TXT]	44056.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	44056.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	44056.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	44058.adcp	2025-06-10 20:20	293K	Acoustic Doppler Current Profiler Data
+[TXT]	44058.txt	2025-06-10 20:20	783K	Standard Meteorological Data
+[TXT]	44062.adcp	2025-06-02 13:25	186K	Acoustic Doppler Current Profiler Data
+[TXT]	44062.ocean	2025-06-10 20:20	628K	Oceanographic Data
+[TXT]	44062.txt	2025-06-10 20:20	725K	Standard Meteorological Data
+[TXT]	44063.adcp	2025-05-16 15:30	281K	Acoustic Doppler Current Profiler Data
+[TXT]	44063.ocean	2025-06-10 20:20	675K	Oceanographic Data
+[TXT]	44063.txt	2025-06-10 20:20	780K	Standard Meteorological Data
+[TXT]	44065.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	44065.spec	2025-06-10 20:15	150K	Spectral Wave Summary Data
+[TXT]	44065.supl	2025-06-10 20:25	307K	Supplemental Measurements Data
+[TXT]	44065.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	44065.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	44065.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	44065.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	44065.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	44072.adcp	2025-06-10 20:20	80K	Acoustic Doppler Current Profiler Data
+[TXT]	44072.ocean	2025-06-10 20:20	667K	Oceanographic Data
+[TXT]	44072.txt	2025-06-10 20:20	770K	Standard Meteorological Data
+[TXT]	44073.ocean	2025-06-10 19:35	369K	Oceanographic Data
+[TXT]	44073.txt	2025-06-10 19:40	429K	Standard Meteorological Data
+[TXT]	44078.ocean	2025-06-10 19:55	357K	Oceanographic Data
+[TXT]	44078.spec	2025-06-10 19:55	51K	Spectral Wave Summary Data
+[TXT]	44078.srad	2025-06-10 19:55	168K	Solar Radiation Data
+[TXT]	44078.txt	2025-06-10 19:55	413K	Standard Meteorological Data
+[TXT]	44079.ocean	2025-06-10 19:55	421K	Oceanographic Data
+[TXT]	44079.spec	2025-06-10 19:55	61K	Spectral Wave Summary Data
+[TXT]	44079.srad	2025-06-10 19:55	197K	Solar Radiation Data
+[TXT]	44079.txt	2025-06-10 19:55	485K	Standard Meteorological Data
+[TXT]	44080.ocean	2025-06-10 20:25	94K	Oceanographic Data
+[TXT]	44080.spec	2025-06-10 20:20	63K	Spectral Wave Summary Data
+[TXT]	44080.txt	2025-06-10 20:20	109K	Standard Meteorological Data
+[TXT]	44084.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	44084.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44084.swdir	2025-06-10 20:10	955K	Spectral Wave Data (alpha1)
+[TXT]	44084.swdir2	2025-06-10 20:10	954K	Spectral Wave Data (alpha2)
+[TXT]	44084.swr1	2025-06-10 20:10	911K	Spectral Wave Data (r1)
+[TXT]	44084.swr2	2025-06-10 20:10	911K	Spectral Wave Data (r2)
+[TXT]	44084.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	44085.adcp	2025-06-10 20:25	71K	Acoustic Doppler Current Profiler Data
+[TXT]	44085.data_spec	2025-06-10 20:25	1.4M	Raw Spectral Wave Data
+[TXT]	44085.spec	2025-06-10 20:25	148K	Spectral Wave Summary Data
+[TXT]	44085.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	44085.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	44085.swr1	2025-06-10 20:25	1.3M	Spectral Wave Data (r1)
+[TXT]	44085.swr2	2025-06-10 20:25	1.3M	Spectral Wave Data (r2)
+[TXT]	44085.txt	2025-06-10 20:25	198K	Standard Meteorological Data
+[TXT]	44086.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	44086.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44086.swdir	2025-06-10 20:10	962K	Spectral Wave Data (alpha1)
+[TXT]	44086.swdir2	2025-06-10 20:10	963K	Spectral Wave Data (alpha2)
+[TXT]	44086.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	44086.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	44086.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	44088.adcp	2025-06-10 20:25	69K	Acoustic Doppler Current Profiler Data
+[TXT]	44088.data_spec	2025-06-10 20:00	1.5M	Raw Spectral Wave Data
+[TXT]	44088.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	44088.swdir	2025-06-10 20:00	1.4M	Spectral Wave Data (alpha1)
+[TXT]	44088.swdir2	2025-06-10 20:00	1.4M	Spectral Wave Data (alpha2)
+[TXT]	44088.swr1	2025-06-10 20:00	1.3M	Spectral Wave Data (r1)
+[TXT]	44088.swr2	2025-06-10 20:00	1.3M	Spectral Wave Data (r2)
+[TXT]	44088.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	44089.data_spec	2025-06-10 20:10	243K	Raw Spectral Wave Data
+[TXT]	44089.spec	2025-06-10 20:10	37K	Spectral Wave Summary Data
+[TXT]	44089.swdir	2025-06-10 20:10	238K	Spectral Wave Data (alpha1)
+[TXT]	44089.swdir2	2025-06-10 20:10	238K	Spectral Wave Data (alpha2)
+[TXT]	44089.swr1	2025-06-10 20:10	224K	Spectral Wave Data (r1)
+[TXT]	44089.swr2	2025-06-10 20:10	224K	Spectral Wave Data (r2)
+[TXT]	44089.txt	2025-06-10 20:10	49K	Standard Meteorological Data
+[TXT]	44090.adcp	2025-06-10 20:20	70K	Acoustic Doppler Current Profiler Data
+[TXT]	44090.data_spec	2025-06-10 20:25	1.4M	Raw Spectral Wave Data
+[TXT]	44090.spec	2025-06-10 20:20	136K	Spectral Wave Summary Data
+[TXT]	44090.swdir	2025-06-10 20:25	1.0M	Spectral Wave Data (alpha1)
+[TXT]	44090.swdir2	2025-06-10 20:25	1.0M	Spectral Wave Data (alpha2)
+[TXT]	44090.swr1	2025-06-10 20:25	1.0M	Spectral Wave Data (r1)
+[TXT]	44090.swr2	2025-06-10 20:25	1.0M	Spectral Wave Data (r2)
+[TXT]	44090.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	44091.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	44091.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44091.swdir	2025-06-10 20:10	970K	Spectral Wave Data (alpha1)
+[TXT]	44091.swdir2	2025-06-10 20:10	968K	Spectral Wave Data (alpha2)
+[TXT]	44091.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	44091.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	44091.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	44095.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	44095.spec	2025-06-10 20:05	150K	Spectral Wave Summary Data
+[TXT]	44095.swdir	2025-06-10 20:10	963K	Spectral Wave Data (alpha1)
+[TXT]	44095.swdir2	2025-06-10 20:10	962K	Spectral Wave Data (alpha2)
+[TXT]	44095.swr1	2025-06-10 20:10	912K	Spectral Wave Data (r1)
+[TXT]	44095.swr2	2025-06-10 20:10	912K	Spectral Wave Data (r2)
+[TXT]	44095.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	44097.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	44097.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44097.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	44097.swdir2	2025-06-10 20:10	973K	Spectral Wave Data (alpha2)
+[TXT]	44097.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	44097.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	44097.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	44098.data_spec	2025-06-10 20:20	1.0M	Raw Spectral Wave Data
+[TXT]	44098.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	44098.swdir	2025-06-10 20:20	967K	Spectral Wave Data (alpha1)
+[TXT]	44098.swdir2	2025-06-10 20:20	966K	Spectral Wave Data (alpha2)
+[TXT]	44098.swr1	2025-06-10 20:20	913K	Spectral Wave Data (r1)
+[TXT]	44098.swr2	2025-06-10 20:20	913K	Spectral Wave Data (r2)
+[TXT]	44098.txt	2025-06-10 20:20	200K	Standard Meteorological Data
+[TXT]	44099.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	44099.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	44099.swdir	2025-06-10 20:10	968K	Spectral Wave Data (alpha1)
+[TXT]	44099.swdir2	2025-06-10 20:10	966K	Spectral Wave Data (alpha2)
+[TXT]	44099.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	44099.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	44099.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	44100.adcp	2025-06-10 20:25	71K	Acoustic Doppler Current Profiler Data
+[TXT]	44100.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	44100.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	44100.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	44100.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	44100.swr1	2025-06-10 20:25	1.4M	Spectral Wave Data (r1)
+[TXT]	44100.swr2	2025-06-10 20:25	1.4M	Spectral Wave Data (r2)
+[TXT]	44100.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	44137.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	44139.txt	2025-06-10 20:15	2.5K	Standard Meteorological Data
+[TXT]	44150.txt	2025-06-10 20:10	2.4K	Standard Meteorological Data
+[TXT]	44258.txt	2025-06-10 20:05	2.2K	Standard Meteorological Data
+[TXT]	44402.dart	2025-06-10 18:25	128K	Water Column Height (DART) Data
+[TXT]	44403.dart	2025-06-10 18:25	82K	Water Column Height (DART) Data
+[TXT]	44488.txt	2025-06-10 20:05	2.5K	Standard Meteorological Data
+[TXT]	44489.txt	2025-06-10 20:05	2.5K	Standard Meteorological Data
+[TXT]	45001.data_spec	2025-06-10 20:05	871K	Raw Spectral Wave Data
+[TXT]	45001.spec	2025-06-10 20:05	91K	Spectral Wave Summary Data
+[TXT]	45001.supl	2025-06-10 20:20	188K	Supplemental Measurements Data
+[TXT]	45001.swdir	2025-06-10 20:05	507K	Spectral Wave Data (alpha1)
+[TXT]	45001.swdir2	2025-06-10 20:05	507K	Spectral Wave Data (alpha2)
+[TXT]	45001.swr1	2025-06-10 20:05	508K	Spectral Wave Data (r1)
+[TXT]	45001.swr2	2025-06-10 20:05	508K	Spectral Wave Data (r2)
+[TXT]	45001.txt	2025-06-10 20:20	368K	Standard Meteorological Data
+[TXT]	45002.data_spec	2025-06-10 20:15	872K	Raw Spectral Wave Data
+[TXT]	45002.spec	2025-06-10 20:15	91K	Spectral Wave Summary Data
+[TXT]	45002.supl	2025-06-10 20:20	187K	Supplemental Measurements Data
+[TXT]	45002.swdir	2025-06-10 19:45	461K	Spectral Wave Data (alpha1)
+[TXT]	45002.swdir2	2025-06-10 19:45	460K	Spectral Wave Data (alpha2)
+[TXT]	45002.swr1	2025-06-10 19:45	461K	Spectral Wave Data (r1)
+[TXT]	45002.swr2	2025-06-10 19:45	461K	Spectral Wave Data (r2)
+[TXT]	45002.txt	2025-06-10 20:20	367K	Standard Meteorological Data
+[TXT]	45003.data_spec	2025-06-10 20:15	1.0M	Raw Spectral Wave Data
+[TXT]	45003.spec	2025-06-10 20:10	105K	Spectral Wave Summary Data
+[TXT]	45003.supl	2025-06-10 20:20	214K	Supplemental Measurements Data
+[TXT]	45003.swdir	2025-06-10 20:15	577K	Spectral Wave Data (alpha1)
+[TXT]	45003.swdir2	2025-06-10 20:15	577K	Spectral Wave Data (alpha2)
+[TXT]	45003.swr1	2025-06-10 20:15	576K	Spectral Wave Data (r1)
+[TXT]	45003.swr2	2025-06-10 20:15	576K	Spectral Wave Data (r2)
+[TXT]	45003.txt	2025-06-10 20:20	418K	Standard Meteorological Data
+[TXT]	45004.data_spec	2025-06-10 20:10	861K	Raw Spectral Wave Data
+[TXT]	45004.spec	2025-06-10 20:10	90K	Spectral Wave Summary Data
+[TXT]	45004.supl	2025-06-10 20:20	185K	Supplemental Measurements Data
+[TXT]	45004.swdir	2025-06-10 20:10	505K	Spectral Wave Data (alpha1)
+[TXT]	45004.swdir2	2025-06-10 20:10	505K	Spectral Wave Data (alpha2)
+[TXT]	45004.swr1	2025-06-10 20:10	506K	Spectral Wave Data (r1)
+[TXT]	45004.swr2	2025-06-10 20:10	506K	Spectral Wave Data (r2)
+[TXT]	45004.txt	2025-06-10 20:20	363K	Standard Meteorological Data
+[TXT]	45005.data_spec	2025-06-10 20:15	879K	Raw Spectral Wave Data
+[TXT]	45005.spec	2025-06-10 20:10	92K	Spectral Wave Summary Data
+[TXT]	45005.supl	2025-06-10 20:20	190K	Supplemental Measurements Data
+[TXT]	45005.swdir	2025-06-10 20:15	560K	Spectral Wave Data (alpha1)
+[TXT]	45005.swdir2	2025-06-10 20:15	560K	Spectral Wave Data (alpha2)
+[TXT]	45005.swr1	2025-06-10 20:15	561K	Spectral Wave Data (r1)
+[TXT]	45005.swr2	2025-06-10 20:15	561K	Spectral Wave Data (r2)
+[TXT]	45005.txt	2025-06-10 20:20	372K	Standard Meteorological Data
+[TXT]	45006.data_spec	2025-06-10 20:15	883K	Raw Spectral Wave Data
+[TXT]	45006.spec	2025-06-10 20:10	93K	Spectral Wave Summary Data
+[TXT]	45006.supl	2025-06-10 20:20	190K	Supplemental Measurements Data
+[TXT]	45006.swdir	2025-06-10 20:15	281K	Spectral Wave Data (alpha1)
+[TXT]	45006.swdir2	2025-06-10 20:15	281K	Spectral Wave Data (alpha2)
+[TXT]	45006.swr1	2025-06-10 20:15	285K	Spectral Wave Data (r1)
+[TXT]	45006.swr2	2025-06-10 20:15	285K	Spectral Wave Data (r2)
+[TXT]	45006.txt	2025-06-10 20:20	371K	Standard Meteorological Data
+[TXT]	45007.data_spec	2025-06-10 20:15	436K	Raw Spectral Wave Data
+[TXT]	45007.spec	2025-06-10 20:10	46K	Spectral Wave Summary Data
+[TXT]	45007.supl	2025-06-10 20:20	94K	Supplemental Measurements Data
+[TXT]	45007.swdir	2025-06-10 17:35	184K	Spectral Wave Data (alpha1)
+[TXT]	45007.swdir2	2025-06-10 17:35	184K	Spectral Wave Data (alpha2)
+[TXT]	45007.swr1	2025-06-10 17:35	186K	Spectral Wave Data (r1)
+[TXT]	45007.swr2	2025-06-10 17:35	186K	Spectral Wave Data (r2)
+[TXT]	45007.txt	2025-06-10 20:20	183K	Standard Meteorological Data
+[TXT]	45008.data_spec	2025-06-10 20:15	1.0M	Raw Spectral Wave Data
+[TXT]	45008.spec	2025-06-10 20:10	102K	Spectral Wave Summary Data
+[TXT]	45008.supl	2025-06-10 20:20	209K	Supplemental Measurements Data
+[TXT]	45008.swdir	2025-06-10 20:15	547K	Spectral Wave Data (alpha1)
+[TXT]	45008.swdir2	2025-06-10 20:15	547K	Spectral Wave Data (alpha2)
+[TXT]	45008.swr1	2025-06-10 20:15	546K	Spectral Wave Data (r1)
+[TXT]	45008.swr2	2025-06-10 20:15	546K	Spectral Wave Data (r2)
+[TXT]	45008.txt	2025-06-10 20:20	409K	Standard Meteorological Data
+[TXT]	45012.data_spec	2025-06-10 20:15	1.3M	Raw Spectral Wave Data
+[TXT]	45012.spec	2025-06-10 20:10	135K	Spectral Wave Summary Data
+[TXT]	45012.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	45012.swdir	2025-06-10 20:15	541K	Spectral Wave Data (alpha1)
+[TXT]	45012.swdir2	2025-06-10 20:15	541K	Spectral Wave Data (alpha2)
+[TXT]	45012.swr1	2025-06-10 20:15	544K	Spectral Wave Data (r1)
+[TXT]	45012.swr2	2025-06-10 20:15	544K	Spectral Wave Data (r2)
+[TXT]	45012.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	45013.adcp	2025-06-10 20:10	369K	Acoustic Doppler Current Profiler Data
+[TXT]	45013.spec	2025-06-10 20:10	151K	Spectral Wave Summary Data
+[TXT]	45013.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	45014.adcp	2025-06-09 12:15	242K	Acoustic Doppler Current Profiler Data
+[TXT]	45014.ocean	2025-06-10 20:10	174K	Oceanographic Data
+[TXT]	45014.spec	2025-06-10 20:10	151K	Spectral Wave Summary Data
+[TXT]	45014.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	45022.ocean	2025-06-10 20:20	44K	Oceanographic Data
+[TXT]	45022.spec	2025-06-10 20:20	38K	Spectral Wave Summary Data
+[TXT]	45022.srad	2025-06-10 20:20	7.2K	Solar Radiation Data
+[TXT]	45022.txt	2025-06-10 20:20	51K	Standard Meteorological Data
+[TXT]	45023.ocean	2025-06-10 19:50	105K	Oceanographic Data
+[TXT]	45023.spec	2025-06-10 19:50	93K	Spectral Wave Summary Data
+[TXT]	45023.srad	2025-06-10 19:50	49K	Solar Radiation Data
+[TXT]	45023.txt	2025-06-10 19:50	125K	Standard Meteorological Data
+[TXT]	45025.spec	2025-06-10 19:50	93K	Spectral Wave Summary Data
+[TXT]	45025.srad	2025-06-10 19:50	49K	Solar Radiation Data
+[TXT]	45025.txt	2025-06-10 19:50	125K	Standard Meteorological Data
+[TXT]	45026.adcp	2025-06-10 20:20	2.0M	Acoustic Doppler Current Profiler Data
+[TXT]	45026.ocean	2025-06-10 20:20	509K	Oceanographic Data
+[TXT]	45026.spec	2025-06-10 20:20	440K	Spectral Wave Summary Data
+[TXT]	45026.txt	2025-06-10 20:25	588K	Standard Meteorological Data
+[TXT]	45027.ocean	2025-06-10 20:20	310K	Oceanographic Data
+[TXT]	45027.spec	2025-06-10 20:20	267K	Spectral Wave Summary Data
+[TXT]	45027.srad	2025-06-10 20:20	100K	Solar Radiation Data
+[TXT]	45027.txt	2025-06-10 20:20	358K	Standard Meteorological Data
+[TXT]	45028.ocean	2025-06-10 20:20	178K	Oceanographic Data
+[TXT]	45028.spec	2025-06-10 20:20	154K	Spectral Wave Summary Data
+[TXT]	45028.srad	2025-06-10 20:20	60K	Solar Radiation Data
+[TXT]	45028.txt	2025-06-10 20:25	206K	Standard Meteorological Data
+[TXT]	45029.ocean	2025-06-10 20:20	513K	Oceanographic Data
+[TXT]	45029.spec	2025-06-10 20:20	444K	Spectral Wave Summary Data
+[TXT]	45029.txt	2025-06-10 20:25	593K	Standard Meteorological Data
+[TXT]	45135.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45136.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45137.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45139.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45140.txt	2025-06-10 20:10	1.3K	Standard Meteorological Data
+[TXT]	45143.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45144.txt	2025-06-10 20:10	752	Standard Meteorological Data
+[TXT]	45145.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45147.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45148.txt	2025-05-21 18:35	2.4K	Standard Meteorological Data
+[TXT]	45149.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45151.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45152.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45154.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45159.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	45161.ocean	2025-06-10 20:15	100K	Oceanographic Data
+[TXT]	45161.spec	2025-06-10 20:15	92K	Spectral Wave Summary Data
+[TXT]	45161.txt	2025-06-10 20:20	125K	Standard Meteorological Data
+[TXT]	45164.ocean	2025-06-10 20:15	74K	Oceanographic Data
+[TXT]	45164.txt	2025-06-10 20:10	86K	Standard Meteorological Data
+[TXT]	45168.ocean	2025-06-10 20:20	454K	Oceanographic Data
+[TXT]	45168.spec	2025-06-10 20:20	390K	Spectral Wave Summary Data
+[TXT]	45168.txt	2025-06-10 20:25	525K	Standard Meteorological Data
+[TXT]	45174.ocean	2025-06-10 20:20	207K	Oceanographic Data
+[TXT]	45174.spec	2025-06-10 20:20	185K	Spectral Wave Summary Data
+[TXT]	45174.srad	2025-06-10 20:20	100K	Solar Radiation Data
+[TXT]	45174.txt	2025-06-10 20:25	248K	Standard Meteorological Data
+[TXT]	45175.spec	2025-06-10 20:20	94K	Spectral Wave Summary Data
+[TXT]	45175.srad	2025-06-10 20:20	51K	Solar Radiation Data
+[TXT]	45175.txt	2025-06-10 20:20	126K	Standard Meteorological Data
+[TXT]	45176.ocean	2025-06-10 20:15	232K	Oceanographic Data
+[TXT]	45176.spec	2025-06-10 20:15	203K	Spectral Wave Summary Data
+[TXT]	45176.txt	2025-06-10 20:20	272K	Standard Meteorological Data
+[TXT]	45194.adcp	2025-06-10 20:15	32K	Acoustic Doppler Current Profiler Data
+[TXT]	45194.data_spec	2025-06-10 20:20	646K	Raw Spectral Wave Data
+[TXT]	45194.spec	2025-06-10 20:15	61K	Spectral Wave Summary Data
+[TXT]	45194.swdir	2025-06-10 20:20	425K	Spectral Wave Data (alpha1)
+[TXT]	45194.swdir2	2025-06-10 20:20	425K	Spectral Wave Data (alpha2)
+[TXT]	45194.swr1	2025-06-10 20:20	403K	Spectral Wave Data (r1)
+[TXT]	45194.swr2	2025-06-10 20:20	403K	Spectral Wave Data (r2)
+[TXT]	45194.txt	2025-06-10 20:15	93K	Standard Meteorological Data
+[TXT]	45196.ocean	2025-06-10 20:05	204K	Oceanographic Data
+[TXT]	45196.spec	2025-06-10 20:05	176K	Spectral Wave Summary Data
+[TXT]	45196.txt	2025-06-10 20:05	235K	Standard Meteorological Data
+[TXT]	45197.ocean	2025-06-10 20:15	243K	Oceanographic Data
+[TXT]	45197.spec	2025-06-10 20:15	210K	Spectral Wave Summary Data
+[TXT]	45197.txt	2025-06-10 20:20	281K	Standard Meteorological Data
+[TXT]	45198.ocean	2025-06-10 20:20	238K	Oceanographic Data
+[TXT]	45198.spec	2025-06-10 20:20	204K	Spectral Wave Summary Data
+[TXT]	45198.txt	2025-06-10 20:20	276K	Standard Meteorological Data
+[TXT]	45199.adcp	2025-06-10 20:10	759K	Acoustic Doppler Current Profiler Data
+[TXT]	45199.ocean	2025-06-10 20:10	174K	Oceanographic Data
+[TXT]	45199.spec	2025-06-10 20:10	147K	Spectral Wave Summary Data
+[TXT]	45199.txt	2025-06-10 20:10	199K	Standard Meteorological Data
+[TXT]	45200.spec	2025-06-05 07:10	701	Spectral Wave Summary Data
+[TXT]	45200.txt	2025-06-10 20:25	105K	Standard Meteorological Data
+[TXT]	45201.spec	2025-06-10 20:15	78K	Spectral Wave Summary Data
+[TXT]	45201.srad	2025-06-10 20:15	42K	Solar Radiation Data
+[TXT]	45201.txt	2025-06-10 20:20	104K	Standard Meteorological Data
+[TXT]	45202.spec	2025-06-10 20:15	78K	Spectral Wave Summary Data
+[TXT]	45202.srad	2025-06-10 20:15	42K	Solar Radiation Data
+[TXT]	45202.txt	2025-06-10 20:20	105K	Standard Meteorological Data
+[TXT]	45203.spec	2025-06-10 20:10	78K	Spectral Wave Summary Data
+[TXT]	45203.srad	2025-06-10 20:10	42K	Solar Radiation Data
+[TXT]	45203.txt	2025-06-10 20:10	104K	Standard Meteorological Data
+[TXT]	45204.spec	2025-06-10 20:20	382K	Spectral Wave Summary Data
+[TXT]	45204.txt	2025-06-10 20:25	511K	Standard Meteorological Data
+[TXT]	45205.spec	2025-06-10 20:15	385K	Spectral Wave Summary Data
+[TXT]	45205.txt	2025-06-10 20:20	519K	Standard Meteorological Data
+[TXT]	45206.spec	2025-06-10 20:15	180K	Spectral Wave Summary Data
+[TXT]	45206.txt	2025-06-10 20:20	515K	Standard Meteorological Data
+[TXT]	45207.spec	2025-06-10 20:20	375K	Spectral Wave Summary Data
+[TXT]	45207.txt	2025-06-10 20:25	505K	Standard Meteorological Data
+[TXT]	45208.spec	2025-06-10 20:20	383K	Spectral Wave Summary Data
+[TXT]	45208.txt	2025-06-10 20:25	514K	Standard Meteorological Data
+[TXT]	45209.spec	2025-06-10 20:20	386K	Spectral Wave Summary Data
+[TXT]	45209.txt	2025-06-10 20:25	517K	Standard Meteorological Data
+[TXT]	45210.data_spec	2025-06-10 20:10	961K	Raw Spectral Wave Data
+[TXT]	45210.spec	2025-06-10 20:10	143K	Spectral Wave Summary Data
+[TXT]	45210.swdir	2025-06-10 20:10	586K	Spectral Wave Data (alpha1)
+[TXT]	45210.swdir2	2025-06-10 20:10	587K	Spectral Wave Data (alpha2)
+[TXT]	45210.swr1	2025-06-10 20:10	570K	Spectral Wave Data (r1)
+[TXT]	45210.swr2	2025-06-10 20:10	569K	Spectral Wave Data (r2)
+[TXT]	45210.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	45211.data_spec	2025-06-10 20:10	660K	Raw Spectral Wave Data
+[TXT]	45211.spec	2025-06-10 20:10	99K	Spectral Wave Summary Data
+[TXT]	45211.swdir	2025-06-10 20:10	419K	Spectral Wave Data (alpha1)
+[TXT]	45211.swdir2	2025-06-10 20:10	420K	Spectral Wave Data (alpha2)
+[TXT]	45211.swr1	2025-06-10 20:10	402K	Spectral Wave Data (r1)
+[TXT]	45211.swr2	2025-06-10 20:10	402K	Spectral Wave Data (r2)
+[TXT]	45211.txt	2025-06-10 20:10	140K	Standard Meteorological Data
+[TXT]	45212.spec	2025-05-23 14:50	105K	Spectral Wave Summary Data
+[TXT]	45212.txt	2025-05-23 14:51	97K	Standard Meteorological Data
+[TXT]	45213.spec	2025-05-14 00:45	116K	Spectral Wave Summary Data
+[TXT]	45213.txt	2025-05-14 00:50	94K	Standard Meteorological Data
+[TXT]	45214.spec	2025-05-27 23:50	177K	Spectral Wave Summary Data
+[TXT]	45214.txt	2025-05-27 23:50	144K	Standard Meteorological Data
+[TXT]	45215.data_spec	2025-06-10 20:10	514K	Raw Spectral Wave Data
+[TXT]	45215.spec	2025-06-10 20:10	73K	Spectral Wave Summary Data
+[TXT]	45215.swdir	2025-06-10 20:10	268K	Spectral Wave Data (alpha1)
+[TXT]	45215.swdir2	2025-06-10 20:10	268K	Spectral Wave Data (alpha2)
+[TXT]	45215.swr1	2025-06-10 20:10	252K	Spectral Wave Data (r1)
+[TXT]	45215.swr2	2025-06-10 20:10	252K	Spectral Wave Data (r2)
+[TXT]	45215.txt	2025-06-10 20:10	123K	Standard Meteorological Data
+[TXT]	45216.spec	2025-06-10 19:50	84K	Spectral Wave Summary Data
+[TXT]	45216.srad	2025-06-10 19:50	44K	Solar Radiation Data
+[TXT]	45216.txt	2025-06-10 19:50	113K	Standard Meteorological Data
+[TXT]	45219.txt	2025-06-10 20:25	551K	Standard Meteorological Data
+[TXT]	46001.data_spec	2025-06-10 20:20	1.4M	Raw Spectral Wave Data
+[TXT]	46001.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46001.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	46001.swdir	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46001.swdir2	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46001.swr1	2025-06-10 20:20	1.3M	Spectral Wave Data (r1)
+[TXT]	46001.swr2	2025-06-10 20:20	1.3M	Spectral Wave Data (r2)
+[TXT]	46001.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	46011.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46011.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	46011.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	46011.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46011.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46011.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46011.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46011.txt	2025-06-10 20:20	599K	Standard Meteorological Data
+[TXT]	46013.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46013.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46013.supl	2025-06-10 20:25	308K	Supplemental Measurements Data
+[TXT]	46013.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46013.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46013.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46013.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46013.txt	2025-06-10 20:25	604K	Standard Meteorological Data
+[TXT]	46014.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46014.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46014.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46014.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46014.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46014.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46014.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46014.txt	2025-06-10 20:20	603K	Standard Meteorological Data
+[TXT]	46015.data_spec	2025-06-10 20:05	1.4M	Raw Spectral Wave Data
+[TXT]	46015.spec	2025-06-10 20:00	147K	Spectral Wave Summary Data
+[TXT]	46015.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46015.swdir	2025-06-10 20:05	1.3M	Spectral Wave Data (alpha1)
+[TXT]	46015.swdir2	2025-06-10 20:05	1.3M	Spectral Wave Data (alpha2)
+[TXT]	46015.swr1	2025-06-10 20:05	1.3M	Spectral Wave Data (r1)
+[TXT]	46015.swr2	2025-06-10 20:05	1.3M	Spectral Wave Data (r2)
+[TXT]	46015.txt	2025-06-10 20:20	603K	Standard Meteorological Data
+[TXT]	46022.data_spec	2025-06-10 20:15	1.1M	Raw Spectral Wave Data
+[TXT]	46022.spec	2025-06-10 20:10	114K	Spectral Wave Summary Data
+[TXT]	46022.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46022.swdir	2025-06-10 20:15	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46022.swdir2	2025-06-10 20:15	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46022.swr1	2025-06-10 20:15	1.0M	Spectral Wave Data (r1)
+[TXT]	46022.swr2	2025-06-10 20:15	1.0M	Spectral Wave Data (r2)
+[TXT]	46022.txt	2025-06-10 20:20	604K	Standard Meteorological Data
+[TXT]	46025.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46025.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46025.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46025.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46025.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46025.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46025.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46025.txt	2025-06-10 20:20	604K	Standard Meteorological Data
+[TXT]	46026.data_spec	2025-06-10 20:15	671K	Raw Spectral Wave Data
+[TXT]	46026.spec	2025-06-10 20:10	71K	Spectral Wave Summary Data
+[TXT]	46026.supl	2025-06-10 20:25	145K	Supplemental Measurements Data
+[TXT]	46026.swdir	2025-06-10 20:15	665K	Spectral Wave Data (alpha1)
+[TXT]	46026.swdir2	2025-06-10 20:15	665K	Spectral Wave Data (alpha2)
+[TXT]	46026.swr1	2025-06-10 20:15	633K	Spectral Wave Data (r1)
+[TXT]	46026.swr2	2025-06-10 20:15	633K	Spectral Wave Data (r2)
+[TXT]	46026.txt	2025-06-10 20:25	285K	Standard Meteorological Data
+[TXT]	46027.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46027.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46027.supl	2025-06-10 20:25	308K	Supplemental Measurements Data
+[TXT]	46027.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46027.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46027.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46027.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46027.txt	2025-06-10 20:25	604K	Standard Meteorological Data
+[TXT]	46028.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46028.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46028.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46028.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46028.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46028.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46028.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46028.txt	2025-06-10 20:20	603K	Standard Meteorological Data
+[TXT]	46029.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46029.spec	2025-06-10 20:10	148K	Spectral Wave Summary Data
+[TXT]	46029.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	46029.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46029.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46029.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46029.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46029.txt	2025-06-10 20:20	602K	Standard Meteorological Data
+[TXT]	46035.data_spec	2025-06-10 20:15	600K	Raw Spectral Wave Data
+[TXT]	46035.spec	2025-06-10 20:10	63K	Spectral Wave Summary Data
+[TXT]	46035.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	46035.swdir	2025-06-10 20:15	585K	Spectral Wave Data (alpha1)
+[TXT]	46035.swdir2	2025-06-10 20:15	585K	Spectral Wave Data (alpha2)
+[TXT]	46035.swr1	2025-06-10 20:15	572K	Spectral Wave Data (r1)
+[TXT]	46035.swr2	2025-06-10 20:15	572K	Spectral Wave Data (r2)
+[TXT]	46035.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	46041.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46041.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	46041.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46041.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46041.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46041.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46041.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46041.txt	2025-06-10 20:20	604K	Standard Meteorological Data
+[TXT]	46047.data_spec	2025-06-10 20:15	746K	Raw Spectral Wave Data
+[TXT]	46047.spec	2025-06-10 20:15	78K	Spectral Wave Summary Data
+[TXT]	46047.supl	2025-06-10 20:20	161K	Supplemental Measurements Data
+[TXT]	46047.swdir	2025-06-10 20:15	739K	Spectral Wave Data (alpha1)
+[TXT]	46047.swdir2	2025-06-10 20:15	737K	Spectral Wave Data (alpha2)
+[TXT]	46047.swr1	2025-06-10 20:15	708K	Spectral Wave Data (r1)
+[TXT]	46047.swr2	2025-06-10 20:15	708K	Spectral Wave Data (r2)
+[TXT]	46047.txt	2025-06-10 20:20	316K	Standard Meteorological Data
+[TXT]	46050.data_spec	2025-06-10 20:15	486K	Raw Spectral Wave Data
+[TXT]	46050.spec	2025-06-10 20:10	51K	Spectral Wave Summary Data
+[TXT]	46050.supl	2025-06-10 20:20	305K	Supplemental Measurements Data
+[TXT]	46050.swdir	2025-06-10 20:15	474K	Spectral Wave Data (alpha1)
+[TXT]	46050.swdir2	2025-06-10 20:15	472K	Spectral Wave Data (alpha2)
+[TXT]	46050.swr1	2025-06-10 20:15	460K	Spectral Wave Data (r1)
+[TXT]	46050.swr2	2025-06-10 20:15	460K	Spectral Wave Data (r2)
+[TXT]	46050.txt	2025-06-10 20:20	597K	Standard Meteorological Data
+[TXT]	46053.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46053.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46053.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46053.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46053.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46053.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46053.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46053.txt	2025-06-10 20:20	604K	Standard Meteorological Data
+[TXT]	46054.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46054.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46054.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46054.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46054.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46054.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46054.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46054.txt	2025-06-10 20:20	603K	Standard Meteorological Data
+[TXT]	46059.data_spec	2025-06-10 20:15	618K	Raw Spectral Wave Data
+[TXT]	46059.spec	2025-06-10 20:10	65K	Spectral Wave Summary Data
+[TXT]	46059.supl	2025-06-10 20:20	132K	Supplemental Measurements Data
+[TXT]	46059.swdir	2025-06-10 20:15	593K	Spectral Wave Data (alpha1)
+[TXT]	46059.swdir2	2025-06-10 20:15	595K	Spectral Wave Data (alpha2)
+[TXT]	46059.swr1	2025-06-10 20:15	585K	Spectral Wave Data (r1)
+[TXT]	46059.swr2	2025-06-10 20:15	585K	Spectral Wave Data (r2)
+[TXT]	46059.txt	2025-06-10 20:20	259K	Standard Meteorological Data
+[TXT]	46060.cwind	2025-06-10 20:10	257K	Continuous Winds Data
+[TXT]	46060.data_spec	2025-06-10 20:10	712K	Raw Spectral Wave Data
+[TXT]	46060.spec	2025-06-10 20:05	75K	Spectral Wave Summary Data
+[TXT]	46060.supl	2025-06-10 20:10	52K	Supplemental Measurements Data
+[TXT]	46060.swdir	2025-06-10 20:10	659K	Spectral Wave Data (alpha1)
+[TXT]	46060.swdir2	2025-06-10 20:10	656K	Spectral Wave Data (alpha2)
+[TXT]	46060.swr1	2025-06-10 20:10	632K	Spectral Wave Data (r1)
+[TXT]	46060.swr2	2025-06-10 20:10	632K	Spectral Wave Data (r2)
+[TXT]	46060.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	46069.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46069.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46069.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	46069.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46069.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46069.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46069.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46069.txt	2025-06-10 20:20	602K	Standard Meteorological Data
+[TXT]	46071.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46071.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46071.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	46071.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46071.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46071.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46071.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46071.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	46072.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46072.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46072.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	46072.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46072.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46072.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46072.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46072.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	46073.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46073.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46073.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	46073.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46073.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46073.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46073.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46073.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	46076.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46076.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46076.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	46076.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46076.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46076.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46076.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46076.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	46077.cwind	2025-06-10 20:10	257K	Continuous Winds Data
+[TXT]	46077.data_spec	2025-06-10 20:10	716K	Raw Spectral Wave Data
+[TXT]	46077.spec	2025-06-10 20:05	75K	Spectral Wave Summary Data
+[TXT]	46077.supl	2025-06-10 20:10	52K	Supplemental Measurements Data
+[TXT]	46077.swdir	2025-06-10 20:10	690K	Spectral Wave Data (alpha1)
+[TXT]	46077.swdir2	2025-06-10 20:10	689K	Spectral Wave Data (alpha2)
+[TXT]	46077.swr1	2025-06-10 20:10	674K	Spectral Wave Data (r1)
+[TXT]	46077.swr2	2025-06-10 20:10	674K	Spectral Wave Data (r2)
+[TXT]	46077.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	46078.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46078.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46078.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	46078.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46078.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46078.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46078.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46078.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	46080.data_spec	2025-06-10 20:20	1.4M	Raw Spectral Wave Data
+[TXT]	46080.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46080.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	46080.swdir	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46080.swdir2	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46080.swr1	2025-06-10 20:20	1.3M	Spectral Wave Data (r1)
+[TXT]	46080.swr2	2025-06-10 20:20	1.3M	Spectral Wave Data (r2)
+[TXT]	46080.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	46081.cwind	2025-06-10 20:10	258K	Continuous Winds Data
+[TXT]	46081.data_spec	2025-06-10 20:10	684K	Raw Spectral Wave Data
+[TXT]	46081.spec	2025-06-10 20:05	72K	Spectral Wave Summary Data
+[TXT]	46081.supl	2025-06-10 20:10	52K	Supplemental Measurements Data
+[TXT]	46081.swdir	2025-06-10 02:10	183K	Spectral Wave Data (alpha1)
+[TXT]	46081.swdir2	2025-06-10 02:10	183K	Spectral Wave Data (alpha2)
+[TXT]	46081.swr1	2025-06-10 02:10	184K	Spectral Wave Data (r1)
+[TXT]	46081.swr2	2025-06-10 02:10	184K	Spectral Wave Data (r2)
+[TXT]	46081.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	46083.data_spec	2025-06-10 20:15	29K	Raw Spectral Wave Data
+[TXT]	46083.spec	2025-06-10 20:10	3.1K	Spectral Wave Summary Data
+[TXT]	46083.supl	2025-06-10 20:20	6.6K	Supplemental Measurements Data
+[TXT]	46083.swdir	2025-06-10 20:15	29K	Spectral Wave Data (alpha1)
+[TXT]	46083.swdir2	2025-06-10 20:15	29K	Spectral Wave Data (alpha2)
+[TXT]	46083.swr1	2025-06-10 20:15	27K	Spectral Wave Data (r1)
+[TXT]	46083.swr2	2025-06-10 20:15	27K	Spectral Wave Data (r2)
+[TXT]	46083.txt	2025-06-10 20:20	13K	Standard Meteorological Data
+[TXT]	46084.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46084.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46084.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	46084.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46084.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46084.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46084.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46084.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	46085.data_spec	2025-06-10 20:15	121K	Raw Spectral Wave Data
+[TXT]	46085.spec	2025-06-10 20:10	13K	Spectral Wave Summary Data
+[TXT]	46085.supl	2025-06-10 20:20	26K	Supplemental Measurements Data
+[TXT]	46085.swdir	2025-06-10 20:15	120K	Spectral Wave Data (alpha1)
+[TXT]	46085.swdir2	2025-06-10 20:15	119K	Spectral Wave Data (alpha2)
+[TXT]	46085.swr1	2025-06-10 20:15	115K	Spectral Wave Data (r1)
+[TXT]	46085.swr2	2025-06-10 20:15	115K	Spectral Wave Data (r2)
+[TXT]	46085.txt	2025-06-10 20:20	51K	Standard Meteorological Data
+[TXT]	46086.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46086.spec	2025-06-10 20:10	149K	Spectral Wave Summary Data
+[TXT]	46086.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	46086.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46086.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46086.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46086.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46086.txt	2025-06-10 20:20	599K	Standard Meteorological Data
+[TXT]	46087.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46087.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46087.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46087.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46087.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46087.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46087.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46087.txt	2025-06-10 20:20	603K	Standard Meteorological Data
+[TXT]	46088.adcp	2025-06-10 20:25	226K	Acoustic Doppler Current Profiler Data
+[TXT]	46088.data_spec	2025-06-10 19:40	1.4M	Raw Spectral Wave Data
+[TXT]	46088.spec	2025-06-10 19:40	150K	Spectral Wave Summary Data
+[TXT]	46088.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	46088.swdir	2025-06-10 19:40	893K	Spectral Wave Data (alpha1)
+[TXT]	46088.swdir2	2025-06-10 19:40	892K	Spectral Wave Data (alpha2)
+[TXT]	46088.swr1	2025-06-10 19:40	865K	Spectral Wave Data (r1)
+[TXT]	46088.swr2	2025-06-10 19:40	865K	Spectral Wave Data (r2)
+[TXT]	46088.txt	2025-06-10 20:20	603K	Standard Meteorological Data
+[TXT]	46089.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	46089.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46089.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	46089.swdir	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46089.swdir2	2025-06-10 20:15	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46089.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	46089.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	46089.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	46092.txt	2025-06-10 19:40	100K	Standard Meteorological Data
+[TXT]	46097.ocean	2025-06-10 19:50	522K	Oceanographic Data
+[TXT]	46097.spec	2025-06-10 19:50	75K	Spectral Wave Summary Data
+[TXT]	46097.srad	2025-06-10 19:50	245K	Solar Radiation Data
+[TXT]	46097.txt	2025-06-10 19:55	604K	Standard Meteorological Data
+[TXT]	46098.ocean	2025-06-10 20:20	159K	Oceanographic Data
+[TXT]	46098.spec	2025-06-10 20:20	21K	Spectral Wave Summary Data
+[TXT]	46098.srad	2025-06-10 20:20	75K	Solar Radiation Data
+[TXT]	46098.txt	2025-06-10 20:20	174K	Standard Meteorological Data
+[TXT]	46099.ocean	2025-06-10 20:25	508K	Oceanographic Data
+[TXT]	46099.spec	2025-06-10 20:25	72K	Spectral Wave Summary Data
+[TXT]	46099.srad	2025-06-10 20:25	239K	Solar Radiation Data
+[TXT]	46099.txt	2025-06-10 20:25	587K	Standard Meteorological Data
+[TXT]	46100.ocean	2025-06-10 20:25	495K	Oceanographic Data
+[TXT]	46100.spec	2025-06-10 20:25	70K	Spectral Wave Summary Data
+[TXT]	46100.srad	2025-06-10 20:25	232K	Solar Radiation Data
+[TXT]	46100.txt	2025-06-10 20:25	573K	Standard Meteorological Data
+[TXT]	46108.adcp	2025-06-10 20:20	72K	Acoustic Doppler Current Profiler Data
+[TXT]	46108.data_spec	2025-06-10 20:20	1.4M	Raw Spectral Wave Data
+[TXT]	46108.spec	2025-06-10 20:20	147K	Spectral Wave Summary Data
+[TXT]	46108.swdir	2025-06-10 20:20	1.2M	Spectral Wave Data (alpha1)
+[TXT]	46108.swdir2	2025-06-10 20:20	1.2M	Spectral Wave Data (alpha2)
+[TXT]	46108.swr1	2025-06-10 20:20	1.2M	Spectral Wave Data (r1)
+[TXT]	46108.swr2	2025-06-10 20:20	1.2M	Spectral Wave Data (r2)
+[TXT]	46108.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	46116.ocean	2025-06-01 11:20	67K	Oceanographic Data
+[TXT]	46120.txt	2025-06-10 19:45	134K	Standard Meteorological Data
+[TXT]	46122.txt	2025-05-22 19:45	409K	Standard Meteorological Data
+[TXT]	46123.txt	2025-06-10 19:45	581K	Standard Meteorological Data
+[TXT]	46131.txt	2025-06-10 20:10	2.0K	Standard Meteorological Data
+[TXT]	46132.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	46145.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	46146.txt	2025-06-10 20:10	2.4K	Standard Meteorological Data
+[TXT]	46147.txt	2025-06-10 20:25	2.5K	Standard Meteorological Data
+[TXT]	46181.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	46183.txt	2025-06-06 14:10	2.5K	Standard Meteorological Data
+[TXT]	46185.txt	2025-06-10 20:25	2.5K	Standard Meteorological Data
+[TXT]	46204.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	46205.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	46206.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	46207.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	46208.txt	2025-06-10 20:10	2.5K	Standard Meteorological Data
+[TXT]	46211.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46211.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46211.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46211.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46211.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46211.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46211.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46213.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46213.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46213.swdir	2025-06-10 20:10	967K	Spectral Wave Data (alpha1)
+[TXT]	46213.swdir2	2025-06-10 20:10	963K	Spectral Wave Data (alpha2)
+[TXT]	46213.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46213.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46213.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46214.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46214.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46214.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46214.swdir2	2025-06-10 20:10	970K	Spectral Wave Data (alpha2)
+[TXT]	46214.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46214.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46214.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46215.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46215.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46215.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46215.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46215.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46215.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46215.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46218.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46218.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46218.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46218.swdir2	2025-06-10 20:10	971K	Spectral Wave Data (alpha2)
+[TXT]	46218.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46218.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46218.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46219.data_spec	2025-06-10 20:20	1.0M	Raw Spectral Wave Data
+[TXT]	46219.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	46219.swdir	2025-06-10 20:20	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46219.swdir2	2025-06-10 20:20	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46219.swr1	2025-06-10 20:20	913K	Spectral Wave Data (r1)
+[TXT]	46219.swr2	2025-06-10 20:20	913K	Spectral Wave Data (r2)
+[TXT]	46219.txt	2025-06-10 20:25	200K	Standard Meteorological Data
+[TXT]	46221.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46221.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46221.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46221.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46221.swr1	2025-06-10 20:10	911K	Spectral Wave Data (r1)
+[TXT]	46221.swr2	2025-06-10 20:10	911K	Spectral Wave Data (r2)
+[TXT]	46221.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	46222.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46222.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46222.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46222.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46222.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46222.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46222.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46224.data_spec	2025-06-10 20:05	1.0M	Raw Spectral Wave Data
+[TXT]	46224.spec	2025-06-10 20:05	150K	Spectral Wave Summary Data
+[TXT]	46224.swdir	2025-06-10 20:05	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46224.swdir2	2025-06-10 20:05	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46224.swr1	2025-06-10 20:05	913K	Spectral Wave Data (r1)
+[TXT]	46224.swr2	2025-06-10 20:05	913K	Spectral Wave Data (r2)
+[TXT]	46224.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46225.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46225.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46225.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46225.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46225.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46225.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46225.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46229.data_spec	2025-06-10 20:20	1.4M	Raw Spectral Wave Data
+[TXT]	46229.spec	2025-06-10 20:15	149K	Spectral Wave Summary Data
+[TXT]	46229.swdir	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46229.swdir2	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46229.swr1	2025-06-10 20:20	1.3M	Spectral Wave Data (r1)
+[TXT]	46229.swr2	2025-06-10 20:20	1.3M	Spectral Wave Data (r2)
+[TXT]	46229.txt	2025-06-10 20:20	200K	Standard Meteorological Data
+[TXT]	46232.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46232.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46232.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46232.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46232.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46232.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46232.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	46235.adcp	2025-06-10 20:20	67K	Acoustic Doppler Current Profiler Data
+[TXT]	46235.data_spec	2025-06-10 20:20	1.5M	Raw Spectral Wave Data
+[TXT]	46235.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	46235.swdir	2025-06-10 20:20	1.5M	Spectral Wave Data (alpha1)
+[TXT]	46235.swdir2	2025-06-10 20:20	1.5M	Spectral Wave Data (alpha2)
+[TXT]	46235.swr1	2025-06-10 20:20	1.4M	Spectral Wave Data (r1)
+[TXT]	46235.swr2	2025-06-10 20:20	1.4M	Spectral Wave Data (r2)
+[TXT]	46235.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	46236.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46236.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46236.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46236.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46236.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46236.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46236.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46237.adcp	2025-06-10 19:55	71K	Acoustic Doppler Current Profiler Data
+[TXT]	46237.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	46237.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	46237.swdir	2025-06-10 20:25	1.5M	Spectral Wave Data (alpha1)
+[TXT]	46237.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46237.swr1	2025-06-10 20:25	1.3M	Spectral Wave Data (r1)
+[TXT]	46237.swr2	2025-06-10 20:25	1.3M	Spectral Wave Data (r2)
+[TXT]	46237.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	46239.adcp	2025-06-10 19:55	56K	Acoustic Doppler Current Profiler Data
+[TXT]	46239.data_spec	2025-06-10 19:55	1.5M	Raw Spectral Wave Data
+[TXT]	46239.spec	2025-06-10 19:55	150K	Spectral Wave Summary Data
+[TXT]	46239.swdir	2025-06-10 19:55	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46239.swdir2	2025-06-10 19:55	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46239.swr1	2025-06-10 19:55	1.3M	Spectral Wave Data (r1)
+[TXT]	46239.swr2	2025-06-10 19:55	1.3M	Spectral Wave Data (r2)
+[TXT]	46239.txt	2025-06-10 19:55	201K	Standard Meteorological Data
+[TXT]	46240.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46240.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46240.swdir	2025-06-10 20:10	971K	Spectral Wave Data (alpha1)
+[TXT]	46240.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46240.swr1	2025-06-10 20:10	914K	Spectral Wave Data (r1)
+[TXT]	46240.swr2	2025-06-10 20:10	914K	Spectral Wave Data (r2)
+[TXT]	46240.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46243.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46243.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46243.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46243.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46243.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46243.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46243.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46244.adcp	2025-06-10 20:20	67K	Acoustic Doppler Current Profiler Data
+[TXT]	46244.data_spec	2025-06-10 20:20	1.5M	Raw Spectral Wave Data
+[TXT]	46244.spec	2025-06-10 20:25	149K	Spectral Wave Summary Data
+[TXT]	46244.swdir	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46244.swdir2	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46244.swr1	2025-06-10 20:20	1.3M	Spectral Wave Data (r1)
+[TXT]	46244.swr2	2025-06-10 20:20	1.3M	Spectral Wave Data (r2)
+[TXT]	46244.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	46246.data_spec	2025-06-10 20:10	405K	Raw Spectral Wave Data
+[TXT]	46246.spec	2025-06-10 20:10	61K	Spectral Wave Summary Data
+[TXT]	46246.swdir	2025-06-10 20:10	401K	Spectral Wave Data (alpha1)
+[TXT]	46246.swdir2	2025-06-10 20:10	400K	Spectral Wave Data (alpha2)
+[TXT]	46246.swr1	2025-06-10 20:10	374K	Spectral Wave Data (r1)
+[TXT]	46246.swr2	2025-06-10 20:10	374K	Spectral Wave Data (r2)
+[TXT]	46246.txt	2025-06-10 20:10	82K	Standard Meteorological Data
+[TXT]	46248.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46248.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46248.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46248.swdir2	2025-06-10 20:10	970K	Spectral Wave Data (alpha2)
+[TXT]	46248.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46248.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46248.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46251.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46251.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46251.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46251.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46251.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46251.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46251.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	46253.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46253.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46253.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46253.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46253.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46253.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46253.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46254.data_spec	2025-06-10 20:25	1.0M	Raw Spectral Wave Data
+[TXT]	46254.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	46254.swdir	2025-06-10 20:25	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46254.swdir2	2025-06-10 20:25	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46254.swr1	2025-06-10 20:25	915K	Spectral Wave Data (r1)
+[TXT]	46254.swr2	2025-06-10 20:25	913K	Spectral Wave Data (r2)
+[TXT]	46254.txt	2025-06-10 20:25	202K	Standard Meteorological Data
+[TXT]	46256.data_spec	2025-06-10 20:20	1.0M	Raw Spectral Wave Data
+[TXT]	46256.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	46256.swdir	2025-06-10 20:20	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46256.swdir2	2025-06-10 20:20	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46256.swr1	2025-06-10 20:20	913K	Spectral Wave Data (r1)
+[TXT]	46256.swr2	2025-06-10 20:20	913K	Spectral Wave Data (r2)
+[TXT]	46256.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	46258.data_spec	2025-06-10 20:20	1.0M	Raw Spectral Wave Data
+[TXT]	46258.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	46258.swdir	2025-06-10 20:20	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46258.swdir2	2025-06-10 20:20	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46258.swr1	2025-06-10 20:20	912K	Spectral Wave Data (r1)
+[TXT]	46258.swr2	2025-06-10 20:20	912K	Spectral Wave Data (r2)
+[TXT]	46258.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	46259.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46259.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46259.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46259.swdir2	2025-06-10 20:10	971K	Spectral Wave Data (alpha2)
+[TXT]	46259.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	46259.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46259.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46266.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46266.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46266.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46266.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46266.swr1	2025-06-10 20:10	914K	Spectral Wave Data (r1)
+[TXT]	46266.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	46266.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	46267.adcp	2025-06-10 20:20	61K	Acoustic Doppler Current Profiler Data
+[TXT]	46267.data_spec	2025-06-10 20:20	1.5M	Raw Spectral Wave Data
+[TXT]	46267.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	46267.swdir	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46267.swdir2	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46267.swr1	2025-06-10 20:20	1.3M	Spectral Wave Data (r1)
+[TXT]	46267.swr2	2025-06-10 20:20	1.3M	Spectral Wave Data (r2)
+[TXT]	46267.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	46268.adcp	2025-06-10 20:20	60K	Acoustic Doppler Current Profiler Data
+[TXT]	46268.data_spec	2025-06-10 20:20	1.4M	Raw Spectral Wave Data
+[TXT]	46268.spec	2025-06-10 20:20	148K	Spectral Wave Summary Data
+[TXT]	46268.swdir	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46268.swdir2	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46268.swr1	2025-06-10 20:20	1.3M	Spectral Wave Data (r1)
+[TXT]	46268.swr2	2025-06-10 20:20	1.3M	Spectral Wave Data (r2)
+[TXT]	46268.txt	2025-06-10 20:25	199K	Standard Meteorological Data
+[TXT]	46274.data_spec	2025-06-10 20:10	969K	Raw Spectral Wave Data
+[TXT]	46274.spec	2025-06-10 20:10	146K	Spectral Wave Summary Data
+[TXT]	46274.swdir	2025-06-10 20:10	963K	Spectral Wave Data (alpha1)
+[TXT]	46274.swdir2	2025-06-10 20:10	963K	Spectral Wave Data (alpha2)
+[TXT]	46274.swr1	2025-06-10 20:10	896K	Spectral Wave Data (r1)
+[TXT]	46274.swr2	2025-06-10 20:10	896K	Spectral Wave Data (r2)
+[TXT]	46274.txt	2025-06-10 20:10	196K	Standard Meteorological Data
+[TXT]	46275.adcp	2025-06-10 20:20	52K	Acoustic Doppler Current Profiler Data
+[TXT]	46275.data_spec	2025-06-10 20:20	1.5M	Raw Spectral Wave Data
+[TXT]	46275.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	46275.swdir	2025-06-10 20:20	1.5M	Spectral Wave Data (alpha1)
+[TXT]	46275.swdir2	2025-06-10 20:20	1.5M	Spectral Wave Data (alpha2)
+[TXT]	46275.swr1	2025-06-10 20:20	1.4M	Spectral Wave Data (r1)
+[TXT]	46275.swr2	2025-06-10 20:20	1.4M	Spectral Wave Data (r2)
+[TXT]	46275.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	46276.adcp	2025-06-10 20:20	70K	Acoustic Doppler Current Profiler Data
+[TXT]	46276.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	46276.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	46276.swdir	2025-06-10 20:25	1.5M	Spectral Wave Data (alpha1)
+[TXT]	46276.swdir2	2025-06-10 20:25	1.5M	Spectral Wave Data (alpha2)
+[TXT]	46276.swr1	2025-06-10 20:25	1.4M	Spectral Wave Data (r1)
+[TXT]	46276.swr2	2025-06-10 20:25	1.4M	Spectral Wave Data (r2)
+[TXT]	46276.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	46277.adcp	2025-06-10 20:15	44K	Acoustic Doppler Current Profiler Data
+[TXT]	46277.data_spec	2025-06-10 20:20	1.5M	Raw Spectral Wave Data
+[TXT]	46277.spec	2025-06-10 20:15	150K	Spectral Wave Summary Data
+[TXT]	46277.swdir	2025-06-10 20:20	1.5M	Spectral Wave Data (alpha1)
+[TXT]	46277.swdir2	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46277.swr1	2025-06-10 20:20	1.4M	Spectral Wave Data (r1)
+[TXT]	46277.swr2	2025-06-10 20:20	1.4M	Spectral Wave Data (r2)
+[TXT]	46277.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	46278.adcp	2025-06-10 20:00	68K	Acoustic Doppler Current Profiler Data
+[TXT]	46278.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	46278.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	46278.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	46278.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46278.swr1	2025-06-10 20:25	1.3M	Spectral Wave Data (r1)
+[TXT]	46278.swr2	2025-06-10 20:25	1.3M	Spectral Wave Data (r2)
+[TXT]	46278.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	46279.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	46279.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	46279.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	46279.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	46279.swr1	2025-06-10 20:10	916K	Spectral Wave Data (r1)
+[TXT]	46279.swr2	2025-06-10 20:10	914K	Spectral Wave Data (r2)
+[TXT]	46279.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	46280.data_spec	2025-06-10 19:40	1.0M	Raw Spectral Wave Data
+[TXT]	46280.spec	2025-06-10 19:40	150K	Spectral Wave Summary Data
+[TXT]	46280.txt	2025-06-10 19:40	201K	Standard Meteorological Data
+[TXT]	46281.data_spec	2025-06-10 20:20	1.0M	Raw Spectral Wave Data
+[TXT]	46281.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	46281.txt	2025-06-10 20:20	201K	Standard Meteorological Data
+[TXT]	46283.data_spec	2025-06-10 20:05	1.0M	Raw Spectral Wave Data
+[TXT]	46283.spec	2025-06-10 20:05	150K	Spectral Wave Summary Data
+[TXT]	46283.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	46284.adcp	2025-06-10 19:55	69K	Acoustic Doppler Current Profiler Data
+[TXT]	46284.data_spec	2025-06-10 19:55	1.5M	Raw Spectral Wave Data
+[TXT]	46284.spec	2025-06-10 19:55	149K	Spectral Wave Summary Data
+[TXT]	46284.swdir	2025-06-10 19:55	1.5M	Spectral Wave Data (alpha1)
+[TXT]	46284.swdir2	2025-06-10 19:55	1.4M	Spectral Wave Data (alpha2)
+[TXT]	46284.swr1	2025-06-10 19:55	1.4M	Spectral Wave Data (r1)
+[TXT]	46284.swr2	2025-06-10 19:55	1.3M	Spectral Wave Data (r2)
+[TXT]	46284.txt	2025-06-10 19:55	201K	Standard Meteorological Data
+[TXT]	46304.txt	2025-06-10 20:05	658	Standard Meteorological Data
+[TXT]	46402.dart	2025-06-10 18:20	132K	Water Column Height (DART) Data
+[TXT]	46403.dart	2025-06-10 20:15	97K	Water Column Height (DART) Data
+[TXT]	46404.dart	2025-06-10 18:25	125K	Water Column Height (DART) Data
+[TXT]	46407.dart	2025-06-10 18:25	64K	Water Column Height (DART) Data
+[TXT]	46410.dart	2025-06-10 20:15	247K	Water Column Height (DART) Data
+[TXT]	46411.dart	2025-06-10 18:25	102K	Water Column Height (DART) Data
+[TXT]	46413.dart	2025-06-10 18:25	115K	Water Column Height (DART) Data
+[TXT]	46414.dart	2025-06-02 05:15	34K	Water Column Height (DART) Data
+[TXT]	46415.dart	2025-06-10 18:25	132K	Water Column Height (DART) Data
+[TXT]	46416.dart	2025-06-10 18:25	20K	Water Column Height (DART) Data
+[TXT]	46419.dart	2025-06-10 18:20	130K	Water Column Height (DART) Data
+[TXT]	48400.txt	2025-06-10 18:55	55K	Standard Meteorological Data
+[TXT]	51000.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	51000.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	51000.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	51000.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	51000.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	51000.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	51000.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	51000.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	51001.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	51001.spec	2025-06-10 20:10	148K	Spectral Wave Summary Data
+[TXT]	51001.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	51001.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	51001.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	51001.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	51001.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	51001.txt	2025-06-10 20:20	601K	Standard Meteorological Data
+[TXT]	51002.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	51002.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	51002.supl	2025-06-10 20:20	307K	Supplemental Measurements Data
+[TXT]	51002.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	51002.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	51002.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	51002.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	51002.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	51004.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	51004.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	51004.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	51004.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	51004.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	51004.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	51004.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	51004.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	51045.ocean	2025-06-10 19:45	179K	Oceanographic Data
+[TXT]	51101.data_spec	2025-06-10 20:15	1.4M	Raw Spectral Wave Data
+[TXT]	51101.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	51101.supl	2025-06-10 20:20	306K	Supplemental Measurements Data
+[TXT]	51101.swdir	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha1)
+[TXT]	51101.swdir2	2025-06-10 20:15	1.3M	Spectral Wave Data (alpha2)
+[TXT]	51101.swr1	2025-06-10 20:15	1.3M	Spectral Wave Data (r1)
+[TXT]	51101.swr2	2025-06-10 20:15	1.3M	Spectral Wave Data (r2)
+[TXT]	51101.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	51201.data_spec	2025-06-10 20:05	1.0M	Raw Spectral Wave Data
+[TXT]	51201.spec	2025-06-10 20:05	150K	Spectral Wave Summary Data
+[TXT]	51201.swdir	2025-06-10 20:05	924K	Spectral Wave Data (alpha1)
+[TXT]	51201.swdir2	2025-06-10 20:05	924K	Spectral Wave Data (alpha2)
+[TXT]	51201.swr1	2025-06-10 20:05	913K	Spectral Wave Data (r1)
+[TXT]	51201.swr2	2025-06-10 20:05	913K	Spectral Wave Data (r2)
+[TXT]	51201.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	51202.adcp	2025-06-10 20:15	70K	Acoustic Doppler Current Profiler Data
+[TXT]	51202.data_spec	2025-06-10 20:20	1.5M	Raw Spectral Wave Data
+[TXT]	51202.spec	2025-06-10 20:15	150K	Spectral Wave Summary Data
+[TXT]	51202.swdir	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha1)
+[TXT]	51202.swdir2	2025-06-10 20:20	1.4M	Spectral Wave Data (alpha2)
+[TXT]	51202.swr1	2025-06-10 20:20	1.4M	Spectral Wave Data (r1)
+[TXT]	51202.swr2	2025-06-10 20:20	1.4M	Spectral Wave Data (r2)
+[TXT]	51202.txt	2025-06-10 20:20	198K	Standard Meteorological Data
+[TXT]	51205.data_spec	2025-05-27 01:05	971K	Raw Spectral Wave Data
+[TXT]	51205.spec	2025-05-27 01:05	148K	Spectral Wave Summary Data
+[TXT]	51205.swdir	2025-05-27 01:05	908K	Spectral Wave Data (alpha1)
+[TXT]	51205.swdir2	2025-05-27 01:05	920K	Spectral Wave Data (alpha2)
+[TXT]	51205.swr1	2025-05-27 01:05	897K	Spectral Wave Data (r1)
+[TXT]	51205.swr2	2025-05-27 01:05	897K	Spectral Wave Data (r2)
+[TXT]	51205.txt	2025-05-27 01:11	197K	Standard Meteorological Data
+[TXT]	51206.data_spec	2025-06-10 20:20	258K	Raw Spectral Wave Data
+[TXT]	51206.spec	2025-06-10 20:20	39K	Spectral Wave Summary Data
+[TXT]	51206.swdir	2025-06-10 20:20	243K	Spectral Wave Data (alpha1)
+[TXT]	51206.swdir2	2025-06-10 20:20	243K	Spectral Wave Data (alpha2)
+[TXT]	51206.swr1	2025-06-10 20:20	238K	Spectral Wave Data (r1)
+[TXT]	51206.swr2	2025-06-10 20:20	238K	Spectral Wave Data (r2)
+[TXT]	51206.txt	2025-06-10 20:20	52K	Standard Meteorological Data
+[TXT]	51207.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	51207.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	51207.swdir	2025-06-10 20:10	915K	Spectral Wave Data (alpha1)
+[TXT]	51207.swdir2	2025-06-10 20:10	921K	Spectral Wave Data (alpha2)
+[TXT]	51207.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	51207.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	51207.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	51208.data_spec	2025-06-10 19:40	1.0M	Raw Spectral Wave Data
+[TXT]	51208.spec	2025-06-10 19:40	150K	Spectral Wave Summary Data
+[TXT]	51208.swdir	2025-06-10 19:40	923K	Spectral Wave Data (alpha1)
+[TXT]	51208.swdir2	2025-06-10 19:40	929K	Spectral Wave Data (alpha2)
+[TXT]	51208.swr1	2025-06-10 19:40	911K	Spectral Wave Data (r1)
+[TXT]	51208.swr2	2025-06-10 19:40	911K	Spectral Wave Data (r2)
+[TXT]	51208.txt	2025-06-10 19:45	199K	Standard Meteorological Data
+[TXT]	51209.data_spec	2025-06-10 20:20	94K	Raw Spectral Wave Data
+[TXT]	51209.spec	2025-06-10 20:20	14K	Spectral Wave Summary Data
+[TXT]	51209.swdir	2025-06-10 20:20	90K	Spectral Wave Data (alpha1)
+[TXT]	51209.swdir2	2025-06-10 20:20	90K	Spectral Wave Data (alpha2)
+[TXT]	51209.swr1	2025-06-10 20:20	86K	Spectral Wave Data (r1)
+[TXT]	51209.swr2	2025-06-10 20:20	86K	Spectral Wave Data (r2)
+[TXT]	51209.txt	2025-06-10 20:25	19K	Standard Meteorological Data
+[TXT]	51210.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	51210.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	51210.swdir	2025-06-10 20:10	915K	Spectral Wave Data (alpha1)
+[TXT]	51210.swdir2	2025-06-10 20:10	919K	Spectral Wave Data (alpha2)
+[TXT]	51210.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	51210.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	51210.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	51211.adcp	2025-06-10 20:25	65K	Acoustic Doppler Current Profiler Data
+[TXT]	51211.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	51211.spec	2025-06-10 20:25	149K	Spectral Wave Summary Data
+[TXT]	51211.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	51211.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	51211.swr1	2025-06-10 20:25	1.4M	Spectral Wave Data (r1)
+[TXT]	51211.swr2	2025-06-10 20:25	1.4M	Spectral Wave Data (r2)
+[TXT]	51211.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	51212.adcp	2025-06-10 20:25	63K	Acoustic Doppler Current Profiler Data
+[TXT]	51212.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	51212.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	51212.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	51212.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	51212.swr1	2025-06-10 20:25	1.4M	Spectral Wave Data (r1)
+[TXT]	51212.swr2	2025-06-10 20:25	1.4M	Spectral Wave Data (r2)
+[TXT]	51212.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	51213.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	51213.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	51213.swdir	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha1)
+[TXT]	51213.swdir2	2025-06-10 20:10	1.0M	Spectral Wave Data (alpha2)
+[TXT]	51213.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	51213.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	51213.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	51214.adcp	2025-06-10 20:25	66K	Acoustic Doppler Current Profiler Data
+[TXT]	51214.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	51214.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	51214.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	51214.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	51214.swr1	2025-06-10 20:25	1.4M	Spectral Wave Data (r1)
+[TXT]	51214.swr2	2025-06-10 20:25	1.4M	Spectral Wave Data (r2)
+[TXT]	51214.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	51407.dart	2025-05-13 00:25	125K	Water Column Height (DART) Data
+[TXT]	51425.dart	2025-06-10 18:20	131K	Water Column Height (DART) Data
+[TXT]	52200.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	52200.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	52200.swdir	2025-06-10 20:10	942K	Spectral Wave Data (alpha1)
+[TXT]	52200.swdir2	2025-06-10 20:10	941K	Spectral Wave Data (alpha2)
+[TXT]	52200.swr1	2025-06-10 20:10	912K	Spectral Wave Data (r1)
+[TXT]	52200.swr2	2025-06-10 20:10	912K	Spectral Wave Data (r2)
+[TXT]	52200.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	52201.adcp	2025-06-10 18:55	5.5K	Acoustic Doppler Current Profiler Data
+[TXT]	52201.data_spec	2025-06-10 20:25	188K	Raw Spectral Wave Data
+[TXT]	52201.spec	2025-06-10 20:25	19K	Spectral Wave Summary Data
+[TXT]	52201.swdir	2025-06-10 20:25	180K	Spectral Wave Data (alpha1)
+[TXT]	52201.swdir2	2025-06-10 20:25	181K	Spectral Wave Data (alpha2)
+[TXT]	52201.swr1	2025-06-10 20:25	174K	Spectral Wave Data (r1)
+[TXT]	52201.swr2	2025-06-10 20:25	174K	Spectral Wave Data (r2)
+[TXT]	52201.txt	2025-06-10 20:25	25K	Standard Meteorological Data
+[TXT]	52202.data_spec	2025-06-10 20:10	1.0M	Raw Spectral Wave Data
+[TXT]	52202.spec	2025-06-10 20:10	150K	Spectral Wave Summary Data
+[TXT]	52202.swdir	2025-06-10 20:10	917K	Spectral Wave Data (alpha1)
+[TXT]	52202.swdir2	2025-06-10 20:10	919K	Spectral Wave Data (alpha2)
+[TXT]	52202.swr1	2025-06-10 20:10	913K	Spectral Wave Data (r1)
+[TXT]	52202.swr2	2025-06-10 20:10	913K	Spectral Wave Data (r2)
+[TXT]	52202.txt	2025-06-10 20:10	200K	Standard Meteorological Data
+[TXT]	52211.adcp	2025-04-29 23:10	46K	Acoustic Doppler Current Profiler Data
+[TXT]	52211.data_spec	2025-04-30 04:40	1.4M	Raw Spectral Wave Data
+[TXT]	52211.spec	2025-04-30 04:40	148K	Spectral Wave Summary Data
+[TXT]	52211.swdir	2025-04-30 04:40	1.3M	Spectral Wave Data (alpha1)
+[TXT]	52211.swdir2	2025-04-30 04:40	1.3M	Spectral Wave Data (alpha2)
+[TXT]	52211.swr1	2025-04-30 04:40	1.3M	Spectral Wave Data (r1)
+[TXT]	52211.swr2	2025-04-30 04:40	1.3M	Spectral Wave Data (r2)
+[TXT]	52211.txt	2025-04-30 04:56	196K	Standard Meteorological Data
+[TXT]	52212.adcp	2025-06-10 20:20	50K	Acoustic Doppler Current Profiler Data
+[TXT]	52212.data_spec	2025-06-10 20:20	1.2M	Raw Spectral Wave Data
+[TXT]	52212.spec	2025-06-10 20:20	124K	Spectral Wave Summary Data
+[TXT]	52212.swdir	2025-06-10 20:20	1.2M	Spectral Wave Data (alpha1)
+[TXT]	52212.swdir2	2025-06-10 20:20	1.2M	Spectral Wave Data (alpha2)
+[TXT]	52212.swr1	2025-06-10 20:20	1.1M	Spectral Wave Data (r1)
+[TXT]	52212.swr2	2025-06-10 20:20	1.1M	Spectral Wave Data (r2)
+[TXT]	52212.txt	2025-06-10 20:20	167K	Standard Meteorological Data
+[TXT]	52213.adcp	2025-06-10 20:25	45K	Acoustic Doppler Current Profiler Data
+[TXT]	52213.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	52213.spec	2025-06-10 20:25	150K	Spectral Wave Summary Data
+[TXT]	52213.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	52213.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	52213.swr1	2025-06-10 20:25	1.4M	Spectral Wave Data (r1)
+[TXT]	52213.swr2	2025-06-10 20:25	1.4M	Spectral Wave Data (r2)
+[TXT]	52213.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	52215.adcp	2025-06-10 20:00	18K	Acoustic Doppler Current Profiler Data
+[TXT]	52215.data_spec	2025-06-10 20:25	1.5M	Raw Spectral Wave Data
+[TXT]	52215.spec	2025-06-10 20:25	149K	Spectral Wave Summary Data
+[TXT]	52215.swdir	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha1)
+[TXT]	52215.swdir2	2025-06-10 20:25	1.4M	Spectral Wave Data (alpha2)
+[TXT]	52215.swr1	2025-06-10 20:25	1.3M	Spectral Wave Data (r1)
+[TXT]	52215.swr2	2025-06-10 20:25	1.3M	Spectral Wave Data (r2)
+[TXT]	52215.txt	2025-06-10 20:25	201K	Standard Meteorological Data
+[TXT]	52402.dart	2025-06-10 18:25	121K	Water Column Height (DART) Data
+[TXT]	52405.dart	2025-06-10 18:25	133K	Water Column Height (DART) Data
+[TXT]	53005.txt	2025-06-10 19:25	101K	Standard Meteorological Data
+[TXT]	55012.dart	2025-06-10 18:40	142K	Water Column Height (DART) Data
+[TXT]	55015.dart	2025-06-10 18:40	55K	Water Column Height (DART) Data
+[TXT]	55023.dart	2025-06-10 18:30	133K	Water Column Height (DART) Data
+[TXT]	56003.dart	2025-06-10 18:40	133K	Water Column Height (DART) Data
+[TXT]	62029.txt	2025-06-10 19:35	752	Standard Meteorological Data
+[TXT]	62050.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62081.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62103.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62105.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62107.spec	2025-06-10 12:45	351	Spectral Wave Summary Data
+[TXT]	62107.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62114.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62121.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62124.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62127.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62127.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62130.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62130.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62144.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62144.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62145.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62145.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62146.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62146.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62148.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62149.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62149.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62163.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62164.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62165.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62165.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62170.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62170.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62304.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62304.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	62305.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	62305.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	63110.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	63110.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	63112.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	63112.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	63115.spec	2025-06-10 18:45	491	Spectral Wave Summary Data
+[TXT]	63115.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	64045.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	1801589.drift	2025-06-10 20:25	69K	Standard Meteorological Data for Drifting Buoys
+[TXT]	1801593.drift	2025-05-08 20:25	62K	Standard Meteorological Data for Drifting Buoys
+[TXT]	5401002.dart	2025-06-10 18:40	190K	Water Column Height (DART) Data
+[TXT]	5401003.dart	2025-06-10 18:30	130K	Water Column Height (DART) Data
+[TXT]	5401004.dart	2025-06-10 18:30	133K	Water Column Height (DART) Data
+[TXT]	5401005.dart	2025-06-10 18:40	133K	Water Column Height (DART) Data
+[TXT]	5501002.dart	2025-06-10 18:40	133K	Water Column Height (DART) Data
+[TXT]	5501004.dart	2025-06-10 18:40	133K	Water Column Height (DART) Data
+[TXT]	5501005.dart	2025-06-10 18:40	149K	Water Column Height (DART) Data
+[TXT]	5501006.dart	2025-06-10 18:40	127K	Water Column Height (DART) Data
+[TXT]	5501007.dart	2025-06-10 18:30	133K	Water Column Height (DART) Data
+[TXT]	AAMC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ABYA2.txt	2025-06-10 20:00	95K	Standard Meteorological Data
+[TXT]	ACFS1.ocean	2025-06-10 19:55	347K	Oceanographic Data
+[TXT]	ACQS1.ocean	2025-06-10 20:25	347K	Oceanographic Data
+[TXT]	ACXS1.txt	2025-06-10 20:25	401K	Standard Meteorological Data
+[TXT]	ACYN4.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	ADKA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	AGCM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	AGXC1.txt	2025-06-10 20:15	814K	Standard Meteorological Data
+[TXT]	AJXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	AKXA2.txt	2025-06-10 20:25	598K	Standard Meteorological Data
+[TXT]	ALIA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ALXN6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	AMAA2.cwind	2025-06-10 20:10	68K	Continuous Winds Data
+[TXT]	AMAA2.txt	2025-06-10 20:10	52K	Standard Meteorological Data
+[TXT]	AMRL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ANMN6.txt	2025-06-10 19:55	397K	Standard Meteorological Data
+[TXT]	ANPT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ANRN6.ocean	2025-06-10 19:55	348K	Oceanographic Data
+[TXT]	ANTA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ANVC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	APAM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	APCF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	APMA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	APNM4.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	APQF1.ocean	2025-06-10 20:25	146K	Oceanographic Data
+[TXT]	APRP7.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	APXA2.txt	2025-06-10 20:25	399K	Standard Meteorological Data
+[TXT]	APXF1.txt	2025-06-10 20:25	404K	Standard Meteorological Data
+[TXT]	ARPF1.txt	2025-06-10 19:35	1.0M	Standard Meteorological Data
+[TXT]	ASBO1.txt	2025-05-28 12:15	589K	Standard Meteorological Data
+[TXT]	ATGM1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	ATKA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	AUGA2.cwind	2025-06-10 20:10	258K	Continuous Winds Data
+[TXT]	AUGA2.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	AWRT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	BABT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	BATN6.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BAXC1.txt	2025-06-10 20:15	815K	Standard Meteorological Data
+[TXT]	BBNF1.ocean	2025-06-10 20:00	133K	Oceanographic Data
+[TXT]	BBNF1.txt	2025-06-10 20:00	162K	Standard Meteorological Data
+[TXT]	BBSF1.ocean	2025-06-10 20:00	133K	Oceanographic Data
+[TXT]	BBSF1.txt	2025-06-10 20:00	162K	Standard Meteorological Data
+[TXT]	BDRN4.txt	2025-06-10 20:00	1.0M	Standard Meteorological Data
+[TXT]	BDSP1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BDVF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	BDVF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	BDVF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	BDXC1.ocean	2025-06-10 20:25	466K	Oceanographic Data
+[TXT]	BDXC1.txt	2025-06-10 20:25	531K	Standard Meteorological Data
+[TXT]	BEIS1.ocean	2025-06-10 14:25	171K	Oceanographic Data
+[TXT]	BEXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	BFTN7.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BGXN3.txt	2025-06-10 20:25	403K	Standard Meteorological Data
+[TXT]	BHBM3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BHRI3.txt	2025-06-10 20:00	473K	Standard Meteorological Data
+[TXT]	BIGM4.txt	2025-06-10 19:55	605K	Standard Meteorological Data
+[TXT]	BILW3.ocean	2025-05-19 13:25	1.4K	Oceanographic Data
+[TXT]	BISM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BKBF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	BKTL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	BKYF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	BKYF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	BKYF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	BLIA2.cwind	2025-06-10 20:10	258K	Continuous Winds Data
+[TXT]	BLIA2.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	BLIF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	BLTM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BLTM3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BMTW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	BNKF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	BNKF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	BNKF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	BOBF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	BOBF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	BOBF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	BRHC3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BRIM2.ocean	2025-06-10 19:55	347K	Oceanographic Data
+[TXT]	BRND1.txt	2025-06-10 20:20	948K	Standard Meteorological Data
+[TXT]	BSBM4.txt	2025-06-10 19:55	610K	Standard Meteorological Data
+[TXT]	BSCA1.txt	2025-06-10 20:05	99K	Standard Meteorological Data
+[TXT]	BSKF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	BSKF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	BSKF1.txt	2025-06-10 20:00	74K	Standard Meteorological Data
+[TXT]	BSLM2.txt	2025-06-10 19:55	364K	Standard Meteorological Data
+[TXT]	BUFN6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	BURL1.cwind	2025-06-10 20:15	258K	Continuous Winds Data
+[TXT]	BURL1.txt	2025-06-10 20:15	101K	Standard Meteorological Data
+[TXT]	BUZM3.cwind	2025-06-10 20:15	257K	Continuous Winds Data
+[TXT]	BUZM3.txt	2025-06-10 20:15	101K	Standard Meteorological Data
+[TXT]	BVQW1.ocean	2025-06-10 20:25	344K	Oceanographic Data
+[TXT]	BWSF1.ocean	2025-06-10 20:00	69K	Oceanographic Data
+[TXT]	BWSF1.rain	2025-06-10 20:00	22K	Hourly Rain Data
+[TXT]	BWSF1.txt	2025-06-10 20:00	84K	Standard Meteorological Data
+[TXT]	BYGL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	BZBM3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	BZST2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CAMM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CANF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	CANF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	CANF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	CAPL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CARL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CASM1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CAVN6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CBLO1.txt	2025-06-10 20:15	591K	Standard Meteorological Data
+[TXT]	CBRW3.txt	2025-06-10 19:55	604K	Standard Meteorological Data
+[TXT]	CDEA2.txt	2025-06-10 19:30	97K	Standard Meteorological Data
+[TXT]	CDXA2.txt	2025-06-10 20:25	585K	Standard Meteorological Data
+[TXT]	CECC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CFWM1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CHAO3.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	CHAV3.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CHBV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CHCM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CHII2.txt	2025-06-10 20:20	604K	Standard Meteorological Data
+[TXT]	CHQO3.ocean	2025-06-10 19:55	348K	Oceanographic Data
+[TXT]	CHSV3.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CHTM3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CHTS1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CHYV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CHYW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CKYF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CLBP4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CLKN7.supl	2025-06-10 20:25	244K	Supplemental Measurements Data
+[TXT]	CLKN7.txt	2025-06-10 20:25	477K	Standard Meteorological Data
+[TXT]	CLSM4.txt	2025-06-10 20:10	608K	Standard Meteorological Data
+[TXT]	CMAN4.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CMLN3.txt	2025-06-10 11:35	30K	Standard Meteorological Data
+[TXT]	CMPO1.txt	2025-06-10 20:20	142K	Standard Meteorological Data
+[TXT]	CMTI2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CNBF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	CNBF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	CNBF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	CNDO1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CNII2.txt	2025-06-10 19:40	364K	Standard Meteorological Data
+[TXT]	COVM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	COXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	CPMW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CPNW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CPSA2.txt	2025-06-10 20:25	524K	Standard Meteorological Data
+[TXT]	CPTR1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CPVM2.txt	2025-06-10 20:00	779K	Standard Meteorological Data
+[TXT]	CPXA2.txt	2025-06-10 20:25	586K	Standard Meteorological Data
+[TXT]	CPXC1.ocean	2025-06-04 15:25	881K	Oceanographic Data
+[TXT]	CPXC1.txt	2025-06-04 15:15	1.1M	Standard Meteorological Data
+[TXT]	CRGA2.supl	2025-06-10 19:35	49K	Supplemental Measurements Data
+[TXT]	CRGA2.txt	2025-06-10 19:35	96K	Standard Meteorological Data
+[TXT]	CRTA1.txt	2025-06-08 11:05	940	Standard Meteorological Data
+[TXT]	CRVA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CRYV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	CSPA2.txt	2025-06-10 20:20	96K	Standard Meteorological Data
+[TXT]	CSXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	CVQV2.ocean	2025-06-10 20:25	348K	Oceanographic Data
+[TXT]	CWAF1.ocean	2025-06-10 20:00	62K	Oceanographic Data
+[TXT]	CWAF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	CWAF1.txt	2025-06-10 20:00	73K	Standard Meteorological Data
+[TXT]	CWBF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	CWCI.txt	2025-06-10 19:35	2.5K	Standard Meteorological Data
+[TXT]	CWQT2.ocean	2025-06-10 19:55	347K	Oceanographic Data
+[TXT]	CWWT2.ocean	2025-06-09 15:25	1.4K	Oceanographic Data
+[TXT]	CXLM2.ocean	2025-06-10 20:15	319K	Oceanographic Data
+[TXT]	CXLM2.txt	2025-06-10 20:20	369K	Standard Meteorological Data
+[TXT]	CYGM4.txt	2025-06-10 20:25	1.2M	Standard Meteorological Data
+[TXT]	DBLN6.cwind	2025-06-04 13:10	256K	Continuous Winds Data
+[TXT]	DBLN6.txt	2025-06-04 13:10	101K	Standard Meteorological Data
+[TXT]	DELD1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	DESW1.cwind	2025-06-10 20:10	256K	Continuous Winds Data
+[TXT]	DESW1.txt	2025-06-10 20:10	100K	Standard Meteorological Data
+[TXT]	DHXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	DILA1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	DISW3.cwind	2025-06-10 20:15	258K	Continuous Winds Data
+[TXT]	DISW3.txt	2025-06-10 20:15	101K	Standard Meteorological Data
+[TXT]	DKKF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	DKKF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	DKKF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	DMSF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	DOMV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	DPHA1.txt	2025-06-10 20:05	97K	Standard Meteorological Data
+[TXT]	DPLA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	DPOA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	DPXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	DPXC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	DRSD1.txt	2025-06-10 19:55	403K	Standard Meteorological Data
+[TXT]	DTLM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	DUKN7.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	DULM5.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	EAZC1.ocean	2025-06-10 20:25	347K	Oceanographic Data
+[TXT]	EBEF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	EFLA1.txt	2025-06-10 20:05	778K	Standard Meteorological Data
+[TXT]	EHSC1.ocean	2025-06-10 20:25	323K	Oceanographic Data
+[TXT]	EINL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ELFA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ELQC1.ocean	2025-06-10 19:55	280K	Oceanographic Data
+[TXT]	ELXC1.txt	2025-06-10 20:25	404K	Standard Meteorological Data
+[TXT]	EMAT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	EPTT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	EROA2.txt	2025-05-26 16:35	98K	Standard Meteorological Data
+[TXT]	ERXA2.txt	2025-06-10 20:25	599K	Standard Meteorological Data
+[TXT]	ESPP4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	EVMC1.ocean	2025-06-10 20:25	286K	Oceanographic Data
+[TXT]	FAIO1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	FFFC1.ocean	2025-06-10 19:55	347K	Oceanographic Data
+[TXT]	FFIA2.cwind	2025-06-10 20:10	257K	Continuous Winds Data
+[TXT]	FFIA2.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	FILA2.cwind	2025-06-10 20:10	257K	Continuous Winds Data
+[TXT]	FILA2.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	FLQN6.ocean	2025-06-10 19:25	74K	Oceanographic Data
+[TXT]	FMNS1.ocean	2025-06-10 19:55	347K	Oceanographic Data
+[TXT]	FMRF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	FOXR1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	FPKG1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	FPST2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	FPTM4.txt	2025-06-10 19:55	139K	Standard Meteorological Data
+[TXT]	FRCB6.txt	2025-06-10 20:20	944K	Standard Meteorological Data
+[TXT]	FRDF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	FRDW1.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	FRMA1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	FRVM3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	FRWL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	FRXM3.txt	2025-06-10 20:00	778K	Standard Meteorological Data
+[TXT]	FSKM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	FTGM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	FTPC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	GBCM6.ocean	2025-06-10 20:25	344K	Oceanographic Data
+[TXT]	GBHM6.ocean	2025-05-23 13:25	136K	Oceanographic Data
+[TXT]	GBIF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	GBIF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	GBIF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	GBQN3.ocean	2025-06-10 20:25	214K	Oceanographic Data
+[TXT]	GBTF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	GBTF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	GBTF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	GBWW3.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	GBXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	GDMM5.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	GDQM6.ocean	2025-06-10 20:25	346K	Oceanographic Data
+[TXT]	GDXM6.txt	2025-06-10 20:25	403K	Standard Meteorological Data
+[TXT]	GELO1.txt	2025-06-10 20:10	302K	Standard Meteorological Data
+[TXT]	GEXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	GISL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	GIXA2.txt	2025-06-10 20:25	600K	Standard Meteorological Data
+[TXT]	GNJT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	GPXA2.txt	2025-06-10 20:25	547K	Standard Meteorological Data
+[TXT]	GRMM4.txt	2025-06-10 19:55	585K	Standard Meteorological Data
+[TXT]	GRRT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	GSLM4.txt	2025-06-10 19:50	413K	Standard Meteorological Data
+[TXT]	GTLM4.txt	2025-06-10 20:20	616K	Standard Meteorological Data
+[TXT]	GTOT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	GTXF1.txt	2025-06-10 20:25	404K	Standard Meteorological Data
+[TXT]	GUXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	HAXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	HBMN6.ocean	2025-06-10 19:55	348K	Oceanographic Data
+[TXT]	HBXC1.ocean	2025-05-26 05:55	307K	Oceanographic Data
+[TXT]	HBXC1.txt	2025-05-26 05:55	356K	Standard Meteorological Data
+[TXT]	HBYC1.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	HCEF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	HCEF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	HCEF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	HCGN7.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	HHLO1.txt	2025-06-10 20:10	605K	Standard Meteorological Data
+[TXT]	HIST2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	HIVT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	HLNM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	HMRA2.txt	2025-06-10 19:55	401K	Standard Meteorological Data
+[TXT]	HMSA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	HRBM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	HREF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	HREF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	HREF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	HRRH1.txt	2025-06-10 19:55	403K	Standard Meteorological Data
+[TXT]	HUQN6.ocean	2025-06-10 20:25	348K	Oceanographic Data
+[TXT]	HWWH1.ocean	2025-06-10 19:55	313K	Oceanographic Data
+[TXT]	ICAC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ICYA2.txt	2025-06-10 20:25	226K	Standard Meteorological Data
+[TXT]	ILOH1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	IOSN3.cwind	2025-06-10 20:15	258K	Continuous Winds Data
+[TXT]	IOSN3.txt	2025-06-10 20:15	101K	Standard Meteorological Data
+[TXT]	IRDT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ITKA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	JBYF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	JBYF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	JBYF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	JCQN4.ocean	2025-05-29 17:55	2.7K	Oceanographic Data
+[TXT]	JCRN4.txt	2025-06-10 19:55	403K	Standard Meteorological Data
+[TXT]	JKYF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	JKYF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	JKYF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	JLXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	JMLA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	JMPN7.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	JNEA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	JNGA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	JOQP4.ocean	2025-05-20 15:50	4.0K	Oceanographic Data
+[TXT]	JOXP4.txt	2025-06-02 14:55	1.7K	Standard Meteorological Data
+[TXT]	JXUF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	KATP.txt	2025-06-10 20:10	301K	Standard Meteorological Data
+[TXT]	KBMG1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	KBQX.txt	2025-06-10 20:10	292K	Standard Meteorological Data
+[TXT]	KECA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	KEXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	KGBK.txt	2025-06-10 00:30	201K	Standard Meteorological Data
+[TXT]	KGCA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	KGHB.txt	2025-06-10 20:10	292K	Standard Meteorological Data
+[TXT]	KGNA.txt	2025-06-10 20:05	101K	Standard Meteorological Data
+[TXT]	KGUL.txt	2025-06-10 20:10	273K	Standard Meteorological Data
+[TXT]	KGVW.txt	2025-06-10 20:10	257K	Standard Meteorological Data
+[TXT]	KGXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	KHHV.txt	2025-06-10 20:10	271K	Standard Meteorological Data
+[TXT]	KIKT.txt	2025-06-08 14:10	277K	Standard Meteorological Data
+[TXT]	KLIH1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	KLMW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	KMXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	KNXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	KP53.txt	2025-06-10 20:05	96K	Standard Meteorological Data
+[TXT]	KP58.txt	2025-06-10 20:15	100K	Standard Meteorological Data
+[TXT]	KP59.txt	2025-06-10 20:05	100K	Standard Meteorological Data
+[TXT]	KPTN6.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	KPTV2.txt	2025-06-10 20:20	969K	Standard Meteorological Data
+[TXT]	KVAF.txt	2025-06-10 20:10	292K	Standard Meteorological Data
+[TXT]	KVOA.txt	2025-06-10 20:10	288K	Standard Meteorological Data
+[TXT]	KWHH1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	KWJP8.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	KWNW3.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	KYWF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LAMV3.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LAPW1.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	LBSF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	LBSF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	LBSF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	LCLL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LCNA2.txt	2025-06-10 20:25	97K	Standard Meteorological Data
+[TXT]	LDTM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LIXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	LJAC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LJPC1.data_spec	2025-06-10 19:35	1.4M	Raw Spectral Wave Data
+[TXT]	LJPC1.spec	2025-06-10 20:25	75K	Spectral Wave Summary Data
+[TXT]	LJPC1.txt	2025-06-10 20:25	100K	Standard Meteorological Data
+[TXT]	LKWF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LMDF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	LMDF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	LMDF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	LMFS1.txt	2025-06-10 20:25	348K	Standard Meteorological Data
+[TXT]	LMRF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	LMRF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	LMRF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	LNDC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LONF1.txt	2025-06-10 20:20	581K	Standard Meteorological Data
+[TXT]	LOPL1.txt	2025-06-10 19:40	101K	Standard Meteorological Data
+[TXT]	LOPW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LORO1.txt	2025-06-10 19:40	604K	Standard Meteorological Data
+[TXT]	LPNM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LQAT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LRIF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	LRIF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	LRIF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	LRKF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	LRKF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	LRKF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	LSNF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	LSNF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	LSNF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	LTBV3.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LTJF1.txt	2025-06-10 20:05	782K	Standard Meteorological Data
+[TXT]	LTQM2.ocean	2025-06-04 15:25	244K	Oceanographic Data
+[TXT]	LTRM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LUIT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	LWSD1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	LWTV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	MACM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MAQT2.ocean	2025-05-07 09:26	341K	Oceanographic Data
+[TXT]	MBET2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MBIN7.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	MBNN7.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	MBPA1.txt	2025-06-10 20:05	781K	Standard Meteorological Data
+[TXT]	MBRM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MBXC1.ocean	2025-06-10 20:10	444K	Oceanographic Data
+[TXT]	MBXC1.txt	2025-06-10 20:10	515K	Standard Meteorological Data
+[TXT]	MCGA1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MCGM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MCYI3.txt	2025-06-10 20:20	604K	Standard Meteorological Data
+[TXT]	MDKF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	MDKF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	MDKF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	MDRM1.cwind	2025-06-10 20:10	257K	Continuous Winds Data
+[TXT]	MDRM1.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	MDXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	MEEM4.txt	2025-06-10 19:50	604K	Standard Meteorological Data
+[TXT]	MEYC1.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	MGIP4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MGPT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MGZP4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MHBT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MHRN6.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	MISM1.cwind	2025-06-10 20:15	258K	Continuous Winds Data
+[TXT]	MISM1.txt	2025-06-10 20:15	101K	Standard Meteorological Data
+[TXT]	MISP4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MIST2.txt	2025-06-10 19:55	402K	Standard Meteorological Data
+[TXT]	MIXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	MKGM4.txt	2025-06-10 20:20	600K	Standard Meteorological Data
+[TXT]	MLSC1.ocean	2025-06-10 20:25	673K	Oceanographic Data
+[TXT]	MLSC1.txt	2025-06-10 20:15	1.7M	Standard Meteorological Data
+[TXT]	MLWW3.txt	2025-06-10 20:20	603K	Standard Meteorological Data
+[TXT]	MNBF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	MNBF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	MNBF1.txt	2025-06-10 20:00	78K	Standard Meteorological Data
+[TXT]	MNMM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MNPV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	MOKH1.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	MQMT2.ocean	2025-06-10 19:55	268K	Oceanographic Data
+[TXT]	MRCP1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	MRHO1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MRKA2.cwind	2025-06-10 20:10	258K	Continuous Winds Data
+[TXT]	MRKA2.txt	2025-06-10 20:10	202K	Standard Meteorological Data
+[TXT]	MRNA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	MROS1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	MRYA2.txt	2025-06-10 20:25	600K	Standard Meteorological Data
+[TXT]	MTBF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MTKN6.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	MUKF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	MUKF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	MVXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	MWQT2.ocean	2025-06-10 20:25	347K	Oceanographic Data
+[TXT]	MXXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	MYPF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	MZXC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NABM4.txt	2025-06-10 20:00	602K	Standard Meteorological Data
+[TXT]	NAQR1.ocean	2025-06-10 20:25	348K	Oceanographic Data
+[TXT]	NAXR1.txt	2025-06-10 20:25	403K	Standard Meteorological Data
+[TXT]	NBGM3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	NBLP1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	NCDV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	NCHT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NEAW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NFDF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NIAN6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NIQS1.ocean	2025-06-10 20:25	348K	Oceanographic Data
+[TXT]	NIWS1.txt	2025-06-10 20:25	404K	Standard Meteorological Data
+[TXT]	NJLC1.txt	2025-06-10 20:15	844K	Standard Meteorological Data
+[TXT]	NKLA2.txt	2025-06-10 20:25	597K	Standard Meteorological Data
+[TXT]	NKTA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NKXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	NLHC3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	NLXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	NMTA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NMXA2.txt	2025-06-10 20:00	595K	Standard Meteorological Data
+[TXT]	NPDW3.txt	2025-06-10 19:50	198K	Standard Meteorological Data
+[TXT]	NPQC1.ocean	2025-06-10 19:55	319K	Oceanographic Data
+[TXT]	NPQN6.ocean	2025-06-10 20:25	347K	Oceanographic Data
+[TXT]	NPXN6.txt	2025-06-10 19:55	401K	Standard Meteorological Data
+[TXT]	NREP1.txt	2025-06-10 20:20	199K	Standard Meteorological Data
+[TXT]	NRRF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	NRRF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	NRRF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	NSTP6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NSXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	NTBC1.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	NTKM3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	NWCL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	NWHC3.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	NWPO3.cwind	2025-06-10 20:10	257K	Continuous Winds Data
+[TXT]	NWPO3.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	NWPR1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	NWWH1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	OBGN6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	OBLA1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	OBXC1.txt	2025-06-10 20:00	767K	Standard Meteorological Data
+[TXT]	OCIM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	OKSI2.srad	2025-06-09 16:10	26K	Solar Radiation Data
+[TXT]	OKSI2.txt	2025-06-09 15:10	64K	Standard Meteorological Data
+[TXT]	OKXC1.txt	2025-06-10 20:15	961K	Standard Meteorological Data
+[TXT]	OLCN6.txt	2025-06-10 20:10	587K	Standard Meteorological Data
+[TXT]	OLSA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	OMHC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	OOUH1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	OPTF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ORIN7.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	OSGN6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	OSTF1.supl	2025-06-10 20:20	308K	Supplemental Measurements Data
+[TXT]	OSTF1.txt	2025-06-10 20:20	604K	Standard Meteorological Data
+[TXT]	OTNM4.txt	2025-06-10 19:55	605K	Standard Meteorological Data
+[TXT]	OVIA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	OWDO1.ocean	2025-06-10 19:55	348K	Oceanographic Data
+[TXT]	OWMO1.txt	2025-06-10 20:25	404K	Standard Meteorological Data
+[TXT]	OWSO1.ocean	2025-06-10 19:55	345K	Oceanographic Data
+[TXT]	OWWO1.ocean	2025-06-10 20:25	50K	Oceanographic Data
+[TXT]	OWXO1.txt	2025-06-10 20:25	404K	Standard Meteorological Data
+[TXT]	PACF1.txt	2025-06-10 20:15	960K	Standard Meteorological Data
+[TXT]	PACT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PAUA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	PAXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	PBFW1.txt	2025-06-10 19:55	385K	Standard Meteorological Data
+[TXT]	PBJW1.ocean	2025-06-10 19:55	348K	Oceanographic Data
+[TXT]	PBLW1.ocean	2025-06-10 19:55	339K	Oceanographic Data
+[TXT]	PBPA2.txt	2025-06-10 20:25	96K	Standard Meteorological Data
+[TXT]	PCBF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PCGT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PCLF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PCLM4.txt	2025-06-10 19:55	591K	Standard Meteorological Data
+[TXT]	PCNT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PCOC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PCXA2.txt	2025-06-10 20:25	600K	Standard Meteorological Data
+[TXT]	PDVR1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	PEGF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PEXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	PFDC1.txt	2025-06-10 20:15	815K	Standard Meteorological Data
+[TXT]	PFXC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PGBP7.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PGXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	PHBP1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	PILA2.cwind	2025-06-10 20:10	258K	Continuous Winds Data
+[TXT]	PILA2.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	PILL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PILM4.cwind	2025-06-10 20:10	256K	Continuous Winds Data
+[TXT]	PILM4.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	PKBW3.txt	2025-06-10 20:25	378K	Standard Meteorological Data
+[TXT]	PKYF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	PKYF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	PKYF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	PLXA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PMAF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PMNT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PNGW3.txt	2025-06-10 19:55	604K	Standard Meteorological Data
+[TXT]	PNLM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PNLM6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PORO3.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PORT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	POTA2.cwind	2025-06-10 20:10	258K	Continuous Winds Data
+[TXT]	POTA2.txt	2025-06-10 20:10	201K	Standard Meteorological Data
+[TXT]	PPHH1.ocean	2025-06-10 19:55	312K	Oceanographic Data
+[TXT]	PPTM2.txt	2025-06-10 20:20	462K	Standard Meteorological Data
+[TXT]	PPXA2.txt	2025-06-10 20:25	600K	Standard Meteorological Data
+[TXT]	PPXC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PRDA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PRHH1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PRIM4.txt	2025-06-09 13:40	79K	Standard Meteorological Data
+[TXT]	PRJC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PRTA2.txt	2025-06-10 20:25	96K	Standard Meteorological Data
+[TXT]	PRYC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PSBC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PSBM1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	PSLC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PSTL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PSTN6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PSXC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PTAT2.cwind	2025-06-10 20:15	257K	Continuous Winds Data
+[TXT]	PTAT2.txt	2025-06-10 20:15	101K	Standard Meteorological Data
+[TXT]	PTAW1.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	PTBM6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PTCR1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	PTFL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PTIM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PTIT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PTLA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	PTOA1.txt	2025-06-10 20:05	782K	Standard Meteorological Data
+[TXT]	PTWW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PVDR1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	PXAC1.txt	2025-06-10 20:15	815K	Standard Meteorological Data
+[TXT]	PXOC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	PXSC1.txt	2025-06-10 20:00	757K	Standard Meteorological Data
+[TXT]	QPTR1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	RCKM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	RCMC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	RCPT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	RCRN6.txt	2025-06-10 20:00	731K	Standard Meteorological Data
+[TXT]	RDDA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	RDYD1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	RIXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	RKQF1.ocean	2025-06-10 20:25	347K	Oceanographic Data
+[TXT]	RKXF1.txt	2025-05-22 16:55	400K	Standard Meteorological Data
+[TXT]	RLIT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	RLOT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ROAM4.cwind	2025-06-10 20:10	257K	Continuous Winds Data
+[TXT]	ROAM4.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	ROBN4.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	RPLV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	RPRN6.txt	2025-06-10 20:10	94K	Standard Meteorological Data
+[TXT]	RSJT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	RTAT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	RTYC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	RYEC1.ocean	2025-06-10 19:55	348K	Oceanographic Data
+[TXT]	SANF1.supl	2025-06-10 20:20	280K	Supplemental Measurements Data
+[TXT]	SANF1.txt	2025-06-10 20:20	593K	Standard Meteorological Data
+[TXT]	SAPF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SAQG1.ocean	2025-06-10 20:25	348K	Oceanographic Data
+[TXT]	SAUF1.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	SAXG1.txt	2025-06-10 20:25	404K	Standard Meteorological Data
+[TXT]	SBEO3.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SBIO1.cwind	2025-06-10 20:10	257K	Continuous Winds Data
+[TXT]	SBIO1.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	SBLM4.txt	2025-06-10 20:10	599K	Standard Meteorological Data
+[TXT]	SCLD1.ocean	2025-06-10 18:55	225K	Oceanographic Data
+[TXT]	SCQC1.ocean	2025-06-10 19:55	347K	Oceanographic Data
+[TXT]	SCXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	SDBC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SDHN4.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	SDIA2.supl	2025-06-10 20:20	132K	Supplemental Measurements Data
+[TXT]	SDIA2.txt	2025-06-10 20:20	259K	Standard Meteorological Data
+[TXT]	SDRT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SEFO3.ocean	2025-06-10 19:20	638K	Oceanographic Data
+[TXT]	SEIM1.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	SEQA2.ocean	2025-06-10 20:25	270K	Oceanographic Data
+[TXT]	SETO3.ocean	2025-06-10 19:20	753K	Oceanographic Data
+[TXT]	SFXC1.txt	2025-06-10 20:25	129K	Standard Meteorological Data
+[TXT]	SGNW3.cwind	2025-06-10 20:05	258K	Continuous Winds Data
+[TXT]	SGNW3.txt	2025-06-10 20:05	101K	Standard Meteorological Data
+[TXT]	SGXA2.txt	2025-05-19 00:15	593K	Standard Meteorological Data
+[TXT]	SHBL1.txt	2025-06-10 20:15	956K	Standard Meteorological Data
+[TXT]	SHXA2.txt	2025-06-10 20:25	600K	Standard Meteorological Data
+[TXT]	SIPF1.txt	2025-06-10 20:25	282K	Standard Meteorological Data
+[TXT]	SISA2.txt	2025-06-10 19:30	96K	Standard Meteorological Data
+[TXT]	SISW1.supl	2025-06-10 20:20	305K	Supplemental Measurements Data
+[TXT]	SISW1.txt	2025-06-10 20:20	597K	Standard Meteorological Data
+[TXT]	SJNP4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SJSN4.txt	2025-05-07 17:30	7.3K	Standard Meteorological Data
+[TXT]	SKCF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SKTA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SKXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	SLIM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	SLOO3.ocean	2025-06-10 19:55	236K	Oceanographic Data
+[TXT]	SLVM5.txt	2025-06-10 20:20	624K	Standard Meteorological Data
+[TXT]	SLXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	SNDA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SNDP5.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SNTO3.txt	2025-06-10 19:55	403K	Standard Meteorological Data
+[TXT]	SOQO3.ocean	2025-05-08 23:25	2.7K	Oceanographic Data
+[TXT]	SPGF1.cwind	2025-06-10 20:10	243K	Continuous Winds Data
+[TXT]	SPGF1.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	SPTM4.txt	2025-06-09 13:40	74K	Standard Meteorological Data
+[TXT]	SREF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	SREF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	SREF1.txt	2025-06-10 20:00	74K	Standard Meteorological Data
+[TXT]	SRLM4.txt	2025-06-10 19:45	198K	Standard Meteorological Data
+[TXT]	SRXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	SSBN7.spec	2025-06-10 20:20	150K	Spectral Wave Summary Data
+[TXT]	SSBN7.txt	2025-06-10 20:25	1.0M	Standard Meteorological Data
+[TXT]	STXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	SVNM4.txt	2025-06-10 20:10	534K	Standard Meteorological Data
+[TXT]	SWLA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SWPM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	SWPV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	SWXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	SXXA2.txt	2025-06-10 20:25	601K	Standard Meteorological Data
+[TXT]	TAQT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TAWM4.txt	2025-06-10 19:50	530K	Standard Meteorological Data
+[TXT]	TBIM4.txt	2025-06-10 19:50	498K	Standard Meteorological Data
+[TXT]	TBYF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	TBYF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	TBYF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	TCBM2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	TCMW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TCNW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TCSV2.ocean	2025-06-10 19:55	347K	Oceanographic Data
+[TXT]	TCVF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	TCVF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	TCVF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	TDPC1.ocean	2025-06-10 20:25	179K	Oceanographic Data
+[TXT]	TDPC1.txt	2025-06-10 20:25	207K	Standard Meteorological Data
+[TXT]	TESL1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TGXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	THLO1.txt	2025-06-10 20:20	100K	Standard Meteorological Data
+[TXT]	THRF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	THRF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	THRF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	THRO1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TIBC1.ocean	2025-06-10 20:10	196K	Oceanographic Data
+[TXT]	TIBC1.txt	2025-06-10 20:10	402K	Standard Meteorological Data
+[TXT]	TIQC1.ocean	2025-06-10 20:25	347K	Oceanographic Data
+[TXT]	TIXC1.txt	2025-06-10 20:25	404K	Standard Meteorological Data
+[TXT]	TKEA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	TKPN6.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	TLVT2.txt	2025-06-10 20:15	637K	Standard Meteorological Data
+[TXT]	TOKW1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TPEF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	TPEF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	TPEF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	TPLM2.cwind	2025-06-10 20:10	258K	Continuous Winds Data
+[TXT]	TPLM2.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	TRDF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TRRF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	TRRF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	TRRF1.txt	2025-06-10 20:00	80K	Standard Meteorological Data
+[TXT]	TSHF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TWCO1.txt	2025-06-10 20:15	591K	Standard Meteorological Data
+[TXT]	TXPT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	TXVT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	ULRA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	UNLA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	UPBC1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	UQXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	UTVT2.txt	2025-06-10 20:15	929K	Standard Meteorological Data
+[TXT]	VAKF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	VCAF1.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	VCAT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	VCVA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	VDXA2.txt	2025-06-10 20:25	591K	Standard Meteorological Data
+[TXT]	VDZA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	VRMO1.txt	2025-06-10 20:20	593K	Standard Meteorological Data
+[TXT]	VTBT2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	WAHV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	WAKP8.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	WAQM3.ocean	2025-06-10 20:25	347K	Oceanographic Data
+[TXT]	WASD2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	WAXM3.txt	2025-05-12 16:25	1.7K	Standard Meteorological Data
+[TXT]	WCRP1.txt	2025-06-10 20:10	604K	Standard Meteorological Data
+[TXT]	WCXA2.txt	2025-06-10 20:25	568K	Standard Meteorological Data
+[TXT]	WDSV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	WEBM1.ocean	2025-06-10 18:55	162K	Oceanographic Data
+[TXT]	WEQM1.ocean	2025-06-02 19:25	648	Oceanographic Data
+[TXT]	WEXM1.txt	2025-06-10 20:25	402K	Standard Meteorological Data
+[TXT]	WFPM4.txt	2025-06-10 19:50	604K	Standard Meteorological Data
+[TXT]	WGXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	WHRI2.txt	2025-06-10 19:55	200K	Standard Meteorological Data
+[TXT]	WIWF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	WIWF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	WIWF1.txt	2025-06-10 20:00	75K	Standard Meteorological Data
+[TXT]	WIXA2.txt	2025-06-10 20:25	602K	Standard Meteorological Data
+[TXT]	WKXA1.txt	2025-06-10 20:25	390K	Standard Meteorological Data
+[TXT]	WLON7.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	WNEM4.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	WPLF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	WPLF1.rain	2025-06-10 20:00	20K	Hourly Rain Data
+[TXT]	WPLF1.txt	2025-06-10 20:00	79K	Standard Meteorological Data
+[TXT]	WPOW1.cwind	2025-06-10 20:10	256K	Continuous Winds Data
+[TXT]	WPOW1.txt	2025-06-10 20:10	101K	Standard Meteorological Data
+[TXT]	WPTW1.txt	2025-06-10 20:05	1.0M	Standard Meteorological Data
+[TXT]	WRBF1.ocean	2025-06-10 20:00	65K	Oceanographic Data
+[TXT]	WRBF1.rain	2025-06-10 20:00	18K	Hourly Rain Data
+[TXT]	WRBF1.txt	2025-06-10 20:00	76K	Standard Meteorological Data
+[TXT]	WRXA2.txt	2025-06-10 20:25	603K	Standard Meteorological Data
+[TXT]	WWEF1.ocean	2025-06-10 20:00	64K	Oceanographic Data
+[TXT]	WWEF1.rain	2025-06-10 20:00	19K	Hourly Rain Data
+[TXT]	WWEF1.txt	2025-06-10 20:00	74K	Standard Meteorological Data
+[TXT]	WYBS1.ocean	2025-06-10 19:55	348K	Oceanographic Data
+[TXT]	WYCM6.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	WYSS1.ocean	2025-06-10 19:55	346K	Oceanographic Data
+[TXT]	YATA2.txt	2025-06-10 20:15	1.0M	Standard Meteorological Data
+[TXT]	YGNN6.txt	2025-06-10 20:10	595K	Standard Meteorological Data
+[TXT]	YKTV2.txt	2025-06-10 20:20	1.0M	Standard Meteorological Data
+[TXT]	YRSV2.txt	2025-06-10 19:00	394K	Standard Meteorological Data
+[TXT]	ship_obs.txt	2025-06-10 20:25	1.3M	Standard Meteorological Data
+Help improve this site

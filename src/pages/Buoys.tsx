@@ -106,7 +106,7 @@ export default function Buoys() {
               mb: 1,
             }}
           >
-            Buoy Monitoring Dashboard
+            Marine Station Monitoring Dashboard
           </Typography>
           <Box
             sx={{
@@ -118,8 +118,8 @@ export default function Buoys() {
           >
             <Typography variant="body2" color="text.secondary">
               {buoyListInitialized
-                ? "Live NOAA NDBC buoy list"
-                : "Initializing buoy list..."}{" "}
+                ? "Active NOAA stations with live data files"
+                : "Initializing station list..."}{" "}
               - Real-time oceanographic data
             </Typography>
             <Typography variant="body2" color="text.secondary">
@@ -276,8 +276,8 @@ export default function Buoys() {
             sx={{ ml: 2 }}
           >
             {buoyListInitialized
-              ? "Real NOAA buoy locations. Click any buoy to load live data."
-              : "Loading real NOAA buoy list... Known buoys shown with coordinates."}
+              ? "Active NOAA stations with confirmed data files. Click any station to load live data."
+              : "Loading verified station list... Active stations shown with coordinates."}
           </Typography>
         </Typography>
         <BuoyMap
@@ -347,9 +347,9 @@ export default function Buoys() {
               <Typography variant="h6" color="text.secondary" sx={{ mb: 2 }}>
                 Select a buoy to view environmental data
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Choose from {allAvailableBuoys.length} available NOAA buoy
-                stations
+              <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                Choose from {allAvailableBuoys.length} verified active NOAA
+                stations with live data
               </Typography>
             </Box>
           </Box>
