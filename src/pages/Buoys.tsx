@@ -13,6 +13,7 @@ import { BuoyDropdown } from "../components/BuoyDropdown/BuoyDropdown";
 import { BuoyMap } from "../components/BuoyMap/BuoyMap";
 import { BuoyCharts } from "../components/BuoyCharts/BuoyCharts";
 import { StatsCard } from "../components/StatsCard/StatsCard";
+import { BUOY_METADATA, DEFAULT_BUOY_ID } from "../data/buoyMetadata";
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   padding: "24px",
@@ -34,109 +35,63 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
+const LoadingOverlay = styled(Box)(({ theme }) => ({
+  position: "absolute",
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  backgroundColor: "rgba(255, 255, 255, 0.8)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  borderRadius: 12,
+  zIndex: 1,
+}));
+
 export default function Buoys() {
   const {
-    groupedData,
+    getBuoyData,
+    getAllAvailableBuoys,
+    getLoadedBuoys,
+    isBuoyLoaded,
+    isBuoyLoading,
+    fetchBuoyData,
     loading,
     error,
     lastUpdate,
-    getBuoyList,
-    getBuoyData,
-    getAllAvailableBuoys,
   } = useBuoyData();
-  const [selectedBuoyId, setSelectedBuoyId] = useState<string>("");
 
-  const loadedBuoyList = getBuoyList();
+  const [selectedBuoyId, setSelectedBuoyId] = useState<string>(DEFAULT_BUOY_ID);
+
   const allAvailableBuoys = getAllAvailableBuoys();
+  const loadedBuoys = getLoadedBuoys();
   const selectedBuoyData = selectedBuoyId ? getBuoyData(selectedBuoyId) : null;
+  const isSelectedBuoyLoading = isBuoyLoading(selectedBuoyId);
 
-  // Auto-select first loaded buoy when data loads
-  useEffect(() => {
-    if (loadedBuoyList.length > 0 && !selectedBuoyId) {
-      setSelectedBuoyId(loadedBuoyList[0].id);
-    }
-  }, [loadedBuoyList, selectedBuoyId]);
+  // Prepare map data using static metadata with live data overlay
+  const mapBuoys = BUOY_METADATA.map((buoy) => {
+    const data = getBuoyData(buoy.id);
+    return {
+      id: buoy.id,
+      name: buoy.name,
+      lat: buoy.lat,
+      lng: buoy.lng,
+      temperature: data?.info.temperature,
+      waveHeight: data?.info.waveHeight,
+      windSpeed: data?.info.windSpeed,
+      hasData: !!data,
+    };
+  });
 
-  // Prepare map data (only for loaded buoys with valid coordinates)
-  const mapBuoys = loadedBuoyList
-    .map((buoy) => {
-      const data = getBuoyData(buoy.id);
-      return {
-        id: buoy.id,
-        name: buoy.name,
-        lat: data?.info.location.lat || 0,
-        lng: data?.info.location.lng || 0,
-        temperature: data?.info.temperature,
-        waveHeight: data?.info.waveHeight,
-        windSpeed: data?.info.windSpeed,
-      };
-    })
-    .filter((buoy) => buoy.lat !== 0 || buoy.lng !== 0); // Filter out invalid coordinates
-
-  const handleBuoySelect = (buoyId: string) => {
+  const handleBuoySelect = async (buoyId: string) => {
     setSelectedBuoyId(buoyId);
+
+    // Fetch data if not already loaded
+    if (!isBuoyLoaded(buoyId)) {
+      await fetchBuoyData(buoyId);
+    }
   };
-
-  if (loading && Object.keys(groupedData).length === 0) {
-    return (
-      <Box sx={{ p: 3 }}>
-        <Typography
-          variant="h4"
-          sx={{ mb: 4, color: "text.primary", fontWeight: 600 }}
-        >
-          Buoy Monitoring Dashboard
-        </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            minHeight: "400px",
-          }}
-        >
-          <Box sx={{ textAlign: "center" }}>
-            <CircularProgress size={60} sx={{ mb: 2 }} />
-            <Typography variant="h6" color="text.secondary">
-              Loading real-time buoy data from NOAA...
-            </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-              Fetching data for {allAvailableBuoys.length} buoys
-            </Typography>
-          </Box>
-        </Box>
-      </Box>
-    );
-  }
-
-  if (error && Object.keys(groupedData).length === 0) {
-    return (
-      <Box sx={{ p: 3 }}>
-        <Typography
-          variant="h4"
-          sx={{ mb: 4, color: "text.primary", fontWeight: 600 }}
-        >
-          Buoy Monitoring Dashboard
-        </Typography>
-        <Alert
-          severity="error"
-          sx={{ mb: 3 }}
-          action={
-            <Typography variant="body2" color="text.secondary">
-              Data will retry automatically in 10 minutes
-            </Typography>
-          }
-        >
-          <Typography variant="h6" sx={{ mb: 1 }}>
-            Error Loading Buoy Data
-          </Typography>
-          {error}
-          <Typography variant="body2" sx={{ mt: 2 }}>
-            Available buoys: {allAvailableBuoys.map((b) => b.name).join(", ")}
-          </Typography>
-        </Alert>
-      </Box>
-    );
-  }
 
   return (
     <Box sx={{ p: 3 }}>
@@ -164,8 +119,7 @@ export default function Buoys() {
               Real-time oceanographic data from NOAA NDBC
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {loadedBuoyList.length} of {allAvailableBuoys.length} buoys loaded
-              successfully
+              {loadedBuoys.length} of {allAvailableBuoys.length} buoys loaded
             </Typography>
             {lastUpdate && (
               <Chip
@@ -177,15 +131,15 @@ export default function Buoys() {
             )}
             {loading && (
               <Chip
-                label="Updating..."
+                label="Loading data..."
                 size="small"
                 color="info"
                 icon={<CircularProgress size={12} />}
               />
             )}
-            {error && loadedBuoyList.length > 0 && (
+            {error && (
               <Chip
-                label="Partial data loaded"
+                label="Data load error"
                 size="small"
                 color="warning"
                 variant="outlined"
@@ -195,12 +149,19 @@ export default function Buoys() {
         </Box>
 
         <BuoyDropdown
-          buoys={loadedBuoyList.length > 0 ? loadedBuoyList : allAvailableBuoys}
+          buoys={allAvailableBuoys}
           selectedBuoy={selectedBuoyId}
           onBuoyChange={handleBuoySelect}
-          loading={loading}
+          loading={isSelectedBuoyLoading}
         />
       </HeaderContainer>
+
+      {/* Error Alert */}
+      {error && (
+        <Alert severity="warning" sx={{ mb: 3 }} onClose={() => {}}>
+          <Typography variant="body2">{error}</Typography>
+        </Alert>
+      )}
 
       {/* Overview Stats */}
       {selectedBuoyData && (
@@ -214,8 +175,20 @@ export default function Buoys() {
             },
             gap: 3,
             mb: 4,
+            position: "relative",
           }}
         >
+          {isSelectedBuoyLoading && (
+            <LoadingOverlay>
+              <Box sx={{ textAlign: "center" }}>
+                <CircularProgress size={40} sx={{ mb: 2 }} />
+                <Typography variant="body2" color="text.secondary">
+                  Loading {selectedBuoyData.info.name}...
+                </Typography>
+              </Box>
+            </LoadingOverlay>
+          )}
+
           <StatsCard
             title="Water Temperature"
             value={`${selectedBuoyData.info.temperature.toFixed(1)}°C`}
@@ -291,6 +264,15 @@ export default function Buoys() {
       <StyledPaper sx={{ mb: 4 }}>
         <Typography variant="h6" sx={{ mb: 3, color: "text.primary" }}>
           Buoy Locations
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            component="span"
+            sx={{ ml: 2 }}
+          >
+            Map loads instantly with static coordinates. Click any buoy to load
+            live data.
+          </Typography>
         </Typography>
         <BuoyMap
           buoys={mapBuoys}
@@ -300,12 +282,71 @@ export default function Buoys() {
       </StyledPaper>
 
       {/* Charts Section */}
-      {selectedBuoyData && (
-        <StyledPaper>
+      {selectedBuoyData ? (
+        <StyledPaper sx={{ position: "relative" }}>
+          {isSelectedBuoyLoading && (
+            <LoadingOverlay>
+              <Box sx={{ textAlign: "center" }}>
+                <CircularProgress size={60} sx={{ mb: 2 }} />
+                <Typography variant="h6" color="text.secondary">
+                  Loading environmental data...
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ mt: 1 }}
+                >
+                  Fetching real-time data for {selectedBuoyData.info.name}
+                </Typography>
+              </Box>
+            </LoadingOverlay>
+          )}
           <BuoyCharts
             data={selectedBuoyData.history}
             buoyName={selectedBuoyData.info.name}
           />
+        </StyledPaper>
+      ) : isBuoyLoading(selectedBuoyId) ? (
+        <StyledPaper>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              minHeight: "400px",
+            }}
+          >
+            <Box sx={{ textAlign: "center" }}>
+              <CircularProgress size={60} sx={{ mb: 2 }} />
+              <Typography variant="h6" color="text.secondary">
+                Loading buoy data...
+              </Typography>
+              <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                Fetching real-time data from NOAA for {selectedBuoyId}
+              </Typography>
+            </Box>
+          </Box>
+        </StyledPaper>
+      ) : (
+        <StyledPaper>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              minHeight: "200px",
+            }}
+          >
+            <Box sx={{ textAlign: "center" }}>
+              <Typography variant="h6" color="text.secondary" sx={{ mb: 2 }}>
+                Select a buoy to view environmental data
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Choose from {allAvailableBuoys.length} available NOAA buoy
+                stations
+              </Typography>
+            </Box>
+          </Box>
         </StyledPaper>
       )}
     </Box>

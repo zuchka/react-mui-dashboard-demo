@@ -5,12 +5,13 @@ import {
   MenuItem,
   Box,
   Typography,
+  CircularProgress,
 } from "@mui/material";
 import type { SelectChangeEvent } from "@mui/material/Select";
 import { styled } from "@mui/material/styles";
 
 const StyledFormControl = styled(FormControl)(({ theme }) => ({
-  minWidth: 200,
+  minWidth: 250,
   "& .MuiInputLabel-root": {
     color: theme.palette.text.secondary,
   },
@@ -53,19 +54,31 @@ export const BuoyDropdown = ({
         Select Buoy:
       </Typography>
       <StyledFormControl size="small" disabled={loading}>
-        <InputLabel id="buoy-select-label">Choose a buoy</InputLabel>
+        <InputLabel id="buoy-select-label">
+          {loading ? "Loading data..." : "Choose a buoy"}
+        </InputLabel>
         <Select
           labelId="buoy-select-label"
           id="buoy-select"
           value={selectedBuoy}
           onChange={handleChange}
-          label="Choose a buoy"
+          label={loading ? "Loading data..." : "Choose a buoy"}
           aria-label="Select buoy for data visualization"
+          endAdornment={
+            loading && (
+              <CircularProgress
+                size={20}
+                sx={{
+                  position: "absolute",
+                  right: 32,
+                  pointerEvents: "none",
+                }}
+              />
+            )
+          }
         >
           {buoys.length === 0 ? (
-            <MenuItem disabled>
-              {loading ? "Loading buoys..." : "No buoys available"}
-            </MenuItem>
+            <MenuItem disabled>No buoys available</MenuItem>
           ) : (
             buoys.map((buoy) => (
               <MenuItem key={buoy.id} value={buoy.id}>

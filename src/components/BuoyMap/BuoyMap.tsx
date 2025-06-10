@@ -45,6 +45,7 @@ interface BuoyLocation {
   temperature?: number;
   waveHeight?: number;
   windSpeed?: number;
+  hasData?: boolean;
 }
 
 interface BuoyMapProps {
@@ -160,10 +161,10 @@ export const BuoyMap = ({
                 >
                   Location: {buoy.lat.toFixed(4)}°N, {buoy.lng.toFixed(4)}°W
                 </Typography>
-                {buoy.temperature !== undefined && (
+                {buoy.hasData ? (
                   <InfoBox>
                     <Typography variant="body2">
-                      Temperature: {buoy.temperature.toFixed(1)}°C
+                      Temperature: {buoy.temperature?.toFixed(1)}°C
                     </Typography>
                     {buoy.waveHeight !== undefined && (
                       <Typography variant="body2">
@@ -176,6 +177,14 @@ export const BuoyMap = ({
                       </Typography>
                     )}
                   </InfoBox>
+                ) : (
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ fontStyle: "italic", mt: 1 }}
+                  >
+                    Click to load real-time data
+                  </Typography>
                 )}
               </Box>
             </Popup>
