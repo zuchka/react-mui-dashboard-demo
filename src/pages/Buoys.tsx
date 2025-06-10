@@ -60,6 +60,7 @@ export default function Buoys() {
     loading,
     error,
     lastUpdate,
+    buoyListInitialized,
   } = useBuoyData();
 
   const [selectedBuoyId, setSelectedBuoyId] = useState<string>(DEFAULT_BUOY_ID);
@@ -116,10 +117,14 @@ export default function Buoys() {
             }}
           >
             <Typography variant="body2" color="text.secondary">
-              Real-time oceanographic data from NOAA NDBC
+              {buoyListInitialized
+                ? "Live NOAA NDBC buoy list"
+                : "Initializing buoy list..."}{" "}
+              - Real-time oceanographic data
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {loadedBuoys.length} of {allAvailableBuoys.length} buoys loaded
+              {!buoyListInitialized && " (fetching complete list...)"}
             </Typography>
             {lastUpdate && (
               <Chip
@@ -270,8 +275,9 @@ export default function Buoys() {
             component="span"
             sx={{ ml: 2 }}
           >
-            Map loads instantly with static coordinates. Click any buoy to load
-            live data.
+            {buoyListInitialized
+              ? "Real NOAA buoy locations. Click any buoy to load live data."
+              : "Loading real NOAA buoy list... Known buoys shown with coordinates."}
           </Typography>
         </Typography>
         <BuoyMap

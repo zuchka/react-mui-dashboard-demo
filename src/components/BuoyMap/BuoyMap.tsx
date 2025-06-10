@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import { Box, Typography, Paper } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -54,18 +54,20 @@ interface BuoyMapProps {
   onBuoySelect?: (buoyId: string) => void;
 }
 
-// Component to fit map bounds to show all buoys
+// Component to fit map bounds to show all buoys (only on initial load)
 const MapBoundsUpdater = ({ buoys }: { buoys: BuoyLocation[] }) => {
   const map = useMap();
+  const [hasInitialized, setHasInitialized] = useState(false);
 
   useEffect(() => {
-    if (buoys.length > 0) {
+    if (buoys.length > 0 && !hasInitialized) {
       const group = new L.FeatureGroup(
         buoys.map((buoy) => L.marker([buoy.lat, buoy.lng])),
       );
       map.fitBounds(group.getBounds(), { padding: [20, 20] });
+      setHasInitialized(true);
     }
-  }, [buoys, map]);
+  }, [buoys, map, hasInitialized]);
 
   return null;
 };

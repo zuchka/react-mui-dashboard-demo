@@ -3,6 +3,8 @@ import {
   BUOY_METADATA,
   DEFAULT_BUOY_ID,
   getBuoyMetadata,
+  initializeBuoyMetadata,
+  updateBuoyCoordinates,
 } from "../data/buoyMetadata";
 
 export interface BuoyData {
@@ -231,6 +233,7 @@ export const useBuoyData = () => {
   const [loadingBuoyId, setLoadingBuoyId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
+  const [buoyListInitialized, setBuoyListInitialized] = useState(false);
 
   // Fetch data for a specific buoy
   const fetchBuoyData = useCallback(async (buoyId: string) => {
@@ -248,6 +251,16 @@ export const useBuoyData = () => {
           ...prev,
           [buoyId]: data,
         }));
+
+        // Update coordinates in metadata if we got real coordinates
+        if (data.info.location.lat !== 0 || data.info.location.lng !== 0) {
+          updateBuoyCoordinates(
+            buoyId,
+            data.info.location.lat,
+            data.info.location.lng,
+          );
+        }
+
         setLastUpdate(new Date());
         console.log(`Successfully loaded data for buoy ${buoyId}`);
       } else {
@@ -264,9 +277,23 @@ export const useBuoyData = () => {
     }
   }, []);
 
-  // Load default buoy on mount
+  // Initialize real buoy list and load default buoy on mount
   useEffect(() => {
-    fetchBuoyData(DEFAULT_BUOY_ID);
+    const initialize = async () => {
+      try {
+        await initializeBuoyMetadata();
+        setBuoyListInitialized(true);
+        console.log("Buoy metadata initialized with real NOAA data");
+      } catch (error) {
+        console.error("Failed to initialize buoy metadata:", error);
+        setBuoyListInitialized(true); // Continue with fallback data
+      }
+
+      // Load default buoy data
+      fetchBuoyData(DEFAULT_BUOY_ID);
+    };
+
+    initialize();
   }, [fetchBuoyData]);
 
   const getBuoyList = useCallback(() => {
@@ -321,6 +348,7 @@ export const useBuoyData = () => {
     loadingBuoyId,
     error,
     lastUpdate,
+    buoyListInitialized,
     getBuoyList,
     getBuoyData,
     getAllAvailableBuoys,
