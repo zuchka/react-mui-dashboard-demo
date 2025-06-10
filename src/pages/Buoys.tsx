@@ -98,60 +98,48 @@ export default function Buoys() {
   return (
     <Box sx={{ p: 3 }}>
       <HeaderContainer>
-        <Box>
-          <Typography
-            variant="h4"
-            sx={{
-              color: "text.primary",
-              fontWeight: 600,
-              mb: 1,
-            }}
-          >
-            Marine Station Monitoring Dashboard
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 2,
+            flexWrap: "wrap",
+          }}
+        >
+          <Typography variant="body2" color="text.secondary">
+            {buoyListInitialized
+              ? "Active NOAA stations with live data files"
+              : "Initializing station list..."}{" "}
+            - Real-time oceanographic data
           </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: 2,
-              flexWrap: "wrap",
-            }}
-          >
-            <Typography variant="body2" color="text.secondary">
-              {buoyListInitialized
-                ? "Active NOAA stations with live data files"
-                : "Initializing station list..."}{" "}
-              - Real-time oceanographic data
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {loadedBuoys.length} of {allAvailableBuoys.length} buoys loaded
-              {!buoyListInitialized && " (fetching complete list...)"}
-            </Typography>
-            {lastUpdate && (
-              <Chip
-                label={`Last updated: ${lastUpdate.toLocaleTimeString()}`}
-                size="small"
-                color="primary"
-                variant="outlined"
-              />
-            )}
-            {loading && (
-              <Chip
-                label="Loading data..."
-                size="small"
-                color="info"
-                icon={<CircularProgress size={12} />}
-              />
-            )}
-            {error && (
-              <Chip
-                label="Data load error"
-                size="small"
-                color="warning"
-                variant="outlined"
-              />
-            )}
-          </Box>
+          <Typography variant="body2" color="text.secondary">
+            {loadedBuoys.length} of {allAvailableBuoys.length} buoys loaded
+            {!buoyListInitialized && " (fetching complete list...)"}
+          </Typography>
+          {lastUpdate && (
+            <Chip
+              label={`Last updated: ${lastUpdate.toLocaleTimeString()}`}
+              size="small"
+              color="primary"
+              variant="outlined"
+            />
+          )}
+          {loading && (
+            <Chip
+              label="Loading data..."
+              size="small"
+              color="info"
+              icon={<CircularProgress size={12} />}
+            />
+          )}
+          {error && (
+            <Chip
+              label="Data load error"
+              size="small"
+              color="warning"
+              variant="outlined"
+            />
+          )}
         </Box>
 
         <BuoyDropdown
@@ -167,119 +155,6 @@ export default function Buoys() {
         <Alert severity="warning" sx={{ mb: 3 }} onClose={() => {}}>
           <Typography variant="body2">{error}</Typography>
         </Alert>
-      )}
-
-      {/* Overview Stats and Wind Speed Chart */}
-      {selectedBuoyData && (
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: {
-              xs: "1fr",
-              lg: "400px 1fr",
-            },
-            gap: 4,
-            mb: 4,
-            position: "relative",
-          }}
-        >
-          {isSelectedBuoyLoading && (
-            <LoadingOverlay>
-              <Box sx={{ textAlign: "center" }}>
-                <CircularProgress size={40} sx={{ mb: 2 }} />
-                <Typography variant="body2" color="text.secondary">
-                  Loading {selectedBuoyData.info.name}...
-                </Typography>
-              </Box>
-            </LoadingOverlay>
-          )}
-
-          {/* Column 1: Stats in 2x2 Grid */}
-          <Box
-            sx={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 2,
-            }}
-          >
-            <StatsCard
-              title="Water Temperature"
-              value={`${selectedBuoyData.info.temperature.toFixed(1)}°C`}
-              trend={{
-                value:
-                  selectedBuoyData.history.length > 1
-                    ? `${(selectedBuoyData.info.temperature - selectedBuoyData.history[selectedBuoyData.history.length - 2].temperature).toFixed(1)}°C`
-                    : "0°C",
-                positive:
-                  selectedBuoyData.history.length > 1
-                    ? selectedBuoyData.info.temperature >=
-                      selectedBuoyData.history[
-                        selectedBuoyData.history.length - 2
-                      ].temperature
-                    : true,
-              }}
-            />
-            <StatsCard
-              title="Wave Height"
-              value={`${selectedBuoyData.info.waveHeight.toFixed(1)}m`}
-              trend={{
-                value:
-                  selectedBuoyData.history.length > 1
-                    ? `${(selectedBuoyData.info.waveHeight - selectedBuoyData.history[selectedBuoyData.history.length - 2].waveHeight).toFixed(1)}m`
-                    : "0m",
-                positive:
-                  selectedBuoyData.history.length > 1
-                    ? selectedBuoyData.info.waveHeight >=
-                      selectedBuoyData.history[
-                        selectedBuoyData.history.length - 2
-                      ].waveHeight
-                    : true,
-              }}
-            />
-            <StatsCard
-              title="Wind Speed"
-              value={`${selectedBuoyData.info.windSpeed.toFixed(1)} m/s`}
-              trend={{
-                value:
-                  selectedBuoyData.history.length > 1
-                    ? `${(selectedBuoyData.info.windSpeed - selectedBuoyData.history[selectedBuoyData.history.length - 2].windSpeed).toFixed(1)} m/s`
-                    : "0 m/s",
-                positive:
-                  selectedBuoyData.history.length > 1
-                    ? selectedBuoyData.info.windSpeed >=
-                      selectedBuoyData.history[
-                        selectedBuoyData.history.length - 2
-                      ].windSpeed
-                    : true,
-              }}
-            />
-            <StatsCard
-              title="Pressure"
-              value={`${selectedBuoyData.info.pressure.toFixed(0)} hPa`}
-              trend={{
-                value:
-                  selectedBuoyData.history.length > 1
-                    ? `${(selectedBuoyData.info.pressure - selectedBuoyData.history[selectedBuoyData.history.length - 2].pressure).toFixed(0)} hPa`
-                    : "0 hPa",
-                positive:
-                  selectedBuoyData.history.length > 1
-                    ? selectedBuoyData.info.pressure >=
-                      selectedBuoyData.history[
-                        selectedBuoyData.history.length - 2
-                      ].pressure
-                    : true,
-              }}
-            />
-          </Box>
-
-          {/* Column 2: Wind Speed Chart */}
-          <StyledPaper sx={{ p: 3 }}>
-            <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
-              Wind Speed Analysis
-            </Typography>
-            <WindSpeedChart data={selectedBuoyData.history} height={300} />
-          </StyledPaper>
-        </Box>
       )}
 
       {/* Map Section */}
@@ -304,6 +179,156 @@ export default function Buoys() {
           centerOnSelection={true}
         />
       </StyledPaper>
+
+      {/* Overview Stats and Wind Speed Chart */}
+      {selectedBuoyData && (
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 4,
+            margin: "-10px 0 10px",
+            position: "relative",
+          }}
+        >
+          {isSelectedBuoyLoading && (
+            <LoadingOverlay>
+              <Box sx={{ textAlign: "center" }}>
+                <CircularProgress size={40} sx={{ mb: 2 }} />
+                <Typography variant="body2" color="text.secondary">
+                  Loading {selectedBuoyData.info.name}...
+                </Typography>
+              </Box>
+            </LoadingOverlay>
+          )}
+
+          <Box
+            sx={{
+              display: "flex",
+              gap: "20px",
+              "@media (max-width: 991px)": {
+                flexDirection: "column",
+                alignItems: "stretch",
+                gap: "0px",
+              },
+            }}
+          >
+            {/* Column 1: Stats in 2x2 Grid */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                lineHeight: "normal",
+                width: "33%",
+                marginLeft: "0px",
+                "@media (max-width: 991px)": {
+                  width: "100%",
+                  marginLeft: 0,
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: 2,
+                }}
+              >
+                <StatsCard
+                  title="Water Temperature"
+                  value={`${selectedBuoyData.info.temperature.toFixed(1)}°C`}
+                  trend={{
+                    value:
+                      selectedBuoyData.history.length > 1
+                        ? `${(selectedBuoyData.info.temperature - selectedBuoyData.history[selectedBuoyData.history.length - 2].temperature).toFixed(1)}°C`
+                        : "0°C",
+                    positive:
+                      selectedBuoyData.history.length > 1
+                        ? selectedBuoyData.info.temperature >=
+                          selectedBuoyData.history[
+                            selectedBuoyData.history.length - 2
+                          ].temperature
+                        : true,
+                  }}
+                />
+                <StatsCard
+                  title="Wave Height"
+                  value={`${selectedBuoyData.info.waveHeight.toFixed(1)}m`}
+                  trend={{
+                    value:
+                      selectedBuoyData.history.length > 1
+                        ? `${(selectedBuoyData.info.waveHeight - selectedBuoyData.history[selectedBuoyData.history.length - 2].waveHeight).toFixed(1)}m`
+                        : "0m",
+                    positive:
+                      selectedBuoyData.history.length > 1
+                        ? selectedBuoyData.info.waveHeight >=
+                          selectedBuoyData.history[
+                            selectedBuoyData.history.length - 2
+                          ].waveHeight
+                        : true,
+                  }}
+                />
+                <StatsCard
+                  title="Wind Speed"
+                  value={`${selectedBuoyData.info.windSpeed.toFixed(1)} m/s`}
+                  trend={{
+                    value:
+                      selectedBuoyData.history.length > 1
+                        ? `${(selectedBuoyData.info.windSpeed - selectedBuoyData.history[selectedBuoyData.history.length - 2].windSpeed).toFixed(1)} m/s`
+                        : "0 m/s",
+                    positive:
+                      selectedBuoyData.history.length > 1
+                        ? selectedBuoyData.info.windSpeed >=
+                          selectedBuoyData.history[
+                            selectedBuoyData.history.length - 2
+                          ].windSpeed
+                        : true,
+                  }}
+                />
+                <StatsCard
+                  title="Pressure"
+                  value={`${selectedBuoyData.info.pressure.toFixed(0)} hPa`}
+                  trend={{
+                    value:
+                      selectedBuoyData.history.length > 1
+                        ? `${(selectedBuoyData.info.pressure - selectedBuoyData.history[selectedBuoyData.history.length - 2].pressure).toFixed(0)} hPa`
+                        : "0 hPa",
+                    positive:
+                      selectedBuoyData.history.length > 1
+                        ? selectedBuoyData.info.pressure >=
+                          selectedBuoyData.history[
+                            selectedBuoyData.history.length - 2
+                          ].pressure
+                        : true,
+                  }}
+                />
+              </Box>
+            </Box>
+
+            {/* Column 2: Wind Speed Chart */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                lineHeight: "normal",
+                width: "67%",
+                marginLeft: "20px",
+                "@media (max-width: 991px)": {
+                  width: "100%",
+                  marginLeft: 0,
+                },
+              }}
+            >
+              <StyledPaper sx={{ p: 3 }}>
+                <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+                  Wind Speed Analysis
+                </Typography>
+                <WindSpeedChart data={selectedBuoyData.history} height={300} />
+              </StyledPaper>
+            </Box>
+          </Box>
+        </Box>
+      )}
 
       {/* Charts Section */}
       {selectedBuoyData ? (

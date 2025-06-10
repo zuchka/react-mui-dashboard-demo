@@ -160,10 +160,12 @@ const MapController = ({
   buoys,
   selectedBuoyId,
   centerOnSelection,
+  markersRef,
 }: {
   buoys: BuoyLocation[];
   selectedBuoyId?: string;
   centerOnSelection?: boolean;
+  markersRef: React.MutableRefObject<{ [key: string]: L.Marker }>;
 }) => {
   const map = useMap();
   const [hasInitialized, setHasInitialized] = useState(false);
@@ -185,7 +187,7 @@ const MapController = ({
     }
   }, [buoys, map, hasInitialized]);
 
-  // Center on selected buoy
+  // Center on selected buoy and open popup
   useEffect(() => {
     if (
       selectedBuoyId &&
@@ -195,16 +197,42 @@ const MapController = ({
     ) {
       const selectedBuoy = buoys.find((buoy) => buoy.id === selectedBuoyId);
       if (selectedBuoy && selectedBuoy.lat !== 0 && selectedBuoy.lng !== 0) {
-        // Center on the selected buoy with smooth animation and appropriate zoom
-        map.setView([selectedBuoy.lat, selectedBuoy.lng], 6, {
+        const mapSize = map.getSize();
+
+        // Calculate offset to position buoy at center-bottom (75% from top)
+        const offsetY = mapSize.y * 0.25; // Move up by 25% of the map height
+        const targetPoint = map.project(
+          [selectedBuoy.lat, selectedBuoy.lng],
+          map.getZoom(),
+        );
+        targetPoint.y -= offsetY;
+        const targetLatLng = map.unproject(targetPoint, map.getZoom());
+
+        // Center on the calculated position with smooth animation
+        map.setView(targetLatLng, 6, {
           animate: true,
           duration: 1.5, // Smooth 1.5 second animation
           easeLinearity: 0.5,
         });
+
+        // Open the popup for the selected buoy after a short delay to ensure map has centered
+        setTimeout(() => {
+          const marker = markersRef.current[selectedBuoyId];
+          if (marker) {
+            marker.openPopup();
+          }
+        }, 1600); // Slightly after the animation completes
       }
       previousSelectedBuoyId.current = selectedBuoyId;
     }
-  }, [selectedBuoyId, centerOnSelection, buoys, map, hasInitialized]);
+  }, [
+    selectedBuoyId,
+    centerOnSelection,
+    buoys,
+    map,
+    hasInitialized,
+    markersRef,
+  ]);
 
   return null;
 };
@@ -216,6 +244,7 @@ export const BuoyMap = ({
   centerOnSelection = true,
 }: BuoyMapProps) => {
   const mapRef = useRef<L.Map | null>(null);
+  const markersRef = useRef<{ [key: string]: L.Marker }>({});
 
   // Create custom icon for selected buoy
   const selectedIcon = new L.Icon({
@@ -282,6 +311,7 @@ export const BuoyMap = ({
           buoys={buoys}
           selectedBuoyId={selectedBuoyId}
           centerOnSelection={centerOnSelection}
+          markersRef={markersRef}
         />
 
         {buoys.map((buoy) => (
@@ -291,6 +321,11 @@ export const BuoyMap = ({
             icon={buoy.id === selectedBuoyId ? selectedIcon : defaultIcon}
             eventHandlers={{
               click: () => onBuoySelect?.(buoy.id),
+            }}
+            ref={(ref) => {
+              if (ref) {
+                markersRef.current[buoy.id] = ref;
+              }
             }}
           >
             <Popup>
