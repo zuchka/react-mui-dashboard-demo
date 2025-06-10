@@ -6,15 +6,25 @@ import {
   Alert,
   Chip,
 } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import { styled } from "@mui/material/styles";
 import { useBuoyData } from "../hooks/useBuoyData";
 import { BuoyDropdown } from "../components/BuoyDropdown/BuoyDropdown";
 import { BuoyMap } from "../components/BuoyMap/BuoyMap";
-import { BuoyCharts } from "../components/BuoyCharts/BuoyCharts";
 import { StatsCard } from "../components/StatsCard/StatsCard";
-import { WindSpeedChart } from "../components/WindSpeedChart/WindSpeedChart";
 import { BUOY_METADATA, DEFAULT_BUOY_ID } from "../data/buoyMetadata";
+
+// Lazy load chart components to prevent blocking
+const BuoyCharts = lazy(() =>
+  import("../components/BuoyCharts/BuoyCharts").then((module) => ({
+    default: module.BuoyCharts,
+  })),
+);
+const WindSpeedChart = lazy(() =>
+  import("../components/WindSpeedChart/WindSpeedChart").then((module) => ({
+    default: module.WindSpeedChart,
+  })),
+);
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   padding: "24px",
@@ -48,6 +58,26 @@ const LoadingOverlay = styled(Box)(({ theme }) => ({
   zIndex: 1,
 }));
 
+const ChartLoadingFallback = ({ height = 300 }: { height?: number }) => (
+  <Box
+    sx={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      height: `${height}px`,
+      backgroundColor: "background.default",
+      borderRadius: 1,
+    }}
+  >
+    <Box sx={{ textAlign: "center" }}>
+      <CircularProgress size={40} sx={{ mb: 2 }} />
+      <Typography variant="body2" color="text.secondary">
+        Loading chart...
+      </Typography>
+    </Box>
+  </Box>
+);
+
 export default function Buoys() {
   const {
     getBuoyData,
@@ -63,6 +93,26 @@ export default function Buoys() {
   } = useBuoyData();
 
   const [selectedBuoyId, setSelectedBuoyId] = useState<string>(DEFAULT_BUOY_ID);
+  const [shouldLoadCharts, setShouldLoadCharts] = useState<boolean>(false);
+
+  // Delay chart loading to allow map to render first
+  useEffect(() => {
+    const enableChartLoading = () => {
+      setShouldLoadCharts(true);
+    };
+
+    // Use requestIdleCallback when available for better performance
+    if (typeof window !== "undefined" && "requestIdleCallback" in window) {
+      const idleCallbackId = requestIdleCallback(enableChartLoading, {
+        timeout: 200,
+      });
+      return () => cancelIdleCallback(idleCallbackId);
+    } else {
+      // Fallback to setTimeout for browsers that don't support requestIdleCallback
+      const timer = setTimeout(enableChartLoading, 100);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   const allAvailableBuoys = getAllAvailableBuoys();
   const loadedBuoys = getLoadedBuoys();
@@ -215,7 +265,7 @@ export default function Buoys() {
       </StyledPaper>
 
       {/* Wind Speed Chart */}
-      {selectedBuoyData && (
+      {selectedBuoyData && shouldLoadCharts && (
         <StyledPaper sx={{ mb: 4, padding: "2px 24px", position: "relative" }}>
           {isSelectedBuoyLoading && (
             <LoadingOverlay>
@@ -230,12 +280,14 @@ export default function Buoys() {
           <Typography variant="h6" sx={{ mb: 3, color: "text.primary" }}>
             Wind Speed Analysis
           </Typography>
-          <WindSpeedChart data={selectedBuoyData.history} height={300} />
+          <Suspense fallback={<ChartLoadingFallback height={300} />}>
+            <WindSpeedChart data={selectedBuoyData.history} height={300} />
+          </Suspense>
         </StyledPaper>
       )}
 
       {/* Charts Section */}
-      {selectedBuoyData ? (
+      {selectedBuoyData && shouldLoadCharts ? (
         <StyledPaper sx={{ position: "relative" }}>
           {isSelectedBuoyLoading && (
             <LoadingOverlay>
@@ -254,10 +306,16 @@ export default function Buoys() {
               </Box>
             </LoadingOverlay>
           )}
-          <BuoyCharts
-            data={selectedBuoyData.history}
-            buoyName={selectedBuoyData.info.name}
-          />
+          <Suspense fallback={<ChartLoadingFallback height={600} />}>
+            <BuoyCharts
+              data={selectedBuoyData.history}
+              buoyName={selectedBuoyData.info.name}
+            />
+          </Suspense>
+        </StyledPaper>
+      ) : selectedBuoyData && !shouldLoadCharts ? (
+        <StyledPaper>
+          <ChartLoadingFallback height={600} />
         </StyledPaper>
       ) : isBuoyLoading(selectedBuoyId) ? (
         <StyledPaper>
