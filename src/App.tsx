@@ -13,6 +13,7 @@ import Pricing from "./pages/Pricing";
 import Integrations from "./pages/Integrations";
 import Settings from "./pages/Settings";
 import Templates from "./pages/Templates";
+import Buoys from "./pages/Buoys";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
             width: "100vw",
             margin: 0,
             padding: 0,
-            overflowX: "hidden"
+            overflowX: "hidden",
           }}
         >
           <Sidebar />
@@ -43,6 +44,7 @@ function App() {
               <Route path="/users" element={<Users />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/integrations" element={<Integrations />} />
+              <Route path="/buoys" element={<Buoys />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/templates" element={<Templates />} />
             </Routes>

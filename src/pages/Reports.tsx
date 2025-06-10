@@ -136,28 +136,28 @@ export default function Reports() {
 
       {/* Key Metrics Overview */}
       <Grid container spacing={3} sx={{ mb: 5 }}>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={6} md={3}>
           <StatsCard
             title="Total Revenue"
             value="$485.2K"
             trend={{ value: "+12.5%", positive: true }}
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={6} md={3}>
           <StatsCard
             title="Active Users"
             value="24,680"
             trend={{ value: "+8.2%", positive: true }}
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={6} md={3}>
           <StatsCard
             title="Conversion Rate"
             value="3.42%"
             trend={{ value: "-2.1%", positive: false }}
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={6} md={3}>
           <StatsCard
             title="Avg. Session"
             value="4m 32s"

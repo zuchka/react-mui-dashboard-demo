@@ -50,6 +50,7 @@ export const Sidebar = () => {
     },
     { path: "/all-pages", label: "All pages" },
     { path: "/reports", label: "Reports" },
+    { path: "/buoys", label: "Buoys" },
     { path: "/products", label: "Products" },
     { path: "/task", label: "Task" },
     {
