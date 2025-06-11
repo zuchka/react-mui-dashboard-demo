@@ -312,7 +312,7 @@ export default function Buoys() {
           >
             <Box
               sx={{
-                width: "66.67%",
+                width: "75%",
                 "@media (max-width: 991px)": { width: "100%" },
               }}
             >
@@ -322,7 +322,7 @@ export default function Buoys() {
             </Box>
             <Box
               sx={{
-                width: "33.33%",
+                width: "25%",
                 "@media (max-width: 991px)": { width: "100%" },
               }}
             >
@@ -344,13 +344,13 @@ export default function Buoys() {
               },
             }}
           >
-            {/* Left Column - Wind Speed Chart (2/3) */}
+            {/* Left Column - Wind Speed Chart (3/4) */}
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 lineHeight: "normal",
-                width: "66.67%",
+                width: "75%",
                 marginLeft: "0px",
                 "@media (max-width: 991px)": {
                   width: "100%",
@@ -377,13 +377,13 @@ export default function Buoys() {
               </Box>
             </Box>
 
-            {/* Right Column - Barometric Pressure (1/3) */}
+            {/* Right Column - Barometric Pressure (1/4) */}
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 lineHeight: "normal",
-                width: "33.33%",
+                width: "25%",
                 marginLeft: "20px",
                 "@media (max-width: 991px)": {
                   width: "100%",
