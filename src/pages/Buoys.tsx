@@ -376,7 +376,7 @@ export default function Buoys() {
               }}
             >
               <Typography variant="h6" sx={{ color: "text.primary" }}>
-                Atmospheric Pressure
+                Atm. Pressure
               </Typography>
             </Box>
           </Box>
