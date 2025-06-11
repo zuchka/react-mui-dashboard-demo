@@ -122,7 +122,9 @@ export default function Reports() {
   };
 
   return (
-    <Box sx={{ p: 3 }}>
+    <Box
+      sx={{ p: 3, width: "100%", maxWidth: "100%", boxSizing: "border-box" }}
+    >
       <Typography
         variant="h4"
         sx={{
@@ -135,36 +137,49 @@ export default function Reports() {
       </Typography>
 
       {/* Key Metrics Overview */}
-      <Grid container spacing={3} sx={{ mb: 5 }}>
-        <Grid xs={12} sm={6} md={3}>
-          <StatsCard
-            title="Total Revenue"
-            value="$485.2K"
-            trend={{ value: "+12.5%", positive: true }}
-          />
-        </Grid>
-        <Grid xs={12} sm={6} md={3}>
-          <StatsCard
-            title="Active Users"
-            value="24,680"
-            trend={{ value: "+8.2%", positive: true }}
-          />
-        </Grid>
-        <Grid xs={12} sm={6} md={3}>
-          <StatsCard
-            title="Conversion Rate"
-            value="3.42%"
-            trend={{ value: "-2.1%", positive: false }}
-          />
-        </Grid>
-        <Grid xs={12} sm={6} md={3}>
-          <StatsCard
-            title="Avg. Session"
-            value="4m 32s"
-            trend={{ value: "+5.8%", positive: true }}
-          />
-        </Grid>
-      </Grid>
+      <Box
+        sx={{
+          display: "flex",
+          gap: 3,
+          mb: 5,
+          flexWrap: "wrap",
+          "& > *": {
+            flex: "1 1 0",
+            minWidth: "200px",
+          },
+          "@media (max-width: 900px)": {
+            "& > *": {
+              flex: "1 1 calc(50% - 12px)",
+            },
+          },
+          "@media (max-width: 600px)": {
+            "& > *": {
+              flex: "1 1 100%",
+            },
+          },
+        }}
+      >
+        <StatsCard
+          title="Total Revenue"
+          value="$485.2K"
+          trend={{ value: "+12.5%", positive: true }}
+        />
+        <StatsCard
+          title="Active Users"
+          value="24,680"
+          trend={{ value: "+8.2%", positive: true }}
+        />
+        <StatsCard
+          title="Conversion Rate"
+          value="3.42%"
+          trend={{ value: "-2.1%", positive: false }}
+        />
+        <StatsCard
+          title="Avg. Session"
+          value="4m 32s"
+          trend={{ value: "+5.8%", positive: true }}
+        />
+      </Box>
 
       {/* Report Tabs */}
       <StyledPaper>

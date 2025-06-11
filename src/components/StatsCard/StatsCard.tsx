@@ -8,6 +8,8 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
   gap: "15px",
   backgroundColor: theme.palette.background.paper,
   boxShadow: "1px 1px 1px 0px rgba(16, 25, 52, 0.40)",
+  width: "100%",
+  boxSizing: "border-box",
 }));
 
 interface StatsCardProps {
