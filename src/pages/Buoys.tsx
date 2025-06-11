@@ -314,7 +314,10 @@ export default function Buoys() {
 
       {/* Map Section */}
       <StyledPaper sx={{ mb: 4, padding: "0 24px 2px" }}>
-        <Typography variant="h6" sx={{ mb: 3, color: "text.primary" }}>
+        <Typography
+          variant="h6"
+          sx={{ mb: 3, color: "text.primary", textAlign: "center" }}
+        >
           Buoy Locations
         </Typography>
         <BuoyMap
@@ -365,7 +368,10 @@ export default function Buoys() {
                 "@media (max-width: 991px)": { width: "100%" },
               }}
             >
-              <Typography variant="h6" sx={{ color: "text.primary" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "text.primary", textAlign: "center" }}
+              >
                 Wind Speed Analysis
               </Typography>
             </Box>
@@ -375,7 +381,10 @@ export default function Buoys() {
                 "@media (max-width: 991px)": { width: "100%" },
               }}
             >
-              <Typography variant="h6" sx={{ color: "text.primary" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "text.primary", textAlign: "center" }}
+              >
                 Atm. Pressure
               </Typography>
             </Box>

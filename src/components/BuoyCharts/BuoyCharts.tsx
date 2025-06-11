@@ -175,7 +175,10 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
         }}
       >
         <ChartContainer>
-          <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+          <Typography
+            variant="h6"
+            sx={{ mb: 2, color: "text.primary", textAlign: "center" }}
+          >
             Water Temperature Over Time
           </Typography>
           <TimeSeriesChart
@@ -186,7 +189,10 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
           />
         </ChartContainer>
         <ChartContainer>
-          <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+          <Typography
+            variant="h6"
+            sx={{ mb: 2, color: "text.primary", textAlign: "center" }}
+          >
             Wave Height Trends
           </Typography>
           <TimeSeriesChart
@@ -207,7 +213,10 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
         }}
       >
         <ChartContainer>
-          <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+          <Typography
+            variant="h6"
+            sx={{ mb: 2, color: "text.primary", textAlign: "center" }}
+          >
             Wind Speed Analysis
           </Typography>
           <TimeSeriesChart
@@ -218,7 +227,10 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
           />
         </ChartContainer>
         <ChartContainer>
-          <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+          <Typography
+            variant="h6"
+            sx={{ mb: 2, color: "text.primary", textAlign: "center" }}
+          >
             Atmospheric Pressure
           </Typography>
           <TimeSeriesChart
@@ -239,7 +251,10 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
         }}
       >
         <ChartContainer>
-          <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+          <Typography
+            variant="h6"
+            sx={{ mb: 2, color: "text.primary", textAlign: "center" }}
+          >
             Average Conditions
           </Typography>
           <BarChart
@@ -255,7 +270,10 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
           />
         </ChartContainer>
         <ChartContainer>
-          <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+          <Typography
+            variant="h6"
+            sx={{ mb: 2, color: "text.primary", textAlign: "center" }}
+          >
             Current Readings
           </Typography>
           <BarChart
