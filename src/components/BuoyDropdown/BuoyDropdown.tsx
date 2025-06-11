@@ -81,18 +81,6 @@ export const BuoyDropdown = ({
         },
       }}
     >
-      <Typography
-        variant="h6"
-        color="text.primary"
-        sx={{
-          "@media (max-width: 600px)": {
-            fontSize: "1rem",
-            fontWeight: 500,
-          },
-        }}
-      >
-        Select Buoy:
-      </Typography>
       <StyledFormControl size="small" disabled={loading}>
         <InputLabel id="buoy-select-label">
           {loading ? "Loading data..." : "Choose a buoy"}

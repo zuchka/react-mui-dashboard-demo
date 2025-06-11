@@ -147,48 +147,85 @@ export default function Buoys() {
       <HeaderContainer>
         <Box
           sx={{
-            gap: "20px",
             display: "flex",
-            "@media (max-width: 768px)": {
-              flexDirection: "column",
-              alignItems: "stretch",
-              gap: "16px",
-            },
+            flexDirection: "column",
+            gap: "20px",
           }}
         >
           <Box
             sx={{
+              gap: "20px",
               display: "flex",
-              flexDirection: "column",
-              lineHeight: "normal",
-              width: "33%",
-              marginLeft: "0px",
-              "@media (max-width: 768px)": {
-                width: "100%",
-                marginLeft: 0,
-                order: 1,
+              "@media (max-width: 991px)": {
+                flexDirection: "column",
+                alignItems: "stretch",
+                gap: "0px",
               },
             }}
           >
+            {/* First Column - Buoy Count */}
             <Box
               sx={{
                 display: "flex",
-                alignItems: "center",
-                flexWrap: "wrap",
-                gap: 1,
-                "@media (max-width: 768px)": {
-                  justifyContent: "flex-start",
+                flexDirection: "column",
+                lineHeight: "normal",
+                width: "33%",
+                marginLeft: "0px",
+                "@media (max-width: 991px)": {
+                  width: "100%",
+                  marginLeft: 0,
                 },
               }}
             >
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                component="span"
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "auto",
+                }}
               >
-                {loadedBuoys.length} of {allAvailableBuoys.length} buoys loaded
-                {!buoyListInitialized && " (fetching complete list...)"}
-              </Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      flexWrap: "wrap",
+                      gap: 1,
+                    }}
+                  >
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      component="span"
+                    >
+                      {loadedBuoys.length} of {allAvailableBuoys.length} buoys
+                      loaded
+                      {!buoyListInitialized && " (fetching complete list...)"}
+                    </Typography>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+
+            {/* Second Column - Last Updated */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                lineHeight: "normal",
+                width: "33%",
+                marginLeft: "20px",
+                "@media (max-width: 991px)": {
+                  width: "100%",
+                  marginLeft: 0,
+                },
+              }}
+            >
               {lastUpdate && (
                 <Chip
                   label={`Last updated: ${lastUpdate.toLocaleTimeString()}`}
@@ -199,57 +236,69 @@ export default function Buoys() {
                     borderRadius: "16px",
                     height: "24px",
                     fontSize: "13px",
+                    marginLeft: "-3px",
+                    maxWidth: "100%",
                   }}
                 />
               )}
             </Box>
-          </Box>
 
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              lineHeight: "normal",
-              width: "67%",
-              marginLeft: "20px",
-              "@media (max-width: 768px)": {
-                width: "100%",
-                marginLeft: 0,
-                order: 2,
-              },
-            }}
-          >
+            {/* Third Column - Buoy Dropdown */}
             <Box
               sx={{
                 display: "flex",
-                alignItems: "center",
-                gap: "30px",
-                justifyContent: "flex-start",
-                marginLeft: "auto",
-                "@media (max-width: 768px)": {
+                flexDirection: "column",
+                lineHeight: "normal",
+                width: "33%",
+                marginLeft: "20px",
+                "@media (max-width: 991px)": {
+                  width: "100%",
                   marginLeft: 0,
-                  justifyContent: "flex-start",
                 },
               }}
             >
               <Box
                 sx={{
+                  marginLeft: "20px",
+                  width: "auto",
                   display: "flex",
-                  alignItems: "center",
-                  gap: "16px",
-                  justifyContent: "flex-end",
-                  "@media (max-width: 768px)": {
-                    justifyContent: "flex-start",
-                    width: "100%",
-                  },
+                  flexDirection: "column",
                 }}
               >
-                <BuoyDropdown
-                  buoys={allAvailableBuoys}
-                  selectedBuoy={selectedBuoyId}
-                  onBuoyChange={handleBuoySelect}
-                  loading={isSelectedBuoyLoading}
-                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "30px",
+                    justifyContent: "flex-start",
+                    marginLeft: "auto",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "16px",
+                      justifyContent: "flex-end",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "16px",
+                        width: "100%",
+                      }}
+                    >
+                      <BuoyDropdown
+                        buoys={allAvailableBuoys}
+                        selectedBuoy={selectedBuoyId}
+                        onBuoyChange={handleBuoySelect}
+                        loading={isSelectedBuoyLoading}
+                      />
+                    </Box>
+                  </Box>
+                </Box>
               </Box>
             </Box>
           </Box>
