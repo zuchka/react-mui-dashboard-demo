@@ -23,6 +23,7 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
   overflow: "hidden",
   borderRadius: "12px",
   border: `1px solid ${theme.palette.divider}`,
+  position: "relative",
   "& .leaflet-container": {
     height: "100%",
     width: "100%",
@@ -31,6 +32,7 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
   // Custom Leaflet popup styling to match brand colors
   "& .leaflet-popup": {
     marginBottom: "20px",
+    zIndex: "1001 !important", // Higher than sidebar to ensure visibility
   },
   "& .leaflet-popup-content-wrapper": {
     backgroundColor: theme.palette.background.paper,
@@ -41,6 +43,9 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
     fontFamily: theme.typography.fontFamily,
     padding: "0",
     minWidth: "280px",
+    maxWidth: "320px",
+    zIndex: "1001 !important", // Higher than sidebar
+    position: "relative",
   },
   "& .leaflet-popup-content": {
     margin: "0",
@@ -48,6 +53,7 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
     lineHeight: "1.4",
     fontFamily: theme.typography.fontFamily,
     color: theme.palette.text.primary,
+    overflow: "visible",
   },
   "& .leaflet-popup-close-button": {
     color: theme.palette.text.secondary,
@@ -60,6 +66,7 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
     height: "32px",
     borderRadius: "6px",
     transition: "all 0.2s ease",
+    zIndex: "1002 !important",
     "&:hover": {
       backgroundColor: theme.palette.action.hover,
       color: theme.palette.text.primary,
@@ -70,9 +77,73 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
     border: `1px solid ${theme.palette.divider}`,
     borderTop: "none",
     borderRight: "none",
+    zIndex: "1001 !important",
   },
   "& .leaflet-popup-tip-container": {
     marginTop: "-1px",
+    zIndex: "1001 !important",
+  },
+  // Ensure all Leaflet pane layers respect z-index hierarchy but popups are on top
+  "& .leaflet-pane": {
+    zIndex: "auto !important",
+  },
+  "& .leaflet-popup-pane": {
+    zIndex: "1001 !important", // Popups above everything including sidebar
+  },
+  "& .leaflet-tooltip-pane": {
+    zIndex: "999 !important", // Tooltips below popups
+  },
+  "& .leaflet-marker-pane": {
+    zIndex: "600 !important", // Markers well below popups
+  },
+  "& .leaflet-overlay-pane": {
+    zIndex: "400 !important", // Overlays lowest
+  },
+  // Ensure map controls are clearly below popups
+  "& .leaflet-control-zoom": {
+    zIndex: "500 !important", // Well below popups
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
+    backdropFilter: "blur(4px)",
+  },
+  "& .leaflet-control-attribution": {
+    zIndex: "500 !important", // Well below popups
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
+    backdropFilter: "blur(4px)",
+  },
+  "& .leaflet-control": {
+    zIndex: "500 !important", // All controls well below popups
+  },
+  "& .leaflet-top": {
+    zIndex: "500 !important",
+    // Add some margin to avoid popup collision area
+    "& .leaflet-control-zoom": {
+      margin: "10px !important",
+    },
+  },
+  "& .leaflet-bottom": {
+    zIndex: "500 !important",
+  },
+  "& .leaflet-left": {
+    zIndex: "500 !important",
+  },
+  "& .leaflet-right": {
+    zIndex: "500 !important",
+  },
+  // Override Leaflet's default control positioning to avoid popup overlap
+  "& .leaflet-control-zoom a": {
+    backgroundColor: `${theme.palette.background.paper} !important`,
+    color: `${theme.palette.text.primary} !important`,
+    border: `1px solid ${theme.palette.divider} !important`,
+    transition: "all 0.2s ease",
+    fontWeight: "bold !important",
+    fontSize: "16px !important",
+    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.15) !important",
+    "&:hover": {
+      backgroundColor: `${theme.palette.primary.main} !important`,
+      color: "white !important",
+      borderColor: `${theme.palette.primary.main} !important`,
+      transform: "scale(1.05)",
+    },
   },
 }));
 
@@ -81,6 +152,9 @@ const PopupContainer = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
   borderRadius: "8px",
   minWidth: "220px",
+  maxWidth: "300px",
+  position: "relative",
+  zIndex: 1,
 }));
 
 const BuoyTitle = styled(Typography)(({ theme }) => ({
@@ -177,6 +251,35 @@ const MapController = ({
   const [hasInitialized, setHasInitialized] = useState(false);
   const previousSelectedBuoyId = useRef<string | undefined>(undefined);
 
+  // Configure popup options to prevent overlap with controls
+  useEffect(() => {
+    map.options.zoomControl = true;
+
+    // Customize popup behavior to avoid control overlap
+    const originalOpenPopup = map.openPopup;
+    map.openPopup = function (
+      popup: L.Popup,
+      latlng?: L.LatLngExpression,
+      options?: L.PopupOptions,
+    ) {
+      // Calculate optimal popup position to avoid control overlap
+      if (popup && latlng) {
+        const popupOptions = {
+          ...options,
+          autoPan: true,
+          autoPanPadding: [40, 40], // Add padding to avoid control overlap
+          autoPanPaddingTopLeft: [70, 70], // Extra padding for zoom controls
+          autoPanPaddingBottomRight: [20, 20],
+          keepInView: true,
+          maxWidth: 300,
+          className: "elevated-popup",
+        };
+        return originalOpenPopup.call(this, popup, latlng, popupOptions);
+      }
+      return originalOpenPopup.call(this, popup, latlng, options);
+    };
+  }, [map]);
+
   // Initial map bounds setup
   useEffect(() => {
     if (buoys.length > 0 && !hasInitialized) {
@@ -187,7 +290,7 @@ const MapController = ({
         const group = new L.FeatureGroup(
           buoysWithValidCoords.map((buoy) => L.marker([buoy.lat, buoy.lng])),
         );
-        map.fitBounds(group.getBounds(), { padding: [20, 20] });
+        map.fitBounds(group.getBounds(), { padding: [50, 50] }); // Increased padding
       }
       setHasInitialized(true);
     }
@@ -205,29 +308,32 @@ const MapController = ({
       if (selectedBuoy && selectedBuoy.lat !== 0 && selectedBuoy.lng !== 0) {
         const mapSize = map.getSize();
 
-        // Calculate offset to position buoy at center-bottom (75% from top)
-        const offsetY = mapSize.y * 0.25; // Move up by 25% of the map height
+        // Calculate offset to position buoy considering control areas
+        const offsetY = mapSize.y * 0.2; // Reduced offset
+        const offsetX = mapSize.x * 0.1; // Add horizontal offset to avoid zoom controls
+
         const targetPoint = map.project(
           [selectedBuoy.lat, selectedBuoy.lng],
           map.getZoom(),
         );
         targetPoint.y -= offsetY;
+        targetPoint.x += offsetX; // Shift right to avoid left-side zoom controls
         const targetLatLng = map.unproject(targetPoint, map.getZoom());
 
         // Center on the calculated position with smooth animation
         map.setView(targetLatLng, 6, {
           animate: true,
-          duration: 1.5, // Smooth 1.5 second animation
+          duration: 1.5,
           easeLinearity: 0.5,
         });
 
-        // Open the popup for the selected buoy after a short delay to ensure map has centered
+        // Open the popup for the selected buoy after animation
         setTimeout(() => {
           const marker = markersRef.current[selectedBuoyId];
           if (marker) {
             marker.openPopup();
           }
-        }, 1600); // Slightly after the animation completes
+        }, 1600);
       }
       previousSelectedBuoyId.current = selectedBuoyId;
     }
@@ -334,7 +440,13 @@ export const BuoyMap = ({
               }
             }}
           >
-            <Popup>
+            <Popup
+              autoPan={true}
+              autoPanPadding={[40, 40]}
+              keepInView={true}
+              maxWidth={300}
+              className="elevated-popup"
+            >
               <PopupContainer>
                 <BuoyTitle>{buoy.name}</BuoyTitle>
 

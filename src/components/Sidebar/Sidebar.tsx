@@ -90,7 +90,7 @@ const LogoContainer = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
   transition: "all 0.3s ease-in-out",
   overflow: "hidden",
   whiteSpace: "nowrap",
-  marginTop: "20px",
+  marginTop: expanded ? "20px" : "60px", // Increased top margin when collapsed to avoid toggle button
   marginBottom: "30px",
 }));
 

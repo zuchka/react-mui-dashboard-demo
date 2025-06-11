@@ -12,6 +12,8 @@ import { styled } from "@mui/material/styles";
 
 const StyledFormControl = styled(FormControl)(({ theme }) => ({
   minWidth: 250,
+  width: "100%",
+  maxWidth: 350,
   "& .MuiInputLabel-root": {
     color: theme.palette.text.secondary,
   },
@@ -23,6 +25,10 @@ const StyledFormControl = styled(FormControl)(({ theme }) => ({
   },
   "&:hover .MuiOutlinedInput-notchedOutline": {
     borderColor: theme.palette.primary.main,
+  },
+  [theme.breakpoints.down("sm")]: {
+    minWidth: "100%",
+    maxWidth: "100%",
   },
 }));
 
@@ -62,8 +68,29 @@ export const BuoyDropdown = ({
   });
 
   return (
-    <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-      <Typography variant="h6" color="text.primary">
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        gap: 2,
+        width: "100%",
+        "@media (max-width: 600px)": {
+          flexDirection: "column",
+          alignItems: "flex-start",
+          gap: 1,
+        },
+      }}
+    >
+      <Typography
+        variant="h6"
+        color="text.primary"
+        sx={{
+          "@media (max-width: 600px)": {
+            fontSize: "1rem",
+            fontWeight: 500,
+          },
+        }}
+      >
         Select Buoy:
       </Typography>
       <StyledFormControl size="small" disabled={loading}>

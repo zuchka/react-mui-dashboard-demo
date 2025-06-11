@@ -150,10 +150,10 @@ export default function Buoys() {
           sx={{
             gap: "20px",
             display: "flex",
-            "@media (max-width: 991px)": {
+            "@media (max-width: 768px)": {
               flexDirection: "column",
               alignItems: "stretch",
-              gap: "0px",
+              gap: "16px",
             },
           }}
         >
@@ -164,9 +164,10 @@ export default function Buoys() {
               lineHeight: "normal",
               width: "33%",
               marginLeft: "0px",
-              "@media (max-width: 991px)": {
+              "@media (max-width: 768px)": {
                 width: "100%",
                 marginLeft: 0,
+                order: 1,
               },
             }}
           >
@@ -176,6 +177,9 @@ export default function Buoys() {
                 alignItems: "center",
                 flexWrap: "wrap",
                 gap: 1,
+                "@media (max-width: 768px)": {
+                  justifyContent: "flex-start",
+                },
               }}
             >
               <Typography
@@ -209,9 +213,10 @@ export default function Buoys() {
               lineHeight: "normal",
               width: "67%",
               marginLeft: "20px",
-              "@media (max-width: 991px)": {
+              "@media (max-width: 768px)": {
                 width: "100%",
                 marginLeft: 0,
+                order: 2,
               },
             }}
           >
@@ -222,6 +227,10 @@ export default function Buoys() {
                 gap: "30px",
                 justifyContent: "flex-start",
                 marginLeft: "auto",
+                "@media (max-width: 768px)": {
+                  marginLeft: 0,
+                  justifyContent: "flex-start",
+                },
               }}
             >
               <Box
@@ -230,6 +239,10 @@ export default function Buoys() {
                   alignItems: "center",
                   gap: "16px",
                   justifyContent: "flex-end",
+                  "@media (max-width: 768px)": {
+                    justifyContent: "flex-start",
+                    width: "100%",
+                  },
                 }}
               >
                 <BuoyDropdown
