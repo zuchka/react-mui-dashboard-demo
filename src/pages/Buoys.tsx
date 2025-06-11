@@ -397,7 +397,7 @@ export default function Buoys() {
                   borderRadius: "8px",
                   padding: "40px 16px 16px",
                   border: "1px solid rgba(255, 255, 255, 0.12)",
-                  height: "fit-content",
+                  height: "300px",
                 }}
               >
                 <Suspense fallback={<ChartLoadingFallback height={250} />}>
