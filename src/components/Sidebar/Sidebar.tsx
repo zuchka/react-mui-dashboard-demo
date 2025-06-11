@@ -1,45 +1,78 @@
-import { Box, Button, Typography, Divider } from "@mui/material";
+import {
+  Box,
+  Button,
+  Typography,
+  Divider,
+  IconButton,
+  Tooltip,
+} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 
 const SidebarContainer = styled(Box)<{ expanded: boolean }>(
   ({ theme, expanded }) => ({
-    width: expanded ? "22%" : "80px",
+    width: expanded ? "280px" : "80px",
     backgroundColor: theme.palette.background.paper,
     boxShadow: "0px 8px 28px 0px rgba(1, 5, 17, 0.30)",
     display: "flex",
     flexDirection: "column",
-    paddingTop: "40px",
+    paddingTop: "20px",
     transition: "width 0.3s ease-in-out",
     overflow: "hidden",
     position: "relative",
     zIndex: 1000,
     [theme.breakpoints.down("md")]: {
       width: expanded ? "100%" : "70px",
-      paddingTop: "20px",
+      paddingTop: "15px",
+    },
+  }),
+);
+
+const ToggleButton = styled(IconButton)<{ expanded: boolean }>(
+  ({ theme, expanded }) => ({
+    position: "absolute",
+    top: "15px",
+    right: expanded ? "15px" : "50%",
+    transform: expanded ? "none" : "translateX(50%)",
+    zIndex: 1001,
+    backgroundColor: theme.palette.background.default,
+    color: theme.palette.primary.main,
+    width: "32px",
+    height: "32px",
+    transition: "all 0.3s ease-in-out",
+    border: `1px solid ${theme.palette.divider}`,
+    "&:hover": {
+      backgroundColor: theme.palette.action.hover,
+      borderColor: theme.palette.primary.main,
     },
   }),
 );
 
 const MenuItem = styled(Box)<{ expanded: boolean }>(({ theme, expanded }) => ({
-  padding: expanded ? "14px" : "14px 12px",
-  borderRadius: "7px",
+  padding: expanded ? "14px 20px" : "14px 12px",
+  borderRadius: "8px",
   display: "flex",
   alignItems: "center",
-  gap: "6px",
+  gap: "12px",
   cursor: "pointer",
   textDecoration: "none",
   color: theme.palette.text.secondary,
   justifyContent: expanded ? "flex-start" : "center",
-  minHeight: "46px",
+  minHeight: "48px",
   transition: "all 0.3s ease-in-out",
+  margin: "2px 0",
   "&:hover": {
     backgroundColor: theme.palette.action.hover,
+    color: theme.palette.text.primary,
   },
   "&.active": {
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.primary.main + "20",
     color: theme.palette.primary.main,
+    borderLeft: `3px solid ${theme.palette.primary.main}`,
+    paddingLeft: expanded ? "17px" : "9px",
   },
 }));
 
@@ -52,11 +85,13 @@ const StyledLink = styled(Link)({
 const LogoContainer = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
   display: "flex",
   alignItems: "center",
-  gap: expanded ? "8px" : "0",
+  gap: expanded ? "12px" : "0",
   justifyContent: expanded ? "flex-start" : "center",
   transition: "all 0.3s ease-in-out",
   overflow: "hidden",
   whiteSpace: "nowrap",
+  marginTop: "20px",
+  marginBottom: "30px",
 }));
 
 const MenuItemText = styled(Typography)<{ expanded: boolean }>(
@@ -68,18 +103,29 @@ const MenuItemText = styled(Typography)<{ expanded: boolean }>(
     overflow: "hidden",
     visibility: expanded ? "visible" : "hidden",
     width: expanded ? "auto" : "0",
+    fontWeight: 500,
   }),
 );
 
 const SidebarPadding = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
-  paddingLeft: expanded ? "28px" : "12px",
-  paddingRight: expanded ? "28px" : "12px",
+  paddingLeft: expanded ? "20px" : "12px",
+  paddingRight: expanded ? "20px" : "12px",
   transition: "padding 0.3s ease-in-out",
 }));
 
 export const Sidebar = () => {
   const location = useLocation();
-  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Initialize state from localStorage or default to expanded
+  const [isExpanded, setIsExpanded] = useState(() => {
+    const saved = localStorage.getItem("sidebar-expanded");
+    return saved !== null ? JSON.parse(saved) : true;
+  });
+
+  // Save state to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("sidebar-expanded", JSON.stringify(isExpanded));
+  }, [isExpanded]);
 
   // Default icons for menu items that don't have one
   const getDefaultIcon = (label: string) => {
@@ -130,36 +176,48 @@ export const Sidebar = () => {
     },
   ];
 
-  const handleMouseEnter = () => {
-    setIsExpanded(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsExpanded(false);
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
   };
 
   return (
     <SidebarContainer
       expanded={isExpanded}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
       role="navigation"
       aria-label="Main navigation"
       aria-expanded={isExpanded}
     >
-      <SidebarPadding expanded={isExpanded} mb={4}>
+      <Tooltip
+        title={isExpanded ? "Collapse sidebar" : "Expand sidebar"}
+        placement="right"
+      >
+        <ToggleButton
+          expanded={isExpanded}
+          onClick={handleToggle}
+          aria-label={isExpanded ? "Collapse sidebar" : "Expand sidebar"}
+        >
+          {isExpanded ? (
+            <ChevronLeftIcon fontSize="small" />
+          ) : (
+            <MenuIcon fontSize="small" />
+          )}
+        </ToggleButton>
+      </Tooltip>
+
+      <SidebarPadding expanded={isExpanded}>
         <LogoContainer expanded={isExpanded}>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/fccf2e7ec9723b0ade97e83d78184ae7dc22e34b?placeholderIfAbsent=true"
             alt="Dashdark X Logo"
             style={{
-              width: "26px",
-              minWidth: "26px",
+              width: "32px",
+              minWidth: "32px",
+              height: "32px",
               transition: "all 0.3s ease-in-out",
             }}
           />
           <MenuItemText variant="h6" color="text.primary" expanded={isExpanded}>
-            Dashdark X
+            Buoy Hub
           </MenuItemText>
         </LogoContainer>
       </SidebarPadding>
@@ -167,110 +225,146 @@ export const Sidebar = () => {
       <SidebarPadding expanded={isExpanded}>
         {menuItems.map((item) => (
           <StyledLink to={item.path} key={item.path}>
-            <MenuItem
-              expanded={isExpanded}
-              className={location.pathname === item.path ? "active" : ""}
-              role="menuitem"
-              aria-label={item.label}
+            <Tooltip
+              title={!isExpanded ? item.label : ""}
+              placement="right"
+              disableHoverListener={isExpanded}
             >
-              {item.icon ? (
-                <img
-                  src={item.icon}
-                  alt=""
-                  style={{
-                    width: "14px",
-                    minWidth: "14px",
-                    height: "14px",
-                  }}
-                />
-              ) : (
-                <Box
-                  component="span"
-                  sx={{
-                    fontSize: "14px",
-                    minWidth: "14px",
-                    textAlign: "center",
-                    opacity: 0.7,
-                  }}
-                >
-                  {getDefaultIcon(item.label)}
-                </Box>
-              )}
-              <MenuItemText variant="body2" expanded={isExpanded}>
-                {item.label}
-              </MenuItemText>
-            </MenuItem>
+              <MenuItem
+                expanded={isExpanded}
+                className={location.pathname === item.path ? "active" : ""}
+                role="menuitem"
+                aria-label={item.label}
+              >
+                {item.icon ? (
+                  <img
+                    src={item.icon}
+                    alt=""
+                    style={{
+                      width: "18px",
+                      minWidth: "18px",
+                      height: "18px",
+                      opacity: 0.8,
+                    }}
+                  />
+                ) : (
+                  <Box
+                    component="span"
+                    sx={{
+                      fontSize: "18px",
+                      minWidth: "18px",
+                      textAlign: "center",
+                      opacity: 0.8,
+                    }}
+                  >
+                    {getDefaultIcon(item.label)}
+                  </Box>
+                )}
+                <MenuItemText variant="body2" expanded={isExpanded}>
+                  {item.label}
+                </MenuItemText>
+              </MenuItem>
+            </Tooltip>
           </StyledLink>
         ))}
       </SidebarPadding>
 
-      <Divider sx={{ my: 2, opacity: 0.2 }} />
+      <Divider sx={{ my: 3, mx: 2, opacity: 0.2 }} />
 
       <SidebarPadding expanded={isExpanded}>
-        <Button
-          variant="contained"
-          fullWidth={isExpanded}
-          sx={{
-            mt: 2,
-            py: 1.5,
-            minWidth: isExpanded ? "auto" : "40px",
-            width: isExpanded ? "100%" : "40px",
-            background:
-              "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
-            transition: "all 0.3s ease-in-out",
-            fontSize: isExpanded ? "inherit" : "12px",
-            overflow: "hidden",
-          }}
+        <Tooltip
+          title={!isExpanded ? "Get template" : ""}
+          placement="right"
+          disableHoverListener={isExpanded}
         >
-          {isExpanded ? "Get template" : "GT"}
-        </Button>
+          <Button
+            variant="contained"
+            fullWidth={isExpanded}
+            sx={{
+              py: 1.5,
+              minWidth: isExpanded ? "auto" : "48px",
+              width: isExpanded ? "100%" : "48px",
+              background:
+                "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
+              transition: "all 0.3s ease-in-out",
+              fontSize: isExpanded ? "14px" : "12px",
+              fontWeight: 600,
+              overflow: "hidden",
+              borderRadius: "8px",
+              textTransform: "none",
+              "&:hover": {
+                background:
+                  "linear-gradient(128deg, #D76AFF 19.86%, #9B4FFF 68.34%)",
+              },
+            }}
+          >
+            {isExpanded ? "Get template" : "GT"}
+          </Button>
+        </Tooltip>
       </SidebarPadding>
 
       <SidebarPadding
         expanded={isExpanded}
         sx={{
           mt: "auto",
-          pt: 2,
-          pb: 3.5,
+          pt: 3,
+          pb: 4,
         }}
       >
-        <Box
-          display="flex"
-          alignItems="center"
-          gap={isExpanded ? 1 : 0}
-          sx={{
-            justifyContent: isExpanded ? "flex-start" : "center",
-            transition: "all 0.3s ease-in-out",
-          }}
+        <Tooltip
+          title={!isExpanded ? "John Carter - Account settings" : ""}
+          placement="right"
+          disableHoverListener={isExpanded}
         >
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/26bd6ffcec002bf455996a05d2b89c3461015451?placeholderIfAbsent=true"
-            alt="John Carter Profile"
-            style={{
-              width: "32px",
-              height: "32px",
-              borderRadius: "50%",
-              minWidth: "32px",
-            }}
-          />
           <Box
+            display="flex"
+            alignItems="center"
+            gap={isExpanded ? 1.5 : 0}
             sx={{
-              opacity: isExpanded ? 1 : 0,
-              transform: isExpanded ? "translateX(0)" : "translateX(-10px)",
+              justifyContent: isExpanded ? "flex-start" : "center",
               transition: "all 0.3s ease-in-out",
-              overflow: "hidden",
-              whiteSpace: "nowrap",
-              width: isExpanded ? "auto" : "0",
+              cursor: "pointer",
+              padding: "8px",
+              borderRadius: "8px",
+              "&:hover": {
+                backgroundColor: "action.hover",
+              },
             }}
           >
-            <Typography variant="body2" color="text.primary">
-              John Carter
-            </Typography>
-            <Typography variant="caption" color="text.secondary">
-              Account settings
-            </Typography>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/26bd6ffcec002bf455996a05d2b89c3461015451?placeholderIfAbsent=true"
+              alt="John Carter Profile"
+              style={{
+                width: "40px",
+                height: "40px",
+                borderRadius: "50%",
+                minWidth: "40px",
+                border: "2px solid rgba(203, 60, 255, 0.2)",
+              }}
+            />
+            <Box
+              sx={{
+                opacity: isExpanded ? 1 : 0,
+                transform: isExpanded ? "translateX(0)" : "translateX(-10px)",
+                transition: "all 0.3s ease-in-out",
+                overflow: "hidden",
+                whiteSpace: "nowrap",
+                width: isExpanded ? "auto" : "0",
+              }}
+            >
+              <Typography
+                variant="body2"
+                color="text.primary"
+                sx={{ fontWeight: 600 }}
+              >
+                John Carter
+              </Typography>
+              <Typography variant="caption" color="text.secondary">
+                Account settings
+              </Typography>
+            </Box>
           </Box>
-        </Box>
+        </Tooltip>
       </SidebarPadding>
     </SidebarContainer>
   );
