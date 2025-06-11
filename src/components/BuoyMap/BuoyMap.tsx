@@ -4,6 +4,11 @@ import { Box, Typography, Paper, Chip } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import {
+  formatTemperature,
+  formatWaveHeight,
+  formatWindSpeed,
+} from "../../utils/buoyDataFormatter";
 
 // Fix for default markers in react-leaflet
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
@@ -222,9 +227,9 @@ interface BuoyLocation {
   name: string;
   lat: number;
   lng: number;
-  temperature?: number;
-  waveHeight?: number;
-  windSpeed?: number;
+  temperature?: number | null;
+  waveHeight?: number | null;
+  windSpeed?: number | null;
   hasData?: boolean;
 }
 
@@ -460,25 +465,19 @@ export const BuoyMap = ({
                     <DataRow>
                       <DataLabel>Temperature</DataLabel>
                       <DataValue>
-                        {buoy.temperature !== undefined
-                          ? `${buoy.temperature.toFixed(1)}°C`
-                          : "N/A"}
+                        {formatTemperature(buoy.temperature)}
                       </DataValue>
                     </DataRow>
 
-                    {buoy.waveHeight !== undefined && (
-                      <DataRow>
-                        <DataLabel>Wave Height</DataLabel>
-                        <DataValue>{buoy.waveHeight.toFixed(1)}m</DataValue>
-                      </DataRow>
-                    )}
+                    <DataRow>
+                      <DataLabel>Wave Height</DataLabel>
+                      <DataValue>{formatWaveHeight(buoy.waveHeight)}</DataValue>
+                    </DataRow>
 
-                    {buoy.windSpeed !== undefined && (
-                      <DataRow>
-                        <DataLabel>Wind Speed</DataLabel>
-                        <DataValue>{buoy.windSpeed.toFixed(1)} m/s</DataValue>
-                      </DataRow>
-                    )}
+                    <DataRow>
+                      <DataLabel>Wind Speed</DataLabel>
+                      <DataValue>{formatWindSpeed(buoy.windSpeed)}</DataValue>
+                    </DataRow>
                   </DataContainer>
                 ) : (
                   <NoDataMessage>

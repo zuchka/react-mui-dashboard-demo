@@ -14,19 +14,19 @@ export interface BuoyData {
     lat: number;
     lng: number;
   };
-  temperature: number;
-  waveHeight: number;
-  windSpeed: number;
-  pressure: number;
+  temperature: number | null;
+  waveHeight: number | null;
+  windSpeed: number | null;
+  pressure: number | null;
   timestamp: string;
 }
 
 export interface BuoyTimeSeriesData {
   timestamp: string;
-  temperature: number;
-  waveHeight: number;
-  windSpeed: number;
-  pressure: number;
+  temperature: number | null;
+  waveHeight: number | null;
+  windSpeed: number | null;
+  pressure: number | null;
 }
 
 export interface GroupedBuoyData {
@@ -36,9 +36,9 @@ export interface GroupedBuoyData {
   };
 }
 
-const parseNOAAValue = (value: string): number => {
+const parseNOAAValue = (value: string): number | null => {
   if (value === "MM" || value === "" || isNaN(parseFloat(value))) {
-    return 0;
+    return null;
   }
   return parseFloat(value);
 };

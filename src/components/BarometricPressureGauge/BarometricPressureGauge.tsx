@@ -2,6 +2,7 @@ import { Box, Typography, Paper, CircularProgress, Chip } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useMemo } from "react";
 import type { BuoyTimeSeriesData } from "../../hooks/useBuoyData";
+import { isValidNumber } from "../../utils/buoyDataFormatter";
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   padding: "16px",
@@ -136,7 +137,7 @@ export const BarometricPressureGauge = ({
 
     // Filter out invalid pressure readings
     const validPressureData = data.filter(
-      (d) => d.pressure > 0 && d.pressure < 1100,
+      (d) => isValidNumber(d.pressure) && (d.pressure as number) < 1100,
     );
 
     if (validPressureData.length === 0) return null;

@@ -1,6 +1,7 @@
 import { Box, useTheme } from "@mui/material";
 import { TimeSeriesChart } from "../Charts";
 import type { BuoyTimeSeriesData } from "../../hooks/useBuoyData";
+import { getChartValue } from "../../utils/buoyDataFormatter";
 
 interface WindSpeedChartProps {
   data: BuoyTimeSeriesData[];
@@ -42,7 +43,7 @@ export const WindSpeedChart = ({ data, height = 300 }: WindSpeedChartProps) => {
       day: "numeric",
       hour: "2-digit",
     }),
-    value: item.windSpeed,
+    value: getChartValue(item.windSpeed),
   }));
 
   return (

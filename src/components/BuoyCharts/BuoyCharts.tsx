@@ -2,6 +2,7 @@ import { Box, Typography, useTheme } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { TimeSeriesChart, BarChart } from "../Charts";
 import type { BuoyTimeSeriesData } from "../../hooks/useBuoyData";
+import { getChartValue, isValidNumber } from "../../utils/buoyDataFormatter";
 
 const ChartContainer = styled(Box)(({ theme }) => ({
   padding: "16px",
@@ -45,7 +46,7 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
       day: "numeric",
       hour: "2-digit",
     }),
-    value: item.temperature,
+    value: getChartValue(item.temperature),
   }));
 
   const waveHeightData = data.map((item) => ({
@@ -54,7 +55,7 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
       day: "numeric",
       hour: "2-digit",
     }),
-    value: item.waveHeight,
+    value: getChartValue(item.waveHeight),
   }));
 
   const windSpeedData = data.map((item) => ({
@@ -63,7 +64,7 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
       day: "numeric",
       hour: "2-digit",
     }),
-    value: item.windSpeed,
+    value: getChartValue(item.windSpeed),
   }));
 
   const pressureData = data.map((item) => ({
@@ -72,27 +73,61 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
       day: "numeric",
       hour: "2-digit",
     }),
-    value: item.pressure,
+    value: getChartValue(item.pressure),
   }));
 
-  // Calculate averages for bar chart
+  // Calculate averages for bar chart (excluding null values)
+  const validTemperatureData = data.filter((item) =>
+    isValidNumber(item.temperature),
+  );
+  const validWaveHeightData = data.filter((item) =>
+    isValidNumber(item.waveHeight),
+  );
+  const validWindSpeedData = data.filter((item) =>
+    isValidNumber(item.windSpeed),
+  );
+  const validPressureData = data.filter((item) => isValidNumber(item.pressure));
+
   const averages = [
     {
       name: "Avg Temperature",
       value:
-        data.reduce((sum, item) => sum + item.temperature, 0) / data.length,
+        validTemperatureData.length > 0
+          ? validTemperatureData.reduce(
+              (sum, item) => sum + (item.temperature as number),
+              0,
+            ) / validTemperatureData.length
+          : 0,
     },
     {
       name: "Avg Wave Height",
-      value: data.reduce((sum, item) => sum + item.waveHeight, 0) / data.length,
+      value:
+        validWaveHeightData.length > 0
+          ? validWaveHeightData.reduce(
+              (sum, item) => sum + (item.waveHeight as number),
+              0,
+            ) / validWaveHeightData.length
+          : 0,
     },
     {
       name: "Avg Wind Speed",
-      value: data.reduce((sum, item) => sum + item.windSpeed, 0) / data.length,
+      value:
+        validWindSpeedData.length > 0
+          ? validWindSpeedData.reduce(
+              (sum, item) => sum + (item.windSpeed as number),
+              0,
+            ) / validWindSpeedData.length
+          : 0,
     },
     {
       name: "Avg Pressure",
-      value: data.reduce((sum, item) => sum + item.pressure, 0) / data.length,
+      value:
+        validPressureData.length > 0
+          ? validPressureData.reduce(
+              (sum, item) => sum + (item.pressure as number),
+              0,
+            ) / validPressureData.length
+          : 0,
     },
   ];
 
@@ -101,19 +136,19 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
   const currentReadings = [
     {
       name: "Current Temp",
-      value: latest.temperature,
+      value: getChartValue(latest.temperature),
     },
     {
       name: "Current Waves",
-      value: latest.waveHeight,
+      value: getChartValue(latest.waveHeight),
     },
     {
       name: "Current Wind",
-      value: latest.windSpeed,
+      value: getChartValue(latest.windSpeed),
     },
     {
       name: "Current Pressure",
-      value: latest.pressure,
+      value: getChartValue(latest.pressure),
     },
   ];
 
