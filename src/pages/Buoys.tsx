@@ -11,7 +11,7 @@ import { styled } from "@mui/material/styles";
 import { useBuoyData } from "../hooks/useBuoyData";
 import { BuoyDropdown } from "../components/BuoyDropdown/BuoyDropdown";
 import { BuoyMap } from "../components/BuoyMap/BuoyMap";
-import { StatsCard } from "../components/StatsCard/StatsCard";
+import { BarometricPressureGauge } from "../components/BarometricPressureGauge/BarometricPressureGauge";
 import { BUOY_METADATA, DEFAULT_BUOY_ID } from "../data/buoyMetadata";
 
 // Lazy load chart components to prevent blocking
@@ -33,7 +33,7 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
   borderRadius: 12,
 }));
 
-const HeaderContainer = styled(Box)(({ theme }) => ({
+const HeaderContainer = styled(Box)(() => ({
   fontWeight: "400",
   gap: "10px",
   justifyContent: "flex-start",
@@ -44,7 +44,7 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   margin: "0 auto 10px 0",
 }));
 
-const LoadingOverlay = styled(Box)(({ theme }) => ({
+const LoadingOverlay = styled(Box)(() => ({
   position: "absolute",
   top: 0,
   left: 0,
@@ -86,7 +86,6 @@ export default function Buoys() {
     isBuoyLoaded,
     isBuoyLoading,
     fetchBuoyData,
-    loading,
     error,
     lastUpdate,
     buoyListInitialized,
@@ -265,7 +264,7 @@ export default function Buoys() {
       )}
 
       {/* Map Section */}
-      <StyledPaper sx={{ mb: 4, padding: "2px 24px" }}>
+      <StyledPaper sx={{ mb: 4, padding: "0 24px 2px" }}>
         <Typography variant="h6" sx={{ mb: 3, color: "text.primary" }}>
           Buoy Locations
         </Typography>
@@ -277,9 +276,17 @@ export default function Buoys() {
         />
       </StyledPaper>
 
-      {/* Wind Speed Chart */}
+      {/* Wind Speed Analysis - Two Column Layout */}
       {selectedBuoyData && shouldLoadCharts && (
-        <StyledPaper sx={{ mb: 4, padding: "2px 24px", position: "relative" }}>
+        <StyledPaper
+          sx={{
+            mb: 4,
+            padding: "0 24px 2px",
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           {isSelectedBuoyLoading && (
             <LoadingOverlay>
               <Box sx={{ textAlign: "center" }}>
@@ -290,12 +297,119 @@ export default function Buoys() {
               </Box>
             </LoadingOverlay>
           )}
-          <Typography variant="h6" sx={{ mb: 3, color: "text.primary" }}>
-            Wind Speed Analysis
-          </Typography>
-          <Suspense fallback={<ChartLoadingFallback height={300} />}>
-            <WindSpeedChart data={selectedBuoyData.history} height={300} />
-          </Suspense>
+
+          {/* Titles Row */}
+          <Box
+            sx={{
+              display: "flex",
+              gap: "20px",
+              mb: 3,
+              "@media (max-width: 991px)": {
+                flexDirection: "column",
+                gap: "16px",
+              },
+            }}
+          >
+            <Box
+              sx={{
+                width: "66.67%",
+                "@media (max-width: 991px)": { width: "100%" },
+              }}
+            >
+              <Typography variant="h6" sx={{ color: "text.primary" }}>
+                Wind Speed Analysis
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                width: "33.33%",
+                "@media (max-width: 991px)": { width: "100%" },
+              }}
+            >
+              <Typography variant="h6" sx={{ color: "text.primary" }}>
+                Atmospheric Pressure
+              </Typography>
+            </Box>
+          </Box>
+
+          {/* Charts Row */}
+          <Box
+            sx={{
+              gap: "20px",
+              display: "flex",
+              "@media (max-width: 991px)": {
+                flexDirection: "column",
+                alignItems: "stretch",
+                gap: "20px",
+              },
+            }}
+          >
+            {/* Left Column - Wind Speed Chart (2/3) */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                lineHeight: "normal",
+                width: "66.67%",
+                marginLeft: "0px",
+                "@media (max-width: 991px)": {
+                  width: "100%",
+                  marginLeft: 0,
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  height: "300px",
+                  width: "100%",
+                  backgroundColor: "rgb(8, 16, 40)",
+                  borderRadius: "8px",
+                  padding: "16px",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                }}
+              >
+                <Suspense fallback={<ChartLoadingFallback height={268} />}>
+                  <WindSpeedChart
+                    data={selectedBuoyData.history}
+                    height={268}
+                  />
+                </Suspense>
+              </Box>
+            </Box>
+
+            {/* Right Column - Barometric Pressure (1/3) */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                lineHeight: "normal",
+                width: "33.33%",
+                marginLeft: "20px",
+                "@media (max-width: 991px)": {
+                  width: "100%",
+                  marginLeft: 0,
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  backgroundColor: "rgb(8, 16, 40)",
+                  borderRadius: "8px",
+                  padding: "40px 16px 16px",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                  height: "fit-content",
+                }}
+              >
+                <Suspense fallback={<ChartLoadingFallback height={250} />}>
+                  <BarometricPressureGauge
+                    data={selectedBuoyData.history}
+                    loading={isSelectedBuoyLoading}
+                    hideTitle={true}
+                  />
+                </Suspense>
+              </Box>
+            </Box>
+          </Box>
         </StyledPaper>
       )}
 
