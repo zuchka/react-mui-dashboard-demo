@@ -115,9 +115,9 @@ const MapWrapper = styled(Paper)(({ theme }) => ({
   },
   "& .leaflet-top": {
     zIndex: "500 !important",
-    // Add some margin to avoid popup collision area
+    // Add increased margin to avoid popup collision area
     "& .leaflet-control-zoom": {
-      margin: "10px !important",
+      margin: "20px !important", // Increased from 10px to 20px for more buffer space
     },
   },
   "& .leaflet-bottom": {
@@ -267,9 +267,9 @@ const MapController = ({
         const popupOptions = {
           ...options,
           autoPan: true,
-          autoPanPadding: [40, 40], // Add padding to avoid control overlap
-          autoPanPaddingTopLeft: [70, 70], // Extra padding for zoom controls
-          autoPanPaddingBottomRight: [20, 20],
+          autoPanPadding: [60, 60], // Increased padding to avoid control overlap
+          autoPanPaddingTopLeft: [100, 100], // Extra padding for zoom controls - increased from 70 to 100
+          autoPanPaddingBottomRight: [40, 40], // Increased bottom-right padding
           keepInView: true,
           maxWidth: 300,
           className: "elevated-popup",
@@ -290,7 +290,7 @@ const MapController = ({
         const group = new L.FeatureGroup(
           buoysWithValidCoords.map((buoy) => L.marker([buoy.lat, buoy.lng])),
         );
-        map.fitBounds(group.getBounds(), { padding: [50, 50] }); // Increased padding
+        map.fitBounds(group.getBounds(), { padding: [80, 80] }); // Further increased padding to ensure better spacing
       }
       setHasInitialized(true);
     }
@@ -308,16 +308,16 @@ const MapController = ({
       if (selectedBuoy && selectedBuoy.lat !== 0 && selectedBuoy.lng !== 0) {
         const mapSize = map.getSize();
 
-        // Calculate offset to position buoy considering control areas
-        const offsetY = mapSize.y * 0.2; // Reduced offset
-        const offsetX = mapSize.x * 0.1; // Add horizontal offset to avoid zoom controls
+        // Calculate offset to center buoy while avoiding control overlap
+        const offsetY = mapSize.y * 0.08; // Increased offset for better spacing from controls
+        const offsetX = mapSize.x * 0.05; // Increased horizontal offset to better account for zoom controls
 
         const targetPoint = map.project(
           [selectedBuoy.lat, selectedBuoy.lng],
           map.getZoom(),
         );
-        targetPoint.y -= offsetY;
-        targetPoint.x += offsetX; // Shift right to avoid left-side zoom controls
+        targetPoint.y -= offsetY; // Slight upward shift to account for popup space
+        targetPoint.x += offsetX; // Minimal right shift to avoid zoom controls
         const targetLatLng = map.unproject(targetPoint, map.getZoom());
 
         // Center on the calculated position with smooth animation
@@ -442,7 +442,7 @@ export const BuoyMap = ({
           >
             <Popup
               autoPan={true}
-              autoPanPadding={[40, 40]}
+              autoPanPadding={[60, 60]}
               keepInView={true}
               maxWidth={300}
               className="elevated-popup"
