@@ -1,6 +1,6 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { TimeSeriesChart, BarChart } from "../Charts";
+import { TimeSeriesChart, BarChart, AreaChart, HeatmapChart } from "../Charts";
 import type { BuoyTimeSeriesData } from "../../hooks/useBuoyData";
 import { getChartValue, isValidNumber } from "../../utils/buoyDataFormatter";
 
