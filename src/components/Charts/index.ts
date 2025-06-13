@@ -1,2 +1,9 @@
-export { TimeSeriesChart } from "./TimeSeriesChart";
 export { BarChart } from "./BarChart";
+export { TimeSeriesChart } from "./TimeSeriesChart";
+export { DonutChart } from "./DonutChart";
+export { PieChart } from "./PieChart";
+export { GaugeChart } from "./GaugeChart";
+export { AreaChart } from "./AreaChart";
+export { ScatterChart } from "./ScatterChart";
+export { RadarChart } from "./RadarChart";
+export { HeatmapChart } from "./HeatmapChart";
