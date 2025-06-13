@@ -472,6 +472,216 @@ export default function Buoys() {
         </StyledPaper>
       )}
 
+      {/* Environmental Overview Cards */}
+      {selectedBuoyData && shouldLoadCharts && (
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", md: "1fr 1fr 1fr 1fr" },
+            gap: 3,
+            mb: 4,
+          }}
+        >
+          <StyledPaper sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+              Water Temperature
+            </Typography>
+            <GaugeChart
+              value={selectedBuoyData.info.temperature || 0}
+              height={200}
+              min={-5}
+              max={35}
+              unit="°C"
+              color="#FF5A65"
+              sectors={[
+                { min: -5, max: 10, color: "#14CA74" },
+                { min: 10, max: 25, color: "#FDB52A" },
+                { min: 25, max: 35, color: "#FF5A65" },
+              ]}
+            />
+          </StyledPaper>
+
+          <StyledPaper sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+              Wave Height
+            </Typography>
+            <GaugeChart
+              value={selectedBuoyData.info.waveHeight || 0}
+              height={200}
+              min={0}
+              max={10}
+              unit="m"
+              color="#CB3CFF"
+              sectors={[
+                { min: 0, max: 3, color: "#14CA74" },
+                { min: 3, max: 6, color: "#FDB52A" },
+                { min: 6, max: 10, color: "#FF5A65" },
+              ]}
+            />
+          </StyledPaper>
+
+          <StyledPaper sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+              Wind Speed
+            </Typography>
+            <GaugeChart
+              value={selectedBuoyData.info.windSpeed || 0}
+              height={200}
+              min={0}
+              max={50}
+              unit="m/s"
+              color="#7F25FB"
+              sectors={[
+                { min: 0, max: 15, color: "#14CA74" },
+                { min: 15, max: 30, color: "#FDB52A" },
+                { min: 30, max: 50, color: "#FF5A65" },
+              ]}
+            />
+          </StyledPaper>
+
+          <StyledPaper sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ mb: 2, color: "text.primary" }}>
+              Conditions Analysis
+            </Typography>
+            <DonutChart
+              data={[
+                { name: "Optimal", value: 35 },
+                { name: "Moderate", value: 45 },
+                { name: "Rough", value: 20 },
+              ]}
+              height={200}
+              colors={["#14CA74", "#FDB52A", "#FF5A65"]}
+              centerText={{
+                title: "Good",
+                subtitle: "Sea State",
+              }}
+            />
+          </StyledPaper>
+        </Box>
+      )}
+
+      {/* Environmental Performance Radar */}
+      {selectedBuoyData && shouldLoadCharts && (
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", md: "2fr 1fr" },
+            gap: 3,
+            mb: 4,
+          }}
+        >
+          <StyledPaper>
+            <Typography
+              variant="h6"
+              sx={{ mb: 3, color: "text.primary", textAlign: "center" }}
+            >
+              Environmental Performance Analysis
+            </Typography>
+            <Box
+              sx={{
+                backgroundColor: "rgb(8, 16, 40)",
+                borderRadius: "8px",
+                padding: "16px",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+              }}
+            >
+              <RadarChart
+                indicators={[
+                  { name: "Temperature Stability", max: 100 },
+                  { name: "Wave Conditions", max: 100 },
+                  { name: "Wind Patterns", max: 100 },
+                  { name: "Pressure Systems", max: 100 },
+                  { name: "Visibility", max: 100 },
+                  { name: "Overall Safety", max: 100 },
+                ]}
+                data={[
+                  {
+                    name: "Current Conditions",
+                    value: [85, 72, 68, 88, 92, 78],
+                    color: "#CB3CFF",
+                  },
+                  {
+                    name: "24h Average",
+                    value: [78, 85, 75, 82, 88, 81],
+                    color: "#14CA74",
+                  },
+                ]}
+                height={400}
+                shape="polygon"
+              />
+            </Box>
+          </StyledPaper>
+
+          <StyledPaper>
+            <Typography
+              variant="h6"
+              sx={{ mb: 3, color: "text.primary", textAlign: "center" }}
+            >
+              Data Quality Metrics
+            </Typography>
+            <Box sx={{ mb: 3 }}>
+              <DonutChart
+                data={[
+                  { name: "Valid Readings", value: 94.5 },
+                  { name: "Estimated", value: 4.2 },
+                  { name: "Missing", value: 1.3 },
+                ]}
+                height={250}
+                colors={["#14CA74", "#FDB52A", "#FF5A65"]}
+                centerText={{
+                  title: "94.5%",
+                  subtitle: "Data Quality",
+                }}
+              />
+            </Box>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Typography variant="body2" color="text.secondary">
+                  Signal Strength
+                </Typography>
+                <Typography variant="body2" color="success.main">
+                  Excellent
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Typography variant="body2" color="text.secondary">
+                  Last Update
+                </Typography>
+                <Typography variant="body2" color="text.primary">
+                  {lastUpdate?.toLocaleTimeString() || "N/A"}
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Typography variant="body2" color="text.secondary">
+                  Data Points
+                </Typography>
+                <Typography variant="body2" color="text.primary">
+                  {selectedBuoyData.history?.length || 0}
+                </Typography>
+              </Box>
+            </Box>
+          </StyledPaper>
+        </Box>
+      )}
+
       {/* Charts Section */}
       {selectedBuoyData && shouldLoadCharts ? (
         <StyledPaper sx={{ position: "relative" }}>
