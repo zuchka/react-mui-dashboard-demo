@@ -13,6 +13,7 @@ import { BuoyDropdown } from "../components/BuoyDropdown/BuoyDropdown";
 import { BuoyMap } from "../components/BuoyMap/BuoyMap";
 import { BarometricPressureGauge } from "../components/BarometricPressureGauge/BarometricPressureGauge";
 import { BUOY_METADATA, DEFAULT_BUOY_ID } from "../data/buoyMetadata";
+import { GaugeChart, DonutChart, RadarChart } from "../components/Charts";
 
 // Lazy load chart components to prevent blocking
 const BuoyCharts = lazy(() =>
