@@ -242,12 +242,46 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
         </ChartContainer>
       </Box>
 
+      {/* Multi-series Area Chart */}
+      <Box sx={{ mb: 4 }}>
+        <ChartContainer>
+          <Typography
+            variant="h6"
+            sx={{ mb: 2, color: "text.primary", textAlign: "center" }}
+          >
+            Environmental Conditions Overview
+          </Typography>
+          <AreaChart
+            series={[
+              {
+                name: "Temperature (°C)",
+                data: temperatureData,
+                color: theme.palette.error.main,
+              },
+              {
+                name: "Wave Height (m)",
+                data: waveHeightData,
+                color: theme.palette.info.main,
+              },
+              {
+                name: "Wind Speed (m/s)",
+                data: windSpeedData,
+                color: theme.palette.primary.main,
+              },
+            ]}
+            height={400}
+            yAxisLabel="Combined Measurements"
+          />
+        </ChartContainer>
+      </Box>
+
       {/* Summary Charts */}
       <Box
         sx={{
           display: "grid",
           gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
           gap: 3,
+          mb: 4,
         }}
       >
         <ChartContainer>
@@ -289,6 +323,30 @@ export const BuoyCharts = ({ data, buoyName }: BuoyChartsProps) => {
           />
         </ChartContainer>
       </Box>
+
+      {/* Daily Pattern Heatmap */}
+      <ChartContainer>
+        <Typography
+          variant="h6"
+          sx={{ mb: 2, color: "text.primary", textAlign: "center" }}
+        >
+          Daily Temperature Patterns
+        </Typography>
+        <HeatmapChart
+          data={
+            // Create heatmap data from temperature readings
+            data.slice(0, 24).map((item, index) => ({
+              x: index % 6, // 6 time periods per day
+              y: Math.floor(index / 6), // 4 days
+              value: getChartValue(item.temperature),
+            }))
+          }
+          xAxisData={["00:00", "04:00", "08:00", "12:00", "16:00", "20:00"]}
+          yAxisData={["Day 1", "Day 2", "Day 3", "Day 4"]}
+          height={300}
+          colorRange={[theme.palette.primary.light, theme.palette.error.main]}
+        />
+      </ChartContainer>
     </Box>
   );
 };
