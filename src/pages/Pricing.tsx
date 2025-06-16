@@ -12,6 +12,7 @@ import {
   Container,
   Divider,
 } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import CheckIcon from "@mui/icons-material/Check";
 import StarIcon from "@mui/icons-material/Star";
 
