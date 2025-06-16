@@ -273,7 +273,7 @@ export const Sidebar = () => {
 
       <SidebarPadding expanded={isExpanded}>
         <Tooltip
-          title={!isExpanded ? "Get template" : ""}
+          title={!isExpanded ? "Get a buoy" : ""}
           placement="right"
           disableHoverListener={isExpanded}
         >
@@ -298,7 +298,14 @@ export const Sidebar = () => {
               },
             }}
           >
-            {isExpanded ? "Get template" : "GT"}
+            {isExpanded ? (
+              <>
+                Get a buoy
+                <br />
+              </>
+            ) : (
+              "GT"
+            )}
           </Button>
         </Tooltip>
       </SidebarPadding>
