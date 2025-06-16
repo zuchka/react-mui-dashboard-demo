@@ -90,15 +90,14 @@ const pricingTiers: PricingTier[] = [
 
 export default function Pricing() {
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Box sx={{ py: 4, px: 3, maxWidth: 1400, mx: "auto" }}>
       <Box sx={{ textAlign: "center", mb: 6 }}>
         <Typography
           variant="h2"
           component="h1"
           sx={{
             mb: 2,
-            background:
-              "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
+            background: "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
@@ -113,14 +112,13 @@ export default function Pricing() {
           sx={{ mb: 4, maxWidth: 600, mx: "auto" }}
         >
           Select the perfect plan for your maritime weather monitoring needs.
-          All plans include our core features with varying levels of access and
-          support.
+          All plans include our core features with varying levels of access and support.
         </Typography>
       </Box>
 
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center" sx={{ maxWidth: 1200, mx: "auto" }}>
         {pricingTiers.map((tier) => (
-          <Grid item xs={12} sm={4} lg={3.5} key={tier.name}>
+            <Grid item xs={12} sm={4} md={4} key={tier.name}>
             <Card
               sx={{
                 height: "100%",
@@ -129,8 +127,7 @@ export default function Pricing() {
                 position: "relative",
                 border: tier.isPopular ? 2 : 1,
                 borderColor: tier.isPopular ? "primary.main" : "divider",
-                transition:
-                  "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+                transition: "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
                 "&:hover": {
                   transform: "translateY(-4px)",
                   boxShadow: tier.isPopular
@@ -156,8 +153,7 @@ export default function Pricing() {
                     size="small"
                     sx={{
                       fontWeight: 600,
-                      background:
-                        "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
+                      background: "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
                     }}
                   />
                 </Box>
@@ -172,20 +168,13 @@ export default function Pricing() {
                     {tier.description}
                   </Typography>
 
-                  <Stack
-                    direction="row"
-                    alignItems="baseline"
-                    justifyContent="center"
-                    spacing={1}
-                  >
+                  <Stack direction="row" alignItems="baseline" justifyContent="center" spacing={1}>
                     <Typography
                       variant="h3"
                       component="span"
                       sx={{
                         fontWeight: 700,
-                        color: tier.isEnterprise
-                          ? "text.primary"
-                          : "primary.main",
+                        color: tier.isEnterprise ? "text.primary" : "primary.main",
                       }}
                     >
                       {tier.price}
@@ -202,7 +191,10 @@ export default function Pricing() {
                   {tier.features.map((feature, index) => (
                     <ListItem key={index} disableGutters>
                       <ListItemIcon sx={{ minWidth: 36 }}>
-                        <Check color="success" fontSize="small" />
+                        <Check
+                          color="success"
+                          fontSize="small"
+                        />
                       </ListItemIcon>
                       <ListItemText
                         primary={feature}
@@ -248,13 +240,9 @@ export default function Pricing() {
         <Typography variant="h5" sx={{ mb: 2 }}>
           Need a custom solution?
         </Typography>
-        <Typography
-          color="text.secondary"
-          sx={{ mb: 3, maxWidth: 500, mx: "auto" }}
-        >
-          We offer flexible pricing and custom features for organizations with
-          specific requirements. Contact our sales team to discuss your unique
-          needs.
+        <Typography color="text.secondary" sx={{ mb: 3, maxWidth: 500, mx: "auto" }}>
+          We offer flexible pricing and custom features for organizations with specific requirements.
+          Contact our sales team to discuss your unique needs.
         </Typography>
         <Button
           variant="outlined"
@@ -278,8 +266,7 @@ export default function Pricing() {
 
       <Box sx={{ mt: 6, textAlign: "center" }}>
         <Typography variant="body2" color="text.secondary">
-          All plans include SSL encryption, 99.9% uptime guarantee, and GDPR
-          compliance.
+          All plans include SSL encryption, 99.9% uptime guarantee, and GDPR compliance.
           <br />
           No setup fees. Cancel anytime.
         </Typography>
