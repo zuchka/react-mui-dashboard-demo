@@ -120,7 +120,7 @@ export default function Pricing() {
 
       <Grid container spacing={4} justifyContent="center">
         {pricingTiers.map((tier) => (
-          <Grid item xs={12} md={4} key={tier.name}>
+          <Grid item xs={12} sm={4} key={tier.name}>
             <Card
               sx={{
                 height: "100%",
