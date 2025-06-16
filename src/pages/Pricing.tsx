@@ -118,9 +118,9 @@ export default function Pricing() {
         </Typography>
       </Box>
 
-      <Grid container spacing={4} justifyContent="center">
+      <Grid container spacing={3} justifyContent="center">
         {pricingTiers.map((tier) => (
-          <Grid item xs={12} sm={4} key={tier.name}>
+          <Grid item xs={12} sm={4} lg={3.5} key={tier.name}>
             <Card
               sx={{
                 height: "100%",
