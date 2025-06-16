@@ -88,8 +88,7 @@ const pricingTiers: PricingTier[] = [
     name: "Hobby",
     price: "$0",
     period: "forever",
-    description:
-      "Perfect for individuals and small projects getting started with buoy data monitoring.",
+    description: "Perfect for individuals and small projects getting started with buoy data monitoring.",
     recommendedFor: "Personal projects & learning",
     features: [
       "Access to 5 buoy stations",
@@ -108,8 +107,7 @@ const pricingTiers: PricingTier[] = [
     name: "Team",
     price: "$29",
     period: "per month",
-    description:
-      "Ideal for teams and businesses that need comprehensive monitoring and collaboration features.",
+    description: "Ideal for teams and businesses that need comprehensive monitoring and collaboration features.",
     recommendedFor: "Small to medium teams",
     features: [
       "Access to all buoy stations",
@@ -132,8 +130,7 @@ const pricingTiers: PricingTier[] = [
     name: "Enterprise",
     price: "$99",
     period: "per month",
-    description:
-      "For large organizations requiring enterprise-grade features, security, and dedicated support.",
+    description: "For large organizations requiring enterprise-grade features, security, and dedicated support.",
     recommendedFor: "Large organizations & enterprises",
     features: [
       "Unlimited buoy stations",
@@ -169,8 +166,7 @@ export default function Pricing() {
             fontSize: { xs: "2rem", md: "2.5rem" },
             fontWeight: 700,
             mb: 2,
-            background:
-              "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
+            background: "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
@@ -188,18 +184,48 @@ export default function Pricing() {
             lineHeight: 1.6,
           }}
         >
-          Get started with buoy data monitoring and analytics. Choose the plan
-          that best fits your needs.
+          Get started with buoy data monitoring and analytics. Choose the plan that best fits your needs.
         </Typography>
       </Box>
 
-      <Grid container spacing={4} sx={{ justifyContent: "center" }}>
-        {pricingTiers.map((tier) => {
-          const CardComponent = tier.popular ? PopularCard : PricingCard;
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          gap: "32px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            gap: "20px",
+            "@media (max-width: 991px)": {
+              flexDirection: "column",
+              alignItems: "stretch",
+              gap: "0px",
+            },
+          }}
+        >
+          {pricingTiers.map((tier) => {
+            const CardComponent = tier.popular ? PopularCard : PricingCard;
 
-          return (
-            <Grid item xs={12} md={4} key={tier.id}>
-              <CardComponent>
+            return (
+              <Box
+                key={tier.id}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  lineHeight: "normal",
+                  width: "33%",
+                  marginLeft: tier.id === "hobby" ? "0px" : "20px",
+                  "@media (max-width: 991px)": {
+                    width: "100%",
+                    marginLeft: 0,
+                  },
+                }}
+              >
+                <CardComponent>
                 {tier.popular && (
                   <Chip
                     label="Most Popular"
@@ -262,11 +288,7 @@ export default function Pricing() {
                     </Typography>
                     <Typography
                       variant="body2"
-                      sx={{
-                        color: "text.primary",
-                        fontSize: "0.85rem",
-                        mt: 0.5,
-                      }}
+                      sx={{ color: "text.primary", fontSize: "0.85rem", mt: 0.5 }}
                     >
                       {tier.recommendedFor}
                     </Typography>
@@ -355,11 +377,9 @@ export default function Pricing() {
                       },
                     }),
                     ...(tier.buttonVariant === "contained" && {
-                      background:
-                        "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
+                      background: "linear-gradient(128deg, #CB3CFF 19.86%, #7F25FB 68.34%)",
                       "&:hover": {
-                        background:
-                          "linear-gradient(128deg, #D76AFF 19.86%, #9B4FFF 68.34%)",
+                        background: "linear-gradient(128deg, #D76AFF 19.86%, #9B4FFF 68.34%)",
                       },
                     }),
                   }}
@@ -393,8 +413,7 @@ export default function Pricing() {
           color="text.secondary"
           sx={{ mb: 3, maxWidth: "600px", mx: "auto", lineHeight: 1.6 }}
         >
-          For unique requirements, custom integrations, or volume discounts, our
-          team is here to help you build the perfect solution.
+          For unique requirements, custom integrations, or volume discounts, our team is here to help you build the perfect solution.
         </Typography>
         <Button
           variant="outlined"
