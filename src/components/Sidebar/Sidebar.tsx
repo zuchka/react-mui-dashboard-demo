@@ -55,11 +55,11 @@ const ToggleButton = styled(IconButton)<{ expanded: boolean }>(
 );
 
 const MenuItem = styled(Box)<{ expanded: boolean }>(({ theme, expanded }) => ({
-  padding: expanded ? "14px 20px" : "14px 12px",
+  padding: expanded ? "14px 20px" : "14px 0",
   borderRadius: "8px",
   display: "flex",
   alignItems: "center",
-  gap: "12px",
+  gap: expanded ? "12px" : "0",
   cursor: "pointer",
   textDecoration: "none",
   color: theme.palette.text.secondary,
@@ -75,7 +75,7 @@ const MenuItem = styled(Box)<{ expanded: boolean }>(({ theme, expanded }) => ({
     backgroundColor: theme.palette.primary.main + "20",
     color: theme.palette.primary.main,
     borderLeft: `3px solid ${theme.palette.primary.main}`,
-    paddingLeft: expanded ? "17px" : "9px",
+    paddingLeft: expanded ? "17px" : "0",
   },
 }));
 
@@ -111,8 +111,8 @@ const MenuItemText = styled(Typography)<{ expanded: boolean }>(
 );
 
 const SidebarPadding = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
-  paddingLeft: expanded ? "20px" : "12px",
-  paddingRight: expanded ? "20px" : "12px",
+  paddingLeft: expanded ? "20px" : "16px",
+  paddingRight: expanded ? "20px" : "16px",
   transition: "padding 0.3s ease-in-out",
 }));
 
@@ -123,7 +123,7 @@ const ThemeToggleButton = styled(IconButton)<{ expanded: boolean }>(
     width: expanded ? "100%" : "48px",
     height: "48px",
     justifyContent: expanded ? "flex-start" : "center",
-    paddingLeft: expanded ? "16px" : "0",
+    padding: expanded ? "0 16px" : "0",
     gap: expanded ? "12px" : "0",
     transition: "all 0.3s ease-in-out",
     border: `1px solid ${theme.palette.divider}`,
