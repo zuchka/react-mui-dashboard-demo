@@ -360,9 +360,10 @@ export const Sidebar = () => {
 
       <Box
         sx={{
-          padding: isExpanded ? "0 20px" : "0 16px",
+          padding: isExpanded ? "0 20px" : "0",
           display: "flex",
           justifyContent: "center",
+          width: "100%",
           transition: "all 0.3s ease-in-out",
         }}
       >
