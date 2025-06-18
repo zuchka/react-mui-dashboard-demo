@@ -55,18 +55,22 @@ const ToggleButton = styled(IconButton)<{ expanded: boolean }>(
 );
 
 const MenuItem = styled(Box)<{ expanded: boolean }>(({ theme, expanded }) => ({
-  padding: expanded ? "14px 20px" : "14px 12px",
+  padding: expanded ? "14px 20px" : "0",
   borderRadius: "8px",
   display: "flex",
   alignItems: "center",
-  gap: "12px",
+  gap: expanded ? "12px" : "0",
   cursor: "pointer",
   textDecoration: "none",
   color: theme.palette.text.secondary,
   justifyContent: expanded ? "flex-start" : "center",
   minHeight: "48px",
+  width: expanded ? "auto" : "48px",
+  marginLeft: expanded ? "0" : "auto",
+  marginRight: expanded ? "0" : "auto",
   transition: "all 0.3s ease-in-out",
-  margin: "2px 0",
+  margin: expanded ? "2px 0" : "2px auto",
+  position: "relative",
   "&:hover": {
     backgroundColor: theme.palette.action.hover,
     color: theme.palette.text.primary,
@@ -74,8 +78,17 @@ const MenuItem = styled(Box)<{ expanded: boolean }>(({ theme, expanded }) => ({
   "&.active": {
     backgroundColor: theme.palette.primary.main + "20",
     color: theme.palette.primary.main,
-    borderLeft: `3px solid ${theme.palette.primary.main}`,
-    paddingLeft: expanded ? "17px" : "9px",
+    "&::before": {
+      content: '""',
+      position: "absolute",
+      left: expanded ? 0 : "-12px",
+      top: 0,
+      bottom: 0,
+      width: "3px",
+      backgroundColor: theme.palette.primary.main,
+      borderRadius: "0 2px 2px 0",
+    },
+    paddingLeft: expanded ? "17px" : "0",
   },
 }));
 
@@ -111,8 +124,8 @@ const MenuItemText = styled(Typography)<{ expanded: boolean }>(
 );
 
 const SidebarPadding = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
-  paddingLeft: expanded ? "20px" : "12px",
-  paddingRight: expanded ? "20px" : "12px",
+  paddingLeft: expanded ? "20px" : "0",
+  paddingRight: expanded ? "20px" : "0",
   transition: "padding 0.3s ease-in-out",
 }));
 
@@ -122,13 +135,17 @@ const ThemeToggleButton = styled(IconButton)<{ expanded: boolean }>(
     color: theme.palette.text.secondary,
     width: expanded ? "100%" : "48px",
     height: "48px",
+    display: "flex",
+    alignItems: "center",
     justifyContent: expanded ? "flex-start" : "center",
-    paddingLeft: expanded ? "16px" : "0",
+    padding: expanded ? "0 16px" : "0",
     gap: expanded ? "12px" : "0",
+    marginLeft: expanded ? "0" : "auto",
+    marginRight: expanded ? "0" : "auto",
+    marginBottom: "12px",
     transition: "all 0.3s ease-in-out",
     border: `1px solid ${theme.palette.divider}`,
     borderRadius: "8px",
-    marginBottom: "12px",
     "&:hover": {
       backgroundColor: theme.palette.action.hover,
       borderColor: theme.palette.primary.main,
@@ -261,22 +278,37 @@ export const Sidebar = () => {
                 aria-label={item.label}
               >
                 {item.icon ? (
-                  <img
-                    src={item.icon}
-                    alt=""
-                    style={{
+                  <Box
+                    sx={{
                       width: "18px",
-                      minWidth: "18px",
                       height: "18px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                       opacity: 0.8,
                     }}
-                  />
+                  >
+                    <img
+                      src={item.icon}
+                      alt=""
+                      style={{
+                        width: "18px",
+                        height: "18px",
+                        display: "block",
+                      }}
+                    />
+                  </Box>
                 ) : (
                   <Box
                     component="span"
                     sx={{
                       fontSize: "18px",
                       minWidth: "18px",
+                      width: "18px",
+                      height: "18px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                       textAlign: "center",
                       opacity: 0.8,
                     }}
@@ -326,7 +358,14 @@ export const Sidebar = () => {
 
       <Divider sx={{ my: 3, mx: 2, opacity: 0.2 }} />
 
-      <SidebarPadding expanded={isExpanded}>
+      <Box
+        sx={{
+          padding: isExpanded ? "0 20px" : "0 16px",
+          display: "flex",
+          justifyContent: "center",
+          transition: "all 0.3s ease-in-out",
+        }}
+      >
         <Tooltip
           title={!isExpanded ? "Get a buoy" : ""}
           placement="right"
@@ -334,7 +373,6 @@ export const Sidebar = () => {
         >
           <Button
             variant="contained"
-            fullWidth={isExpanded}
             sx={{
               py: 1.5,
               minWidth: isExpanded ? "auto" : "48px",
@@ -363,7 +401,7 @@ export const Sidebar = () => {
             )}
           </Button>
         </Tooltip>
-      </SidebarPadding>
+      </Box>
 
       <SidebarPadding
         expanded={isExpanded}
