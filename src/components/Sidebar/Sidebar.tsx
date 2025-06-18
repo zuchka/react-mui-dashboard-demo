@@ -11,6 +11,9 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { useThemeMode } from "../../contexts/ThemeContext";
 
 const SidebarContainer = styled(Box)<{ expanded: boolean }>(
   ({ theme, expanded }) => ({
@@ -113,8 +116,29 @@ const SidebarPadding = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
   transition: "padding 0.3s ease-in-out",
 }));
 
+const ThemeToggleButton = styled(IconButton)<{ expanded: boolean }>(
+  ({ theme, expanded }) => ({
+    backgroundColor: theme.palette.background.default,
+    color: theme.palette.text.secondary,
+    width: expanded ? "100%" : "48px",
+    height: "48px",
+    justifyContent: expanded ? "flex-start" : "center",
+    paddingLeft: expanded ? "16px" : "0",
+    gap: expanded ? "12px" : "0",
+    transition: "all 0.3s ease-in-out",
+    border: `1px solid ${theme.palette.divider}`,
+    borderRadius: "8px",
+    marginBottom: "12px",
+    "&:hover": {
+      backgroundColor: theme.palette.action.hover,
+      borderColor: theme.palette.primary.main,
+    },
+  }),
+);
+
 export const Sidebar = () => {
   const location = useLocation();
+  const { mode, toggleTheme } = useThemeMode();
 
   // Initialize state from localStorage or default to expanded
   const [isExpanded, setIsExpanded] = useState(() => {
@@ -267,6 +291,37 @@ export const Sidebar = () => {
             </Tooltip>
           </StyledLink>
         ))}
+      </SidebarPadding>
+
+      <SidebarPadding expanded={isExpanded}>
+        <Tooltip
+          title={
+            !isExpanded
+              ? mode === "dark"
+                ? "Switch to light mode"
+                : "Switch to dark mode"
+              : ""
+          }
+          placement="right"
+          disableHoverListener={isExpanded}
+        >
+          <ThemeToggleButton
+            expanded={isExpanded}
+            onClick={toggleTheme}
+            aria-label={
+              mode === "dark" ? "Switch to light mode" : "Switch to dark mode"
+            }
+          >
+            {mode === "dark" ? (
+              <LightModeIcon fontSize="small" />
+            ) : (
+              <DarkModeIcon fontSize="small" />
+            )}
+            <MenuItemText variant="body2" expanded={isExpanded}>
+              {mode === "dark" ? "Light Mode" : "Dark Mode"}
+            </MenuItemText>
+          </ThemeToggleButton>
+        </Tooltip>
       </SidebarPadding>
 
       <Divider sx={{ my: 3, mx: 2, opacity: 0.2 }} />
