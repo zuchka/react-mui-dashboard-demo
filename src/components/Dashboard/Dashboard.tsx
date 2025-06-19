@@ -72,15 +72,20 @@ export default function Dashboard() {
   return (
     <Box
       component="main"
-      sx={{ flexGrow: 1, p: 2, width: "85%", maxWidth: "100%" }}
+      sx={{ flexGrow: 1, p: 3, width: "100%", maxWidth: "100%" }}
     >
+      <Typography variant="h4" sx={{ mb: 4, fontWeight: 600 }}>
+        Analytics & Reports Dashboard
+      </Typography>
+
       {/* Stats Cards */}
       <Box
         sx={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          display: "flex",
+          flexDirection: "row",
           gap: 3,
-          mb: 4,
+          mb: 5,
+          width: "100%",
         }}
       >
         <StatsCard
@@ -108,73 +113,188 @@ export default function Dashboard() {
         />
       </Box>
 
-      {/* Website Visitors and Analytics */}
-      <Box
+      {/* Traffic Sources */}
+      <Paper
         sx={{
-          display: "grid",
-          gridTemplateColumns: "1fr 2fr",
-          gap: 3,
+          p: 2,
           mb: 4,
+          bgcolor: "background.default",
+          border: "1px solid",
+          borderColor: "divider",
         }}
       >
-        {/* Website Visitors */}
-        <Paper sx={{ p: 3 }}>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <Typography variant="h6">Website Visitors</Typography>
-            <Button
-              variant="contained"
-              size="small"
-              sx={{ bgcolor: "background.paper" }}
-            >
-              Export
-            </Button>
-          </Box>
-
-          <Typography variant="h3" align="center" sx={{ my: 8 }}>
-            150k
-          </Typography>
-
-          {["Organic", "Social", "Direct"].map((type, index) => (
-            <Box key={type} sx={{ mb: 2 }}>
-              <Box
-                sx={{ display: "flex", justifyContent: "space-between", mb: 1 }}
-              >
-                <Typography color="text.secondary">{type}</Typography>
-                <Typography>{["30%", "50%", "20%"][index]}</Typography>
-              </Box>
-              <Box
-                sx={{
-                  height: 4,
-                  bgcolor: "primary.main",
-                  width: ["30%", "50%", "20%"][index],
-                  borderRadius: 1,
-                }}
-              />
-            </Box>
-          ))}
-        </Paper>
-
-        {/* Analytics Chart */}
-        <Paper
+        <Typography variant="h6" sx={{ mb: 3, fontWeight: 600 }}>
+          Traffic Sources
+        </Typography>
+        <Box
           sx={{
-            p: 3,
+            height: 350,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/991ee9a0afad461fa9386316c87fe366/cecb0a586d41b199491293c20063d9f661073c1f?placeholderIfAbsent=true"
-            alt="Analytics"
-            style={{ width: "100%", height: "auto", objectFit: "contain" }}
-          />
-        </Paper>
+          <Typography color="text.secondary">Chart Placeholder</Typography>
+        </Box>
+      </Paper>
+
+      {/* Website Visitors and Analytics */}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 3,
+          mb: 4,
+        }}
+      >
+        <Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 2.5,
+              "@media (max-width: 991px)": {
+                flexDirection: "column",
+                gap: 0,
+              },
+            }}
+          >
+            {/* Website Visitors - Column 1 */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                width: "50%",
+                "@media (max-width: 991px)": {
+                  width: "100%",
+                },
+              }}
+            >
+              <Paper sx={{ p: 3, height: "100%" }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 2,
+                    mb: 2,
+                  }}
+                >
+                  <Typography variant="h6">Website Visitors</Typography>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    sx={{
+                      bgcolor: "primary.main",
+                      color: "white",
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      px: 1.5,
+                      py: 0.5,
+                    }}
+                  >
+                    Export
+                  </Button>
+                </Box>
+
+                <Typography
+                  variant="h3"
+                  sx={{ mb: 1, fontWeight: 700, fontSize: "48px" }}
+                >
+                  150k
+                </Typography>
+
+                <Box sx={{ mb: 3 }}>
+                  {[
+                    {
+                      type: "Organic",
+                      percentage: "30%",
+                      color: "primary.main",
+                    },
+                    {
+                      type: "Social",
+                      percentage: "50%",
+                      color: "secondary.main",
+                    },
+                    {
+                      type: "Direct",
+                      percentage: "20%",
+                      color: "success.main",
+                    },
+                  ].map((item, index) => (
+                    <Box
+                      key={item.type}
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 2,
+                        mb: 1,
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          width: 12,
+                          height: 12,
+                          borderRadius: "50%",
+                          bgcolor: item.color,
+                        }}
+                      />
+                      <Typography
+                        color="text.secondary"
+                        sx={{ fontSize: "14px" }}
+                      >
+                        {item.type}
+                      </Typography>
+                      <Typography sx={{ ml: "auto", fontSize: "14px" }}>
+                        {item.percentage}
+                      </Typography>
+                    </Box>
+                  ))}
+                </Box>
+              </Paper>
+            </Box>
+
+            {/* Column 2 - Empty for now as per diff */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                width: "50%",
+                ml: 2.5,
+                "@media (max-width: 991px)": {
+                  width: "100%",
+                  ml: 0,
+                },
+              }}
+            />
+          </Box>
+        </Box>
+
+        {/* Analytics Chart */}
+        <Box sx={{ flexGrow: 2 }}>
+          <Paper sx={{ p: 3 }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "flex-start",
+                justifyContent: "space-between",
+                mb: 3,
+              }}
+            >
+              <Typography variant="h6">Analytics</Typography>
+            </Box>
+            <Box
+              sx={{
+                height: 350,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Typography color="text.secondary">
+                Analytics Chart Placeholder
+              </Typography>
+            </Box>
+          </Paper>
+        </Box>
       </Box>
 
       {/* Products, Team Progress, and Visitors Stats */}

@@ -25,7 +25,7 @@ interface StatsCardProps {
 export const StatsCard = ({ title, value, icon, trend }: StatsCardProps) => {
   return (
     <StyledPaper>
-      <Box display="flex" alignItems="center" gap={1}>
+      <Box display="flex" alignItems="center" gap={1} justifyContent="center">
         {icon && (
           <img
             src={icon}
@@ -45,7 +45,7 @@ export const StatsCard = ({ title, value, icon, trend }: StatsCardProps) => {
           {title}
         </Typography>
       </Box>
-      <Box display="flex" alignItems="center" gap={1}>
+      <Box display="flex" alignItems="center" gap={1} justifyContent="center">
         <Typography variant="h4" color="text.primary">
           {value}
         </Typography>

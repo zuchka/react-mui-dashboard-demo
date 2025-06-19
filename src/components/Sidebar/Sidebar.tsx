@@ -55,7 +55,7 @@ const ToggleButton = styled(IconButton)<{ expanded: boolean }>(
 );
 
 const MenuItem = styled(Box)<{ expanded: boolean }>(({ theme, expanded }) => ({
-  padding: expanded ? "14px 20px" : "0",
+  padding: expanded ? "14px 20px" : "14px 0",
   borderRadius: "8px",
   display: "flex",
   alignItems: "center",
@@ -78,16 +78,7 @@ const MenuItem = styled(Box)<{ expanded: boolean }>(({ theme, expanded }) => ({
   "&.active": {
     backgroundColor: theme.palette.primary.main + "20",
     color: theme.palette.primary.main,
-    "&::before": {
-      content: '""',
-      position: "absolute",
-      left: expanded ? 0 : "-12px",
-      top: 0,
-      bottom: 0,
-      width: "3px",
-      backgroundColor: theme.palette.primary.main,
-      borderRadius: "0 2px 2px 0",
-    },
+    borderLeft: `3px solid ${theme.palette.primary.main}`,
     paddingLeft: expanded ? "17px" : "0",
   },
 }));
@@ -124,8 +115,8 @@ const MenuItemText = styled(Typography)<{ expanded: boolean }>(
 );
 
 const SidebarPadding = styled(Box)<{ expanded: boolean }>(({ expanded }) => ({
-  paddingLeft: expanded ? "20px" : "0",
-  paddingRight: expanded ? "20px" : "0",
+  paddingLeft: expanded ? "20px" : "16px",
+  paddingRight: expanded ? "20px" : "16px",
   transition: "padding 0.3s ease-in-out",
 }));
 

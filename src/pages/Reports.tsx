@@ -249,8 +249,8 @@ export default function Reports() {
         sx={{
           display: "flex",
           gap: 3,
-          mb: 5,
-          flexWrap: "wrap",
+          mb: 2.5,
+          flexDirection: "row",
           "& > *": {
             flex: "1 1 0",
             minWidth: "200px",
@@ -293,12 +293,98 @@ export default function Reports() {
       <Box
         sx={{
           display: "flex",
+          flexDirection: "column",
           gap: 3,
           mb: 4,
-          flexDirection: { xs: "column", lg: "row" },
         }}
       >
-        {/* Left Column - Website Visitors */}
+        {/* Revenue Chart */}
+        <Box sx={{ flex: 2, minWidth: 0 }}>
+          <StyledPaper>
+            <Box
+              sx={{
+                mb: 2,
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+              }}
+            >
+              <Box>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ mb: 1 }}
+                >
+                  Revenue by customer type
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{ color: "text.primary", fontWeight: 700 }}
+                >
+                  $240.8K
+                  <Typography
+                    component="span"
+                    variant="body2"
+                    color="success.main"
+                    sx={{ ml: 1 }}
+                  >
+                    +14.6%
+                  </Typography>
+                </Typography>
+              </Box>
+              <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <Box
+                    sx={{
+                      width: 8,
+                      height: 8,
+                      backgroundColor: theme.palette.primary.main,
+                      borderRadius: "50%",
+                    }}
+                  />
+                  <Typography variant="caption" color="text.secondary">
+                    Current clients
+                  </Typography>
+                </Box>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <Box
+                    sx={{
+                      width: 8,
+                      height: 8,
+                      backgroundColor: theme.palette.secondary.main,
+                      borderRadius: "50%",
+                    }}
+                  />
+                  <Typography variant="caption" color="text.secondary">
+                    Subscribers
+                  </Typography>
+                </Box>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <Box
+                    sx={{
+                      width: 8,
+                      height: 8,
+                      backgroundColor: theme.palette.success.main,
+                      borderRadius: "50%",
+                    }}
+                  />
+                  <Typography variant="caption" color="text.secondary">
+                    New customers
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+            <ChartContainer>
+              <AreaChart
+                series={multiSeriesAreaData}
+                height={300}
+                yAxisLabel="Revenue (K)"
+              />
+            </ChartContainer>
+          </StyledPaper>
+        </Box>
+
+        {/* Website Visitors */}
         <Box sx={{ flex: 1, minWidth: 0 }}>
           <StyledPaper
             sx={{
@@ -406,92 +492,6 @@ export default function Reports() {
                 </Typography>
               </Box>
             </Box>
-          </StyledPaper>
-        </Box>
-
-        {/* Right Column - Revenue Chart */}
-        <Box sx={{ flex: 2, minWidth: 0 }}>
-          <StyledPaper>
-            <Box
-              sx={{
-                mb: 2,
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "flex-start",
-              }}
-            >
-              <Box>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ mb: 1 }}
-                >
-                  Revenue by customer type
-                </Typography>
-                <Typography
-                  variant="h4"
-                  sx={{ color: "text.primary", fontWeight: 700 }}
-                >
-                  $240.8K
-                  <Typography
-                    component="span"
-                    variant="body2"
-                    color="success.main"
-                    sx={{ ml: 1 }}
-                  >
-                    +14.6%
-                  </Typography>
-                </Typography>
-              </Box>
-              <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <Box
-                    sx={{
-                      width: 8,
-                      height: 8,
-                      backgroundColor: theme.palette.primary.main,
-                      borderRadius: "50%",
-                    }}
-                  />
-                  <Typography variant="caption" color="text.secondary">
-                    Current clients
-                  </Typography>
-                </Box>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <Box
-                    sx={{
-                      width: 8,
-                      height: 8,
-                      backgroundColor: theme.palette.secondary.main,
-                      borderRadius: "50%",
-                    }}
-                  />
-                  <Typography variant="caption" color="text.secondary">
-                    Subscribers
-                  </Typography>
-                </Box>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <Box
-                    sx={{
-                      width: 8,
-                      height: 8,
-                      backgroundColor: theme.palette.success.main,
-                      borderRadius: "50%",
-                    }}
-                  />
-                  <Typography variant="caption" color="text.secondary">
-                    New customers
-                  </Typography>
-                </Box>
-              </Box>
-            </Box>
-            <ChartContainer>
-              <AreaChart
-                series={multiSeriesAreaData}
-                height={300}
-                yAxisLabel="Revenue (K)"
-              />
-            </ChartContainer>
           </StyledPaper>
         </Box>
       </Box>
