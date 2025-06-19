@@ -82,7 +82,7 @@ export default function Dashboard() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
           gap: 3,
           mb: 5,
           width: "100%",

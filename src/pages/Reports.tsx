@@ -248,9 +248,9 @@ export default function Reports() {
       <Box
         sx={{
           display: "flex",
-          gap: 1,
+          gap: 3,
           mb: 2.5,
-          flexDirection: "column",
+          flexDirection: "row",
           "& > *": {
             flex: "1 1 0",
             minWidth: "200px",
