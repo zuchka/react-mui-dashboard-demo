@@ -99,12 +99,20 @@ export default function NotificationToggle({
   const handleInAppToggle = () => {
     const newValue = !inAppEnabled;
     setInAppEnabled(newValue);
+    if (newValue) {
+      setEmailEnabled(false);
+      onEmailChange?.(false);
+    }
     onInAppChange?.(newValue);
   };
 
   const handleEmailToggle = () => {
     const newValue = !emailEnabled;
     setEmailEnabled(newValue);
+    if (newValue) {
+      setInAppEnabled(false);
+      onInAppChange?.(false);
+    }
     onEmailChange?.(newValue);
   };
 
