@@ -171,9 +171,9 @@ export default function Settings() {
         <AddUserButton
           variant="contained"
           onClick={handleAddUser}
-          aria-label="Add new user"
+          aria-label="Save notification settings"
         >
-          Add User
+          Save
         </AddUserButton>
       </ContentContainer>
     </PageContainer>
