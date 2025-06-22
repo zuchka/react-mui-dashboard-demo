@@ -16,8 +16,10 @@ const ToggleContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  padding: "8px 0",
+  padding: "15px 0",
   minHeight: "30px",
+  width: "100%",
+  maxWidth: "543px",
 }));
 
 const LabelContainer = styled(Box)(() => ({
