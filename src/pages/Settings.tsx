@@ -152,7 +152,7 @@ export default function Settings() {
       <ContentContainer>
         <NotificationSection
           title="General notifications"
-          description="Lorem ipsum dolor sit amet consectetur adipiscing."
+          description="Stay informed about important buoy monitoring activities and team interactions."
           notifications={notifications.general}
           onNotificationChange={(id, type, enabled) =>
             handleNotificationChange("general", id, type, enabled)
@@ -161,7 +161,7 @@ export default function Settings() {
 
         <NotificationSection
           title="Summary notifications"
-          description="Lorem ipsum dolor sit amet consectetur adipiscing."
+          description="Receive periodic reports about buoy data trends and system performance."
           notifications={notifications.summary}
           onNotificationChange={(id, type, enabled) =>
             handleNotificationChange("summary", id, type, enabled)
