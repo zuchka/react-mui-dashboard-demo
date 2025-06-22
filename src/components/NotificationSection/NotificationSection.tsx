@@ -60,15 +60,8 @@ const NotificationCard = styled(Paper)(({ theme }) => ({
   gap: "0",
   position: "relative",
   boxShadow: "none",
-
-  "&::before, &::after": {
-    content: '""',
-    position: "absolute",
-    left: "0",
-    right: "0",
-    height: "1px",
-    backgroundColor: "#0B1739",
-  },
+  width: "100%",
+  height: "322px",
 }));
 
 const SeparatorLine = styled(Box)(() => ({
